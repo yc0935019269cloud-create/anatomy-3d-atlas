@@ -1,0 +1,900 @@
+[
+  {
+    "id": "frontal",
+    "zh": "額骨",
+    "en": "Frontal bone",
+    "views": [
+      "f"
+    ],
+    "position": [
+      -16.838748033018003,
+      70.91100801441019,
+      68.4131367108745
+    ],
+    "bone": "Frontal bone",
+    "anchor": "Squamous part of frontal bone",
+    "note": "形成前額與眼眶上壁。",
+    "number": 1,
+    "positionType": "source-leader-tip"
+  },
+  {
+    "id": "temporal",
+    "zh": "顳骨",
+    "en": "Temporal bone",
+    "views": [
+      "f"
+    ],
+    "position": [
+      67,
+      4,
+      14
+    ],
+    "bone": "Temporal bone.l",
+    "anchor": null,
+    "note": "位於頭顱兩側；其岩部參與顱底。",
+    "number": 2,
+    "positionType": "approximate-guide"
+  },
+  {
+    "id": "sphenoid",
+    "zh": "蝶骨",
+    "en": "Sphenoid",
+    "views": [
+      "f"
+    ],
+    "position": [
+      34,
+      -1,
+      53
+    ],
+    "bone": "Sphenoid bone",
+    "anchor": null,
+    "note": "位於顱底中央，並參與眼眶後壁。",
+    "number": 3,
+    "positionType": "approximate-guide"
+  },
+  {
+    "id": "ethmoid",
+    "zh": "篩骨",
+    "en": "Ethmoid",
+    "views": [
+      "f",
+      "l"
+    ],
+    "position": [
+      13,
+      -6,
+      70
+    ],
+    "bone": "Ethmoid bone",
+    "anchor": null,
+    "note": "參與眼眶內側壁、鼻腔頂與骨性鼻中隔。",
+    "number": 4,
+    "positionType": "approximate-guide"
+  },
+  {
+    "id": "lacrimal",
+    "zh": "淚骨",
+    "en": "Lacrimal bone",
+    "views": [
+      "f",
+      "l"
+    ],
+    "position": [
+      18,
+      -9,
+      80
+    ],
+    "bone": "Lacrimal bone.l",
+    "anchor": null,
+    "note": "位於眼眶內側壁前部。",
+    "number": 5,
+    "positionType": "approximate-guide"
+  },
+  {
+    "id": "zygomatic",
+    "zh": "顴骨",
+    "en": "Zygomatic bone",
+    "views": [
+      "f"
+    ],
+    "position": [
+      53,
+      -35,
+      71
+    ],
+    "bone": "Zygomatic bone.l",
+    "anchor": null,
+    "note": "形成面頰突起及眼眶外下側緣。",
+    "number": 6,
+    "positionType": "approximate-guide"
+  },
+  {
+    "id": "septum",
+    "zh": "鼻中隔",
+    "en": "Nasal septum",
+    "views": [
+      "f"
+    ],
+    "position": [
+      0,
+      -32,
+      83
+    ],
+    "bone": "Vomer",
+    "anchor": null,
+    "note": "圖中標示骨性部分：上方篩骨垂直板，下方犁骨；完整鼻中隔還包括軟骨。",
+    "number": 7,
+    "positionType": "approximate-guide"
+  },
+  {
+    "id": "perpendicular",
+    "zh": "篩骨垂直板",
+    "en": "Perpendicular plate of ethmoid",
+    "views": [
+      "f"
+    ],
+    "position": [
+      0,
+      -18,
+      78
+    ],
+    "bone": "Ethmoid bone",
+    "anchor": null,
+    "note": "篩骨向下延伸的正中薄板，構成骨性鼻中隔上部。",
+    "number": 8,
+    "positionType": "approximate-guide"
+  },
+  {
+    "id": "vomer",
+    "zh": "犁骨",
+    "en": "Vomer",
+    "views": [
+      "f"
+    ],
+    "position": [
+      0,
+      -45,
+      70
+    ],
+    "bone": "Vomer",
+    "anchor": null,
+    "note": "構成骨性鼻中隔的後下部。",
+    "number": 9,
+    "positionType": "approximate-guide"
+  },
+  {
+    "id": "supraorbital",
+    "zh": "眶上孔",
+    "en": "Supraorbital foramen",
+    "views": [
+      "f"
+    ],
+    "position": [
+      28.444605567991402,
+      14.489388634203237,
+      78.74848312347436
+    ],
+    "bone": "Frontal bone",
+    "anchor": "(Supra-orbital notch)",
+    "note": "位於眶上緣；本模型呈現眶上切跡型態，不一定是完整封閉孔。",
+    "number": 10,
+    "positionType": "source-leader-tip"
+  },
+  {
+    "id": "nasal",
+    "zh": "鼻骨",
+    "en": "Nasal bone",
+    "views": [
+      "f"
+    ],
+    "position": [
+      5,
+      -4,
+      102
+    ],
+    "bone": "Nasal bone.l",
+    "anchor": null,
+    "note": "左右成對，形成鼻樑。",
+    "number": 11,
+    "positionType": "approximate-guide"
+  },
+  {
+    "id": "superior-fissure",
+    "zh": "眶上裂",
+    "en": "Superior orbital fissure",
+    "views": [
+      "f",
+      "i"
+    ],
+    "position": [
+      29,
+      -2,
+      39
+    ],
+    "bone": "Sphenoid bone",
+    "anchor": null,
+    "note": "蝶骨大翼與小翼之間的裂隙。",
+    "number": 12,
+    "positionType": "approximate-guide"
+  },
+  {
+    "id": "inferior-fissure",
+    "zh": "眶下裂",
+    "en": "Inferior orbital fissure",
+    "views": [
+      "f"
+    ],
+    "position": [
+      35,
+      -26,
+      60
+    ],
+    "bone": "Maxilla.l",
+    "anchor": null,
+    "note": "位於眼眶底與外側壁交界。",
+    "number": 13,
+    "positionType": "approximate-guide"
+  },
+  {
+    "id": "infraorbital",
+    "zh": "眶下孔",
+    "en": "Infraorbital foramen",
+    "views": [
+      "f",
+      "l"
+    ],
+    "position": [
+      30,
+      -36,
+      88
+    ],
+    "bone": "Maxilla.l",
+    "anchor": null,
+    "note": "位於上頷骨前面、眶下緣下方。",
+    "number": 14,
+    "positionType": "approximate-guide"
+  },
+  {
+    "id": "maxilla",
+    "zh": "上頷骨",
+    "en": "Maxilla",
+    "views": [
+      "f",
+      "l"
+    ],
+    "position": [
+      23,
+      -50,
+      85
+    ],
+    "bone": "Maxilla.l",
+    "anchor": null,
+    "note": "形成上顎，支持上排牙齒並參與硬腭。",
+    "number": 15,
+    "positionType": "approximate-guide"
+  },
+  {
+    "id": "middle-concha",
+    "zh": "中鼻甲",
+    "en": "Middle nasal concha",
+    "views": [
+      "f"
+    ],
+    "position": [
+      8,
+      -24,
+      73
+    ],
+    "bone": "Ethmoid bone",
+    "anchor": null,
+    "note": "為篩骨的一部分，向鼻腔內突出。",
+    "number": 16,
+    "positionType": "approximate-guide"
+  },
+  {
+    "id": "inferior-concha",
+    "zh": "下鼻甲",
+    "en": "Inferior nasal concha",
+    "views": [
+      "f"
+    ],
+    "position": [
+      12,
+      -39,
+      82
+    ],
+    "bone": "Inferior nasal concha bone.l",
+    "anchor": null,
+    "note": "獨立成對的小骨，位於鼻腔外側壁。",
+    "number": 17,
+    "positionType": "approximate-guide"
+  },
+  {
+    "id": "mandible",
+    "zh": "下頷骨",
+    "en": "Mandible",
+    "views": [
+      "f"
+    ],
+    "position": [
+      23,
+      -94,
+      69
+    ],
+    "bone": "Mandible",
+    "anchor": null,
+    "note": "下顎骨，支持下排牙齒。",
+    "number": 18,
+    "positionType": "approximate-guide"
+  },
+  {
+    "id": "mental",
+    "zh": "頦孔",
+    "en": "Mental foramen",
+    "views": [
+      "f"
+    ],
+    "position": [
+      -21.732586059771236,
+      -89.8938412461432,
+      67.26697088177862
+    ],
+    "bone": "Mandible",
+    "anchor": "Mental foramen",
+    "note": "位於下頷骨體外側面。",
+    "number": 19,
+    "positionType": "source-leader-tip"
+  },
+  {
+    "id": "mandibular-fossa",
+    "zh": "下頷窩",
+    "en": "Mandibular fossa",
+    "views": [
+      "l"
+    ],
+    "position": [
+      52,
+      -33,
+      8
+    ],
+    "bone": "Temporal bone.l",
+    "anchor": null,
+    "note": "顳骨上與下頷骨頭相對的關節凹窩。",
+    "number": 20,
+    "positionType": "approximate-guide"
+  },
+  {
+    "id": "external-meatus",
+    "zh": "外耳道",
+    "en": "External auditory meatus",
+    "views": [
+      "l"
+    ],
+    "position": [
+      67,
+      -29,
+      -6
+    ],
+    "bone": "Temporal bone.l",
+    "anchor": null,
+    "note": "位於顳骨外側的外耳道骨性開口。",
+    "number": 21,
+    "positionType": "approximate-guide"
+  },
+  {
+    "id": "occipital",
+    "zh": "枕骨",
+    "en": "Occipital bone",
+    "views": [
+      "l"
+    ],
+    "position": [
+      45,
+      2,
+      -78
+    ],
+    "bone": "Occipital bone",
+    "anchor": null,
+    "note": "構成顱骨後下部，中央有枕骨大孔。",
+    "number": 22,
+    "positionType": "approximate-guide"
+  },
+  {
+    "id": "mastoid",
+    "zh": "乳突",
+    "en": "Mastoid process",
+    "views": [
+      "l",
+      "b"
+    ],
+    "position": [
+      55.384766361225985,
+      -38.461846715501565,
+      -15.949682224407669
+    ],
+    "bone": "Temporal bone.l",
+    "anchor": "Mastoid process",
+    "note": "顳骨向下突出的粗大骨突，位於外耳道後下方。",
+    "number": 23,
+    "positionType": "source-leader-tip"
+  },
+  {
+    "id": "temporal-zygomatic",
+    "zh": "顳骨顴突",
+    "en": "Zygomatic process of temporal bone",
+    "views": [
+      "l",
+      "b"
+    ],
+    "position": [
+      64,
+      -20,
+      30
+    ],
+    "bone": "Temporal bone.l",
+    "anchor": null,
+    "note": "顳骨向前伸出的骨突，構成顴弓後部。",
+    "number": 24,
+    "positionType": "approximate-guide"
+  },
+  {
+    "id": "zygomatic-temporal",
+    "zh": "顴骨顳突",
+    "en": "Temporal process of zygomatic bone",
+    "views": [
+      "l",
+      "b"
+    ],
+    "position": [
+      62,
+      -23,
+      48
+    ],
+    "bone": "Zygomatic bone.l",
+    "anchor": null,
+    "note": "顴骨向後延伸的骨突，構成顴弓前部。",
+    "number": 25,
+    "positionType": "approximate-guide"
+  },
+  {
+    "id": "arch",
+    "zh": "顴弓",
+    "en": "Zygomatic arch",
+    "views": [
+      "l",
+      "b"
+    ],
+    "position": [
+      64,
+      -21,
+      38
+    ],
+    "bone": "Zygomatic bone.l",
+    "anchor": null,
+    "note": "由顳骨顴突與顴骨顳突相接形成。",
+    "number": 26,
+    "positionType": "approximate-guide"
+  },
+  {
+    "id": "squamous",
+    "zh": "鱗狀縫",
+    "en": "Squamous suture",
+    "views": [
+      "l"
+    ],
+    "position": [
+      65,
+      22,
+      -5
+    ],
+    "bone": "Temporal bone.l",
+    "anchor": null,
+    "note": "顳骨鱗部與頂骨之間的骨縫；截去顱蓋時部分骨縫也會消失。",
+    "number": 27,
+    "positionType": "approximate-guide"
+  },
+  {
+    "id": "greater-wing",
+    "zh": "蝶骨大翼",
+    "en": "Sphenoid, greater wing",
+    "views": [
+      "l"
+    ],
+    "position": [
+      -38.691018225445696,
+      13.30870246392335,
+      43.92275745516815
+    ],
+    "bone": "Sphenoid bone",
+    "anchor": "Greater wing",
+    "note": "蝶骨向兩側伸展的大翼。",
+    "number": 28,
+    "positionType": "source-leader-tip"
+  },
+  {
+    "id": "styloid",
+    "zh": "莖突",
+    "en": "Styloid process",
+    "views": [
+      "l",
+      "b"
+    ],
+    "position": [
+      39.157249575479824,
+      -51.27331193351914,
+      1.2035589260008284
+    ],
+    "bone": "Temporal bone.l",
+    "anchor": "Styloid process of temporal bone",
+    "note": "顳骨向下延伸的細長骨突。",
+    "number": 29,
+    "positionType": "source-leader-tip"
+  },
+  {
+    "id": "incisive",
+    "zh": "門齒孔",
+    "en": "Incisive foramen",
+    "views": [
+      "b"
+    ],
+    "position": [
+      0,
+      -62,
+      86
+    ],
+    "bone": "Maxilla.l",
+    "anchor": null,
+    "note": "位於硬腭前部，上中門齒後方。",
+    "number": 30,
+    "positionType": "approximate-guide"
+  },
+  {
+    "id": "ovale",
+    "zh": "卵圓孔",
+    "en": "Foramen ovale",
+    "views": [
+      "b",
+      "i"
+    ],
+    "position": [
+      24.257369800408192,
+      -21.67945114474246,
+      13.03190522239959
+    ],
+    "bone": "Sphenoid bone",
+    "anchor": "Foramen ovale",
+    "note": "位於蝶骨大翼。",
+    "number": 31,
+    "positionType": "source-leader-tip"
+  },
+  {
+    "id": "spinosum",
+    "zh": "棘孔",
+    "en": "Foramen spinosum",
+    "views": [
+      "b",
+      "i"
+    ],
+    "position": [
+      29.532412396865364,
+      -22.21128055360344,
+      8.196100012555913
+    ],
+    "bone": "Sphenoid bone",
+    "anchor": "Foramen spinosum",
+    "note": "位於卵圓孔後外側的小孔。",
+    "number": 32,
+    "positionType": "source-leader-tip"
+  },
+  {
+    "id": "carotid",
+    "zh": "頸動脈管",
+    "en": "Carotid canal",
+    "views": [
+      "b"
+    ],
+    "position": [
+      28,
+      -38,
+      -7
+    ],
+    "bone": "Temporal bone.l",
+    "anchor": null,
+    "note": "此處標示顱底外面的管口位置。",
+    "number": 33,
+    "positionType": "approximate-guide"
+  },
+  {
+    "id": "jugular",
+    "zh": "頸靜脈孔",
+    "en": "Jugular foramen",
+    "views": [
+      "b",
+      "i"
+    ],
+    "position": [
+      27,
+      -39,
+      -22
+    ],
+    "bone": "Temporal bone.l",
+    "anchor": null,
+    "note": "位於顳骨與枕骨之間。",
+    "number": 34,
+    "positionType": "approximate-guide"
+  },
+  {
+    "id": "hypoglossal",
+    "zh": "舌下神經管",
+    "en": "Hypoglossal canal",
+    "views": [
+      "b",
+      "i"
+    ],
+    "position": [
+      -18.03675496596031,
+      -36.764042692428724,
+      -14.670379997033182
+    ],
+    "bone": "Occipital bone",
+    "anchor": "Hypoglossal canal",
+    "note": "位於枕骨大孔前外側、枕髁上方。",
+    "number": 35,
+    "positionType": "source-leader-tip"
+  },
+  {
+    "id": "palatine-process",
+    "zh": "上頷骨腭突",
+    "en": "Palatine process of maxilla",
+    "views": [
+      "b"
+    ],
+    "position": [
+      12,
+      -61,
+      66
+    ],
+    "bone": "Maxilla.l",
+    "anchor": null,
+    "note": "形成硬腭前部。",
+    "number": 36,
+    "positionType": "approximate-guide"
+  },
+  {
+    "id": "horizontal-plate",
+    "zh": "腭骨水平板",
+    "en": "Horizontal plate of palatine bone",
+    "views": [
+      "b"
+    ],
+    "position": [
+      12,
+      -57,
+      40
+    ],
+    "bone": "Palatine bone.l",
+    "anchor": null,
+    "note": "形成硬腭後部。",
+    "number": 37,
+    "positionType": "approximate-guide"
+  },
+  {
+    "id": "hard-palate",
+    "zh": "硬腭",
+    "en": "Hard palate",
+    "views": [
+      "b"
+    ],
+    "position": [
+      0,
+      -60,
+      57
+    ],
+    "bone": "Maxilla.l",
+    "anchor": null,
+    "note": "由上頷骨腭突及腭骨水平板共同形成。",
+    "number": 38,
+    "positionType": "approximate-guide"
+  },
+  {
+    "id": "lacerum",
+    "zh": "破裂孔",
+    "en": "Foramen lacerum",
+    "views": [
+      "b",
+      "i"
+    ],
+    "position": [
+      16,
+      -30,
+      6
+    ],
+    "bone": "Sphenoid bone",
+    "anchor": null,
+    "note": "位於蝶骨、顳骨與枕骨交界；活體中主要由軟骨填充。",
+    "number": 39,
+    "positionType": "approximate-guide"
+  },
+  {
+    "id": "stylomastoid",
+    "zh": "莖乳孔",
+    "en": "Stylomastoid foramen",
+    "views": [
+      "b"
+    ],
+    "position": [
+      43,
+      -42,
+      -14
+    ],
+    "bone": "Temporal bone.l",
+    "anchor": null,
+    "note": "位於莖突與乳突之間。",
+    "number": 40,
+    "positionType": "approximate-guide"
+  },
+  {
+    "id": "condyle",
+    "zh": "枕髁",
+    "en": "Occipital condyle",
+    "views": [
+      "b"
+    ],
+    "position": [
+      -23.177770595968678,
+      -47.48678428220554,
+      -16.906186827045758
+    ],
+    "bone": "Occipital bone",
+    "anchor": "Occipital condyle",
+    "note": "位於枕骨大孔左右兩側的關節隆起。",
+    "number": 41,
+    "positionType": "source-leader-tip"
+  },
+  {
+    "id": "magnum",
+    "zh": "枕骨大孔",
+    "en": "Foramen magnum",
+    "views": [
+      "b",
+      "i"
+    ],
+    "position": [
+      0.4117767247340741,
+      -51.18634851562987,
+      -19.919189495930876
+    ],
+    "bone": "Occipital bone",
+    "anchor": "Foramen magnum",
+    "note": "枕骨的大型開口，連接顱腔與椎管。",
+    "number": 42,
+    "positionType": "source-leader-tip"
+  },
+  {
+    "id": "rotundum",
+    "zh": "圓孔",
+    "en": "Foramen rotundum",
+    "views": [
+      "i"
+    ],
+    "position": [
+      -16.940790309548618,
+      -8.279725640695235,
+      25.542188930891104
+    ],
+    "bone": "Sphenoid bone",
+    "anchor": "Foramen rotundum",
+    "note": "位於蝶骨大翼，較卵圓孔靠前。",
+    "number": 43,
+    "positionType": "source-leader-tip"
+  },
+  {
+    "id": "internal-meatus",
+    "zh": "內耳道",
+    "en": "Internal auditory meatus",
+    "views": [
+      "i"
+    ],
+    "position": [
+      29,
+      -8,
+      -19
+    ],
+    "bone": "Temporal bone.l",
+    "anchor": null,
+    "note": "顳骨岩部後面的內耳道開口。",
+    "number": 44,
+    "positionType": "approximate-guide"
+  },
+  {
+    "id": "crista",
+    "zh": "雞冠",
+    "en": "Crista galli",
+    "views": [
+      "i"
+    ],
+    "position": [
+      0,
+      5,
+      61
+    ],
+    "bone": "Ethmoid bone",
+    "anchor": null,
+    "note": "篩骨向顱腔內突出的正中骨嵴。",
+    "number": 45,
+    "positionType": "approximate-guide"
+  },
+  {
+    "id": "cribriform",
+    "zh": "篩板",
+    "en": "Cribriform plate",
+    "views": [
+      "i"
+    ],
+    "position": [
+      6,
+      -2,
+      61
+    ],
+    "bone": "Ethmoid bone",
+    "anchor": null,
+    "note": "雞冠兩側的篩骨水平板。",
+    "number": 46,
+    "positionType": "approximate-guide"
+  },
+  {
+    "id": "olfactory",
+    "zh": "嗅孔",
+    "en": "Olfactory foramina",
+    "views": [
+      "i"
+    ],
+    "position": [
+      6,
+      4,
+      67
+    ],
+    "bone": "Ethmoid bone",
+    "anchor": null,
+    "note": "篩板上的細小孔群；此模型無法逐孔辨識，標記為篩板區域導引。",
+    "number": 47,
+    "positionType": "approximate-guide"
+  },
+  {
+    "id": "optic",
+    "zh": "視神經管（孔）",
+    "en": "Optic canal (foramen)",
+    "views": [
+      "i"
+    ],
+    "position": [
+      -12.742848449182567,
+      2.1899464974108884,
+      31.406515270614562
+    ],
+    "bone": "Sphenoid bone",
+    "anchor": "Optic canal",
+    "note": "位於蝶骨小翼根部。",
+    "number": 48,
+    "positionType": "source-leader-tip"
+  },
+  {
+    "id": "sella",
+    "zh": "蝶鞍（腦下腺窩）",
+    "en": "Sella turcica (hypophyseal fossa)",
+    "views": [
+      "i"
+    ],
+    "position": [
+      0.23030794461934023,
+      -6.548613645652068,
+      15.326767011328231
+    ],
+    "bone": "Sphenoid bone",
+    "anchor": "Hypophysial fossa",
+    "note": "腦下腺窩位於蝶鞍中央；蝶鞍是更廣的鞍形骨性結構。",
+    "number": 49,
+    "positionType": "source-leader-tip"
+  }
+]

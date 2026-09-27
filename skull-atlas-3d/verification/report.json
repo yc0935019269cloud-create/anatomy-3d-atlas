@@ -1,0 +1,27 @@
+{
+  "testedAt": "2026-09-21T14:18:28.170Z",
+  "model": {
+    "count": 49,
+    "ids": 49,
+    "meshes": 50,
+    "vertices": 79682
+  },
+  "checks": [
+    "49 unique entries; 50 meshes; 79682 vertices",
+    "f: 19 labels present, visible and non-overlapping",
+    "l: 14 labels present, visible and non-overlapping",
+    "b: 18 labels present, visible and non-overlapping",
+    "i: 14 labels present, visible and non-overlapping",
+    "Hide masks canvas labels, list and detail; photo answers stay closed",
+    "Show restores all active-view names",
+    "Cross-view English search switches to front and selects mental foramen",
+    "Chinese search finds cribriform plate",
+    "Both language-only modes work",
+    "Drag rotation, wheel zoom, jaw, color and transparency controls",
+    "Local reference photo opens offline",
+    "390px mobile: no horizontal overflow; 19 visible labels",
+    "No runtime/console errors or HTTP requests in offline mode"
+  ],
+  "errors": [],
+  "requests": []
+}

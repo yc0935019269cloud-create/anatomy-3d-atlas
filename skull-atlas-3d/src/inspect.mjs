@@ -1,0 +1,11 @@
+import {NodeIO} from '@gltf-transform/core';
+import {ALL_EXTENSIONS} from '@gltf-transform/extensions';
+import {MeshoptDecoder} from 'meshoptimizer';
+import fs from 'node:fs';
+await MeshoptDecoder.ready;
+const io=new NodeIO().registerExtensions(ALL_EXTENSIONS).registerDependencies({'meshopt.decoder':MeshoptDecoder});
+const doc=await io.read('assets/skeleton.glb');
+const nodes=doc.getRoot().listNodes();
+const start=nodes.findIndex(n=>n.getName()==='Frontal bone');
+console.log(nodes.filter(n=>/Frontal bone|Sphenoid bone|Temporal bone|Mandible|Foramen ovale|Crista|Cribriform|Ethmoid/i.test(n.getName())).map(n=>({name:n.getName(),mesh:!!n.getMesh(),children:n.listChildren().map(c=>c.getName()),world:n.getWorldTranslation()})));
+fs.writeFileSync('assets/node-inventory.json',JSON.stringify(nodes.map(n=>({name:n.getName(),mesh:!!n.getMesh(),children:n.listChildren().map(c=>c.getName()),world:n.getWorldTranslation()})),null,2));

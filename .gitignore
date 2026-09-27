@@ -1,0 +1,7 @@
+# Dependencies are reproducible from package-lock.json
+**/node_modules/
+
+# Large upstream reconstruction sources are retained in the local folders;
+# the published standalone atlases already contain the required runtime assets.
+skull-atlas-3d/assets/Startup.blend
+skull-atlas-3d/assets/Z-Anatomy.zip

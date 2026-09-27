@@ -1,0 +1,12 @@
+{
+  "originalPath": "E:\\NEWTEST\\skull-atlas-3d\\assets\\Startup.blend",
+  "sha256": "9f08a17ea0115fed80b2a73ecdf0a1bc2ab2f6956f37c593ce23d513ea35afcd",
+  "url": "https://github.com/Z-Anatomy/Models-of-human-anatomy",
+  "origin_m": [
+    0,
+    0,
+    1.64
+  ],
+  "axes": "X anatomical left; Y superior; Z anterior; millimetres",
+  "modifications": "Selected brain, nerves, eyes, intracranial artery objects; evaluated original modifiers; lower extent clipped at -150mm; no further decimation"
+}

@@ -1,0 +1,14 @@
+import fs from 'node:fs';
+import zlib from 'node:zlib';
+import {build} from 'esbuild';
+import {labels,groups} from './src/labels.js';
+const raw=fs.readFileSync('assets/brain-data.js','utf8').slice('window.BRAIN_DATA='.length,-1);
+fs.writeFileSync('assets/brain-packed.js','window.BRAIN_GZIP='+JSON.stringify(zlib.gzipSync(raw,{level:9}).toString('base64'))+';');
+await build({entryPoints:['src/app.js'],bundle:true,outfile:'app.js',format:'iife',minify:true,legalComments:'eof',target:['chrome110']});
+const refs=Object.fromEntries(Array.from({length:13},(_,i)=>[i+1,'data:image/png;base64,'+fs.readFileSync(`assets/page-${String(i+1).padStart(2,'0')}.png`).toString('base64')]));
+const script=s=>'<script>'+s.replace(/<\/script/gi,'<\\/script')+'</script>';
+let html=fs.readFileSync('index.html','utf8').replace('<link rel="stylesheet" href="style.css">',()=>'<style>'+fs.readFileSync('style.css','utf8')+'</style>').replace('<script src="assets/brain-packed.js"></script>',()=>script(fs.readFileSync('assets/brain-packed.js','utf8'))+script('window.REFERENCE_IMAGES='+JSON.stringify(refs)+';')).replace('<script src="app.js"></script>',()=>script(fs.readFileSync('app.js','utf8')));
+fs.writeFileSync('腦與視覺路徑3D.html',html);
+fs.writeFileSync('assets/landmarks.json',JSON.stringify(labels,null,2));
+fs.writeFileSync('完整構造清單.md','# 腦與視覺路徑完整構造清單\n\n'+labels.length+' 個學習項目。PDF 原始頁序 1–13；背景補充與未具名項目皆明確列出。\n\n|編號|中文|English|主題|PDF 頁|原圖號碼|呈現方式|\n|---|---|---|---|---|---|---|\n'+labels.map(l=>`|${l.number}|${l.zh}${l.extra?'（補充）':''}|${l.en}|${l.groups.map(g=>groups[g].title).join('、')}|${l.pages.join('、')}|${l.pdfNo||'—'}|${l.representation}|`).join('\n')+'\n\nmesh：原模型；guide：區域導引；schematic：示意模型；reference：原圖層次構造，無獨立 3D 網格。\n');
+console.log(JSON.stringify({entries:labels.length,groupCounts:Object.fromEntries(Object.keys(groups).map(g=>[g,labels.filter(l=>l.groups.includes(g)).length])),standaloneMB:(Buffer.byteLength(html)/1e6).toFixed(2)}));

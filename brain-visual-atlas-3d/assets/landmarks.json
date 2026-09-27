@@ -1,0 +1,1798 @@
+[
+  {
+    "id": "optic-nerve",
+    "zh": "視神經",
+    "en": "Optic nerve (CN II)",
+    "groups": [
+      "p",
+      "r"
+    ],
+    "pages": [
+      8,
+      10,
+      11
+    ],
+    "models": [
+      "Optic nerve (II)"
+    ],
+    "position": [
+      18,
+      -39,
+      40
+    ],
+    "note": "將視網膜訊號傳入顱內；此段位於視交叉之前。",
+    "representation": "mesh",
+    "pdfNo": 1,
+    "extra": false,
+    "number": 1
+  },
+  {
+    "id": "lgn",
+    "zh": "外側膝狀體核",
+    "en": "Lateral geniculate nucleus (LGN)",
+    "groups": [
+      "p",
+      "b",
+      "d",
+      "r"
+    ],
+    "pages": [
+      6,
+      8,
+      10,
+      11
+    ],
+    "models": [
+      "Lateral geniculate body"
+    ],
+    "position": [
+      19,
+      -28,
+      -13
+    ],
+    "note": "視徑主要的丘腦中繼站；之後經視放射投射到初級視覺皮質。原模型使用 lateral geniculate body 名稱。",
+    "representation": "mesh",
+    "pdfNo": 2,
+    "extra": false,
+    "number": 2
+  },
+  {
+    "id": "optic-radiation",
+    "zh": "視放射",
+    "en": "Optic radiation",
+    "groups": [
+      "p",
+      "r"
+    ],
+    "pages": [
+      8,
+      9,
+      10,
+      11
+    ],
+    "models": [
+      "guide:radiation"
+    ],
+    "position": [
+      36,
+      -15,
+      -47
+    ],
+    "note": "連接 LGN 與枕葉 V1；彩色束線為依解剖關係繪製的路徑示意，不是擴散 MRI 纖維追蹤。",
+    "representation": "schematic",
+    "pdfNo": 3,
+    "extra": false,
+    "number": 3
+  },
+  {
+    "id": "v1",
+    "zh": "初級視覺皮質／紋狀皮質",
+    "en": "Primary visual / striate cortex (V1)",
+    "groups": [
+      "p",
+      "m",
+      "r"
+    ],
+    "pages": [
+      8,
+      10,
+      11,
+      12
+    ],
+    "models": [
+      "Calcarine sulcus",
+      "Cuneus",
+      "Lingual gyrus"
+    ],
+    "position": [
+      8,
+      -23,
+      -79
+    ],
+    "note": "主要位於距狀溝兩岸，對應 Brodmann area 17。高亮以相鄰表面區域導引，不代表已精確分割的 V1 邊界。",
+    "representation": "guide",
+    "pdfNo": 4,
+    "extra": false,
+    "number": 4
+  },
+  {
+    "id": "association",
+    "zh": "視覺聯合皮質",
+    "en": "Visual association cortex",
+    "groups": [
+      "p",
+      "r"
+    ],
+    "pages": [
+      8,
+      10
+    ],
+    "models": [
+      "Lateral occipital gyrus",
+      "Superior occipital gyri"
+    ],
+    "position": [
+      30,
+      -16,
+      -81
+    ],
+    "note": "位於初級視覺皮質周圍及相關視覺處理網路；此處標示枕葉周邊的範圍導引。",
+    "representation": "guide",
+    "pdfNo": 5,
+    "extra": false,
+    "number": 5
+  },
+  {
+    "id": "midbrain-six",
+    "zh": "第 6 號：中腦核群區（未具名）",
+    "en": "Unlabelled midbrain region, figure no. 6",
+    "groups": [
+      "r"
+    ],
+    "pages": [
+      8,
+      10
+    ],
+    "models": [
+      "Nucleus of oculomotor nerve",
+      "Accessory nucleus of oculomotor nerve"
+    ],
+    "position": [
+      0,
+      -33,
+      -9
+    ],
+    "note": "講義第 6 號箭頭指向彩色中腦核群，但沒有寫出名稱。旁列動眼神經核與 EW 核作為補充；不將本推定當成原講義正式答案。",
+    "representation": "guide",
+    "pdfNo": 6,
+    "extra": false,
+    "number": 6
+  },
+  {
+    "id": "cn3",
+    "zh": "動眼神經",
+    "en": "Oculomotor nerve (CN III)",
+    "groups": [
+      "r"
+    ],
+    "pages": [
+      8,
+      10
+    ],
+    "models": [
+      "Oculomotor nerve (III)"
+    ],
+    "position": [
+      13,
+      -42,
+      20
+    ],
+    "note": "近反射的傳出神經：運動成分參與內直肌收縮，副交感成分經睫狀神經節到眼內肌。",
+    "representation": "mesh",
+    "pdfNo": 7,
+    "extra": false,
+    "number": 7
+  },
+  {
+    "id": "medial-rectus",
+    "zh": "內直肌",
+    "en": "Medial rectus muscle",
+    "groups": [
+      "r"
+    ],
+    "pages": [
+      8,
+      10
+    ],
+    "models": [
+      "Medial rectus muscle"
+    ],
+    "position": [
+      18,
+      -47,
+      54
+    ],
+    "note": "雙側內直肌收縮使眼球向內轉，形成會聚。",
+    "representation": "mesh",
+    "pdfNo": 8,
+    "extra": false,
+    "number": 8
+  },
+  {
+    "id": "ciliary-muscle",
+    "zh": "睫狀肌",
+    "en": "Ciliary muscle",
+    "groups": [
+      "r"
+    ],
+    "pages": [
+      8,
+      10
+    ],
+    "models": [
+      "guide:ciliary"
+    ],
+    "position": [
+      36,
+      -49,
+      69
+    ],
+    "note": "收縮時使懸韌帶張力減少，水晶體變厚以看近；本頁使用環形位置示意，非肌纖維模型。",
+    "representation": "schematic",
+    "pdfNo": 9,
+    "extra": false,
+    "number": 9
+  },
+  {
+    "id": "sphincter",
+    "zh": "瞳孔括約肌",
+    "en": "Sphincter pupillae",
+    "groups": [
+      "r"
+    ],
+    "pages": [
+      8,
+      10
+    ],
+    "models": [
+      "guide:sphincter"
+    ],
+    "position": [
+      31,
+      -49,
+      74
+    ],
+    "note": "近反射中收縮使瞳孔縮小；薄環只示意肌肉所在位置與收縮方向。",
+    "representation": "schematic",
+    "pdfNo": 10,
+    "extra": false,
+    "number": 10
+  },
+  {
+    "id": "chiasm",
+    "zh": "視交叉",
+    "en": "Optic chiasm",
+    "groups": [
+      "p",
+      "m",
+      "r"
+    ],
+    "pages": [
+      9,
+      11,
+      13
+    ],
+    "models": [
+      "Optic chiasm"
+    ],
+    "position": [
+      0,
+      -28,
+      17
+    ],
+    "note": "鼻側視網膜纖維在此交叉，顳側纖維保持同側；因此每側視徑攜帶對側視野。",
+    "representation": "mesh",
+    "pdfNo": null,
+    "extra": false,
+    "number": 11
+  },
+  {
+    "id": "optic-tract",
+    "zh": "視徑",
+    "en": "Optic tract",
+    "groups": [
+      "p",
+      "r"
+    ],
+    "pages": [
+      11
+    ],
+    "models": [
+      "Optic tract"
+    ],
+    "position": [
+      16,
+      -28,
+      0
+    ],
+    "note": "視交叉之後通往 LGN 的路徑；與視交叉前的視神經區分。",
+    "representation": "mesh",
+    "pdfNo": null,
+    "extra": false,
+    "number": 12
+  },
+  {
+    "id": "meyer",
+    "zh": "梅氏環（顳葉視放射）",
+    "en": "Meyer’s loop / temporal optic radiation",
+    "groups": [
+      "p"
+    ],
+    "pages": [
+      9,
+      11
+    ],
+    "models": [
+      "guide:meyer"
+    ],
+    "position": [
+      34,
+      -31,
+      3
+    ],
+    "note": "先向前繞過側腦室顳角，再向後到距狀溝下岸；傳遞對側上方視野。損傷可造成對側上象限盲（pie in the sky）。",
+    "representation": "schematic",
+    "pdfNo": null,
+    "extra": false,
+    "number": 13
+  },
+  {
+    "id": "baum",
+    "zh": "鮑氏環（頂葉視放射）",
+    "en": "Baum’s loop / parietal optic radiation",
+    "groups": [
+      "p"
+    ],
+    "pages": [
+      9,
+      11
+    ],
+    "models": [
+      "guide:baum"
+    ],
+    "position": [
+      31,
+      -3,
+      -45
+    ],
+    "note": "講義用 Baum’s loop 指上方／頂葉視放射；通向距狀溝上岸，傳遞對側下方視野。此束線為走向示意。",
+    "representation": "schematic",
+    "pdfNo": null,
+    "extra": false,
+    "number": 14
+  },
+  {
+    "id": "retina",
+    "zh": "視網膜",
+    "en": "Retina",
+    "groups": [
+      "p",
+      "r"
+    ],
+    "pages": [
+      8,
+      9
+    ],
+    "models": [
+      "Retina"
+    ],
+    "position": [
+      34,
+      -49,
+      53
+    ],
+    "note": "影像上下與左右皆倒置；下半部視網膜對應上方視野。",
+    "representation": "mesh",
+    "pdfNo": null,
+    "extra": true,
+    "number": 15
+  },
+  {
+    "id": "calcarine",
+    "zh": "距狀溝",
+    "en": "Calcarine sulcus",
+    "groups": [
+      "m"
+    ],
+    "pages": [
+      12
+    ],
+    "models": [
+      "Calcarine sulcus"
+    ],
+    "position": [
+      6,
+      -22,
+      -67
+    ],
+    "note": "枕葉內側面的重要溝；初級視覺皮質分布在其上下兩岸。",
+    "representation": "mesh",
+    "pdfNo": null,
+    "extra": false,
+    "number": 16
+  },
+  {
+    "id": "parieto-occipital",
+    "zh": "頂枕溝",
+    "en": "Parieto-occipital sulcus",
+    "groups": [
+      "m"
+    ],
+    "pages": [
+      12
+    ],
+    "models": [
+      "Parieto-occipital sulcus"
+    ],
+    "position": [
+      6,
+      10,
+      -60
+    ],
+    "note": "腦內側面區分頂葉與枕葉的重要界線。",
+    "representation": "mesh",
+    "pdfNo": null,
+    "extra": false,
+    "number": 17
+  },
+  {
+    "id": "gennari",
+    "zh": "Gennari 線／紋",
+    "en": "Line / stria of Gennari",
+    "groups": [
+      "m"
+    ],
+    "pages": [
+      12
+    ],
+    "models": [
+      "Calcarine sulcus"
+    ],
+    "position": [
+      8,
+      -25,
+      -75
+    ],
+    "note": "V1 皮質內富含髓鞘的纖維帶，屬切面／組織層次構造。本 3D 表面未逐層建模；標點只提示 V1 區域，請看第 12 頁局部照片。",
+    "representation": "reference",
+    "pdfNo": null,
+    "extra": false,
+    "number": 18
+  },
+  {
+    "id": "pituitary",
+    "zh": "腦下垂體",
+    "en": "Pituitary gland / hypophysis",
+    "groups": [
+      "m"
+    ],
+    "pages": [
+      13
+    ],
+    "models": [
+      "Adenohypophysis",
+      "Neurohypophysis"
+    ],
+    "position": [
+      0,
+      -39,
+      17
+    ],
+    "note": "位於蝶鞍內，視交叉在其上方；本模型保留前葉及後葉。",
+    "representation": "mesh",
+    "pdfNo": null,
+    "extra": false,
+    "number": 19
+  },
+  {
+    "id": "sella",
+    "zh": "蝶鞍",
+    "en": "Sella turcica",
+    "groups": [
+      "m"
+    ],
+    "pages": [
+      13
+    ],
+    "models": [
+      "Sphenoid bone"
+    ],
+    "position": [
+      0,
+      -44,
+      20
+    ],
+    "note": "蝶骨中央的鞍形區域，容納腦下垂體。高亮整個蝶骨時，標點才是蝶鞍位置。",
+    "representation": "guide",
+    "pdfNo": null,
+    "extra": false,
+    "number": 20
+  },
+  {
+    "id": "ica",
+    "zh": "頸內動脈",
+    "en": "Internal carotid artery (ICA)",
+    "groups": [
+      "b"
+    ],
+    "pages": [
+      3,
+      4,
+      5,
+      6
+    ],
+    "models": [
+      "Internal carotid artery"
+    ],
+    "position": [
+      14,
+      -38,
+      20
+    ],
+    "note": "前循環的重要來源；講義列出 ACA、MCA、眼動脈與前脈絡叢動脈等分支。此視圖只顯示近顱底部分。",
+    "representation": "mesh",
+    "pdfNo": null,
+    "extra": false,
+    "number": 21
+  },
+  {
+    "id": "aca",
+    "zh": "前大腦動脈",
+    "en": "Anterior cerebral artery (ACA)",
+    "groups": [
+      "b",
+      "a"
+    ],
+    "pages": [
+      3,
+      4,
+      5,
+      6
+    ],
+    "models": [
+      "Anterior cerebral artery"
+    ],
+    "position": [
+      6,
+      -28,
+      29
+    ],
+    "note": "源自頸內動脈；左右 ACA 由前交通動脈相連。",
+    "representation": "mesh",
+    "pdfNo": null,
+    "extra": false,
+    "number": 22
+  },
+  {
+    "id": "mca",
+    "zh": "中大腦動脈",
+    "en": "Middle cerebral artery (MCA)",
+    "groups": [
+      "b",
+      "a"
+    ],
+    "pages": [
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "models": [
+      "Middle cerebral artery",
+      "Insular branches of middle cerebral artery",
+      "Temporal branches of middle cerebral artery",
+      "Parietal branches of middle cerebral artery"
+    ],
+    "position": [
+      26,
+      -30,
+      22
+    ],
+    "note": "源自頸內動脈，向外側走行；MCA 本身不構成 Willis 環的封閉環路。",
+    "representation": "mesh",
+    "pdfNo": null,
+    "extra": false,
+    "number": 23
+  },
+  {
+    "id": "ophthalmic",
+    "zh": "眼動脈",
+    "en": "Ophthalmic artery",
+    "groups": [
+      "b"
+    ],
+    "pages": [
+      3,
+      5,
+      6
+    ],
+    "models": [
+      "Ophthalmic artery"
+    ],
+    "position": [
+      15,
+      -39,
+      39
+    ],
+    "note": "頸內動脈的分支，供應眼眶與眼部結構；視網膜中央動脈是其分支。",
+    "representation": "mesh",
+    "pdfNo": null,
+    "extra": false,
+    "number": 24
+  },
+  {
+    "id": "acha",
+    "zh": "前脈絡叢動脈",
+    "en": "Anterior choroidal artery (AChA)",
+    "groups": [
+      "b",
+      "a",
+      "d"
+    ],
+    "pages": [
+      4,
+      5,
+      6,
+      7
+    ],
+    "models": [
+      "guide:acha"
+    ],
+    "position": [
+      14,
+      -32,
+      1
+    ],
+    "note": "通常由頸內動脈發出；供應視徑、LGN、內囊後肢與脈絡叢等部分區域，供血範圍有變異。原 atlas 未含可用獨立網格，本頁為走向示意。",
+    "representation": "schematic",
+    "pdfNo": null,
+    "extra": false,
+    "number": 25
+  },
+  {
+    "id": "acom",
+    "zh": "前交通動脈",
+    "en": "Anterior communicating artery (ACom)",
+    "groups": [
+      "b"
+    ],
+    "pages": [
+      3,
+      4,
+      6
+    ],
+    "models": [
+      "Anterior communicating artery"
+    ],
+    "position": [
+      0,
+      -30,
+      23
+    ],
+    "note": "連接左右前大腦動脈；不是頸內動脈直接分出的另一條平行主幹。",
+    "representation": "mesh",
+    "pdfNo": null,
+    "extra": false,
+    "number": 26
+  },
+  {
+    "id": "pcom",
+    "zh": "後交通動脈",
+    "en": "Posterior communicating artery (PCom)",
+    "groups": [
+      "b"
+    ],
+    "pages": [
+      3,
+      4
+    ],
+    "models": [
+      "Posterior communicating artery"
+    ],
+    "position": [
+      8,
+      -35,
+      15
+    ],
+    "note": "連接頸內動脈循環與後大腦動脈循環，構成 Willis 環的側後部。",
+    "representation": "mesh",
+    "pdfNo": null,
+    "extra": false,
+    "number": 27
+  },
+  {
+    "id": "pca",
+    "zh": "後大腦動脈",
+    "en": "Posterior cerebral artery (PCA)",
+    "groups": [
+      "b",
+      "a"
+    ],
+    "pages": [
+      3,
+      4,
+      6
+    ],
+    "models": [
+      "Posterior cerebral artery",
+      "Medial occipital artery",
+      "Lateral occipital artery",
+      "Parieto-occipital artery"
+    ],
+    "position": [
+      26,
+      -25,
+      -27
+    ],
+    "note": "通常由基底動脈分出，繞行中腦後到枕葉；為視覺皮質的重要供血來源。",
+    "representation": "mesh",
+    "pdfNo": null,
+    "extra": false,
+    "number": 28
+  },
+  {
+    "id": "basilar",
+    "zh": "基底動脈",
+    "en": "Basilar artery",
+    "groups": [
+      "b",
+      "a"
+    ],
+    "pages": [
+      3,
+      4
+    ],
+    "models": [
+      "Basilar artery"
+    ],
+    "position": [
+      0,
+      -50,
+      3
+    ],
+    "note": "由左右椎動脈匯合形成，沿橋腦腹側上行。",
+    "representation": "mesh",
+    "pdfNo": null,
+    "extra": false,
+    "number": 29
+  },
+  {
+    "id": "vertebral",
+    "zh": "椎動脈",
+    "en": "Vertebral artery",
+    "groups": [
+      "b",
+      "a"
+    ],
+    "pages": [
+      3,
+      4
+    ],
+    "models": [
+      "Vertebral artery"
+    ],
+    "position": [
+      12,
+      -77,
+      -13
+    ],
+    "note": "後循環來源；左右椎動脈匯合為基底動脈。",
+    "representation": "mesh",
+    "pdfNo": null,
+    "extra": false,
+    "number": 30
+  },
+  {
+    "id": "willis",
+    "zh": "威利氏環",
+    "en": "Cerebral arterial circle / Circle of Willis",
+    "groups": [
+      "b"
+    ],
+    "pages": [
+      3,
+      4
+    ],
+    "models": [
+      "Anterior communicating artery",
+      "Anterior cerebral artery",
+      "Posterior communicating artery",
+      "Posterior cerebral artery",
+      "Internal carotid artery"
+    ],
+    "position": [
+      0,
+      -32,
+      10
+    ],
+    "note": "前交通、左右 ACA 近端、ICA 末端、後交通與 PCA 近端共同形成環路。高亮保留血管全長，並非每一段都屬於環本身。",
+    "representation": "guide",
+    "pdfNo": null,
+    "extra": false,
+    "number": 31
+  },
+  {
+    "id": "medial-orbitofrontal",
+    "zh": "內側眶額動脈",
+    "en": "Medial orbitofrontal artery",
+    "groups": [
+      "a"
+    ],
+    "pages": [
+      4,
+      5
+    ],
+    "models": [
+      "Orbitofrontal branches of anterior cerebral artery"
+    ],
+    "position": [
+      8,
+      -22,
+      56
+    ],
+    "note": "圖中額葉底面的 ACA 分支。原 atlas 對應眶額分支網格。",
+    "representation": "mesh",
+    "pdfNo": null,
+    "extra": false,
+    "number": 32
+  },
+  {
+    "id": "heubner",
+    "zh": "Heubner 回返動脈",
+    "en": "Recurrent artery of Heubner",
+    "groups": [
+      "a"
+    ],
+    "pages": [
+      4,
+      5
+    ],
+    "models": [
+      "guide:heubner"
+    ],
+    "position": [
+      10,
+      -26,
+      25
+    ],
+    "note": "又稱內側紋狀體動脈，常從 ACA 的近端分出後回返。此處以短支線示意。",
+    "representation": "schematic",
+    "pdfNo": null,
+    "extra": false,
+    "number": 33
+  },
+  {
+    "id": "lenticulostriate",
+    "zh": "內、外側豆紋動脈",
+    "en": "Medial and lateral lenticulostriate arteries",
+    "groups": [
+      "a",
+      "d"
+    ],
+    "pages": [
+      4,
+      5,
+      7
+    ],
+    "models": [
+      "Proximal lateral striate branches",
+      "Distal lateral striate branches",
+      "guide:heubner"
+    ],
+    "position": [
+      18,
+      -24,
+      24
+    ],
+    "note": "原模型具外側紋狀體分支；內側群以回返動脈導引補充。勿將整個基底核都歸為 AChA 單獨供血。",
+    "representation": "guide",
+    "pdfNo": null,
+    "extra": false,
+    "number": 34
+  },
+  {
+    "id": "lateral-orbitofrontal",
+    "zh": "外側眶額動脈",
+    "en": "Lateral orbitofrontal artery",
+    "groups": [
+      "a"
+    ],
+    "pages": [
+      4,
+      5
+    ],
+    "models": [
+      "guide:lateral-orbitofrontal"
+    ],
+    "position": [
+      37,
+      -22,
+      39
+    ],
+    "note": "MCA 系統在眶額區的分支，本頁為位置與分支走向示意。",
+    "representation": "schematic",
+    "pdfNo": null,
+    "extra": false,
+    "number": 35
+  },
+  {
+    "id": "ascending-frontal",
+    "zh": "上行額動脈（燭臺分支）",
+    "en": "Ascending frontal / candelabra artery",
+    "groups": [
+      "a"
+    ],
+    "pages": [
+      4,
+      5
+    ],
+    "models": [
+      "guide:ascending-frontal"
+    ],
+    "position": [
+      48,
+      1,
+      23
+    ],
+    "note": "講義圖中標示的額葉上行分支；此處不聲稱重建個體的真實分支變異。",
+    "representation": "schematic",
+    "pdfNo": null,
+    "extra": false,
+    "number": 36
+  },
+  {
+    "id": "sca",
+    "zh": "上小腦動脈",
+    "en": "Superior cerebellar artery (SCA)",
+    "groups": [
+      "a"
+    ],
+    "pages": [
+      4,
+      5
+    ],
+    "models": [
+      "Superior cerebellar artery"
+    ],
+    "position": [
+      23,
+      -42,
+      -28
+    ],
+    "note": "通常源自基底動脈遠端，供應小腦上部。",
+    "representation": "mesh",
+    "pdfNo": null,
+    "extra": false,
+    "number": 37
+  },
+  {
+    "id": "pontine",
+    "zh": "橋腦動脈",
+    "en": "Pontine arteries",
+    "groups": [
+      "a"
+    ],
+    "pages": [
+      4,
+      5
+    ],
+    "models": [
+      "Medial pontine branches of basilar artery",
+      "Lateral pontine branches of basilar artery"
+    ],
+    "position": [
+      7,
+      -49,
+      4
+    ],
+    "note": "從基底動脈發出的內側與外側橋腦分支。",
+    "representation": "mesh",
+    "pdfNo": null,
+    "extra": false,
+    "number": 38
+  },
+  {
+    "id": "labyrinthine",
+    "zh": "內耳／迷路動脈",
+    "en": "Internal acoustic / labyrinthine artery",
+    "groups": [
+      "a"
+    ],
+    "pages": [
+      4,
+      5
+    ],
+    "models": [
+      "guide:labyrinthine"
+    ],
+    "position": [
+      27,
+      -57,
+      -3
+    ],
+    "note": "圖中內耳供血分支；常由 AICA 發出，也存在變異。本頁為路徑示意。",
+    "representation": "schematic",
+    "pdfNo": null,
+    "extra": false,
+    "number": 39
+  },
+  {
+    "id": "aica",
+    "zh": "前下小腦動脈",
+    "en": "Anterior inferior cerebellar artery (AICA)",
+    "groups": [
+      "a"
+    ],
+    "pages": [
+      4,
+      5
+    ],
+    "models": [
+      "Anterior inferior cerebellar artery"
+    ],
+    "position": [
+      18,
+      -60,
+      -13
+    ],
+    "note": "通常來自基底動脈，走向小腦前下部。",
+    "representation": "mesh",
+    "pdfNo": null,
+    "extra": false,
+    "number": 40
+  },
+  {
+    "id": "asa",
+    "zh": "前脊髓動脈",
+    "en": "Anterior spinal artery",
+    "groups": [
+      "a"
+    ],
+    "pages": [
+      4,
+      5
+    ],
+    "models": [
+      "Anterior spinal artery"
+    ],
+    "position": [
+      0,
+      -87,
+      -16
+    ],
+    "note": "左右來源分支在腹側形成前脊髓動脈系統；頁面只保留上段。",
+    "representation": "mesh",
+    "pdfNo": null,
+    "extra": false,
+    "number": 41
+  },
+  {
+    "id": "pica",
+    "zh": "後下小腦動脈",
+    "en": "Posterior inferior cerebellar artery (PICA)",
+    "groups": [
+      "a"
+    ],
+    "pages": [
+      4,
+      5
+    ],
+    "models": [
+      "Posterior inferior cerebellar artery"
+    ],
+    "position": [
+      27,
+      -64,
+      -43
+    ],
+    "note": "通常由椎動脈發出。講義圖片以 cut 表示切斷的血管端，非另一種血管。",
+    "representation": "mesh",
+    "pdfNo": null,
+    "extra": false,
+    "number": 42
+  },
+  {
+    "id": "psa",
+    "zh": "後脊髓動脈",
+    "en": "Posterior spinal artery",
+    "groups": [
+      "a"
+    ],
+    "pages": [
+      4,
+      5
+    ],
+    "models": [
+      "guide:psa"
+    ],
+    "position": [
+      6,
+      -88,
+      -31
+    ],
+    "note": "位於脊髓後方的成對供血系統；此處只有上段位置示意。",
+    "representation": "schematic",
+    "pdfNo": null,
+    "extra": false,
+    "number": 43
+  },
+  {
+    "id": "posterior-choroidal",
+    "zh": "後脈絡叢動脈",
+    "en": "Posterior choroidal arteries",
+    "groups": [
+      "d"
+    ],
+    "pages": [
+      6
+    ],
+    "models": [
+      "guide:posterior-choroidal"
+    ],
+    "position": [
+      14,
+      -20,
+      -25
+    ],
+    "note": "講義題目中提及的後循環分支；本頁以 PCA 到脈絡叢附近的路徑作導引。",
+    "representation": "schematic",
+    "pdfNo": null,
+    "extra": false,
+    "number": 44
+  },
+  {
+    "id": "lateral-ventricle",
+    "zh": "側腦室",
+    "en": "Lateral ventricle",
+    "groups": [
+      "d"
+    ],
+    "pages": [
+      6
+    ],
+    "models": [
+      "Lateral ventricle"
+    ],
+    "position": [
+      23,
+      -10,
+      -36
+    ],
+    "note": "內含腦脊髓液的腔室；可用半透明外形觀察與視放射的鄰近關係。",
+    "representation": "mesh",
+    "pdfNo": null,
+    "extra": false,
+    "number": 45
+  },
+  {
+    "id": "plexus",
+    "zh": "脈絡叢",
+    "en": "Choroid plexus",
+    "groups": [
+      "d"
+    ],
+    "pages": [
+      6
+    ],
+    "models": [
+      "Choroid plexus"
+    ],
+    "position": [
+      25,
+      -18,
+      -14
+    ],
+    "note": "腦室內產生腦脊髓液的組織；勿與 choroid（眼球脈絡膜）混淆。",
+    "representation": "mesh",
+    "pdfNo": null,
+    "extra": false,
+    "number": 46
+  },
+  {
+    "id": "internal-capsule",
+    "zh": "內囊",
+    "en": "Internal capsule",
+    "groups": [
+      "d"
+    ],
+    "pages": [
+      6,
+      7
+    ],
+    "models": [
+      "guide:internal-capsule"
+    ],
+    "position": [
+      15,
+      -12,
+      6
+    ],
+    "note": "位於尾狀核／丘腦與豆狀核之間的白質通道；本模型以帶狀導引表示，非完整白質分割。",
+    "representation": "schematic",
+    "pdfNo": null,
+    "extra": false,
+    "number": 47
+  },
+  {
+    "id": "anterior-limb",
+    "zh": "內囊前肢",
+    "en": "Anterior limb of internal capsule",
+    "groups": [
+      "d"
+    ],
+    "pages": [
+      7
+    ],
+    "models": [
+      "guide:anterior-limb"
+    ],
+    "position": [
+      12,
+      -8,
+      22
+    ],
+    "note": "位於尾狀核頭與豆狀核之間。",
+    "representation": "schematic",
+    "pdfNo": null,
+    "extra": false,
+    "number": 48
+  },
+  {
+    "id": "genu",
+    "zh": "內囊膝",
+    "en": "Genu of internal capsule",
+    "groups": [
+      "d"
+    ],
+    "pages": [
+      7
+    ],
+    "models": [
+      "guide:genu"
+    ],
+    "position": [
+      13,
+      -12,
+      11
+    ],
+    "note": "內囊前、後肢轉折處；圖中以運動通路示意其功能關聯。",
+    "representation": "schematic",
+    "pdfNo": null,
+    "extra": false,
+    "number": 49
+  },
+  {
+    "id": "posterior-limb",
+    "zh": "內囊後肢",
+    "en": "Posterior limb of internal capsule",
+    "groups": [
+      "d"
+    ],
+    "pages": [
+      6,
+      7
+    ],
+    "models": [
+      "guide:posterior-limb"
+    ],
+    "position": [
+      17,
+      -14,
+      -2
+    ],
+    "note": "位於丘腦與豆狀核之間；AChA 可供應其中部分區域，亦有其他穿通支參與。",
+    "representation": "schematic",
+    "pdfNo": null,
+    "extra": false,
+    "number": 50
+  },
+  {
+    "id": "sublenticular",
+    "zh": "內囊豆狀核下部",
+    "en": "Sublenticular part of internal capsule",
+    "groups": [
+      "d"
+    ],
+    "pages": [
+      7
+    ],
+    "models": [
+      "guide:sublenticular"
+    ],
+    "position": [
+      24,
+      -25,
+      0
+    ],
+    "note": "位於豆狀核下方；視放射顳葉部分與此區相鄰。",
+    "representation": "schematic",
+    "pdfNo": null,
+    "extra": false,
+    "number": 51
+  },
+  {
+    "id": "retrolenticular",
+    "zh": "內囊豆狀核後部",
+    "en": "Retrolenticular part of internal capsule",
+    "groups": [
+      "d"
+    ],
+    "pages": [
+      7
+    ],
+    "models": [
+      "guide:retrolenticular"
+    ],
+    "position": [
+      26,
+      -13,
+      -18
+    ],
+    "note": "位於豆狀核後方，與視放射通過的區域相關。",
+    "representation": "schematic",
+    "pdfNo": null,
+    "extra": false,
+    "number": 52
+  },
+  {
+    "id": "putamen",
+    "zh": "殼核",
+    "en": "Putamen",
+    "groups": [
+      "d"
+    ],
+    "pages": [
+      6,
+      7
+    ],
+    "models": [
+      "Putamen"
+    ],
+    "position": [
+      27,
+      -10,
+      7
+    ],
+    "note": "基底核的一部分；與蒼白球共同組成豆狀核。",
+    "representation": "mesh",
+    "pdfNo": null,
+    "extra": false,
+    "number": 53
+  },
+  {
+    "id": "lentiform",
+    "zh": "豆狀核",
+    "en": "Lentiform nucleus",
+    "groups": [
+      "d"
+    ],
+    "pages": [
+      7
+    ],
+    "models": [
+      "Putamen",
+      "Globus pallidus"
+    ],
+    "position": [
+      26,
+      -12,
+      6
+    ],
+    "note": "由殼核與蒼白球構成；圖中的 lenticular nucleus 與 lentiform nucleus 為同一組合名稱。",
+    "representation": "mesh",
+    "pdfNo": null,
+    "extra": false,
+    "number": 54
+  },
+  {
+    "id": "caudate",
+    "zh": "尾狀核頭",
+    "en": "Head of caudate nucleus",
+    "groups": [
+      "d"
+    ],
+    "pages": [
+      7
+    ],
+    "models": [
+      "Caudate nucleus"
+    ],
+    "position": [
+      10,
+      -3,
+      25
+    ],
+    "note": "原網格包含整條尾狀核；標點指向頭部，不能把全部高亮都當成尾狀核頭。",
+    "representation": "guide",
+    "pdfNo": null,
+    "extra": false,
+    "number": 55
+  },
+  {
+    "id": "thalamus",
+    "zh": "丘腦",
+    "en": "Thalamus",
+    "groups": [
+      "d",
+      "m"
+    ],
+    "pages": [
+      7
+    ],
+    "models": [
+      "Thalamus"
+    ],
+    "position": [
+      12,
+      -14,
+      -8
+    ],
+    "note": "多條感覺傳導的中繼區；LGN 位於其後外側的相關區域。",
+    "representation": "mesh",
+    "pdfNo": null,
+    "extra": false,
+    "number": 56
+  },
+  {
+    "id": "mgn",
+    "zh": "內側膝狀體",
+    "en": "Medial geniculate body",
+    "groups": [
+      "d"
+    ],
+    "pages": [
+      7
+    ],
+    "models": [
+      "Medial geniculate body"
+    ],
+    "position": [
+      14,
+      -28,
+      -13
+    ],
+    "note": "主要與聽覺傳導相關；和視覺的外側膝狀體區分。",
+    "representation": "mesh",
+    "pdfNo": null,
+    "extra": false,
+    "number": 57
+  },
+  {
+    "id": "corona",
+    "zh": "放射冠",
+    "en": "Corona radiata",
+    "groups": [
+      "d"
+    ],
+    "pages": [
+      7
+    ],
+    "models": [
+      "guide:corona"
+    ],
+    "position": [
+      18,
+      10,
+      2
+    ],
+    "note": "由大腦皮質向內囊匯聚的扇狀白質；此處以路徑示意表示。",
+    "representation": "schematic",
+    "pdfNo": null,
+    "extra": false,
+    "number": 58
+  },
+  {
+    "id": "corticospinal",
+    "zh": "皮質脊髓徑",
+    "en": "Corticospinal tract",
+    "groups": [
+      "d"
+    ],
+    "pages": [
+      7
+    ],
+    "models": [
+      "guide:corticospinal"
+    ],
+    "position": [
+      16,
+      -15,
+      0
+    ],
+    "note": "講義以通過內囊的運動路徑說明臨床關聯；本頁只示意顱內段。",
+    "representation": "schematic",
+    "pdfNo": null,
+    "extra": false,
+    "number": 59
+  },
+  {
+    "id": "corticobulbar",
+    "zh": "皮質延腦徑／皮質核徑",
+    "en": "Corticobulbar / corticonuclear tract",
+    "groups": [
+      "d"
+    ],
+    "pages": [
+      7
+    ],
+    "models": [
+      "guide:corticobulbar"
+    ],
+    "position": [
+      12,
+      -17,
+      9
+    ],
+    "note": "從皮質投射到腦幹運動核的通路；示意線並不表示每條纖維的精確位置。",
+    "representation": "schematic",
+    "pdfNo": null,
+    "extra": false,
+    "number": 60
+  },
+  {
+    "id": "motor-cortex",
+    "zh": "體運動皮質",
+    "en": "Somatomotor cortex",
+    "groups": [
+      "d"
+    ],
+    "pages": [
+      7
+    ],
+    "models": [
+      "Precentral gyrus"
+    ],
+    "position": [
+      36,
+      30,
+      -4
+    ],
+    "note": "圖中運動下行通路的皮質起點；以中央前回作位置對照。",
+    "representation": "mesh",
+    "pdfNo": null,
+    "extra": false,
+    "number": 61
+  },
+  {
+    "id": "nucleus3",
+    "zh": "動眼神經核",
+    "en": "Oculomotor nucleus",
+    "groups": [
+      "r"
+    ],
+    "pages": [
+      8
+    ],
+    "models": [
+      "Nucleus of oculomotor nerve"
+    ],
+    "position": [
+      2,
+      -34,
+      -9
+    ],
+    "note": "近反射補充：支配內直肌等眼外肌的體運動核。不是原圖第 6 號的已確認答案。",
+    "representation": "mesh",
+    "pdfNo": null,
+    "extra": true,
+    "number": 62
+  },
+  {
+    "id": "ew",
+    "zh": "動眼神經副核（EW 核）",
+    "en": "Edinger–Westphal nucleus",
+    "groups": [
+      "r"
+    ],
+    "pages": [
+      8
+    ],
+    "models": [
+      "Accessory nucleus of oculomotor nerve"
+    ],
+    "position": [
+      1,
+      -31,
+      -9
+    ],
+    "note": "近反射補充：眼副交感傳出相關核群；其節前纖維隨 CN III 到睫狀神經節。",
+    "representation": "mesh",
+    "pdfNo": null,
+    "extra": true,
+    "number": 63
+  },
+  {
+    "id": "ciliary-ganglion",
+    "zh": "睫狀神經節",
+    "en": "Ciliary ganglion",
+    "groups": [
+      "r"
+    ],
+    "pages": [
+      8
+    ],
+    "models": [
+      "guide:ganglion"
+    ],
+    "position": [
+      30,
+      -49,
+      49
+    ],
+    "note": "近反射補充：副交感節前、節後神經元的中繼站；此處用小球示意所在位置，大小不代表量測值。",
+    "representation": "schematic",
+    "pdfNo": null,
+    "extra": true,
+    "number": 64
+  },
+  {
+    "id": "lens",
+    "zh": "水晶體",
+    "en": "Lens",
+    "groups": [
+      "r"
+    ],
+    "pages": [
+      8
+    ],
+    "models": [
+      "Lens"
+    ],
+    "position": [
+      31,
+      -49,
+      71
+    ],
+    "note": "近反射的調節部分：水晶體變厚，使屈光力增加。",
+    "representation": "mesh",
+    "pdfNo": null,
+    "extra": false,
+    "number": 65
+  },
+  {
+    "id": "callosum",
+    "zh": "胼胝體",
+    "en": "Corpus callosum",
+    "groups": [
+      "m"
+    ],
+    "pages": [
+      12,
+      13
+    ],
+    "models": [
+      "Corpus callosum"
+    ],
+    "position": [
+      0,
+      5,
+      0
+    ],
+    "note": "內側面定位用補充構造；原照片上的數字未附完整對照表，因此不指派照片數字。",
+    "representation": "mesh",
+    "pdfNo": null,
+    "extra": true,
+    "number": 66
+  },
+  {
+    "id": "midbrain",
+    "zh": "中腦",
+    "en": "Midbrain",
+    "groups": [
+      "m"
+    ],
+    "pages": [
+      8,
+      12,
+      13
+    ],
+    "models": [
+      "Midbrain"
+    ],
+    "position": [
+      0,
+      -36,
+      -9
+    ],
+    "note": "腦幹上部；提供近反射核群與視徑周圍的位置背景。",
+    "representation": "mesh",
+    "pdfNo": null,
+    "extra": true,
+    "number": 67
+  },
+  {
+    "id": "pons",
+    "zh": "橋腦",
+    "en": "Pons",
+    "groups": [
+      "m"
+    ],
+    "pages": [
+      4,
+      12,
+      13
+    ],
+    "models": [
+      "Pons"
+    ],
+    "position": [
+      0,
+      -53,
+      -5
+    ],
+    "note": "腦幹中部，腹側可見基底動脈。",
+    "representation": "mesh",
+    "pdfNo": null,
+    "extra": true,
+    "number": 68
+  },
+  {
+    "id": "medulla",
+    "zh": "延腦",
+    "en": "Medulla oblongata",
+    "groups": [
+      "m"
+    ],
+    "pages": [
+      4,
+      12,
+      13
+    ],
+    "models": [
+      "Medulla oblongata"
+    ],
+    "position": [
+      0,
+      -78,
+      -16
+    ],
+    "note": "腦幹下部，與椎動脈及脊髓相鄰。",
+    "representation": "mesh",
+    "pdfNo": null,
+    "extra": true,
+    "number": 69
+  },
+  {
+    "id": "cerebellum",
+    "zh": "小腦",
+    "en": "Cerebellum",
+    "groups": [
+      "m"
+    ],
+    "pages": [
+      4,
+      12,
+      13
+    ],
+    "models": [
+      "Tonsil of cerebellum",
+      "semilunar lobule",
+      "quadrangular lobule",
+      "Gracile lobule",
+      "Biventral lobule",
+      "Culmen",
+      "Declive"
+    ],
+    "position": [
+      25,
+      -56,
+      -44
+    ],
+    "note": "提供腦底與內側面的空間背景；可切換顯示以看清深部血管。",
+    "representation": "mesh",
+    "pdfNo": null,
+    "extra": true,
+    "number": 70
+  }
+]

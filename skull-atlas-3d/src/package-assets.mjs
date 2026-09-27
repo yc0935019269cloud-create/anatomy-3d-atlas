@@ -1,0 +1,20 @@
+import fs from 'node:fs';
+import crypto from 'node:crypto';
+import {Document,NodeIO} from '@gltf-transform/core';
+import {labels} from './labels.js';
+const data=JSON.parse(fs.readFileSync('assets/skull-data.js','utf8').slice(18,-1));
+const decode=(s,Type)=>new Type(Uint8Array.from(Buffer.from(s,'base64')).buffer);
+const doc=new Document(),scene=doc.createScene('Human skull'),buffer=doc.createBuffer();
+const mat=doc.createMaterial('Bone').setBaseColorFactor([.78,.69,.52,1]).setRoughnessFactor(.8).setMetallicFactor(0).setDoubleSided(true);
+for(const m of data.meshes){const positions=decode(m.positions,Float32Array);for(let i=0;i<positions.length;i++)positions[i]/=1000;const prim=doc.createPrimitive().setAttribute('POSITION',doc.createAccessor().setType('VEC3').setArray(positions).setBuffer(buffer)).setIndices(doc.createAccessor().setType('SCALAR').setArray(decode(m.indices,Uint32Array)).setBuffer(buffer)).setMaterial(mat);scene.addChild(doc.createNode(m.name).setMesh(doc.createMesh(m.name).addPrimitive(prim)));}
+doc.getRoot().getAsset().copyright='Z-Anatomy (Kervyn, Zielinski), derived from BodyParts3D (DBCLS); CC BY-SA 4.0. Skull subset extracted for this study viewer.';
+await new NodeIO().write('assets/skull.glb',doc);
+const manifest=labels.map(l=>{let position=l.anchor&&data.anchors[l.anchor]?[...data.anchors[l.anchor]]:l.position;if(l.anchor&&l.bone.endsWith('.l'))position[0]=Math.abs(position[0]);return {...l,position,positionType:l.anchor?'source-leader-tip':'approximate-guide'};});
+fs.writeFileSync('assets/landmarks.json',JSON.stringify(manifest,null,2));
+const viewNames={f:'前面',l:'左側',b:'底面',i:'顱底內面'};
+fs.writeFileSync('完整構造清單.md','# 四張參考圖的完整構造清單\n\n49 個不重複構造。各視角：19 / 14 / 18 / 14 項；同一構造可出現在多個視角。\n\n| 編號 | 中文 | English | 視角 | 定位方式 |\n|---|---|---|---|---|\n'+manifest.map(l=>`| ${l.number} | ${l.zh} | ${l.en} | ${l.views.map(v=>viewNames[v]).join('、')} | ${l.anchor?'原模型指線端點':'位置導引'} |`).join('\n')+'\n\n位置導引不是精密孔道定位；原作者端點亦非本專案逐點專業校驗。嗅孔為篩板區域標記，非逐孔模型。\n');
+const provenance={downloadDate:'2026-09-21',geometry:{url:'https://raw.githubusercontent.com/Z-Anatomy/Models-of-human-anatomy/master/Z-Anatomy.zip',authors:['Gauthier Kervyn','Marcin Zielinski','BodyParts3D / DBCLS'],license:'CC BY-SA 4.0 (derived from BodyParts3D CC BY-SA 2.1 Japan)',meshes:data.meshes.length,vertices:data.meshes.reduce((sum,m)=>sum+decode(m.positions,Float32Array).length/3,0)},landmarkSource:{url:'https://uafyfwyyqzunabpuftue.supabase.co/storage/v1/object/public/models/glb/skeleton.glb',repository:'https://github.com/pitfa19/anatomed-mcp',author:'Fabijan Pitlovic',license:'CC BY-SA 4.0'},modifications:['Extracted 22 skull bones and 28 teeth; transformed coordinates to a skull-centred Y-up frame','Retained original Blender evaluated meshes without additional decimation','Added 49 bilingual entries and source/approximate position provenance','Replaced original typography with interactive HTML labels and preset cameras','View-only horizontal clipping; exported GLB retains complete skull'],sha256:{}};
+for(const p of ['assets/Z-Anatomy.zip','assets/Startup.blend','assets/skeleton.glb','assets/skull.glb'])provenance.sha256[p]=crypto.createHash('sha256').update(fs.readFileSync(p)).digest('hex');
+fs.writeFileSync('assets/provenance.json',JSON.stringify(provenance,null,2));
+fs.copyFileSync('node_modules/three/LICENSE','assets/THREE-LICENSE.txt');
+console.log('Exported standalone GLB, 49-item manifest, study checklist and provenance');

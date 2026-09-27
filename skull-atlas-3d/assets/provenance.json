@@ -1,0 +1,33 @@
+{
+  "downloadDate": "2026-09-21",
+  "geometry": {
+    "url": "https://raw.githubusercontent.com/Z-Anatomy/Models-of-human-anatomy/master/Z-Anatomy.zip",
+    "authors": [
+      "Gauthier Kervyn",
+      "Marcin Zielinski",
+      "BodyParts3D / DBCLS"
+    ],
+    "license": "CC BY-SA 4.0 (derived from BodyParts3D CC BY-SA 2.1 Japan)",
+    "meshes": 50,
+    "vertices": 79682
+  },
+  "landmarkSource": {
+    "url": "https://uafyfwyyqzunabpuftue.supabase.co/storage/v1/object/public/models/glb/skeleton.glb",
+    "repository": "https://github.com/pitfa19/anatomed-mcp",
+    "author": "Fabijan Pitlovic",
+    "license": "CC BY-SA 4.0"
+  },
+  "modifications": [
+    "Extracted 22 skull bones and 28 teeth; transformed coordinates to a skull-centred Y-up frame",
+    "Retained original Blender evaluated meshes without additional decimation",
+    "Added 49 bilingual entries and source/approximate position provenance",
+    "Replaced original typography with interactive HTML labels and preset cameras",
+    "View-only horizontal clipping; exported GLB retains complete skull"
+  ],
+  "sha256": {
+    "assets/Z-Anatomy.zip": "e029688545627bd0214b269e1063143abb580aad72b2c2445d6d8a9a0d9da736",
+    "assets/Startup.blend": "9f08a17ea0115fed80b2a73ecdf0a1bc2ab2f6956f37c593ce23d513ea35afcd",
+    "assets/skeleton.glb": "afb0562864c32503ec4776849df6dbd4a5a77753a1afdd52750c02a596557fa9",
+    "assets/skull.glb": "e549d4006d865efc98ca349561a3e06accc9d433d11ba7d32c3a2d299cf5c610"
+  }
+}

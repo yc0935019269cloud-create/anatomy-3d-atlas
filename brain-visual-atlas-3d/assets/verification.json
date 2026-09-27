@@ -1,0 +1,17 @@
+{
+  "date": "2026-09-27T11:30:18.553Z",
+  "browser": "155.0.8059.12",
+  "offline": true,
+  "checks": [
+    "70 entries with model or guide matches",
+    "All six themes: counts, labels in bounds, no overlaps, hide/show and reference answer guard",
+    "Cross-theme bilingual search and selection",
+    "Schematic toggle, hemisphere removal, cortex opacity",
+    "Pointer drag rotation and wheel zoom",
+    "Three language modes and all 13 embedded lecture pages decode offline",
+    "390px mobile: all themes fit, no overlapping labels, hide/show"
+  ],
+  "pageErrors": [],
+  "httpRequests": [],
+  "result": "PASS"
+}

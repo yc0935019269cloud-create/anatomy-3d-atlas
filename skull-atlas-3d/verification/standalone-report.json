@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "checks": [
+    "Standalone HTML works offline without any subresource request",
+    "Four mobile views have no overlapping labels",
+    "Embedded reference photo decodes",
+    "Hide/show works in standalone build"
+  ],
+  "errors": []
+}

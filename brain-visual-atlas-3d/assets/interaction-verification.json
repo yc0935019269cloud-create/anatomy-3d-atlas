@@ -1,0 +1,45 @@
+{
+  "result": "PASS",
+  "views": [
+    {
+      "view": "top",
+      "drag": true,
+      "noDrift": true,
+      "stableLabels": true
+    },
+    {
+      "view": "bottom",
+      "drag": true,
+      "noDrift": true,
+      "stableLabels": true
+    },
+    {
+      "view": "left",
+      "drag": true,
+      "noDrift": true,
+      "stableLabels": true
+    },
+    {
+      "view": "medial",
+      "drag": true,
+      "noDrift": true,
+      "stableLabels": true
+    },
+    {
+      "view": "front",
+      "drag": true,
+      "noDrift": true,
+      "stableLabels": true
+    },
+    {
+      "view": "oblique",
+      "drag": true,
+      "noDrift": true,
+      "stableLabels": true
+    }
+  ],
+  "hoverHighlight": {
+    "width": "3.2px",
+    "color": "rgb(255, 220, 124)"
+  }
+}
