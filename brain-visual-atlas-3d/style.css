@@ -25,3 +25,8 @@
 
 /* Original PDF opens only when requested. */
 .bottom-line{flex-wrap:wrap;gap:8px}.bottom-line>div{display:flex;flex-wrap:wrap;align-items:center;gap:8px}.bottom-line .pdf-link{display:inline-flex;align-items:center;padding:6px 10px;color:var(--accent);background:#233641;border:1px solid #40555f;border-radius:7px;text-decoration:none;font-size:12px;white-space:nowrap}.bottom-line .pdf-link:hover{background:#344e5c}.pdf-link:focus-visible{outline:2px solid var(--accent);outline-offset:3px}body.hidden-names .pdf-link{display:none}
+
+/* Keep WebGL and SVG in the same positioning box. */
+#canvas{position:absolute;inset:0;width:100%;height:100%}
+
+.medial-guide{display:flex;align-items:center;gap:20px;padding:14px 18px;border:1px solid #59687a;border-radius:12px;margin:8px 18px;background:#1b293b}.medial-guide[hidden],.hidden-names .medial-guide{display:none}.medial-guide>div{flex:1}.medial-guide h3{margin:0 0 8px;color:#ffe095}.medial-guide p{font-size:13px;line-height:1.7}.medial-guide figure{margin:0;flex:1;max-width:420px}.medial-guide svg{width:100%;display:block}.medial-guide figcaption{font-size:11px;color:#becbda}.calcarine-swatch{display:inline-block;width:12px;height:12px;background:#ffbd32;border-radius:3px;margin-right:6px}@media(max-width:700px){.medial-guide{flex-direction:column;align-items:stretch;margin:8px 0}.medial-guide figure{width:100%;max-width:none}}

@@ -12,3 +12,5 @@ Build: npm run build; npm run assets; npm test. package.json type module. src/ve
 Deliverable: 腦與視覺路徑3D.html (all JS,CSS,geometry and images embedded). No server/CDN required. Source entry index.html uses local assets. Don't require source Startup.blend for normal use/build; only raw re-export requires it. Keep attribution and provenance with any derived data.
 
 Interaction: TrackballControls uses staticMoving=true (no inertia), recreated per camera preset. Keep screen-relative dragging and fixed label slots while rotating. Leader halos + hover/selection highlighting are intentional. Run node src/verify-interaction.cjs for all six camera frames, no drift, stable label slots and highlighted line checks.
+
+2026-09-28: Medial view highlights the actual calcarine mesh in gold and includes an explicitly schematic Gennari cortical section plus original page 12. V1/Gennari region anchors follow source meshes. Selection preserves label slots. Both atlas canvas/SVG share a positioning box; skull now has brain-style halo/focus leaders.

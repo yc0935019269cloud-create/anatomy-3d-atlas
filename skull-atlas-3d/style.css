@@ -8,3 +8,26 @@
 
 /* Original PDF opens only when requested. */
 .bottom-line{flex-wrap:wrap;gap:8px}.bottom-line>div{display:flex;flex-wrap:wrap;align-items:center;gap:8px}.bottom-line .pdf-link{display:inline-flex;align-items:center;padding:6px 10px;color:var(--accent);background:#233641;border:1px solid #40555f;border-radius:7px;text-decoration:none;font-size:12px;white-space:nowrap}.bottom-line .pdf-link:hover{background:#344e5c}.pdf-link:focus-visible{outline:2px solid var(--accent);outline-offset:3px}body.hidden-names .pdf-link{display:none}
+
+/* Keep WebGL and SVG in the same positioning box. */
+#canvas{position:absolute;inset:0;width:100%;height:100%}
+
+
+/* High-contrast leaders remain readable over both dark canvas and pale brain surfaces. */
+#leaders .leader-halo{stroke:#101722;stroke-width:5;stroke-opacity:.9;opacity:1;stroke-linecap:round}
+
+#leaders .leader-main{stroke:#e4f4ff;stroke-width:1.9;opacity:1;stroke-linecap:round}
+
+#leaders .leader-main.guide{stroke:#eddbff;stroke-dasharray:7 5}
+
+#leaders circle{fill:#fff4cf;stroke:#172131;stroke-width:1.8}
+
+#leaders.has-focus g:not(.focused){opacity:.3}
+
+#leaders .focused .leader-halo{stroke-width:7}
+
+#leaders .focused .leader-main{stroke:#ffdc7c;stroke-width:3.2}
+
+#leaders .focused circle{fill:#ffdc7c;stroke-width:2}
+
+.label.traced{background:#51435f;border-color:#ffdc7c;z-index:6}
