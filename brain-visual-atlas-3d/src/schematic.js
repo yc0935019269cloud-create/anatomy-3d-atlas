@@ -5,8 +5,8 @@ export function createSchematics(){const result=[];
  function ball(id,pos,r,color){const m=new T.Mesh(new T.SphereGeometry(r,16,12),new T.MeshStandardMaterial({color}));m.position.set(...pos);m.name=id;m.userData={category:'reflex-guide',tags:[id],schematic:true,baseColor:color,center:pos};result.push(m);}
  for(const s of [-1,1]){const side=s>0?'.l':'.r';const reflect=pts=>pts.map(([x,y,z])=>[s*x,y,z]);
   for(let i=0;i<5;i++){
-   tube('guide:meyer'+side+i,reflect([[19,-28,-13],[27+i*.5,-30,4],[35+i,-33,13],[40+i,-34,-12],[34+i,-32,-47],[12+i*.8,-28,-79]]),.48,0xe69fcb,'path-guide',['guide:radiation','guide:meyer']);
-   tube('guide:baum'+side+i,reflect([[19,-28,-13],[28+i,-17,-22],[34+i,-3,-39],[28+i,-6,-61],[10+i*.8,-17,-79]]),.48,0x74d8c2,'path-guide',['guide:radiation','guide:baum']);
+   tube('guide:meyer'+side+i,reflect([[19,-28,-13],[27+i*.5,-30,4],[35+i,-33,13],[40+i,-34,-12],[34+i,-32,-47],[12+i*.8,-28,-79]]),1.05,0xff70cf,'path-guide',['guide:radiation','guide:meyer']);
+   tube('guide:baum'+side+i,reflect([[19,-28,-13],[28+i,-17,-22],[34+i,-3,-39],[28+i,-6,-61],[10+i*.8,-17,-79]]),1.05,0x39f5cf,'path-guide',['guide:radiation','guide:baum']);
   }
   const vascular=[['acha',[[13,-34,23],[14,-34,12],[16,-33,0],[20,-31,-13],[23,-24,-20]],.65],['heubner',[[5,-29,27],[8,-29,30],[12,-26,25],[13,-19,19]],.55],['lateral-orbitofrontal',[[30,-31,24],[38,-26,30],[43,-22,44]],.65],['ascending-frontal',[[37,-28,21],[48,-12,22],[50,2,25],[45,21,19]],.65],['labyrinthine',[[16,-60,-8],[25,-58,-4],[34,-57,-1]],.5],['psa',[[10,-73,-27],[7,-84,-31],[6,-100,-34]],.6],['posterior-choroidal',[[17,-31,-18],[13,-21,-23],[11,-12,-15],[17,-14,-5]],.5]];
   for(const [id,pts,r] of vascular)tube('guide:'+id+side,reflect(pts),r,0xbc95eb,'artery-guide');
