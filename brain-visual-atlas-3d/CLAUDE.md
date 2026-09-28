@@ -16,3 +16,5 @@ Interaction: TrackballControls uses staticMoving=true (no inertia), recreated pe
 2026-09-28: Medial view highlights the actual calcarine mesh in gold and includes an explicitly schematic Gennari cortical section plus original page 12. V1/Gennari region anchors follow source meshes. Selection preserves label slots. Both atlas canvas/SVG share a positioning box; skull now has brain-style halo/focus leaders.
 
 2026-09-28 視放射辨識度：保留既有路徑座標，線束半徑由 0.48 提升至 1.05 mm（視覺強調，非量測尺寸），使用亮青／亮粉與自發光材質。新增顏色圖例和「視放射特寫」：隱藏腦外層、切至上面觀、對準後方線束並放大；重設視角可還原。保留正常深度遮擋，沒有將深部線束強制畫在所有表面之上。
+
+2026-09-28 修正視放射指空：optic-radiation、meyer、baum 的提示端點吸附到左側實際示意線束頂點，包含 .l0 等編號網格；不再使用懸空的代表座標。特寫依目前可見線束的包圍球及畫布比例計算縮放，保留旋轉與邊緣空間。使用者手動放大後仍可能超出畫面，可再按特寫重新取景。
