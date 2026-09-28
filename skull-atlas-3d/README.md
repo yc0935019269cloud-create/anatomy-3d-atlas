@@ -56,3 +56,7 @@ node src/verify.cjs
 - Three.js：MIT，見 `assets/THREE-LICENSE.txt`。
 
 本頁自製程式、標記與衍生模型依 [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) 提供。四張原圖為使用者提供的本機學習對照資料，其著作權屬原權利人，不包含在本頁 CC 授權之中；對外分享前需自行確認原圖的使用權。
+
+## 完整 PDF
+
+模型下方的「骨質眼窩 PDF」會在新分頁開啟 assets/orbit-atlas-2026-01.pdf，可用瀏覽器的 PDF 閱讀器翻頁與縮放。PDF 在點擊時才載入；隱藏名稱時此入口也會隱藏。若搬移單檔 HTML 並需要此 PDF 入口，請一併保留 assets/orbit-atlas-2026-01.pdf 的相對路徑。PDF 仍依原權利人的授權使用。
