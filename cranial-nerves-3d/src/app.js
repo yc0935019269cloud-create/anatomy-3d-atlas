@@ -3,6 +3,7 @@ import {TrackballControls} from 'three/addons/controls/TrackballControls.js';
 import {labels,groups,themeOrder} from './labels.js';
 import {createSchematics,createOra} from './schematic.js';
 import {notesHTML} from './notes.js';
+import {correctAnnulus} from './annulus.js';
 const $=id=>document.getElementById(id);
 // Camera directions (from target to camera). Frame: +X left, +Y superior, +Z anterior.
 const cameras={top:{dir:[0,1,-.02],up:[0,0,1],text:'上面觀 · 前方在上 · 左側在畫面左方'},bottom:{dir:[0,-1,-.02],up:[0,0,1],text:'底面觀 · 前方在上 · 左側在畫面右方'},front:{dir:[0,.12,1],up:[0,1,0],text:'前面觀 · 左側在畫面右方'},left:{dir:[1,0,0],up:[0,1,0],text:'左側觀 · 前方在畫面左方'},medial:{dir:[-1,0,0],up:[0,1,0],text:'由正中面看左半邊 · 前方在畫面右方'},oblique:{dir:[.62,.55,.56],up:[0,1,0],text:'立體斜視 · 可自由拖曳旋轉'}};
@@ -10,14 +11,14 @@ const frames={q:{target:[4,-38,2],zoom:1.3},f:{target:[0,-58,8],zoom:1.3},n:{tar
 const typeNames={mesh:'原模型構造',guide:'原模型上的位置／通道',schematic:'示意（原模型沒有）',reference:'皮質內層次（無 3D 網格）'};
 // Cranial nerve colours, reused by the legend.
 export const nerveColors=[['I',/^Olfactory/,0xf4e38e],['II',/^Optic (nerve|chiasm|tract)/,0xffd35c],['III',/^Oculomotor/,0x5fa8ff],['IV',/^Trochlear nerve/,0xc58bff],['V1',/^Ophthalmic nerve/,0xffe36b],['V2',/^(Maxillary nerve|Meningeal branch of maxillary)/,0xffa94d],['V',/(Trigeminal|root of trigeminal)/,0xffc04d],['V3',/(mandibular nerve|Inferior alveolar|Lingual nerve|Buccal nerve|Mental nerve|mylohyoid)/,0xff7d3d],['VI',/^Abducens/,0x3fe0b0],['VII',/^Facial nerve/,0xff78a8],['VIII',/^(Vestibul|Cochlear)/,0xa3e070],['IX',/^Glossopharyngeal/,0x74d3ff],['X',/^Vagus/,0x98a8ff],['XI',/^Accessory nerve/,0xd9a4ff],['XII',/^Hypoglossal nerve/,0x57e3e0]];
-let sectionAll=[],hoverId=null,current='q',names=true,selected=null,language='both',renderer,scene,camera,controls,meshes=[],active=[],width=0,height=0,dirty=true,labelSlots=null;
+let apexMode=false,apexPlane=new T.Plane(),sectionAll=[],hoverId=null,current='q',names=true,selected=null,language='both',renderer,scene,camera,controls,meshes=[],active=[],width=0,height=0,dirty=true,labelSlots=null;
 const project=new T.Vector3();
 // Three section planes. keep 'low' keeps coordinates below the slider value, 'high' keeps those above.
 // Frame: x = anatomical left (+), y = superior (+), z = anterior (+).
 const AXES={y:{index:1,name:'水平',low:'保留下方',high:'保留上方',start:-30},z:{index:2,name:'冠狀',low:'保留後方',high:'保留前方',start:20},x:{index:0,name:'矢狀',low:'保留右側',high:'保留左側',start:0}};
 const cuts=Object.fromEntries(Object.keys(AXES).map(a=>[a,{keep:a==='x'?'high':'low',plane:new T.Plane()}]));
-function sectionPlanes(){const all=[],bone=[];for(const [a,c] of Object.entries(cuts)){if(!$('cut-'+a).checked)continue;const v=+$('cut-'+a+'-v').value,n=new T.Vector3();n.setComponent(AXES[a].index,c.keep==='low'?-1:1);c.plane.set(n,c.keep==='low'?v:-v);($('cut-'+a+'-all').checked?all:bone).push(c.plane);}return {all,bone};}
-function syncCutUI(){const parts=[];for(const [a,c] of Object.entries(cuts)){const on=$('cut-'+a).checked,v=$('cut-'+a+'-v').value;$('cut-'+a+'-o').textContent=v+' mm';$('cut-'+a+'-flip').textContent=AXES[a][c.keep];if(on)parts.push(AXES[a].name+' '+v+($('cut-'+a+'-all').checked?'':'（骨）'));}$('section-summary').textContent=parts.join('・')||'關';}
+function sectionPlanes(){const all=apexMode?[apexPlane]:[],bone=[];for(const [a,c] of Object.entries(cuts)){if(!$('cut-'+a).checked)continue;const v=+$('cut-'+a+'-v').value,n=new T.Vector3();n.setComponent(AXES[a].index,c.keep==='low'?-1:1);c.plane.set(n,c.keep==='low'?v:-v);($('cut-'+a+'-all').checked?all:bone).push(c.plane);}return {all,bone};}
+function syncCutUI(){const parts=[];for(const [a,c] of Object.entries(cuts)){const on=$('cut-'+a).checked,v=$('cut-'+a+'-v').value;$('cut-'+a+'-o').textContent=v+' mm';$('cut-'+a+'-flip').textContent=AXES[a][c.keep];if(on)parts.push(AXES[a].name+' '+v+($('cut-'+a+'-all').checked?'':'（骨）'));}if(apexMode)parts.unshift('眶尖斜切面');$('section-summary').textContent=parts.join('・')||'關';}
 function presetCuts(g){for(const a of Object.keys(AXES)){const p=g.cuts[a];$('cut-'+a).checked=!!p;$('cut-'+a+'-v').value=p?p[0]:AXES[a].start;$('cut-'+a+'-all').checked=p?p[1]:a!=='y';cuts[a].keep=a==='x'?'high':'low';}}
 function decode(s,Ctor){return new Ctor(Uint8Array.from(atob(s),c=>c.charCodeAt(0)).buffer);}
 function matches(m,l){return l.models.some(p=>m.name.startsWith(p)||(m.userData.tags||[]).some(t=>t.startsWith(p)));}
@@ -35,11 +36,12 @@ async function initialize(){
  renderer=new T.WebGLRenderer({canvas:$('canvas'),antialias:true,alpha:true});renderer.setPixelRatio(Math.min(devicePixelRatio,1.5));renderer.localClippingEnabled=true;renderer.outputColorSpace=T.SRGBColorSpace;renderer.toneMapping=T.ACESFilmicToneMapping;renderer.toneMappingExposure=1.05;
  scene=new T.Scene();camera=new T.OrthographicCamera(-180,180,130,-130,.1,2400);scene.add(new T.HemisphereLight(0xececff,0x463e4b,2));for(const [pos,col,intensity] of [[[180,260,280],0xffece6,2.3],[[-180,40,-200],0xb5cdef,1.4],[[0,-220,60],0xfad3cc,1.3]]){const light=new T.DirectionalLight(col,intensity);light.position.set(...pos);scene.add(light);}
  for(const item of data.meshes){const g=new T.BufferGeometry();g.setAttribute('position',new T.BufferAttribute(decode(item.positions,Float32Array),3));g.setIndex(new T.BufferAttribute(decode(item.indices,Uint32Array),1));g.computeVertexNormals();const col=colorFor(item);const m=new T.Mesh(g,new T.MeshStandardMaterial({color:col,roughness:item.category==='bone'||item.category==='tooth'?.82:.62,side:T.DoubleSide}));m.name=item.name;m.userData={category:item.category,baseColor:col,schematic:false};meshes.push(m);scene.add(m);}
+ const annulus=correctAnnulus(meshes);
  const schematic=createSchematics();for(const r of meshes.filter(m=>/^Retina\.[lr]$/.test(m.name)))schematic.push(createOra(r));meshes.push(...schematic);scene.add(...schematic);scene.updateMatrixWorld(true);
  for(const l of labels){l.matches=meshes.filter(m=>matches(m,l));l.point=new T.Vector3(...l.position);if(l.snap){const left=l.matches.filter(m=>/\.l\d*$/.test(m.name)),pool=left.length?left:l.matches;let dist=Infinity;const v=new T.Vector3();for(const m of pool){const a=m.geometry.attributes.position;for(let i=0;i<a.count;i++){v.fromBufferAttribute(a,i).applyMatrix4(m.matrixWorld);const d=v.distanceToSquared(new T.Vector3(...l.position));if(d<dist){dist=d;l.anchorMesh=m;l.localAnchor=new T.Vector3().fromBufferAttribute(a,i);}}}if(l.anchorMesh)l.point.copy(l.localAnchor).applyMatrix4(l.anchorMesh.matrixWorld);}}
  $('total').textContent=labels.length;buildLegend();
  setGroup('q');new ResizeObserver(resize).observe($('stage'));resize();$('loading').hidden=true;renderer.setAnimationLoop(()=>{controls.update();if(dirty){renderer.render(scene,camera);drawLabels();dirty=false;}});
- window.atlas={labels,groups,meshes,scene,get camera(){return camera;},get controls(){return controls;},setGroup,select:choose,setCamera,focusOn:id=>focusOn(labels.find(l=>l.id===id)),get state(){return {current,names,selected,active:active.length};}};
+ window.atlas={labels,groups,meshes,scene,get camera(){return camera;},get controls(){return controls;},annulus,setGroup,select:choose,setCamera,focusOn:id=>focusOn(labels.find(l=>l.id===id)),get state(){return {current,names,selected,active:active.length};}};
 }
 function buildLegend(){$('legend').replaceChildren();for(const [cn,,col] of nerveColors){const s=document.createElement('span');s.innerHTML=`<i style="background:#${col.toString(16).padStart(6,'0')}"></i>${cn}`;$('legend').append(s);}}
 function setCamera(which,frame=frames[current]){
@@ -48,7 +50,7 @@ function setCamera(which,frame=frames[current]){
  controls.addEventListener('change',()=>dirty=true);controls.addEventListener('start',()=>{$('canvas').classList.add('dragging');$('orientation').textContent='自由視角 · 指線可穿透表面，旋轉時留意前後關係';controls.handleResize();});controls.addEventListener('end',()=>$('canvas').classList.remove('dragging'));
  controls.update();labelSlots=null;$('camera-view').value=which;$('orientation').textContent=c.text;dirty=true;
 }
-function setGroup(id){current=id;selected=null;const g=groups[id];$('view-title').textContent=g.title;$('view-note').textContent=g.subtitle;$('flow').textContent=names?g.flow:'名稱與說明已隱藏 · 保留項目編號供自測';
+function setGroup(id){current=id;selected=null;apexMode=false;$('apex-view').hidden=id!=='o';const g=groups[id];$('view-title').textContent=g.title;$('view-note').textContent=g.subtitle;$('flow').textContent=names?g.flow:'名稱與說明已隱藏 · 保留項目編號供自測';
  $('bone').value=g.bone;$('cortex').value=g.cortex;presetCuts(g);$('jaw').checked=id==='q';$('right').checked=id!=='g';$('cerebellum').checked=id==='n';$('guides').checked=true;$('search').value='';$('legend').hidden=!'fnoc'.includes(id);
  setCamera(g.camera);document.querySelectorAll('[data-view]').forEach(b=>b.classList.toggle('active',b.dataset.view===id));updateModel();renderList();rebuildLabels();showDetail();}
 function updateModel(){const groupLabels=labels.filter(l=>l.groups.includes(current)),sel=labels.find(l=>l.id===selected),bone=+$('bone').value,cortex=+$('cortex').value;const needed=new Set(groupLabels.flatMap(l=>l.matches));if(sel)sel.matches.forEach(m=>needed.add(m));
@@ -71,6 +73,7 @@ function updateModel(){const groupLabels=labels.filter(l=>l.groups.includes(curr
   else if(cat==='vein'){visible=belongs||'cof'.includes(th);opacity=/^Cavernous/.test(n)?(th==='c'?.55:.4):.8;}
   else if(cat==='dura'){visible=belongs&&(th==='q'||highlight);opacity=.32;}
   else if(m.userData.schematic){visible=belongs||(m.userData.themes||'').includes(th);opacity=m.userData.fixedOpacity??1;}
+  if(apexMode&&(cat==='sinus'||cat==='sinus-guide'||cat==='bone'||cat==='tooth'))visible=false;
   if(m.userData.schematic&&!$('guides').checked)visible=false;
   if(!$('right').checked&&/\.r\d*$/.test(n))visible=false;
   if(highlight&&visible)opacity=Math.max(opacity,cat==='bone'||cat==='cortex'||cat==='vein'||cat==='sinus'||cat==='dura'?opacity:.8);
@@ -112,5 +115,11 @@ $('views').innerHTML=themeOrder.map((id,i)=>`<button data-view="${id}">${String(
 $('hide').onclick=()=>toggleNames(false);$('show').onclick=()=>toggleNames(true);$('views').onclick=e=>{const b=e.target.closest('[data-view]');if(b)setGroup(b.dataset.view);};$('search').oninput=renderList;$('reset').onclick=()=>setGroup(current);$('camera-view').onchange=()=>setCamera($('camera-view').value);
 for(const id of ['bone','cortex','cut-y-v','cut-z-v','cut-x-v'])$(id).oninput=updateModel;for(const id of ['jaw','right','cerebellum','guides','cut-y','cut-z','cut-x','cut-y-all','cut-z-all','cut-x-all'])$(id).onchange=updateModel;
 for(const a of Object.keys(AXES)){$('cut-'+a+'-flip').onclick=()=>{cuts[a].keep=cuts[a].keep==='low'?'high':'low';$('cut-'+a).checked=true;updateModel();};$('cut-'+a+'-v').addEventListener('input',()=>{if(!$('cut-'+a).checked){$('cut-'+a).checked=true;updateModel();}});}
-$('language').onchange=()=>{language=$('language').value;rebuildLabels();};$('clear').onclick=()=>{selected=null;updateModel();renderList();rebuildLabels();showDetail();};$('source-button').onclick=()=>$('source-dialog').showModal();$('notes-button').onclick=showNotes;document.querySelectorAll('[data-close]').forEach(b=>b.onclick=()=>$(b.dataset.close).close());
+$('language').onchange=()=>{language=$('language').value;rebuildLabels();};$('clear').onclick=()=>{selected=null;updateModel();renderList();rebuildLabels();showDetail();};// Look straight at the common tendinous ring, cutting away everything in front of its plane.
+function apexView(){const f=window.atlas.annulus['.l'].frame,c=new T.Vector3(...f.centre),n=new T.Vector3(...f.normal);apexMode=true;apexPlane.set(n.clone().negate(),n.dot(c)+1.5);
+ for(const a of Object.keys(AXES))$('cut-'+a).checked=false;$('bone').value=0;$('cortex').value=0;
+ controls.target.copy(c);camera.position.copy(c).addScaledVector(n,700);camera.up.set(0,1,0);camera.zoom=9;camera.updateProjectionMatrix();camera.lookAt(c);controls.update();labelSlots=null;
+ $('orientation').textContent='沿眶軸從前方看眶尖 · 切面平行於共同腱環 · 上方在上';choose('annulus');}
+$('apex-view').onclick=apexView;
+$('source-button').onclick=()=>$('source-dialog').showModal();$('notes-button').onclick=showNotes;document.querySelectorAll('[data-close]').forEach(b=>b.onclick=()=>$(b.dataset.close).close());
 initialize().catch(e=>{$('loading').textContent='模型載入失敗：'+e.message+'。請使用新版 Chrome 或 Edge 開啟。';console.error(e);});

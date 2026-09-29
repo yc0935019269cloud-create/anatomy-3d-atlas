@@ -5,6 +5,7 @@ const browser=await chromium.launch({headless:true,...exe});const context=await 
 await page.goto(pathToFileURL(path.resolve('神經與顱骨3D.html')).href);await page.waitForFunction(()=>window.atlas,null,{timeout:120000});
 const report={date:new Date().toISOString(),browser:await browser.version(),offline:true,checks:[]};const pass=x=>{report.checks.push(x);console.log('✓',x);};
 const info=await page.evaluate(()=>({n:atlas.labels.length,unmatched:atlas.labels.filter(l=>!l.matches.length).map(l=>l.id),meshes:atlas.meshes.length,groups:Object.fromEntries(Object.keys(atlas.groups).map(g=>[g,atlas.labels.filter(l=>l.groups.includes(g)).length]))}));
+const ring=await page.evaluate(()=>atlas.annulus['.l']);for(const n of ['Trochlear nerve (IV)','Ophthalmic nerve','Superior ophthalmic vein'])assert.equal(ring[n].where,'outside',n);for(const n of ['Oculomotor nerve (III)','Abducens nerve (VI)','Optic nerve (II)','Ophthalmic artery'])assert.equal(ring[n].where,'inside',n);
 assert.deepEqual(info.unmatched,[]);pass(`${info.n} entries, every one matched to a source mesh or guide (${info.meshes} meshes incl. schematics)`);
 // Every foramen that a nerve passes through must exist.
 assert.equal(await page.evaluate(()=>atlas.labels.flatMap(l=>l.via).filter(id=>!atlas.labels.some(l=>l.id===id)).length),0);pass('All nerve → foramen links resolve');
@@ -27,6 +28,7 @@ await page.click('#clear');await page.waitForTimeout(300);assert.ok(await page.e
 pass('Selecting a cranial nerve hides the other nerves (both sides kept; V includes V1–V3) and hides other leader lines until cleared');
 await page.evaluate(()=>{atlas.setGroup('n');atlas.select('v2');});await page.locator('#detail-meta button',{hasText:'圓孔'}).click();
 await page.locator('#detail-meta button',{hasText:'放大'}).click();assert.ok(await page.evaluate(()=>atlas.camera.zoom>=4.5));pass('Zoom-to-structure button');
+assert.equal(await page.evaluate(()=>atlas.annulus['.l']['Trochlear nerve (IV)'].where),'outside');await page.click('[data-view="o"]');await page.click('#apex-view');assert.equal(await page.evaluate(()=>atlas.state.selected),'annulus');assert.ok(await page.evaluate(()=>atlas.meshes.find(m=>m.name==='Trochlear nerve (IV).l').material.clippingPlanes?.length===1));pass('Tendinous ring: IV, frontal nerve and SOV outside; III, VI, II, ophthalmic artery inside; apex view');
 await page.click('[data-view="f"]');assert.ok(await page.evaluate(()=>atlas.meshes.find(m=>m.name==='Frontal bone').material.clippingPlanes?.length===1));await page.locator('#section-panel summary').click();await page.locator('#cut-y').uncheck();assert.ok(await page.evaluate(()=>!atlas.meshes.find(m=>m.name==='Frontal bone').material.clippingPlanes));pass('Horizontal skull cut toggles');
 await page.locator('#cut-x').check();assert.equal(await page.evaluate(()=>{const m=atlas.meshes.find(m=>m.userData.category==='cortex');return m.material.clippingPlanes?.[0].normal.x;}),1);
 await page.locator('#cut-x-flip').click();assert.equal(await page.evaluate(()=>atlas.meshes.find(m=>m.userData.category==='cortex').material.clippingPlanes[0].normal.x),-1);

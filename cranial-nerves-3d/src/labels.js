@@ -51,7 +51,7 @@ add('cn11','CN XI 副神經','Accessory nerve (CN XI)','n',['Accessory nerve (XI
 add('cn12','CN XII 舌下神經','Hypoglossal nerve (CN XII)','n',['Hypoglossal nerve (XII).l'],[6,-74,-10],'延腦橄欖前溝發出，走舌下神經管。',via('hypoglossal-canal'));
 
 // ── 眼窩：共同腱環、眶上裂、眼外肌 ──
-add('annulus','共同腱環（Zinn 環）','Common tendinous ring (annulus of Zinn)','o',['Common tendinous ring.l'],[16.3,-40.3,34],'四條直肌的共同起點。腱環內：III 上支、III 下支、鼻睫神經、VI（以及 II 與眼動脈）。腱環外：IV、額神經、淚神經、上眼靜脈。');
+add('annulus','共同腱環（Zinn 環）','Common tendinous ring (annulus of Zinn)','o',['Common tendinous ring.l'],[16.3,-40.3,34],'四條直肌的共同起點。腱環內：III 上支、III 下支、鼻睫神經、VI（以及 II 與眼動脈）。腱環外：IV、額神經、淚神經、上眼靜脈。按「眶尖正面」可沿眶軸直接看。原模型的腱環只有約 5 mm 寬，IV、額神經、上眼靜脈卡在環壁上看似穿過環內；本頁已把環在其平面上放大 1.5 倍，並只在眶尖附近把這三者移到環外上方、把 VI 移進環內（教學校正）。');
 add('sr','上直肌','Superior rectus','o',['Superior rectus muscle.l'],[25.4,-36.5,55],'CN III 上支支配。');
 add('lps','提上瞼肌','Levator palpebrae superioris','o',['Levator palpebrae superioris.l'],[28,-32,62],'CN III 上支支配（另有交感支配的 Müller 肌）。');
 add('ir','下直肌','Inferior rectus','o',['Inferior rectus muscle.l'],[24.5,-55,52],'CN III 下支支配。');
