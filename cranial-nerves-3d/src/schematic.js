@@ -27,6 +27,8 @@ export function createSchematics(){const result=[];
   [[-2.6,1.8],[-1,2.8],[1.2,2.2],[2.2,-.6],[-2.2,-1.8]].forEach(([dx,dy],i)=>{const end=onGlobe(28.3+dx,-46.2+dy);tube('guide:short-ciliary'+side+i,R([G,[24.2+dx*.3,-44+dy*.3,45.5],end]),.28,0x9fd8ff,'reflex-guide','g');});
   [[23.6,-42.2],[22.4,-44]].forEach(([x,y],i)=>tube('guide:long-ciliary'+side+i,R([[17.8,-38.8,42],[20.6,-40.4,47],onGlobe(x,y)]),.28,0xffc36b,'reflex-guide','g'));
   ball('guide:pretectal'+side,R([[4.2,-25.5,-12]])[0],1.6,0xf38b5f,'g');
+  // Dural sheath of the optic nerve: from the optic canal to where it fuses with the sclera behind the optic disc.
+  const sheath=tube('guide:on-sheath'+side,R([[10.6,-35.9,28.7],[15.6,-39.3,36.2],[20.3,-42,41.5],[25,-44.6,46.8],[27.3,-45.7,51.4]]),1.75,0xb8a6dc,'dura-guide','qv');sheath.material.transparent=true;sheath.material.opacity=.42;sheath.material.depthWrite=false;sheath.userData.fixedOpacity=.42;
   const sinus=new T.Mesh(new T.SphereGeometry(1,24,16),mat(0x57c8ff,.38));sinus.scale.set(7,8,9);sinus.position.set(s*23,-73,59);sinus.name='guide:maxsinus'+side;sinus.userData={category:'sinus-guide',themes:'qo',tags:['guide:maxsinus'+side],schematic:true,baseColor:0x57c8ff,fixedOpacity:.38};result.push(sinus);
  }
  tube('guide:transsphenoidal',[[0,-62,96],[0,-58,72],[0,-51,46],[0,-46,31],[0,-43,20]],.8,0x6fe39a,'path-guide','c');

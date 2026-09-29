@@ -8,7 +8,7 @@ function add(id,zh,en,groups,models,position,note,o={}){rows.push({id,zh,en,grou
 
 // ── 小考 10 題（講義投影片與小考卷） ──
 add('optic-papilla','視乳突／視神經盤','Optic papilla / optic disc','qv',['Retina.l','Optic nerve (II).l'],[28.3,-46.2,54],'視網膜神經節細胞軸突集中離開眼球處。沒有 rods 與 cones，所以是生理性盲點（中央凹則看最清楚）。顱內壓升高時可見視乳頭水腫 papilledema。模型以視神經接上視網膜後極的位置標示。',{rep:'guide',snap:true,quiz:1});
-add('dura','硬腦膜','Dura mater','q',['Falx cerebri','Tentorium cerebelli','Cavernous sinus.l'],[1,28,-20],'最外層腦膜。模型中的大腦鐮、小腦天幕是硬腦膜反摺；海綿竇位於硬腦膜兩層之間。視神經是中樞神經延伸，外面同樣包著 dura／arachnoid／pia，蛛網膜下腔也延伸到視神經周圍（模型未獨立建出視神經鞘）。',{quiz:2});
+add('dura','硬腦膜（視神經鞘）','Dura mater (optic nerve sheath)','qv',['guide:on-sheath','Falx cerebri','Tentorium cerebelli'],[24,-44,45.5],'考題指的是包在視乳突後方視神經外面的硬腦膜：視神經是中樞神經的延伸，從視神經管到眼球後方都包著 dura／arachnoid／pia，蛛網膜下腔也一路延伸過來，所以顱內壓升高會造成視乳頭水腫。硬腦膜在眼球後方與鞏膜相連、在視神經管處與顱內硬腦膜延續。淡紫色半透明管為視神經鞘示意（原模型沒有）；顱內的大腦鐮、小腦天幕是原模型的硬腦膜反摺，一併高亮。',{rep:'schematic',snap:true,quiz:2});
 add('meyer','梅氏環（顳葉視放射）',"Meyer’s loop",'qv',['guide:meyer'],[34,-31,3],'視放射下部先向前繞過側腦室顳角，再往後到距狀溝下岸（舌回），傳遞對側上方視野。小考第 3 題答案是 Meyer’s loop，不是 Baum’s loop。',{rep:'schematic',quiz:3});
 add('ora-serrata','鋸齒緣','Ora serrata','qv',['guide:ora'],[40,-49,68],'視網膜感光部的前緣，與睫狀體平坦部交界。金色環沿原模型視網膜前緣畫出，實際邊緣呈鋸齒狀。',{rep:'schematic',quiz:4});
 add('gennari','Gennari 線','Line / stria of Gennari','qv',['Calcarine sulcus.l'],[8,-25,-75],'初級視覺皮質（V1，Brodmann 17）第 IV 層內的有髓纖維帶，肉眼可見的白線，所以 V1 又叫紋狀皮質。它在皮質裡面，3D 表面沒有網格；標點只提示距狀溝周圍的 V1 區。',{rep:'reference',snap:true,quiz:5});

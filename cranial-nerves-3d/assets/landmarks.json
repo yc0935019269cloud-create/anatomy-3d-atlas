@@ -26,23 +26,24 @@
  },
  {
   "id": "dura",
-  "zh": "硬腦膜",
-  "en": "Dura mater",
+  "zh": "硬腦膜（視神經鞘）",
+  "en": "Dura mater (optic nerve sheath)",
   "groups": [
-   "q"
+   "q",
+   "v"
   ],
   "models": [
+   "guide:on-sheath",
    "Falx cerebri",
-   "Tentorium cerebelli",
-   "Cavernous sinus.l"
+   "Tentorium cerebelli"
   ],
   "position": [
-   1,
-   28,
-   -20
+   24,
+   -44,
+   45.5
   ],
-  "note": "最外層腦膜。模型中的大腦鐮、小腦天幕是硬腦膜反摺；海綿竇位於硬腦膜兩層之間。視神經是中樞神經延伸，外面同樣包著 dura／arachnoid／pia，蛛網膜下腔也延伸到視神經周圍（模型未獨立建出視神經鞘）。",
-  "representation": "mesh",
+  "note": "考題指的是包在視乳突後方視神經外面的硬腦膜：視神經是中樞神經的延伸，從視神經管到眼球後方都包著 dura／arachnoid／pia，蛛網膜下腔也一路延伸過來，所以顱內壓升高會造成視乳頭水腫。硬腦膜在眼球後方與鞏膜相連、在視神經管處與顱內硬腦膜延續。淡紫色半透明管為視神經鞘示意（原模型沒有）；顱內的大腦鐮、小腦天幕是原模型的硬腦膜反摺，一併高亮。",
+  "representation": "schematic",
   "snap": true,
   "quiz": 2,
   "via": [],
