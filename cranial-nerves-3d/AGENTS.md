@@ -8,6 +8,6 @@ Geometry: one extraction (src/export_combined.py) from Z-Anatomy Startup.blend, 
 
 Representation rules: mesh / guide (position on source mesh, foramen, cavity) / schematic (drawn; dashed label) / reference (Gennari). Do not relabel schematic or estimated positions as measured. Foramen anchors: source leader tips where they exist; SOF, jugular, IAM from nerve convergence at bone; cribriform and carotid canal approximate. Model matching uses startsWith on object names.
 
-Themes: q quiz, f foramina (horizontal bone cut), n 12 CN, o orbit (bone cut −33), c cavernous (coronal section on all meshes, axis z), g ciliary ganglion, v visual pathway. Keep every label anchor on screen at 1440×1100 and no overlaps at 1440 and 390 widths.
+Sections: three planes (y horizontal, z coronal, x sagittal) in the 切面 panel, each with value, keep-side flip and bone-only vs all-meshes scope; theme presets in groups[].cuts. Themes: q quiz, f foramina (horizontal bone cut), n 12 CN, o orbit (bone cut −33), c cavernous (coronal section on all meshes, axis z), g ciliary ganglion, v visual pathway. Keep every label anchor on screen at 1440×1100 and no overlaps at 1440 and 390 widths.
 
 Build/test: node build.mjs; node src/verify.cjs (offline Chromium, writes assets/verification.json). Uses /opt/pw-browsers/chromium when present, else Chrome channel.

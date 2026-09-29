@@ -1,5 +1,5 @@
 {
-  "date": "2026-09-29T09:04:22.538Z",
+  "date": "2026-09-29T09:09:02.522Z",
   "browser": "141.0.7390.37",
   "offline": true,
   "checks": [
@@ -12,6 +12,7 @@
     "Selecting a cranial nerve hides the other nerves (both sides kept; V includes V1–V3) and hides other leader lines until cleared",
     "Zoom-to-structure button",
     "Horizontal skull cut toggles",
+    "Sagittal and coronal sections, flip side, and brain/nerve scope",
     "Cavernous theme uses coronal section on all meshes",
     "Schematic and right-side toggles",
     "Notes dialog jump buttons",

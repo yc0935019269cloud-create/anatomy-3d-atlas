@@ -10,8 +10,15 @@ const frames={q:{target:[4,-38,2],zoom:1.3},f:{target:[0,-58,8],zoom:1.3},n:{tar
 const typeNames={mesh:'原模型構造',guide:'原模型上的位置／通道',schematic:'示意（原模型沒有）',reference:'皮質內層次（無 3D 網格）'};
 // Cranial nerve colours, reused by the legend.
 export const nerveColors=[['I',/^Olfactory/,0xf4e38e],['II',/^Optic (nerve|chiasm|tract)/,0xffd35c],['III',/^Oculomotor/,0x5fa8ff],['IV',/^Trochlear nerve/,0xc58bff],['V1',/^Ophthalmic nerve/,0xffe36b],['V2',/^(Maxillary nerve|Meningeal branch of maxillary)/,0xffa94d],['V',/(Trigeminal|root of trigeminal)/,0xffc04d],['V3',/(mandibular nerve|Inferior alveolar|Lingual nerve|Buccal nerve|Mental nerve|mylohyoid)/,0xff7d3d],['VI',/^Abducens/,0x3fe0b0],['VII',/^Facial nerve/,0xff78a8],['VIII',/^(Vestibul|Cochlear)/,0xa3e070],['IX',/^Glossopharyngeal/,0x74d3ff],['X',/^Vagus/,0x98a8ff],['XI',/^Accessory nerve/,0xd9a4ff],['XII',/^Hypoglossal nerve/,0x57e3e0]];
-let hoverId=null,current='q',names=true,selected=null,language='both',renderer,scene,camera,controls,meshes=[],active=[],width=0,height=0,dirty=true,labelSlots=null;
-const project=new T.Vector3(),bonePlane=new T.Plane(new T.Vector3(0,-1,0),-30),sectionPlane=new T.Plane(new T.Vector3(0,0,-1),20);
+let sectionAll=[],hoverId=null,current='q',names=true,selected=null,language='both',renderer,scene,camera,controls,meshes=[],active=[],width=0,height=0,dirty=true,labelSlots=null;
+const project=new T.Vector3();
+// Three section planes. keep 'low' keeps coordinates below the slider value, 'high' keeps those above.
+// Frame: x = anatomical left (+), y = superior (+), z = anterior (+).
+const AXES={y:{index:1,name:'水平',low:'保留下方',high:'保留上方',start:-30},z:{index:2,name:'冠狀',low:'保留後方',high:'保留前方',start:20},x:{index:0,name:'矢狀',low:'保留右側',high:'保留左側',start:0}};
+const cuts=Object.fromEntries(Object.keys(AXES).map(a=>[a,{keep:a==='x'?'high':'low',plane:new T.Plane()}]));
+function sectionPlanes(){const all=[],bone=[];for(const [a,c] of Object.entries(cuts)){if(!$('cut-'+a).checked)continue;const v=+$('cut-'+a+'-v').value,n=new T.Vector3();n.setComponent(AXES[a].index,c.keep==='low'?-1:1);c.plane.set(n,c.keep==='low'?v:-v);($('cut-'+a+'-all').checked?all:bone).push(c.plane);}return {all,bone};}
+function syncCutUI(){const parts=[];for(const [a,c] of Object.entries(cuts)){const on=$('cut-'+a).checked,v=$('cut-'+a+'-v').value;$('cut-'+a+'-o').textContent=v+' mm';$('cut-'+a+'-flip').textContent=AXES[a][c.keep];if(on)parts.push(AXES[a].name+' '+v+($('cut-'+a+'-all').checked?'':'（骨）'));}$('section-summary').textContent=parts.join('・')||'關';}
+function presetCuts(g){for(const a of Object.keys(AXES)){const p=g.cuts[a];$('cut-'+a).checked=!!p;$('cut-'+a+'-v').value=p?p[0]:AXES[a].start;$('cut-'+a+'-all').checked=p?p[1]:a!=='y';cuts[a].keep=a==='x'?'high':'low';}}
 function decode(s,Ctor){return new Ctor(Uint8Array.from(atob(s),c=>c.charCodeAt(0)).buffer);}
 function matches(m,l){return l.models.some(p=>m.name.startsWith(p)||(m.userData.tags||[]).some(t=>t.startsWith(p)));}
 const isLower=n=>n==='Mandible'||n.startsWith('Lower ');
@@ -42,10 +49,10 @@ function setCamera(which,frame=frames[current]){
  controls.update();labelSlots=null;$('camera-view').value=which;$('orientation').textContent=c.text;dirty=true;
 }
 function setGroup(id){current=id;selected=null;const g=groups[id];$('view-title').textContent=g.title;$('view-note').textContent=g.subtitle;$('flow').textContent=names?g.flow:'名稱與說明已隱藏 · 保留項目編號供自測';
- $('bone').value=g.bone;$('cortex').value=g.cortex;$('cut').checked=g.cut!==null;const coronal=g.axis==='z';$('cut-label').textContent=coronal?'冠狀切面':'切面高度';$('cut-text').textContent=coronal?'冠狀剖切':'剖開顱骨';$('cut-height').min=coronal?-40:-90;$('cut-height').max=coronal?90:60;$('cut-height').value=g.cut??-30;$('jaw').checked=id==='q';$('right').checked=id!=='g';$('cerebellum').checked=id==='n';$('guides').checked=true;$('search').value='';$('legend').hidden=!'fnoc'.includes(id);
+ $('bone').value=g.bone;$('cortex').value=g.cortex;presetCuts(g);$('jaw').checked=id==='q';$('right').checked=id!=='g';$('cerebellum').checked=id==='n';$('guides').checked=true;$('search').value='';$('legend').hidden=!'fnoc'.includes(id);
  setCamera(g.camera);document.querySelectorAll('[data-view]').forEach(b=>b.classList.toggle('active',b.dataset.view===id));updateModel();renderList();rebuildLabels();showDetail();}
 function updateModel(){const groupLabels=labels.filter(l=>l.groups.includes(current)),sel=labels.find(l=>l.id===selected),bone=+$('bone').value,cortex=+$('cortex').value;const needed=new Set(groupLabels.flatMap(l=>l.matches));if(sel)sel.matches.forEach(m=>needed.add(m));
- $('bone-value').textContent=Math.round(bone*100)+'%';$('cortex-value').textContent=Math.round(cortex*100)+'%';const coronal=groups[current].axis==='z';$('cut-value').textContent=$('cut').checked?$('cut-height').value+' mm':'關';bonePlane.constant=+$('cut-height').value;sectionPlane.constant=+$('cut-height').value;const cut=$('cut').checked&&!coronal?[bonePlane]:null;const section=$('cut').checked&&coronal?[sectionPlane]:null;
+ $('bone-value').textContent=Math.round(bone*100)+'%';$('cortex-value').textContent=Math.round(cortex*100)+'%';syncCutUI();const planes=sectionPlanes();sectionAll=planes.all;const section=planes.all.length?planes.all:null,cut=planes.all.length+planes.bone.length?[...planes.all,...planes.bone]:null;
  // Selecting a nerve (or a foramen) isolates those cranial nerves: all other nerves are hidden.
  const isolate=sel&&current!=='v'?new Set(sel.matches.filter(m=>m.userData.category==='nerve').map(m=>cnCode(m.name)).filter(Boolean)):null;
  if(isolate?.has('V'))['V1','V2','V3'].forEach(c=>isolate.add(c));if(isolate&&['V1','V2','V3'].some(c=>isolate.has(c)))isolate.add('V');
@@ -67,7 +74,7 @@ function updateModel(){const groupLabels=labels.filter(l=>l.groups.includes(curr
   if(m.userData.schematic&&!$('guides').checked)visible=false;
   if(!$('right').checked&&/\.r\d*$/.test(n))visible=false;
   if(highlight&&visible)opacity=Math.max(opacity,cat==='bone'||cat==='cortex'||cat==='vein'||cat==='sinus'||cat==='dura'?opacity:.8);
-  const mat=m.material;m.visible=visible;mat.opacity=opacity;mat.transparent=opacity<.999;mat.depthWrite=opacity>.7;mat.clippingPlanes=section||((cat==='bone'||cat==='tooth')?cut:null);mat.needsUpdate=true;
+  const mat=m.material;m.visible=visible;mat.opacity=opacity;mat.transparent=opacity<.999;mat.depthWrite=opacity>.7;mat.clippingPlanes=(cat==='bone'||cat==='tooth')?cut:section;mat.needsUpdate=true;
   mat.emissive.setHex(highlight?0x6a4b20:0);mat.emissiveIntensity=highlight?.7:0;if(cat==='path-guide'){mat.emissive.setHex(m.userData.baseColor);mat.emissiveIntensity=highlight?.9:.5;}if(cat==='nerve'&&highlight){mat.emissive.setHex(m.userData.baseColor);mat.emissiveIntensity=.55;}
   m.renderOrder=opacity<.5?2:0;
  }
@@ -96,13 +103,14 @@ function drawLabels(){if(!width||!camera)return;camera.updateMatrixWorld();
  if(!labelSlots){const sorted=[...entries].sort((a,b)=>a.x-b.x),mid=Math.ceil(sorted.length/2);labelSlots=[sorted.slice(0,mid),sorted.slice(mid)].map(a=>a.sort((a,b)=>a.y-b.y).map(o=>o.l.id));}
  const byId=new Map(entries.map(o=>[o.l.id,o]));
  for(let side=0;side<2;side++){const arr=labelSlots[side].map(id=>byId.get(id)).filter(Boolean);const sizes=arr.map(o=>o.el.offsetHeight||34),total=sizes.reduce((a,b)=>a+b,0)+8*(arr.length-1);let y=Math.max(8,(height-total)/2);
-  for(let i=0;i<arr.length;i++){const o=arr[i],w=o.el.offsetWidth,x=side?width-w-5:5;o.el.style.transform=`translate(${x}px,${y}px)`;const onscreen=o.z>-1&&o.z<1&&o.x>=0&&o.x<=width&&o.y>=0&&o.y<=height;o.group.style.display=onscreen&&(!selected||o.l.id===selected||o.l.id===hoverId)?'':'none';o.el.classList.toggle('muted',!!selected&&o.l.id!==selected);o.el.classList.toggle('offscreen',!onscreen);
+  for(let i=0;i<arr.length;i++){const o=arr[i],w=o.el.offsetWidth,x=side?width-w-5:5;o.el.style.transform=`translate(${x}px,${y}px)`;const onscreen=o.z>-1&&o.z<1&&o.x>=0&&o.x<=width&&o.y>=0&&o.y<=height;const cutAway=sectionAll.some(p=>p.distanceToPoint(o.l.point)<-2);o.group.style.display=onscreen&&!cutAway&&(!selected||o.l.id===selected||o.l.id===hoverId)?'':'none';o.el.classList.toggle('muted',(!!selected&&o.l.id!==selected)||cutAway);o.el.classList.toggle('offscreen',!onscreen);
    for(const line of [o.halo,o.line]){line.setAttribute('x1',side?x:x+w);line.setAttribute('y1',y+sizes[i]/2);line.setAttribute('x2',o.x);line.setAttribute('y2',o.y);}o.dot.setAttribute('cx',o.x);o.dot.setAttribute('cy',o.y);y+=sizes[i]+8;}}
 }
 function toggleNames(show){names=show;document.body.classList.toggle('hidden-names',!show);$('hide').setAttribute('aria-pressed',!show);$('show').setAttribute('aria-pressed',show);if(!show){$('notes-dialog').close();$('source-dialog').close();}$('flow').textContent=show?groups[current].flow:'名稱與說明已隱藏 · 保留項目編號供自測';renderList();rebuildLabels();showDetail(labels.find(l=>l.id===selected));}
 function showNotes(){if(!names){$('detail').querySelector('p').textContent='重點整理含答案，請先顯示所有名稱。';return;}$('notes-content').innerHTML=notesHTML;$('notes-content').querySelectorAll('[data-go]').forEach(b=>b.onclick=()=>{$('notes-dialog').close();choose(b.dataset.go);});$('notes-dialog').showModal();}
 $('views').innerHTML=themeOrder.map((id,i)=>`<button data-view="${id}">${String(i+1).padStart(2,'0')}　${groups[id].title}</button>`).join('');
 $('hide').onclick=()=>toggleNames(false);$('show').onclick=()=>toggleNames(true);$('views').onclick=e=>{const b=e.target.closest('[data-view]');if(b)setGroup(b.dataset.view);};$('search').oninput=renderList;$('reset').onclick=()=>setGroup(current);$('camera-view').onchange=()=>setCamera($('camera-view').value);
-for(const id of ['bone','cortex','cut-height'])$(id).oninput=updateModel;for(const id of ['cut','jaw','right','cerebellum','guides'])$(id).onchange=updateModel;
+for(const id of ['bone','cortex','cut-y-v','cut-z-v','cut-x-v'])$(id).oninput=updateModel;for(const id of ['jaw','right','cerebellum','guides','cut-y','cut-z','cut-x','cut-y-all','cut-z-all','cut-x-all'])$(id).onchange=updateModel;
+for(const a of Object.keys(AXES)){$('cut-'+a+'-flip').onclick=()=>{cuts[a].keep=cuts[a].keep==='low'?'high':'low';$('cut-'+a).checked=true;updateModel();};$('cut-'+a+'-v').addEventListener('input',()=>{if(!$('cut-'+a).checked){$('cut-'+a).checked=true;updateModel();}});}
 $('language').onchange=()=>{language=$('language').value;rebuildLabels();};$('clear').onclick=()=>{selected=null;updateModel();renderList();rebuildLabels();showDetail();};$('source-button').onclick=()=>$('source-dialog').showModal();$('notes-button').onclick=showNotes;document.querySelectorAll('[data-close]').forEach(b=>b.onclick=()=>$(b.dataset.close).close());
 initialize().catch(e=>{$('loading').textContent='模型載入失敗：'+e.message+'。請使用新版 Chrome 或 Edge 開啟。';console.error(e);});

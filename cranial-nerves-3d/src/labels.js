@@ -117,12 +117,12 @@ add('cav-6','VI（海綿竇腔內）','CN VI inside the sinus','c',['Abducens ne
 
 export const labels=rows.map((r,i)=>({...r,number:i+1}));
 export const groups={
- q:{title:'小考 10 題',subtitle:'投影片與小考卷上的 10 個構造，一次放在同一顆頭裡',camera:'oblique',bone:.14,cut:null,cortex:.12,flow:'1 視乳突　2 硬腦膜　3 Meyer’s loop　4 鋸齒緣　5 Gennari 線　6 距狀溝　7 視交叉　8 鼻淚管　9 上頷竇　10 蝶竇'},
- f:{title:'顱底孔洞',subtitle:'移除顱蓋與腦，看每條腦神經穿出哪個孔',camera:'top',bone:1,cut:-30,cortex:0,flow:'一篩二視　三四一六眶上裂　二圓三卵　七八內聽　九十十一頸靜脈　十二舌下'},
- n:{title:'12 對腦神經',subtitle:'從腦底認腦神經的發出位置，再追到它穿的孔',camera:'bottom',bone:0,cut:null,cortex:.18,flow:'I 嗅　II 視　III 動眼　IV 滑車　V 三叉　VI 外旋　VII 顏面　VIII 前庭耳蝸　IX 舌咽　X 迷走　XI 副　XII 舌下'},
- o:{title:'眼窩與共同腱環',subtitle:'掀開眼窩頂，看眶上裂的神經誰在腱環內、誰在腱環外',camera:'top',bone:1,cut:-33,cortex:0,flow:'上斜四、外直六、其他三　｜　腱環外：IV、額、淚、上眼靜脈　｜　腱環內：III、鼻睫、VI'},
- c:{title:'海綿竇與蝶鞍',subtitle:'冠狀切面：外側壁 III→IV→V1→V2，腔內 ICA＋VI；拖曳切面滑桿可前後移動',camera:'front',bone:1,cut:20,axis:'z',cortex:0,flow:'外壁三四一二，裡面六和頸內動脈　｜　蝶竇 → 蝶鞍 → 腦下垂體'},
- g:{title:'睫狀神經節與瞳孔反射',subtitle:'由上往下看：三種根、長短睫狀神經、上丘三下丘四',camera:'top',bone:0,cut:null,cortex:0,flow:'光 → 視網膜 → CN II → 頂蓋前區 → 兩側 EW 核 → CN III → 睫狀神經節 → 短睫狀神經 → 瞳孔括約肌'},
- v:{title:'視覺路徑與皮質',subtitle:'從視神經四段到 V1，楔葉在上看下面、舌回在下看上面',camera:'top',bone:0,cut:null,cortex:.12,flow:'視網膜 → 視神經 → 視交叉 → 視束 → LGN → 視放射 → V1（BA17）'}
+ q:{title:'小考 10 題',subtitle:'投影片與小考卷上的 10 個構造，一次放在同一顆頭裡',camera:'oblique',bone:.14,cuts:{},cortex:.12,flow:'1 視乳突　2 硬腦膜　3 Meyer’s loop　4 鋸齒緣　5 Gennari 線　6 距狀溝　7 視交叉　8 鼻淚管　9 上頷竇　10 蝶竇'},
+ f:{title:'顱底孔洞',subtitle:'移除顱蓋與腦，看每條腦神經穿出哪個孔',camera:'top',bone:1,cuts:{y:[-30,false]},cortex:0,flow:'一篩二視　三四一六眶上裂　二圓三卵　七八內聽　九十十一頸靜脈　十二舌下'},
+ n:{title:'12 對腦神經',subtitle:'從腦底認腦神經的發出位置，再追到它穿的孔',camera:'bottom',bone:0,cuts:{},cortex:.18,flow:'I 嗅　II 視　III 動眼　IV 滑車　V 三叉　VI 外旋　VII 顏面　VIII 前庭耳蝸　IX 舌咽　X 迷走　XI 副　XII 舌下'},
+ o:{title:'眼窩與共同腱環',subtitle:'掀開眼窩頂，看眶上裂的神經誰在腱環內、誰在腱環外',camera:'top',bone:1,cuts:{y:[-33,false]},cortex:0,flow:'上斜四、外直六、其他三　｜　腱環外：IV、額、淚、上眼靜脈　｜　腱環內：III、鼻睫、VI'},
+ c:{title:'海綿竇與蝶鞍',subtitle:'冠狀切面：外側壁 III→IV→V1→V2，腔內 ICA＋VI；在「切面」可前後移動',camera:'front',bone:1,cuts:{z:[20,true]},cortex:0,flow:'外壁三四一二，裡面六和頸內動脈　｜　蝶竇 → 蝶鞍 → 腦下垂體'},
+ g:{title:'睫狀神經節與瞳孔反射',subtitle:'由上往下看：三種根、長短睫狀神經、上丘三下丘四',camera:'top',bone:0,cuts:{},cortex:0,flow:'光 → 視網膜 → CN II → 頂蓋前區 → 兩側 EW 核 → CN III → 睫狀神經節 → 短睫狀神經 → 瞳孔括約肌'},
+ v:{title:'視覺路徑與皮質',subtitle:'從視神經四段到 V1，楔葉在上看下面、舌回在下看上面',camera:'top',bone:0,cuts:{},cortex:.12,flow:'視網膜 → 視神經 → 視交叉 → 視束 → LGN → 視放射 → V1（BA17）'}
 };
 export const themeOrder=['q','f','n','o','c','g','v'];
