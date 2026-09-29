@@ -4,37 +4,49 @@
     {
       "view": "top",
       "drag": true,
-      "noDrift": true,
+      "damping": true,
+      "settles": true,
+      "settleMs": 406,
       "stableLabels": true
     },
     {
       "view": "bottom",
       "drag": true,
-      "noDrift": true,
+      "damping": true,
+      "settles": true,
+      "settleMs": 413,
       "stableLabels": true
     },
     {
       "view": "left",
       "drag": true,
-      "noDrift": true,
+      "damping": true,
+      "settles": true,
+      "settleMs": 411,
       "stableLabels": true
     },
     {
       "view": "medial",
       "drag": true,
-      "noDrift": true,
+      "damping": true,
+      "settles": true,
+      "settleMs": 406,
       "stableLabels": true
     },
     {
       "view": "front",
       "drag": true,
-      "noDrift": true,
+      "damping": true,
+      "settles": true,
+      "settleMs": 408,
       "stableLabels": true
     },
     {
       "view": "oblique",
       "drag": true,
-      "noDrift": true,
+      "damping": true,
+      "settles": true,
+      "settleMs": 407,
       "stableLabels": true
     }
   ],

@@ -12,4 +12,6 @@ Representation rules: mesh / guide (position on source mesh, foramen, cavity) / 
 
 Annulus: src/annulus.js widens the source ring 1.5x in-plane and moves IV, V1 trunk and SOV outside (VI inside) near the apex at load time; verify asserts it. 'Orbit apex' button views along the ring normal. Sections: three planes (y horizontal, z coronal, x sagittal) in the 切面 panel, each with value, keep-side flip and per-plane scope checkboxes bone / brain(+meninges) / nerve / other (scopeOf in app.js); theme presets in groups[].cuts. Themes: q quiz, f foramina (horizontal bone cut), n 12 CN, o orbit (bone cut −33), c cavernous (coronal section on all meshes, axis z), g ciliary ganglion, v visual pathway. Keep every label anchor on screen at 1440×1100 and no overlaps at 1440 and 390 widths.
 
+Controls: OrbitControls with damping .1 (same as skull atlas), rebuilt by makeControls() whenever camera.up changes.
+
 Build/test: node build.mjs; node src/verify.cjs (offline Chromium, writes assets/verification.json). Uses /opt/pw-browsers/chromium when present, else Chrome channel.

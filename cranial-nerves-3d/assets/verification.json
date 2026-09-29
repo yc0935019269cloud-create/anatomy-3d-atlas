@@ -1,5 +1,5 @@
 {
-  "date": "2026-09-29T16:08:47.873Z",
+  "date": "2026-09-29T16:35:45.214Z",
   "browser": "141.0.7390.37",
   "offline": true,
   "checks": [
@@ -18,7 +18,7 @@
     "Cavernous theme uses coronal section on all meshes",
     "Schematic and right-side toggles",
     "Notes dialog jump buttons",
-    "Drag rotates, no drift after release",
+    "Drag rotates with skull-atlas damping, then settles",
     "390px mobile: no horizontal overflow or label overlap",
     "No page errors and no network requests (fully offline)"
   ],

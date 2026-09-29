@@ -3,7 +3,9 @@ import zlib from 'node:zlib';
 import {build} from 'esbuild';
 import {labels,groups} from './src/labels.js';
 const raw=fs.readFileSync('assets/brain-data.js','utf8').slice('window.BRAIN_DATA='.length,-1);
-fs.writeFileSync('assets/brain-packed.js','window.BRAIN_GZIP='+JSON.stringify(zlib.gzipSync(raw,{level:9}).toString('base64'))+';');
+// Recompress only when the model data changed, so rebuilding does not churn the 15 MB packed file.
+const packed=fs.existsSync('assets/brain-packed.js')?fs.readFileSync('assets/brain-packed.js','utf8'):'';const same=packed&&zlib.gunzipSync(Buffer.from(JSON.parse(packed.slice('window.BRAIN_GZIP='.length,-1)),'base64')).toString()===raw;
+if(!same)fs.writeFileSync('assets/brain-packed.js','window.BRAIN_GZIP='+JSON.stringify(zlib.gzipSync(raw,{level:9}).toString('base64'))+';');
 await build({entryPoints:['src/app.js'],bundle:true,outfile:'app.js',format:'iife',minify:true,legalComments:'eof',target:['chrome110']});
 const refs=Object.fromEntries(Array.from({length:13},(_,i)=>[i+1,'data:image/png;base64,'+fs.readFileSync(`assets/page-${String(i+1).padStart(2,'0')}.png`).toString('base64')]));
 const script=s=>'<script>'+s.replace(/<\/script/gi,'<\\/script')+'</script>';

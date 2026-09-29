@@ -4,7 +4,7 @@ import crypto from 'node:crypto';
 import {build} from 'esbuild';
 import {labels,groups,themeOrder} from './src/labels.js';
 // cranial-data.js comes from src/export_combined.py (Blender); the packed copy is kept in git so rebuilding does not need Blender.
-if(fs.existsSync('assets/cranial-data.js')){const raw=fs.readFileSync('assets/cranial-data.js','utf8').slice('window.CRANIAL_DATA='.length,-1);fs.writeFileSync('assets/cranial-packed.js','window.CRANIAL_GZIP='+JSON.stringify(zlib.gzipSync(raw,{level:9}).toString('base64'))+';');}
+if(fs.existsSync('assets/cranial-data.js')){const raw=fs.readFileSync('assets/cranial-data.js','utf8').slice('window.CRANIAL_DATA='.length,-1);const old=fs.existsSync('assets/cranial-packed.js')?fs.readFileSync('assets/cranial-packed.js','utf8'):'';if(!old||zlib.gunzipSync(Buffer.from(JSON.parse(old.slice('window.CRANIAL_GZIP='.length,-1)),'base64')).toString()!==raw)fs.writeFileSync('assets/cranial-packed.js','window.CRANIAL_GZIP='+JSON.stringify(zlib.gzipSync(raw,{level:9}).toString('base64'))+';');}
 await build({entryPoints:['src/app.js'],bundle:true,outfile:'app.js',format:'iife',minify:true,legalComments:'eof',target:['chrome110']});
 const script=s=>'<script>'+s.replace(/<\/script/gi,'<\\/script')+'</script>';
 const html=fs.readFileSync('index.html','utf8').replace('<link rel="stylesheet" href="style.css">',()=>'<style>'+fs.readFileSync('style.css','utf8')+'</style>').replace('<script src="assets/cranial-packed.js"></script>',()=>script(fs.readFileSync('assets/cranial-packed.js','utf8'))).replace('<script src="app.js"></script>',()=>script(fs.readFileSync('app.js','utf8')));

@@ -1,5 +1,5 @@
 import * as T from 'three';
-import {TrackballControls} from 'three/addons/controls/TrackballControls.js';
+import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
 import {labels,groups,themeOrder} from './labels.js';
 import {createSchematics,createOra} from './schematic.js';
 import {notesHTML} from './notes.js';
@@ -47,11 +47,12 @@ async function initialize(){
  window.atlas={labels,groups,meshes,scene,get camera(){return camera;},get controls(){return controls;},annulus,setGroup,select:choose,setCamera,focusOn:id=>focusOn(labels.find(l=>l.id===id)),get state(){return {current,names,selected,active:active.length};}};
 }
 function buildLegend(){$('legend').replaceChildren();for(const [cn,,col] of nerveColors){const s=document.createElement('span');s.innerHTML=`<i style="background:#${col.toString(16).padStart(6,'0')}"></i>${cn}`;$('legend').append(s);}}
+// Same drag feel as the skull atlas: orbit around camera.up with light damping. Rebuilt whenever camera.up changes.
+function makeControls(target){controls?.dispose();controls=new OrbitControls(camera,$('canvas'));controls.enableDamping=true;controls.dampingFactor=.1;controls.minZoom=.45;controls.maxZoom=9;controls.target.copy(target);
+ controls.addEventListener('change',()=>dirty=true);controls.addEventListener('start',()=>{$('canvas').classList.add('dragging');$('orientation').textContent='自由視角 · 指線可穿透表面，旋轉時留意前後關係';});controls.addEventListener('end',()=>$('canvas').classList.remove('dragging'));controls.update();}
 function setCamera(which,frame=frames[current]){
- const c=cameras[which],target=new T.Vector3(...frame.target),dir=new T.Vector3(...c.dir).normalize();controls?.dispose();camera.up.set(...c.up);camera.position.copy(target).addScaledVector(dir,700);camera.zoom=frame.zoom;camera.lookAt(target);camera.updateProjectionMatrix();
- controls=new TrackballControls(camera,$('canvas'));controls.target.copy(target);controls.staticMoving=true;controls.rotateSpeed=1.35;controls.zoomSpeed=.9;controls.panSpeed=.65;controls.minZoom=.45;controls.maxZoom=9;
- controls.addEventListener('change',()=>dirty=true);controls.addEventListener('start',()=>{$('canvas').classList.add('dragging');$('orientation').textContent='自由視角 · 指線可穿透表面，旋轉時留意前後關係';controls.handleResize();});controls.addEventListener('end',()=>$('canvas').classList.remove('dragging'));
- controls.update();labelSlots=null;$('camera-view').value=which;$('orientation').textContent=c.text;dirty=true;
+ const c=cameras[which],target=new T.Vector3(...frame.target),dir=new T.Vector3(...c.dir).normalize();camera.up.set(...c.up);camera.position.copy(target).addScaledVector(dir,700);camera.zoom=frame.zoom;camera.lookAt(target);camera.updateProjectionMatrix();
+ makeControls(target);labelSlots=null;$('camera-view').value=which;$('orientation').textContent=c.text;dirty=true;
 }
 function setGroup(id){current=id;selected=null;apexMode=false;$('apex-view').hidden=id!=='o';const g=groups[id];$('view-title').textContent=g.title;$('view-note').textContent=g.subtitle;$('flow').textContent=names?g.flow:'名稱與說明已隱藏 · 保留項目編號供自測';
  $('bone').value=g.bone;$('cortex').value=g.cortex;presetCuts(g);$('jaw').checked=id==='q';$('right').checked=id!=='g';$('cerebellum').checked=id==='n';$('guides').checked=true;$('search').value='';$('legend').hidden=!'fnoc'.includes(id);
@@ -102,7 +103,7 @@ function focusLeader(id){hoverId=id;$('leaders').classList.toggle('has-focus',!!
 function rebuildLabels(){const ls=labels.filter(l=>l.groups.includes(current));$('labels').replaceChildren();$('leaders').replaceChildren();const svg=name=>document.createElementNS('http://www.w3.org/2000/svg',name);
  active=ls.map(l=>{const el=document.createElement('button');el.className='label '+(l.representation==='schematic'||l.representation==='reference'?'guide':'')+(selected===l.id?' selected':'');el.dataset.id=l.id;el.innerHTML=labelHTML(l);el.setAttribute('aria-label',names?l.zh:'項目 '+l.number);el.onclick=()=>choose(l);el.onpointerenter=()=>focusLeader(l.id);el.onpointerleave=()=>focusLeader(selected);el.onfocus=()=>focusLeader(l.id);el.onblur=()=>focusLeader(selected);$('labels').append(el);
   const group=svg('g'),halo=svg('line'),line=svg('line'),dot=svg('circle');group.dataset.id=l.id;halo.classList.add('leader-halo');line.classList.add('leader-main');line.classList.toggle('guide',l.representation==='schematic'||l.representation==='reference');dot.setAttribute('r',3.6);group.append(halo,line,dot);$('leaders').append(group);return {l,el,group,halo,line,dot};});focusLeader(selected);resize();}
-function resize(){const mobile=innerWidth<=700;const rows=Math.ceil(active.length/2);$('stage').style.minHeight=mobile?Math.max(480,rows*51+46)+'px':Math.max(460,rows*44+40)+'px';const r=$('stage').getBoundingClientRect();width=r.width;height=r.height;$('leaders').setAttribute('viewBox',`0 0 ${width} ${height}`);if(!renderer)return;renderer.setSize(width,height,false);controls?.handleResize();const half=width<500?height*.57:140;camera.left=-half*width/height;camera.right=half*width/height;camera.top=half;camera.bottom=-half;camera.updateProjectionMatrix();dirty=true;}
+function resize(){const mobile=innerWidth<=700;const rows=Math.ceil(active.length/2);$('stage').style.minHeight=mobile?Math.max(480,rows*51+46)+'px':Math.max(460,rows*44+40)+'px';const r=$('stage').getBoundingClientRect();width=r.width;height=r.height;$('leaders').setAttribute('viewBox',`0 0 ${width} ${height}`);if(!renderer)return;renderer.setSize(width,height,false);const half=width<500?height*.57:140;camera.left=-half*width/height;camera.right=half*width/height;camera.top=half;camera.bottom=-half;camera.updateProjectionMatrix();dirty=true;}
 function drawLabels(){if(!width||!camera)return;camera.updateMatrixWorld();
  const entries=active.map(o=>{if(o.l.anchorMesh)o.l.point.copy(o.l.localAnchor).applyMatrix4(o.l.anchorMesh.matrixWorld);project.copy(o.l.point).project(camera);return {...o,x:(project.x+1)*width/2,y:(1-project.y)*height/2,z:project.z};});
  // Fixed slots while rotating, so names do not jump across the screen.
@@ -121,7 +122,7 @@ for(const a of Object.keys(AXES)){$('cut-'+a+'-flip').onclick=()=>{cuts[a].keep=
 $('language').onchange=()=>{language=$('language').value;rebuildLabels();};$('clear').onclick=()=>{selected=null;updateModel();renderList();rebuildLabels();showDetail();};// Look straight at the common tendinous ring, cutting away everything in front of its plane.
 function apexView(){const f=window.atlas.annulus['.l'].frame,c=new T.Vector3(...f.centre),n=new T.Vector3(...f.normal);apexMode=true;apexPlane.set(n.clone().negate(),n.dot(c)+1.5);
  for(const a of Object.keys(AXES))$('cut-'+a).checked=false;$('bone').value=0;$('cortex').value=0;
- controls.target.copy(c);camera.position.copy(c).addScaledVector(n,700);camera.up.set(0,1,0);camera.zoom=9;camera.updateProjectionMatrix();camera.lookAt(c);controls.update();labelSlots=null;
+ camera.position.copy(c).addScaledVector(n,700);camera.up.set(0,1,0);camera.zoom=9;camera.updateProjectionMatrix();camera.lookAt(c);makeControls(c);labelSlots=null;
  $('orientation').textContent='沿眶軸從前方看眶尖 · 切面平行於共同腱環 · 上方在上';choose('annulus');}
 $('apex-view').onclick=apexView;
 $('source-button').onclick=()=>$('source-dialog').showModal();$('notes-button').onclick=showNotes;document.querySelectorAll('[data-close]').forEach(b=>b.onclick=()=>$(b.dataset.close).close());
