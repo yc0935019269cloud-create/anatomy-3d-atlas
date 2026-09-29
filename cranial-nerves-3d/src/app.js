@@ -57,8 +57,8 @@ function setGroup(id){current=id;selected=null;apexMode=false;$('apex-view').hid
  $('bone').value=g.bone;$('cortex').value=g.cortex;presetCuts(g);$('jaw').checked=id==='q';$('right').checked=id!=='g';$('cerebellum').checked=id==='n';$('guides').checked=true;$('search').value='';$('legend').hidden=!'fnoc'.includes(id);
  setCamera(g.camera);document.querySelectorAll('[data-view]').forEach(b=>b.classList.toggle('active',b.dataset.view===id));updateModel();renderList();rebuildLabels();showDetail();}
 function updateModel(){const groupLabels=labels.filter(l=>l.groups.includes(current)),sel=labels.find(l=>l.id===selected),bone=+$('bone').value,cortex=+$('cortex').value;const needed=new Set(groupLabels.flatMap(l=>l.matches));if(sel)sel.matches.forEach(m=>needed.add(m));
- $('bone-value').textContent=Math.round(bone*100)+'%';$('cortex-value').textContent=Math.round(cortex*100)+'%';syncCutUI();planesBy=sectionPlanes();
- // Selecting a nerve (or a foramen) isolates those cranial nerves: all other nerves are hidden.
+ $('bone-value').textContent=Math.round(bone*100)+'%';$('cortex-value').textContent=Math.round(cortex*100)+'%';$('nerve-dim-value').textContent=+$('nerve-dim').value?Math.round($('nerve-dim').value*100)+'%':'隱藏';syncCutUI();planesBy=sectionPlanes();
+ // Selecting a nerve (or a foramen) emphasises those cranial nerves; the others fade to the「其他神經」opacity (0 = hidden).
  const isolate=sel&&current!=='v'?new Set(sel.matches.filter(m=>m.userData.category==='nerve').map(m=>cnCode(m.name)).filter(Boolean)):null;
  if(isolate?.has('V'))['V1','V2','V3'].forEach(c=>isolate.add(c));if(isolate&&['V1','V2','V3'].some(c=>isolate.has(c)))isolate.add('V');
  for(const m of meshes){const cat=m.userData.category,n=m.name,belongs=needed.has(m),highlight=sel?.matches.includes(m),th=current;let visible=belongs,opacity=1;
@@ -68,7 +68,7 @@ function updateModel(){const groupLabels=labels.filter(l=>l.groups.includes(curr
   else if(cat==='cerebellum'){visible=$('cerebellum').checked;opacity=th==='n'?.5:.25;}
   else if(cat==='stem'){visible=belongs||'nqgvc'.includes(th);opacity=belongs?.9:th==='n'?.85:th==='g'?.35:.22;}
   else if(cat==='deep'){visible=belongs||('vg'.includes(th)&&/^Thalamus/.test(n));opacity=belongs?.85:.14;}
-  else if(cat==='nerve'){visible=belongs||('fnoc'.includes(th)&&!(/^Optic tract/.test(n)&&th!=='n'))||(th==='g'&&/^(Oculomotor|Optic|Ophthalmic)/.test(n))||(th==='v'&&/^Optic/.test(n));opacity=belongs||'fnoc'.includes(th)?1:.45;if(isolate?.size){visible=isolate.has(cnCode(n));opacity=1;}}
+  else if(cat==='nerve'){visible=belongs||('fnoc'.includes(th)&&!(/^Optic tract/.test(n)&&th!=='n'))||(th==='g'&&/^(Oculomotor|Optic|Ophthalmic)/.test(n))||(th==='v'&&/^Optic/.test(n));opacity=belongs||'fnoc'.includes(th)?1:.45;if(isolate?.size){const on=isolate.has(cnCode(n)),dim=+$('nerve-dim').value;visible=on||dim>0;opacity=on?1:dim;}}
   else if(cat==='nucleus'){visible=belongs||'gn'.includes(th);opacity=belongs?1:.6;}
   else if(cat==='eye'){visible=th!=='n';opacity=n.startsWith('Sclera')?.13:n.startsWith('Retina')?.3:n.startsWith('Lens')?.6:n.startsWith('Cornea')?.18:n.startsWith('Vitreous')?0:.85;if(opacity===0&&!belongs)visible=false;}
   else if(cat==='orbit'){visible=belongs||'ocf'.includes(th);opacity=belongs?1:th==='o'||th==='f'?.95:.35;}
@@ -81,8 +81,8 @@ function updateModel(){const groupLabels=labels.filter(l=>l.groups.includes(curr
   if(!$('right').checked&&/\.r\d*$/.test(n))visible=false;
   if(highlight&&visible)opacity=Math.max(opacity,cat==='bone'||cat==='cortex'||cat==='vein'||cat==='sinus'||cat==='dura'?opacity:.8);
   const mat=m.material;m.visible=visible;mat.opacity=opacity;mat.transparent=opacity<.999;mat.depthWrite=opacity>.7;const pl=planesBy[scopeOf(m)];mat.clippingPlanes=pl.length?pl:null;mat.needsUpdate=true;
-  mat.emissive.setHex(highlight?0x6a4b20:0);mat.emissiveIntensity=highlight?.7:0;if(cat==='path-guide'){mat.emissive.setHex(m.userData.baseColor);mat.emissiveIntensity=highlight?.9:.5;}if(cat==='nerve'&&highlight){mat.emissive.setHex(m.userData.baseColor);mat.emissiveIntensity=.55;}
-  m.renderOrder=opacity<.5?2:0;
+  mat.emissive.setHex(highlight?0x6a4b20:0);mat.emissiveIntensity=highlight?.7:0;if(cat==='path-guide'){mat.emissive.setHex(m.userData.baseColor);mat.emissiveIntensity=highlight?.9:.5;}if(cat==='nerve'&&(highlight||(isolate?.size&&isolate.has(cnCode(n))))){mat.emissive.setHex(m.userData.baseColor);mat.emissiveIntensity=.85;m.renderOrder=3;}
+  m.renderOrder=cat==='nerve'&&isolate?.size&&isolate.has(cnCode(n))?3:opacity<.5?2:0;
  }
  dirty=true;
 }
@@ -116,7 +116,7 @@ function toggleNames(show){names=show;document.body.classList.toggle('hidden-nam
 function showNotes(){if(!names){$('detail').querySelector('p').textContent='重點整理含答案，請先顯示所有名稱。';return;}$('notes-content').innerHTML=notesHTML;$('notes-content').querySelectorAll('[data-go]').forEach(b=>b.onclick=()=>{$('notes-dialog').close();choose(b.dataset.go);});$('notes-dialog').showModal();}
 $('views').innerHTML=themeOrder.map((id,i)=>`<button data-view="${id}">${String(i+1).padStart(2,'0')}　${groups[id].title}</button>`).join('');
 $('hide').onclick=()=>toggleNames(false);$('show').onclick=()=>toggleNames(true);$('views').onclick=e=>{const b=e.target.closest('[data-view]');if(b)setGroup(b.dataset.view);};$('search').oninput=renderList;$('reset').onclick=()=>setGroup(current);$('camera-view').onchange=()=>setCamera($('camera-view').value);
-for(const id of ['bone','cortex','cut-y-v','cut-z-v','cut-x-v'])$(id).oninput=updateModel;for(const id of ['jaw','right','cerebellum','guides','cut-y','cut-z','cut-x',...['y','z','x'].flatMap(a=>Object.keys(SCOPES).map(k=>`cut-${a}-${k}`))])$(id).onchange=updateModel;
+for(const id of ['bone','cortex','nerve-dim','cut-y-v','cut-z-v','cut-x-v'])$(id).oninput=updateModel;for(const id of ['jaw','right','cerebellum','guides','cut-y','cut-z','cut-x',...['y','z','x'].flatMap(a=>Object.keys(SCOPES).map(k=>`cut-${a}-${k}`))])$(id).onchange=updateModel;
 for(const a of Object.keys(AXES)){$('cut-'+a+'-flip').onclick=()=>{cuts[a].keep=cuts[a].keep==='low'?'high':'low';$('cut-'+a).checked=true;updateModel();};$('cut-'+a+'-v').addEventListener('input',()=>{if(!$('cut-'+a).checked){$('cut-'+a).checked=true;updateModel();}});}
 $('language').onchange=()=>{language=$('language').value;rebuildLabels();};$('clear').onclick=()=>{selected=null;updateModel();renderList();rebuildLabels();showDetail();};// Look straight at the common tendinous ring, cutting away everything in front of its plane.
 function apexView(){const f=window.atlas.annulus['.l'].frame,c=new T.Vector3(...f.centre),n=new T.Vector3(...f.normal);apexMode=true;apexPlane.set(n.clone().negate(),n.dot(c)+1.5);

@@ -1,5 +1,5 @@
 {
-  "date": "2026-09-29T09:21:52.242Z",
+  "date": "2026-09-29T16:08:47.873Z",
   "browser": "141.0.7390.37",
   "offline": true,
   "checks": [
@@ -9,7 +9,7 @@
     "Themes {\"q\":10,\"f\":13,\"n\":15,\"o\":23,\"c\":11,\"g\":18,\"v\":20}: labels in bounds, no overlaps, anchors on screen, hide/show guards answers",
     "Quiz-number search",
     "Nerve → foramen jump (V2 → 圓孔) and foramen lists the nerves",
-    "Selecting a cranial nerve hides the other nerves (both sides kept; V includes V1–V3) and hides other leader lines until cleared",
+    "Selecting a cranial nerve emphasises it (both sides; V includes V1–V3), other nerves fade to the adjustable opacity (0 hides them), other leader lines hidden until cleared",
     "Zoom-to-structure button",
     "Tendinous ring: IV, frontal nerve and SOV outside; III, VI, II, ophthalmic artery inside; apex view",
     "Horizontal skull cut toggles",
