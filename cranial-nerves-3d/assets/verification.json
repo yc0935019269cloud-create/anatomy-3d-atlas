@@ -1,5 +1,5 @@
 {
-  "date": "2026-09-29T07:20:55.033Z",
+  "date": "2026-09-29T09:04:22.538Z",
   "browser": "141.0.7390.37",
   "offline": true,
   "checks": [
@@ -9,6 +9,7 @@
     "Themes {\"q\":10,\"f\":13,\"n\":15,\"o\":23,\"c\":11,\"g\":18,\"v\":19}: labels in bounds, no overlaps, anchors on screen, hide/show guards answers",
     "Quiz-number search",
     "Nerve → foramen jump (V2 → 圓孔) and foramen lists the nerves",
+    "Selecting a cranial nerve hides the other nerves (both sides kept; V includes V1–V3) and hides other leader lines until cleared",
     "Zoom-to-structure button",
     "Horizontal skull cut toggles",
     "Cavernous theme uses coronal section on all meshes",

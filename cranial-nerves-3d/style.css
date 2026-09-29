@@ -43,3 +43,4 @@
 .hidden-names .legend{display:flex}
 @media(max-width:700px){.legend{max-width:94%;font-size:10px;top:4px}.stage-tools input[type=range]{width:74px}}
 @media(max-width:700px){.view-grid{grid-template-columns:1fr 1fr}.view-grid button{padding:8px 9px;font-size:11px}}
+.label.muted{opacity:.6}.label.muted:hover{opacity:1}

@@ -10,11 +10,13 @@ const frames={q:{target:[4,-38,2],zoom:1.3},f:{target:[0,-58,8],zoom:1.3},n:{tar
 const typeNames={mesh:'原模型構造',guide:'原模型上的位置／通道',schematic:'示意（原模型沒有）',reference:'皮質內層次（無 3D 網格）'};
 // Cranial nerve colours, reused by the legend.
 export const nerveColors=[['I',/^Olfactory/,0xf4e38e],['II',/^Optic (nerve|chiasm|tract)/,0xffd35c],['III',/^Oculomotor/,0x5fa8ff],['IV',/^Trochlear nerve/,0xc58bff],['V1',/^Ophthalmic nerve/,0xffe36b],['V2',/^(Maxillary nerve|Meningeal branch of maxillary)/,0xffa94d],['V',/(Trigeminal|root of trigeminal)/,0xffc04d],['V3',/(mandibular nerve|Inferior alveolar|Lingual nerve|Buccal nerve|Mental nerve|mylohyoid)/,0xff7d3d],['VI',/^Abducens/,0x3fe0b0],['VII',/^Facial nerve/,0xff78a8],['VIII',/^(Vestibul|Cochlear)/,0xa3e070],['IX',/^Glossopharyngeal/,0x74d3ff],['X',/^Vagus/,0x98a8ff],['XI',/^Accessory nerve/,0xd9a4ff],['XII',/^Hypoglossal nerve/,0x57e3e0]];
-let current='q',names=true,selected=null,language='both',renderer,scene,camera,controls,meshes=[],active=[],width=0,height=0,dirty=true,labelSlots=null;
+let hoverId=null,current='q',names=true,selected=null,language='both',renderer,scene,camera,controls,meshes=[],active=[],width=0,height=0,dirty=true,labelSlots=null;
 const project=new T.Vector3(),bonePlane=new T.Plane(new T.Vector3(0,-1,0),-30),sectionPlane=new T.Plane(new T.Vector3(0,0,-1),20);
 function decode(s,Ctor){return new Ctor(Uint8Array.from(atob(s),c=>c.charCodeAt(0)).buffer);}
 function matches(m,l){return l.models.some(p=>m.name.startsWith(p)||(m.userData.tags||[]).some(t=>t.startsWith(p)));}
 const isLower=n=>n==='Mandible'||n.startsWith('Lower ');
+// Cranial nerve number of a nerve mesh (V1–V3 count as their own pair).
+const cnCode=n=>{for(const [cn,re] of nerveColors)if(re.test(n))return cn;return null;};
 function colorFor(item){const c=item.category,n=item.name;
  if(c==='nerve'){for(const [,re,col] of nerveColors)if(re.test(n))return col;return 0xf1d28c;}
  return c==='cortex'?0xcbaab5:c==='cerebellum'?0xbdadb0:c==='stem'?0xb7bcc9:c==='artery'?0xe06a6a:c==='bone'?0xdccfb0:c==='tooth'?0xf2e8d2:c==='sinus'?0x5cc4ec:c==='dura'?0xb8a6dc:c==='vein'?0x6f8ff0:c==='nucleus'?0xffa860:
@@ -44,6 +46,9 @@ function setGroup(id){current=id;selected=null;const g=groups[id];$('view-title'
  setCamera(g.camera);document.querySelectorAll('[data-view]').forEach(b=>b.classList.toggle('active',b.dataset.view===id));updateModel();renderList();rebuildLabels();showDetail();}
 function updateModel(){const groupLabels=labels.filter(l=>l.groups.includes(current)),sel=labels.find(l=>l.id===selected),bone=+$('bone').value,cortex=+$('cortex').value;const needed=new Set(groupLabels.flatMap(l=>l.matches));if(sel)sel.matches.forEach(m=>needed.add(m));
  $('bone-value').textContent=Math.round(bone*100)+'%';$('cortex-value').textContent=Math.round(cortex*100)+'%';const coronal=groups[current].axis==='z';$('cut-value').textContent=$('cut').checked?$('cut-height').value+' mm':'關';bonePlane.constant=+$('cut-height').value;sectionPlane.constant=+$('cut-height').value;const cut=$('cut').checked&&!coronal?[bonePlane]:null;const section=$('cut').checked&&coronal?[sectionPlane]:null;
+ // Selecting a nerve (or a foramen) isolates those cranial nerves: all other nerves are hidden.
+ const isolate=sel&&current!=='v'?new Set(sel.matches.filter(m=>m.userData.category==='nerve').map(m=>cnCode(m.name)).filter(Boolean)):null;
+ if(isolate?.has('V'))['V1','V2','V3'].forEach(c=>isolate.add(c));if(isolate&&['V1','V2','V3'].some(c=>isolate.has(c)))isolate.add('V');
  for(const m of meshes){const cat=m.userData.category,n=m.name,belongs=needed.has(m),highlight=sel?.matches.includes(m),th=current;let visible=belongs,opacity=1;
   if(cat==='bone'||cat==='tooth'){visible=bone>0&&(!isLower(n)||$('jaw').checked);opacity=bone;if(highlight&&bone<.3){visible=true;opacity=.45;}}
   else if(cat==='sinus'){visible=belongs||'qocf'.includes(th);opacity=belongs?.8:.45;}
@@ -51,7 +56,7 @@ function updateModel(){const groupLabels=labels.filter(l=>l.groups.includes(curr
   else if(cat==='cerebellum'){visible=$('cerebellum').checked;opacity=th==='n'?.5:.25;}
   else if(cat==='stem'){visible=belongs||'nqgvc'.includes(th);opacity=belongs?.9:th==='n'?.85:th==='g'?.35:.22;}
   else if(cat==='deep'){visible=belongs||('vg'.includes(th)&&/^Thalamus/.test(n));opacity=belongs?.85:.14;}
-  else if(cat==='nerve'){visible=belongs||('fnoc'.includes(th)&&!(/^Optic tract/.test(n)&&th!=='n'))||(th==='g'&&/^(Oculomotor|Optic|Ophthalmic)/.test(n))||(th==='v'&&/^Optic/.test(n));opacity=belongs||'fnoc'.includes(th)?1:.45;}
+  else if(cat==='nerve'){visible=belongs||('fnoc'.includes(th)&&!(/^Optic tract/.test(n)&&th!=='n'))||(th==='g'&&/^(Oculomotor|Optic|Ophthalmic)/.test(n))||(th==='v'&&/^Optic/.test(n));opacity=belongs||'fnoc'.includes(th)?1:.45;if(isolate?.size){visible=isolate.has(cnCode(n));opacity=1;}}
   else if(cat==='nucleus'){visible=belongs||'gn'.includes(th);opacity=belongs?1:.6;}
   else if(cat==='eye'){visible=th!=='n';opacity=n.startsWith('Sclera')?.13:n.startsWith('Retina')?.3:n.startsWith('Lens')?.6:n.startsWith('Cornea')?.18:n.startsWith('Vitreous')?0:.85;if(opacity===0&&!belongs)visible=false;}
   else if(cat==='orbit'){visible=belongs||'ocf'.includes(th);opacity=belongs?1:th==='o'||th==='f'?.95:.35;}
@@ -80,7 +85,7 @@ function showDetail(l){const d=$('detail');d.querySelector('.detail-number').tex
 // Recentre the trackball on a structure without changing the viewing direction.
 function focusOn(l){const target=l.point.clone(),shift=new T.Vector3().subVectors(target,controls.target);camera.position.add(shift);controls.target.copy(target);camera.zoom=Math.min(9,Math.max(camera.zoom*1.8,4.5));camera.updateProjectionMatrix();controls.update();dirty=true;}
 function labelHTML(l){const no=`<b>${String(l.number).padStart(2,'0')}</b>`;return !names?no:`${no}<div>${language!=='en'?`<div class="zh">${l.zh}</div>`:''}${language!=='zh'?`<div class="en">${l.en}</div>`:''}</div>`;}
-function focusLeader(id){$('leaders').classList.toggle('has-focus',!!id);for(const o of active){const focus=o.l.id===id;o.group.classList.toggle('focused',focus);o.el.classList.toggle('traced',focus);o.dot.setAttribute('r',focus?5:3.6);if(focus)$('leaders').append(o.group);}}
+function focusLeader(id){hoverId=id;$('leaders').classList.toggle('has-focus',!!id);for(const o of active){const focus=o.l.id===id;o.group.classList.toggle('focused',focus);o.el.classList.toggle('traced',focus);o.dot.setAttribute('r',focus?5:3.6);if(focus)$('leaders').append(o.group);}dirty=true;}
 function rebuildLabels(){const ls=labels.filter(l=>l.groups.includes(current));$('labels').replaceChildren();$('leaders').replaceChildren();const svg=name=>document.createElementNS('http://www.w3.org/2000/svg',name);
  active=ls.map(l=>{const el=document.createElement('button');el.className='label '+(l.representation==='schematic'||l.representation==='reference'?'guide':'')+(selected===l.id?' selected':'');el.dataset.id=l.id;el.innerHTML=labelHTML(l);el.setAttribute('aria-label',names?l.zh:'項目 '+l.number);el.onclick=()=>choose(l);el.onpointerenter=()=>focusLeader(l.id);el.onpointerleave=()=>focusLeader(selected);el.onfocus=()=>focusLeader(l.id);el.onblur=()=>focusLeader(selected);$('labels').append(el);
   const group=svg('g'),halo=svg('line'),line=svg('line'),dot=svg('circle');group.dataset.id=l.id;halo.classList.add('leader-halo');line.classList.add('leader-main');line.classList.toggle('guide',l.representation==='schematic'||l.representation==='reference');dot.setAttribute('r',3.6);group.append(halo,line,dot);$('leaders').append(group);return {l,el,group,halo,line,dot};});focusLeader(selected);resize();}
@@ -91,7 +96,7 @@ function drawLabels(){if(!width||!camera)return;camera.updateMatrixWorld();
  if(!labelSlots){const sorted=[...entries].sort((a,b)=>a.x-b.x),mid=Math.ceil(sorted.length/2);labelSlots=[sorted.slice(0,mid),sorted.slice(mid)].map(a=>a.sort((a,b)=>a.y-b.y).map(o=>o.l.id));}
  const byId=new Map(entries.map(o=>[o.l.id,o]));
  for(let side=0;side<2;side++){const arr=labelSlots[side].map(id=>byId.get(id)).filter(Boolean);const sizes=arr.map(o=>o.el.offsetHeight||34),total=sizes.reduce((a,b)=>a+b,0)+8*(arr.length-1);let y=Math.max(8,(height-total)/2);
-  for(let i=0;i<arr.length;i++){const o=arr[i],w=o.el.offsetWidth,x=side?width-w-5:5;o.el.style.transform=`translate(${x}px,${y}px)`;const onscreen=o.z>-1&&o.z<1&&o.x>=0&&o.x<=width&&o.y>=0&&o.y<=height;o.group.style.display=onscreen?'':'none';o.el.classList.toggle('offscreen',!onscreen);
+  for(let i=0;i<arr.length;i++){const o=arr[i],w=o.el.offsetWidth,x=side?width-w-5:5;o.el.style.transform=`translate(${x}px,${y}px)`;const onscreen=o.z>-1&&o.z<1&&o.x>=0&&o.x<=width&&o.y>=0&&o.y<=height;o.group.style.display=onscreen&&(!selected||o.l.id===selected||o.l.id===hoverId)?'':'none';o.el.classList.toggle('muted',!!selected&&o.l.id!==selected);o.el.classList.toggle('offscreen',!onscreen);
    for(const line of [o.halo,o.line]){line.setAttribute('x1',side?x:x+w);line.setAttribute('y1',y+sizes[i]/2);line.setAttribute('x2',o.x);line.setAttribute('y2',o.y);}o.dot.setAttribute('cx',o.x);o.dot.setAttribute('cy',o.y);y+=sizes[i]+8;}}
 }
 function toggleNames(show){names=show;document.body.classList.toggle('hidden-names',!show);$('hide').setAttribute('aria-pressed',!show);$('show').setAttribute('aria-pressed',show);if(!show){$('notes-dialog').close();$('source-dialog').close();}$('flow').textContent=show?groups[current].flow:'名稱與說明已隱藏 · 保留項目編號供自測';renderList();rebuildLabels();showDetail(labels.find(l=>l.id===selected));}
