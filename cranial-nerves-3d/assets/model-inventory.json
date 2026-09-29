@@ -1,0 +1,10090 @@
+[
+ {
+  "name": "Zygomatic bone.r",
+  "category": "bone",
+  "type": "MESH",
+  "vertices": 666,
+  "triangles": 1328,
+  "center": [
+   -46.97,
+   -58.91,
+   52.19
+  ],
+  "bounds": [
+   [
+    -62.33,
+    -31.62
+   ],
+   [
+    -86.28,
+    -31.53
+   ],
+   [
+    32.71,
+    71.68
+   ]
+  ]
+ },
+ {
+  "name": "Zygomatic bone.l",
+  "category": "bone",
+  "type": "MESH",
+  "vertices": 666,
+  "triangles": 1328,
+  "center": [
+   46.97,
+   -58.91,
+   52.19
+  ],
+  "bounds": [
+   [
+    31.62,
+    62.33
+   ],
+   [
+    -86.28,
+    -31.53
+   ],
+   [
+    32.71,
+    71.68
+   ]
+  ]
+ },
+ {
+  "name": "Wing of central lobule.r",
+  "category": "cerebellum",
+  "type": "MESH",
+  "vertices": 1585,
+  "triangles": 3144,
+  "center": [
+   -9.93,
+   -40.46,
+   -19.4
+  ],
+  "bounds": [
+   [
+    -18.6,
+    -1.25
+   ],
+   [
+    -46.92,
+    -34.01
+   ],
+   [
+    -29.68,
+    -9.12
+   ]
+  ]
+ },
+ {
+  "name": "Wing of central lobule.l",
+  "category": "cerebellum",
+  "type": "MESH",
+  "vertices": 1585,
+  "triangles": 3144,
+  "center": [
+   9.93,
+   -40.46,
+   -19.4
+  ],
+  "bounds": [
+   [
+    1.25,
+    18.6
+   ],
+   [
+    -46.92,
+    -34.01
+   ],
+   [
+    -29.68,
+    -9.12
+   ]
+  ]
+ },
+ {
+  "name": "Vomer",
+  "category": "bone",
+  "type": "MESH",
+  "vertices": 513,
+  "triangles": 1022,
+  "center": [
+   0.0,
+   -71.12,
+   51.53
+  ],
+  "bounds": [
+   [
+    -5.12,
+    5.12
+   ],
+   [
+    -82.59,
+    -59.64
+   ],
+   [
+    20.96,
+    82.1
+   ]
+  ]
+ },
+ {
+  "name": "Vitreous body.r",
+  "category": "eye",
+  "type": "MESH",
+  "vertices": 2775,
+  "triangles": 5436,
+  "center": [
+   -30.55,
+   -49.29,
+   62.79
+  ],
+  "bounds": [
+   [
+    -40.74,
+    -20.36
+   ],
+   [
+    -59.44,
+    -39.14
+   ],
+   [
+    53.92,
+    71.66
+   ]
+  ]
+ },
+ {
+  "name": "Vitreous body.l",
+  "category": "eye",
+  "type": "MESH",
+  "vertices": 2775,
+  "triangles": 5436,
+  "center": [
+   30.55,
+   -49.29,
+   62.79
+  ],
+  "bounds": [
+   [
+    20.36,
+    40.74
+   ],
+   [
+    -59.44,
+    -39.14
+   ],
+   [
+    53.92,
+    71.66
+   ]
+  ]
+ },
+ {
+  "name": "Vestibulocochlear nerve (VIII).r",
+  "category": "nerve",
+  "type": "CURVE",
+  "vertices": 936,
+  "triangles": 1768,
+  "center": [
+   -14.37,
+   -60.68,
+   -10.42
+  ],
+  "bounds": [
+   [
+    -21.57,
+    -7.17
+   ],
+   [
+    -63.36,
+    -58.0
+   ],
+   [
+    -16.05,
+    -4.79
+   ]
+  ]
+ },
+ {
+  "name": "Vestibulocochlear nerve (VIII).l",
+  "category": "nerve",
+  "type": "CURVE",
+  "vertices": 936,
+  "triangles": 1768,
+  "center": [
+   14.37,
+   -60.68,
+   -10.42
+  ],
+  "bounds": [
+   [
+    7.17,
+    21.57
+   ],
+   [
+    -63.36,
+    -58.0
+   ],
+   [
+    -16.05,
+    -4.79
+   ]
+  ]
+ },
+ {
+  "name": "Vestibular nerve.r",
+  "category": "nerve",
+  "type": "CURVE",
+  "vertices": 2448,
+  "triangles": 4688,
+  "center": [
+   -29.94,
+   -58.8,
+   -4.07
+  ],
+  "bounds": [
+   [
+    -40.56,
+    -19.33
+   ],
+   [
+    -61.18,
+    -56.43
+   ],
+   [
+    -5.71,
+    -2.42
+   ]
+  ]
+ },
+ {
+  "name": "Vestibular nerve.l",
+  "category": "nerve",
+  "type": "CURVE",
+  "vertices": 2448,
+  "triangles": 4688,
+  "center": [
+   29.94,
+   -58.8,
+   -4.07
+  ],
+  "bounds": [
+   [
+    19.33,
+    40.56
+   ],
+   [
+    -61.18,
+    -56.43
+   ],
+   [
+    -5.71,
+    -2.42
+   ]
+  ]
+ },
+ {
+  "name": "Vertebral artery.r",
+  "category": "artery",
+  "type": "CURVE",
+  "vertices": 2148,
+  "triangles": 4271,
+  "center": [
+   -15.78,
+   -118.55,
+   -15.99
+  ],
+  "bounds": [
+   [
+    -32.49,
+    0.93
+   ],
+   [
+    -176.29,
+    -60.8
+   ],
+   [
+    -30.7,
+    -1.27
+   ]
+  ]
+ },
+ {
+  "name": "Vertebral artery.l",
+  "category": "artery",
+  "type": "CURVE",
+  "vertices": 2148,
+  "triangles": 4271,
+  "center": [
+   15.78,
+   -118.55,
+   -15.99
+  ],
+  "bounds": [
+   [
+    -0.93,
+    32.49
+   ],
+   [
+    -176.29,
+    -60.8
+   ],
+   [
+    -30.7,
+    -1.27
+   ]
+  ]
+ },
+ {
+  "name": "Vagus nerve (X).r",
+  "category": "nerve",
+  "type": "CURVE",
+  "vertices": 5575,
+  "triangles": 10813,
+  "center": [
+   -15.29,
+   -119.81,
+   5.76
+  ],
+  "bounds": [
+   [
+    -28.96,
+    -1.63
+   ],
+   [
+    -175.48,
+    -64.13
+   ],
+   [
+    -19.63,
+    31.16
+   ]
+  ]
+ },
+ {
+  "name": "Vagus nerve (X).l",
+  "category": "nerve",
+  "type": "CURVE",
+  "vertices": 5575,
+  "triangles": 10813,
+  "center": [
+   15.29,
+   -119.81,
+   5.76
+  ],
+  "bounds": [
+   [
+    1.63,
+    28.96
+   ],
+   [
+    -175.48,
+    -64.13
+   ],
+   [
+    -19.63,
+    31.16
+   ]
+  ]
+ },
+ {
+  "name": "Uvula of vermis",
+  "category": "cerebellum",
+  "type": "MESH",
+  "vertices": 1118,
+  "triangles": 2176,
+  "center": [
+   0.53,
+   -63.14,
+   -41.13
+  ],
+  "bounds": [
+   [
+    -5.85,
+    6.9
+   ],
+   [
+    -71.31,
+    -54.98
+   ],
+   [
+    -49.02,
+    -33.24
+   ]
+  ]
+ },
+ {
+  "name": "Upper second premolar.r",
+  "category": "tooth",
+  "type": "MESH",
+  "vertices": 779,
+  "triangles": 1554,
+  "center": [
+   -23.08,
+   -97.66,
+   67.85
+  ],
+  "bounds": [
+   [
+    -27.62,
+    -18.53
+   ],
+   [
+    -110.31,
+    -85.0
+   ],
+   [
+    64.13,
+    71.56
+   ]
+  ]
+ },
+ {
+  "name": "Upper second premolar.l",
+  "category": "tooth",
+  "type": "MESH",
+  "vertices": 779,
+  "triangles": 1554,
+  "center": [
+   23.08,
+   -97.66,
+   67.85
+  ],
+  "bounds": [
+   [
+    18.53,
+    27.62
+   ],
+   [
+    -110.31,
+    -85.0
+   ],
+   [
+    64.13,
+    71.56
+   ]
+  ]
+ },
+ {
+  "name": "Upper second molar tooth.r",
+  "category": "tooth",
+  "type": "MESH",
+  "vertices": 924,
+  "triangles": 1844,
+  "center": [
+   -23.68,
+   -93.75,
+   50.68
+  ],
+  "bounds": [
+   [
+    -29.5,
+    -17.86
+   ],
+   [
+    -104.81,
+    -82.68
+   ],
+   [
+    45.88,
+    55.49
+   ]
+  ]
+ },
+ {
+  "name": "Upper second molar tooth.l",
+  "category": "tooth",
+  "type": "MESH",
+  "vertices": 924,
+  "triangles": 1844,
+  "center": [
+   23.68,
+   -93.75,
+   50.68
+  ],
+  "bounds": [
+   [
+    17.86,
+    29.5
+   ],
+   [
+    -104.81,
+    -82.68
+   ],
+   [
+    45.88,
+    55.49
+   ]
+  ]
+ },
+ {
+  "name": "Upper medial incisor.r",
+  "category": "tooth",
+  "type": "MESH",
+  "vertices": 686,
+  "triangles": 1368,
+  "center": [
+   -4.45,
+   -100.83,
+   86.91
+  ],
+  "bounds": [
+   [
+    -8.85,
+    -0.06
+   ],
+   [
+    -113.71,
+    -87.95
+   ],
+   [
+    80.61,
+    93.2
+   ]
+  ]
+ },
+ {
+  "name": "Upper medial incisor.l",
+  "category": "tooth",
+  "type": "MESH",
+  "vertices": 686,
+  "triangles": 1368,
+  "center": [
+   4.45,
+   -100.83,
+   86.91
+  ],
+  "bounds": [
+   [
+    0.06,
+    8.85
+   ],
+   [
+    -113.71,
+    -87.95
+   ],
+   [
+    80.61,
+    93.2
+   ]
+  ]
+ },
+ {
+  "name": "Upper lateral incisor.r",
+  "category": "tooth",
+  "type": "MESH",
+  "vertices": 729,
+  "triangles": 1454,
+  "center": [
+   -11.19,
+   -100.31,
+   84.63
+  ],
+  "bounds": [
+   [
+    -15.87,
+    -6.5
+   ],
+   [
+    -114.41,
+    -86.2
+   ],
+   [
+    79.11,
+    90.15
+   ]
+  ]
+ },
+ {
+  "name": "Upper lateral incisor.l",
+  "category": "tooth",
+  "type": "MESH",
+  "vertices": 729,
+  "triangles": 1454,
+  "center": [
+   11.19,
+   -100.31,
+   84.63
+  ],
+  "bounds": [
+   [
+    6.5,
+    15.87
+   ],
+   [
+    -114.41,
+    -86.2
+   ],
+   [
+    79.11,
+    90.15
+   ]
+  ]
+ },
+ {
+  "name": "Upper first premolar.r",
+  "category": "tooth",
+  "type": "MESH",
+  "vertices": 844,
+  "triangles": 1684,
+  "center": [
+   -20.06,
+   -97.42,
+   73.84
+  ],
+  "bounds": [
+   [
+    -24.71,
+    -15.4
+   ],
+   [
+    -111.28,
+    -83.55
+   ],
+   [
+    69.91,
+    77.77
+   ]
+  ]
+ },
+ {
+  "name": "Upper first premolar.l",
+  "category": "tooth",
+  "type": "MESH",
+  "vertices": 844,
+  "triangles": 1684,
+  "center": [
+   20.06,
+   -97.42,
+   73.84
+  ],
+  "bounds": [
+   [
+    15.4,
+    24.71
+   ],
+   [
+    -111.28,
+    -83.55
+   ],
+   [
+    69.91,
+    77.77
+   ]
+  ]
+ },
+ {
+  "name": "Upper first molar tooth.r",
+  "category": "tooth",
+  "type": "MESH",
+  "vertices": 1090,
+  "triangles": 2176,
+  "center": [
+   -24.16,
+   -96.31,
+   59.14
+  ],
+  "bounds": [
+   [
+    -29.82,
+    -18.49
+   ],
+   [
+    -108.29,
+    -84.33
+   ],
+   [
+    53.51,
+    64.77
+   ]
+  ]
+ },
+ {
+  "name": "Upper first molar tooth.l",
+  "category": "tooth",
+  "type": "MESH",
+  "vertices": 1090,
+  "triangles": 2176,
+  "center": [
+   24.16,
+   -96.31,
+   59.14
+  ],
+  "bounds": [
+   [
+    18.49,
+    29.82
+   ],
+   [
+    -108.29,
+    -84.33
+   ],
+   [
+    53.51,
+    64.77
+   ]
+  ]
+ },
+ {
+  "name": "Upper canine.r",
+  "category": "tooth",
+  "type": "MESH",
+  "vertices": 737,
+  "triangles": 1470,
+  "center": [
+   -17.08,
+   -97.59,
+   81.41
+  ],
+  "bounds": [
+   [
+    -21.6,
+    -12.55
+   ],
+   [
+    -112.89,
+    -82.28
+   ],
+   [
+    76.86,
+    85.96
+   ]
+  ]
+ },
+ {
+  "name": "Upper canine.l",
+  "category": "tooth",
+  "type": "MESH",
+  "vertices": 737,
+  "triangles": 1470,
+  "center": [
+   17.08,
+   -97.59,
+   81.41
+  ],
+  "bounds": [
+   [
+    12.55,
+    21.6
+   ],
+   [
+    -112.89,
+    -82.28
+   ],
+   [
+    76.86,
+    85.96
+   ]
+  ]
+ },
+ {
+  "name": "Tuber of vermis",
+  "category": "cerebellum",
+  "type": "MESH",
+  "vertices": 591,
+  "triangles": 1178,
+  "center": [
+   -0.01,
+   -58.33,
+   -56.5
+  ],
+  "bounds": [
+   [
+    -7.58,
+    7.55
+   ],
+   [
+    -64.62,
+    -52.05
+   ],
+   [
+    -66.02,
+    -46.99
+   ]
+  ]
+ },
+ {
+  "name": "Trochlear nerve (IV).r",
+  "category": "nerve",
+  "type": "CURVE",
+  "vertices": 1908,
+  "triangles": 3764,
+  "center": [
+   -14.24,
+   -38.52,
+   20.93
+  ],
+  "bounds": [
+   [
+    -30.23,
+    1.75
+   ],
+   [
+    -43.88,
+    -33.16
+   ],
+   [
+    -16.0,
+    57.87
+   ]
+  ]
+ },
+ {
+  "name": "Trochlear nerve (IV).l",
+  "category": "nerve",
+  "type": "CURVE",
+  "vertices": 1908,
+  "triangles": 3764,
+  "center": [
+   14.24,
+   -38.52,
+   20.93
+  ],
+  "bounds": [
+   [
+    -1.75,
+    30.23
+   ],
+   [
+    -43.88,
+    -33.16
+   ],
+   [
+    -16.0,
+    57.87
+   ]
+  ]
+ },
+ {
+  "name": "Trochlea of superior oblique muscle.r",
+  "category": "orbit",
+  "type": "MESH",
+  "vertices": 98,
+  "triangles": 192,
+  "center": [
+   -14.59,
+   -33.09,
+   75.45
+  ],
+  "bounds": [
+   [
+    -16.7,
+    -12.48
+   ],
+   [
+    -34.9,
+    -31.28
+   ],
+   [
+    73.98,
+    76.92
+   ]
+  ]
+ },
+ {
+  "name": "Trochlea of superior oblique muscle.l",
+  "category": "orbit",
+  "type": "MESH",
+  "vertices": 98,
+  "triangles": 192,
+  "center": [
+   14.59,
+   -33.09,
+   75.45
+  ],
+  "bounds": [
+   [
+    12.48,
+    16.7
+   ],
+   [
+    -34.9,
+    -31.28
+   ],
+   [
+    73.98,
+    76.92
+   ]
+  ]
+ },
+ {
+  "name": "Trigeminal nerve (V).r",
+  "category": "nerve",
+  "type": "CURVE",
+  "vertices": 1224,
+  "triangles": 2344,
+  "center": [
+   -13.9,
+   -51.62,
+   -0.77
+  ],
+  "bounds": [
+   [
+    -23.27,
+    -4.53
+   ],
+   [
+    -63.36,
+    -39.87
+   ],
+   [
+    -16.93,
+    15.39
+   ]
+  ]
+ },
+ {
+  "name": "Trigeminal nerve (V).l",
+  "category": "nerve",
+  "type": "CURVE",
+  "vertices": 1224,
+  "triangles": 2344,
+  "center": [
+   13.9,
+   -51.62,
+   -0.77
+  ],
+  "bounds": [
+   [
+    4.53,
+    23.27
+   ],
+   [
+    -63.36,
+    -39.87
+   ],
+   [
+    -16.93,
+    15.39
+   ]
+  ]
+ },
+ {
+  "name": "Triangular part of inferior frontal gyrus.r",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 254,
+  "triangles": 504,
+  "center": [
+   -47.85,
+   3.41,
+   36.22
+  ],
+  "bounds": [
+   [
+    -58.08,
+    -37.61
+   ],
+   [
+    -14.25,
+    21.08
+   ],
+   [
+    25.0,
+    47.44
+   ]
+  ]
+ },
+ {
+  "name": "Triangular part of inferior frontal gyrus.l",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 254,
+  "triangles": 504,
+  "center": [
+   47.85,
+   3.41,
+   36.22
+  ],
+  "bounds": [
+   [
+    37.61,
+    58.08
+   ],
+   [
+    -14.25,
+    21.08
+   ],
+   [
+    25.0,
+    47.44
+   ]
+  ]
+ },
+ {
+  "name": "Transverse temporal gyri.r",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 119,
+  "triangles": 234,
+  "center": [
+   -46.23,
+   -7.23,
+   -11.19
+  ],
+  "bounds": [
+   [
+    -56.87,
+    -35.59
+   ],
+   [
+    -14.44,
+    -0.02
+   ],
+   [
+    -23.92,
+    1.53
+   ]
+  ]
+ },
+ {
+  "name": "Transverse temporal gyri.l",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 119,
+  "triangles": 234,
+  "center": [
+   46.23,
+   -7.23,
+   -11.19
+  ],
+  "bounds": [
+   [
+    35.59,
+    56.87
+   ],
+   [
+    -14.44,
+    -0.02
+   ],
+   [
+    -23.92,
+    1.53
+   ]
+  ]
+ },
+ {
+  "name": "Transverse occipital sulcus.r",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 345,
+  "triangles": 686,
+  "center": [
+   -22.89,
+   -12.11,
+   -74.71
+  ],
+  "bounds": [
+   [
+    -31.49,
+    -14.29
+   ],
+   [
+    -26.53,
+    2.31
+   ],
+   [
+    -87.29,
+    -62.12
+   ]
+  ]
+ },
+ {
+  "name": "Transverse occipital sulcus.l",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 345,
+  "triangles": 686,
+  "center": [
+   22.89,
+   -12.11,
+   -74.71
+  ],
+  "bounds": [
+   [
+    14.29,
+    31.49
+   ],
+   [
+    -26.53,
+    2.31
+   ],
+   [
+    -87.29,
+    -62.12
+   ]
+  ]
+ },
+ {
+  "name": "Transverse frontopolar gyrus and sulcus*.r",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 123,
+  "triangles": 242,
+  "center": [
+   -13.6,
+   0.72,
+   72.89
+  ],
+  "bounds": [
+   [
+    -25.18,
+    -2.02
+   ],
+   [
+    -7.19,
+    8.63
+   ],
+   [
+    64.2,
+    81.57
+   ]
+  ]
+ },
+ {
+  "name": "Transverse frontopolar gyrus and sulcus*.l",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 123,
+  "triangles": 242,
+  "center": [
+   13.6,
+   0.72,
+   72.89
+  ],
+  "bounds": [
+   [
+    2.02,
+    25.18
+   ],
+   [
+    -7.19,
+    8.63
+   ],
+   [
+    64.2,
+    81.57
+   ]
+  ]
+ },
+ {
+  "name": "Tonsil of cerebellum.r",
+  "category": "cerebellum",
+  "type": "MESH",
+  "vertices": 1821,
+  "triangles": 3638,
+  "center": [
+   -12.45,
+   -69.54,
+   -32.23
+  ],
+  "bounds": [
+   [
+    -23.33,
+    -1.57
+   ],
+   [
+    -79.77,
+    -59.32
+   ],
+   [
+    -43.42,
+    -21.04
+   ]
+  ]
+ },
+ {
+  "name": "Tonsil of cerebellum.l",
+  "category": "cerebellum",
+  "type": "MESH",
+  "vertices": 1821,
+  "triangles": 3638,
+  "center": [
+   12.45,
+   -69.54,
+   -32.23
+  ],
+  "bounds": [
+   [
+    1.57,
+    23.33
+   ],
+   [
+    -79.77,
+    -59.32
+   ],
+   [
+    -43.42,
+    -21.04
+   ]
+  ]
+ },
+ {
+  "name": "Thalamus.r",
+  "category": "deep",
+  "type": "MESH",
+  "vertices": 381,
+  "triangles": 758,
+  "center": [
+   -11.95,
+   -14.4,
+   -8.09
+  ],
+  "bounds": [
+   [
+    -23.29,
+    -0.61
+   ],
+   [
+    -25.85,
+    -2.95
+   ],
+   [
+    -25.81,
+    9.62
+   ]
+  ]
+ },
+ {
+  "name": "Thalamus.l",
+  "category": "deep",
+  "type": "MESH",
+  "vertices": 381,
+  "triangles": 758,
+  "center": [
+   11.95,
+   -14.4,
+   -8.09
+  ],
+  "bounds": [
+   [
+    0.61,
+    23.29
+   ],
+   [
+    -25.85,
+    -2.95
+   ],
+   [
+    -25.81,
+    9.62
+   ]
+  ]
+ },
+ {
+  "name": "Tentorium cerebelli.r",
+  "category": "dura",
+  "type": "MESH",
+  "vertices": 2242,
+  "triangles": 4480,
+  "center": [
+   -29.89,
+   -40.81,
+   -40.46
+  ],
+  "bounds": [
+   [
+    -60.34,
+    0.56
+   ],
+   [
+    -56.27,
+    -25.35
+   ],
+   [
+    -85.7,
+    4.78
+   ]
+  ]
+ },
+ {
+  "name": "Tentorium cerebelli.l",
+  "category": "dura",
+  "type": "MESH",
+  "vertices": 2242,
+  "triangles": 4480,
+  "center": [
+   29.89,
+   -40.81,
+   -40.46
+  ],
+  "bounds": [
+   [
+    -0.56,
+    60.34
+   ],
+   [
+    -56.27,
+    -25.35
+   ],
+   [
+    -85.7,
+    4.78
+   ]
+  ]
+ },
+ {
+  "name": "Temporal pole.r",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 274,
+  "triangles": 523,
+  "center": [
+   -37.0,
+   -43.49,
+   16.17
+  ],
+  "bounds": [
+   [
+    -51.76,
+    -22.24
+   ],
+   [
+    -57.34,
+    -29.64
+   ],
+   [
+    -4.83,
+    37.17
+   ]
+  ]
+ },
+ {
+  "name": "Temporal pole.l",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 274,
+  "triangles": 523,
+  "center": [
+   37.0,
+   -43.49,
+   16.17
+  ],
+  "bounds": [
+   [
+    22.24,
+    51.76
+   ],
+   [
+    -57.34,
+    -29.64
+   ],
+   [
+    -4.83,
+    37.17
+   ]
+  ]
+ },
+ {
+  "name": "Temporal branches of middle cerebral artery.r",
+  "category": "artery",
+  "type": "CURVE",
+  "vertices": 2616,
+  "triangles": 5184,
+  "center": [
+   -61.91,
+   -24.6,
+   -19.64
+  ],
+  "bounds": [
+   [
+    -70.99,
+    -52.82
+   ],
+   [
+    -47.04,
+    -2.16
+   ],
+   [
+    -42.37,
+    3.09
+   ]
+  ]
+ },
+ {
+  "name": "Temporal branches of middle cerebral artery.l",
+  "category": "artery",
+  "type": "CURVE",
+  "vertices": 2616,
+  "triangles": 5184,
+  "center": [
+   61.91,
+   -24.6,
+   -19.64
+  ],
+  "bounds": [
+   [
+    52.82,
+    70.99
+   ],
+   [
+    -47.04,
+    -2.16
+   ],
+   [
+    -42.37,
+    3.09
+   ]
+  ]
+ },
+ {
+  "name": "Temporal bone.r",
+  "category": "bone",
+  "type": "MESH",
+  "vertices": 7051,
+  "triangles": 14094,
+  "center": [
+   -41.03,
+   -54.06,
+   -3.39
+  ],
+  "bounds": [
+   [
+    -72.42,
+    -9.65
+   ],
+   [
+    -91.27,
+    -16.85
+   ],
+   [
+    -51.56,
+    44.78
+   ]
+  ]
+ },
+ {
+  "name": "Temporal bone.l",
+  "category": "bone",
+  "type": "MESH",
+  "vertices": 7051,
+  "triangles": 14094,
+  "center": [
+   41.03,
+   -54.06,
+   -3.39
+  ],
+  "bounds": [
+   [
+    9.65,
+    72.42
+   ],
+   [
+    -91.27,
+    -16.85
+   ],
+   [
+    -51.56,
+    44.78
+   ]
+  ]
+ },
+ {
+  "name": "Supramarginal gyrus.r",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 756,
+  "triangles": 1510,
+  "center": [
+   -53.01,
+   15.52,
+   -35.02
+  ],
+  "bounds": [
+   [
+    -68.12,
+    -37.9
+   ],
+   [
+    -6.47,
+    37.5
+   ],
+   [
+    -59.52,
+    -10.53
+   ]
+  ]
+ },
+ {
+  "name": "Supramarginal gyrus.l",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 756,
+  "triangles": 1510,
+  "center": [
+   53.01,
+   15.52,
+   -35.02
+  ],
+  "bounds": [
+   [
+    37.9,
+    68.12
+   ],
+   [
+    -6.47,
+    37.5
+   ],
+   [
+    -59.52,
+    -10.53
+   ]
+  ]
+ },
+ {
+  "name": "Superior temporal sulcus.r",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 1189,
+  "triangles": 2374,
+  "center": [
+   -47.03,
+   -9.72,
+   -32.4
+  ],
+  "bounds": [
+   [
+    -64.92,
+    -29.14
+   ],
+   [
+    -35.48,
+    16.04
+   ],
+   [
+    -81.73,
+    16.92
+   ]
+  ]
+ },
+ {
+  "name": "Superior temporal sulcus.l",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 1189,
+  "triangles": 2374,
+  "center": [
+   47.03,
+   -9.72,
+   -32.4
+  ],
+  "bounds": [
+   [
+    29.14,
+    64.92
+   ],
+   [
+    -35.48,
+    16.04
+   ],
+   [
+    -81.73,
+    16.92
+   ]
+  ]
+ },
+ {
+  "name": "Superior temporal gyrus (Lateral part).r",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 538,
+  "triangles": 1072,
+  "center": [
+   -56.18,
+   -17.66,
+   -6.51
+  ],
+  "bounds": [
+   [
+    -68.89,
+    -43.48
+   ],
+   [
+    -39.09,
+    3.77
+   ],
+   [
+    -47.68,
+    34.65
+   ]
+  ]
+ },
+ {
+  "name": "Superior temporal gyrus (Lateral part).l",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 538,
+  "triangles": 1072,
+  "center": [
+   56.18,
+   -17.66,
+   -6.51
+  ],
+  "bounds": [
+   [
+    43.48,
+    68.89
+   ],
+   [
+    -39.09,
+    3.77
+   ],
+   [
+    -47.68,
+    34.65
+   ]
+  ]
+ },
+ {
+  "name": "Superior semilunar lobule.r",
+  "category": "cerebellum",
+  "type": "MESH",
+  "vertices": 4368,
+  "triangles": 8688,
+  "center": [
+   -24.63,
+   -52.47,
+   -50.89
+  ],
+  "bounds": [
+   [
+    -49.13,
+    -0.14
+   ],
+   [
+    -62.13,
+    -42.8
+   ],
+   [
+    -80.13,
+    -21.65
+   ]
+  ]
+ },
+ {
+  "name": "Superior semilunar lobule.l",
+  "category": "cerebellum",
+  "type": "MESH",
+  "vertices": 4368,
+  "triangles": 8688,
+  "center": [
+   24.63,
+   -52.47,
+   -50.89
+  ],
+  "bounds": [
+   [
+    0.14,
+    49.13
+   ],
+   [
+    -62.13,
+    -42.8
+   ],
+   [
+    -80.13,
+    -21.65
+   ]
+  ]
+ },
+ {
+  "name": "Superior rectus muscle.r",
+  "category": "orbit",
+  "type": "MESH",
+  "vertices": 644,
+  "triangles": 1284,
+  "center": [
+   -25.36,
+   -38.42,
+   53.15
+  ],
+  "bounds": [
+   [
+    -36.8,
+    -13.91
+   ],
+   [
+    -41.65,
+    -35.19
+   ],
+   [
+    32.84,
+    73.45
+   ]
+  ]
+ },
+ {
+  "name": "Superior rectus muscle.l",
+  "category": "orbit",
+  "type": "MESH",
+  "vertices": 644,
+  "triangles": 1284,
+  "center": [
+   25.36,
+   -38.42,
+   53.15
+  ],
+  "bounds": [
+   [
+    13.91,
+    36.8
+   ],
+   [
+    -41.65,
+    -35.19
+   ],
+   [
+    32.84,
+    73.45
+   ]
+  ]
+ },
+ {
+  "name": "Superior petrosal sinus.r",
+  "category": "vein",
+  "type": "CURVE",
+  "vertices": 876,
+  "triangles": 1728,
+  "center": [
+   -37.01,
+   -47.2,
+   -16.86
+  ],
+  "bounds": [
+   [
+    -60.48,
+    -13.55
+   ],
+   [
+    -51.5,
+    -42.91
+   ],
+   [
+    -39.46,
+    5.73
+   ]
+  ]
+ },
+ {
+  "name": "Superior petrosal sinus.l",
+  "category": "vein",
+  "type": "CURVE",
+  "vertices": 876,
+  "triangles": 1728,
+  "center": [
+   37.01,
+   -47.2,
+   -16.86
+  ],
+  "bounds": [
+   [
+    13.55,
+    60.48
+   ],
+   [
+    -51.5,
+    -42.91
+   ],
+   [
+    -39.46,
+    5.73
+   ]
+  ]
+ },
+ {
+  "name": "Superior parietal lobule.r",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 603,
+  "triangles": 1199,
+  "center": [
+   -20.49,
+   30.55,
+   -64.83
+  ],
+  "bounds": [
+   [
+    -38.63,
+    -2.35
+   ],
+   [
+    9.64,
+    51.46
+   ],
+   [
+    -87.28,
+    -42.37
+   ]
+  ]
+ },
+ {
+  "name": "Superior parietal lobule.l",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 603,
+  "triangles": 1199,
+  "center": [
+   20.49,
+   30.55,
+   -64.83
+  ],
+  "bounds": [
+   [
+    2.35,
+    38.63
+   ],
+   [
+    9.64,
+    51.46
+   ],
+   [
+    -87.28,
+    -42.37
+   ]
+  ]
+ },
+ {
+  "name": "Superior ophthalmic vein.r",
+  "category": "vein",
+  "type": "CURVE",
+  "vertices": 588,
+  "triangles": 1152,
+  "center": [
+   -19.67,
+   -35.42,
+   52.72
+  ],
+  "bounds": [
+   [
+    -25.86,
+    -13.49
+   ],
+   [
+    -43.12,
+    -27.72
+   ],
+   [
+    22.17,
+    83.26
+   ]
+  ]
+ },
+ {
+  "name": "Superior ophthalmic vein.l",
+  "category": "vein",
+  "type": "CURVE",
+  "vertices": 588,
+  "triangles": 1152,
+  "center": [
+   19.67,
+   -35.42,
+   52.72
+  ],
+  "bounds": [
+   [
+    13.49,
+    25.86
+   ],
+   [
+    -43.12,
+    -27.72
+   ],
+   [
+    22.17,
+    83.26
+   ]
+  ]
+ },
+ {
+  "name": "Superior occipital gyri.r",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 337,
+  "triangles": 670,
+  "center": [
+   -16.73,
+   -1.31,
+   -87.08
+  ],
+  "bounds": [
+   [
+    -31.49,
+    -1.97
+   ],
+   [
+    -21.15,
+    18.53
+   ],
+   [
+    -98.97,
+    -75.19
+   ]
+  ]
+ },
+ {
+  "name": "Superior occipital gyri.l",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 337,
+  "triangles": 670,
+  "center": [
+   16.73,
+   -1.31,
+   -87.08
+  ],
+  "bounds": [
+   [
+    1.97,
+    31.49
+   ],
+   [
+    -21.15,
+    18.53
+   ],
+   [
+    -98.97,
+    -75.19
+   ]
+  ]
+ },
+ {
+  "name": "Superior oblique muscle.r",
+  "category": "orbit",
+  "type": "MESH",
+  "vertices": 877,
+  "triangles": 1750,
+  "center": [
+   -26.6,
+   -38.64,
+   55.53
+  ],
+  "bounds": [
+   [
+    -40.57,
+    -12.64
+   ],
+   [
+    -44.58,
+    -32.7
+   ],
+   [
+    33.89,
+    77.17
+   ]
+  ]
+ },
+ {
+  "name": "Superior oblique muscle.l",
+  "category": "orbit",
+  "type": "MESH",
+  "vertices": 877,
+  "triangles": 1750,
+  "center": [
+   26.6,
+   -38.64,
+   55.53
+  ],
+  "bounds": [
+   [
+    12.64,
+    40.57
+   ],
+   [
+    -44.58,
+    -32.7
+   ],
+   [
+    33.89,
+    77.17
+   ]
+  ]
+ },
+ {
+  "name": "Superior frontal sulcus.r",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 647,
+  "triangles": 1290,
+  "center": [
+   -20.49,
+   35.0,
+   21.72
+  ],
+  "bounds": [
+   [
+    -32.67,
+    -8.31
+   ],
+   [
+    15.21,
+    54.8
+   ],
+   [
+    -11.96,
+    55.4
+   ]
+  ]
+ },
+ {
+  "name": "Superior frontal sulcus.l",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 647,
+  "triangles": 1290,
+  "center": [
+   20.49,
+   35.0,
+   21.72
+  ],
+  "bounds": [
+   [
+    8.31,
+    32.67
+   ],
+   [
+    15.21,
+    54.8
+   ],
+   [
+    -11.96,
+    55.4
+   ]
+  ]
+ },
+ {
+  "name": "Superior frontal gyrus.r",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 1872,
+  "triangles": 3735,
+  "center": [
+   -14.1,
+   23.62,
+   24.26
+  ],
+  "bounds": [
+   [
+    -28.14,
+    -0.05
+   ],
+   [
+    -11.95,
+    59.18
+   ],
+   [
+    -33.02,
+    81.53
+   ]
+  ]
+ },
+ {
+  "name": "Superior frontal gyrus.l",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 1872,
+  "triangles": 3735,
+  "center": [
+   14.1,
+   23.62,
+   24.26
+  ],
+  "bounds": [
+   [
+    0.05,
+    28.14
+   ],
+   [
+    -11.95,
+    59.18
+   ],
+   [
+    -33.02,
+    81.53
+   ]
+  ]
+ },
+ {
+  "name": "Superior colliculus.r",
+  "category": "stem",
+  "type": "MESH",
+  "vertices": 233,
+  "triangles": 458,
+  "center": [
+   -8.7,
+   -27.47,
+   -16.62
+  ],
+  "bounds": [
+   [
+    -17.21,
+    -0.19
+   ],
+   [
+    -30.67,
+    -24.28
+   ],
+   [
+    -19.86,
+    -13.39
+   ]
+  ]
+ },
+ {
+  "name": "Superior colliculus.l",
+  "category": "stem",
+  "type": "MESH",
+  "vertices": 233,
+  "triangles": 458,
+  "center": [
+   8.7,
+   -27.47,
+   -16.62
+  ],
+  "bounds": [
+   [
+    0.19,
+    17.21
+   ],
+   [
+    -30.67,
+    -24.28
+   ],
+   [
+    -19.86,
+    -13.39
+   ]
+  ]
+ },
+ {
+  "name": "Superior cerebellar peduncle.r",
+  "category": "cerebellum",
+  "type": "MESH",
+  "vertices": 4344,
+  "triangles": 8474,
+  "center": [
+   -9.2,
+   -48.0,
+   -25.36
+  ],
+  "bounds": [
+   [
+    -16.06,
+    -2.33
+   ],
+   [
+    -58.62,
+    -37.37
+   ],
+   [
+    -40.37,
+    -10.35
+   ]
+  ]
+ },
+ {
+  "name": "Superior cerebellar peduncle.l",
+  "category": "cerebellum",
+  "type": "MESH",
+  "vertices": 4344,
+  "triangles": 8474,
+  "center": [
+   9.2,
+   -48.0,
+   -25.36
+  ],
+  "bounds": [
+   [
+    2.33,
+    16.06
+   ],
+   [
+    -58.62,
+    -37.37
+   ],
+   [
+    -40.37,
+    -10.35
+   ]
+  ]
+ },
+ {
+  "name": "Superior cerebellar artery.r",
+  "category": "artery",
+  "type": "CURVE",
+  "vertices": 5520,
+  "triangles": 10944,
+  "center": [
+   -22.25,
+   -41.56,
+   -28.23
+  ],
+  "bounds": [
+   [
+    -45.4,
+    0.91
+   ],
+   [
+    -56.95,
+    -26.17
+   ],
+   [
+    -65.61,
+    9.15
+   ]
+  ]
+ },
+ {
+  "name": "Superior cerebellar artery.l",
+  "category": "artery",
+  "type": "CURVE",
+  "vertices": 5520,
+  "triangles": 10944,
+  "center": [
+   22.25,
+   -41.56,
+   -28.23
+  ],
+  "bounds": [
+   [
+    -0.91,
+    45.4
+   ],
+   [
+    -56.95,
+    -26.17
+   ],
+   [
+    -65.61,
+    9.15
+   ]
+  ]
+ },
+ {
+  "name": "Sulcus interm_prim-Jensen.r",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 182,
+  "triangles": 360,
+  "center": [
+   -45.96,
+   12.1,
+   -51.56
+  ],
+  "bounds": [
+   [
+    -52.8,
+    -39.12
+   ],
+   [
+    -2.05,
+    26.25
+   ],
+   [
+    -59.82,
+    -43.31
+   ]
+  ]
+ },
+ {
+  "name": "Sulcus interm_prim-Jensen.l",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 182,
+  "triangles": 360,
+  "center": [
+   45.96,
+   12.1,
+   -51.56
+  ],
+  "bounds": [
+   [
+    39.12,
+    52.8
+   ],
+   [
+    -2.05,
+    26.25
+   ],
+   [
+    -59.82,
+    -43.31
+   ]
+  ]
+ },
+ {
+  "name": "Subparietal sulcus.r",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 283,
+  "triangles": 561,
+  "center": [
+   -7.53,
+   14.64,
+   -51.04
+  ],
+  "bounds": [
+   [
+    -15.06,
+    -0.01
+   ],
+   [
+    -3.27,
+    32.56
+   ],
+   [
+    -64.32,
+    -37.77
+   ]
+  ]
+ },
+ {
+  "name": "Subparietal sulcus.l",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 283,
+  "triangles": 561,
+  "center": [
+   7.53,
+   14.64,
+   -51.04
+  ],
+  "bounds": [
+   [
+    0.01,
+    15.06
+   ],
+   [
+    -3.27,
+    32.56
+   ],
+   [
+    -64.32,
+    -37.77
+   ]
+  ]
+ },
+ {
+  "name": "Straight gyrus (Gyrus rectus).r",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 256,
+  "triangles": 508,
+  "center": [
+   -6.29,
+   -18.0,
+   48.91
+  ],
+  "bounds": [
+   [
+    -12.29,
+    -0.29
+   ],
+   [
+    -30.38,
+    -5.62
+   ],
+   [
+    17.01,
+    80.81
+   ]
+  ]
+ },
+ {
+  "name": "Straight gyrus (Gyrus rectus).l",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 256,
+  "triangles": 508,
+  "center": [
+   6.29,
+   -18.0,
+   48.91
+  ],
+  "bounds": [
+   [
+    0.29,
+    12.29
+   ],
+   [
+    -30.38,
+    -5.62
+   ],
+   [
+    17.01,
+    80.81
+   ]
+  ]
+ },
+ {
+  "name": "Sinus of sphenoid bone",
+  "category": "sinus",
+  "type": "MESH",
+  "vertices": 210,
+  "triangles": 384,
+  "center": [
+   0.0,
+   -45.86,
+   30.91
+  ],
+  "bounds": [
+   [
+    -14.12,
+    14.12
+   ],
+   [
+    -56.7,
+    -35.01
+   ],
+   [
+    22.1,
+    39.71
+   ]
+  ]
+ },
+ {
+  "name": "Sinus of frontal bone",
+  "category": "sinus",
+  "type": "MESH",
+  "vertices": 770,
+  "triangles": 1504,
+  "center": [
+   0.0,
+   -23.0,
+   80.25
+  ],
+  "bounds": [
+   [
+    -25.19,
+    25.19
+   ],
+   [
+    -38.62,
+    -7.39
+   ],
+   [
+    74.44,
+    86.06
+   ]
+  ]
+ },
+ {
+  "name": "Sensory root of trigeminal nerve.r",
+  "category": "nerve",
+  "type": "MESH",
+  "vertices": 1378,
+  "triangles": 2752,
+  "center": [
+   -4.55,
+   -63.8,
+   -20.91
+  ],
+  "bounds": [
+   [
+    -6.74,
+    -2.35
+   ],
+   [
+    -97.19,
+    -30.42
+   ],
+   [
+    -34.06,
+    -7.75
+   ]
+  ]
+ },
+ {
+  "name": "Sensory root of trigeminal nerve.l",
+  "category": "nerve",
+  "type": "MESH",
+  "vertices": 1378,
+  "triangles": 2752,
+  "center": [
+   4.55,
+   -63.8,
+   -20.91
+  ],
+  "bounds": [
+   [
+    2.35,
+    6.74
+   ],
+   [
+    -97.19,
+    -30.42
+   ],
+   [
+    -34.06,
+    -7.75
+   ]
+  ]
+ },
+ {
+  "name": "Sclera.r",
+  "category": "eye",
+  "type": "MESH",
+  "vertices": 2305,
+  "triangles": 4544,
+  "center": [
+   -30.55,
+   -49.3,
+   63.31
+  ],
+  "bounds": [
+   [
+    -43.67,
+    -17.43
+   ],
+   [
+    -62.42,
+    -36.17
+   ],
+   [
+    50.82,
+    75.79
+   ]
+  ]
+ },
+ {
+  "name": "Sclera.l",
+  "category": "eye",
+  "type": "MESH",
+  "vertices": 2305,
+  "triangles": 4544,
+  "center": [
+   30.55,
+   -49.3,
+   63.31
+  ],
+  "bounds": [
+   [
+    17.43,
+    43.67
+   ],
+   [
+    -62.42,
+    -36.17
+   ],
+   [
+    50.82,
+    75.79
+   ]
+  ]
+ },
+ {
+  "name": "Retina.r",
+  "category": "eye",
+  "type": "MESH",
+  "vertices": 3154,
+  "triangles": 6304,
+  "center": [
+   -30.55,
+   -49.3,
+   61.56
+  ],
+  "bounds": [
+   [
+    -42.49,
+    -18.61
+   ],
+   [
+    -61.23,
+    -37.36
+   ],
+   [
+    52.02,
+    71.11
+   ]
+  ]
+ },
+ {
+  "name": "Retina.l",
+  "category": "eye",
+  "type": "MESH",
+  "vertices": 3154,
+  "triangles": 6304,
+  "center": [
+   30.55,
+   -49.3,
+   61.79
+  ],
+  "bounds": [
+   [
+    19.7,
+    41.4
+   ],
+   [
+    -60.15,
+    -38.44
+   ],
+   [
+    53.11,
+    70.47
+   ]
+  ]
+ },
+ {
+  "name": "Pyramis of vermis",
+  "category": "cerebellum",
+  "type": "MESH",
+  "vertices": 593,
+  "triangles": 1182,
+  "center": [
+   0.01,
+   -63.63,
+   -51.82
+  ],
+  "bounds": [
+   [
+    -6.3,
+    6.32
+   ],
+   [
+    -71.91,
+    -55.34
+   ],
+   [
+    -59.67,
+    -43.98
+   ]
+  ]
+ },
+ {
+  "name": "Putamen.r",
+  "category": "deep",
+  "type": "MESH",
+  "vertices": 577,
+  "triangles": 1150,
+  "center": [
+   -25.27,
+   -9.93,
+   8.21
+  ],
+  "bounds": [
+   [
+    -34.11,
+    -16.42
+   ],
+   [
+    -22.52,
+    2.67
+   ],
+   [
+    -12.61,
+    29.04
+   ]
+  ]
+ },
+ {
+  "name": "Putamen.l",
+  "category": "deep",
+  "type": "MESH",
+  "vertices": 577,
+  "triangles": 1150,
+  "center": [
+   25.27,
+   -9.93,
+   8.21
+  ],
+  "bounds": [
+   [
+    16.42,
+    34.11
+   ],
+   [
+    -22.52,
+    2.67
+   ],
+   [
+    -12.61,
+    29.04
+   ]
+  ]
+ },
+ {
+  "name": "Precentral sulcus (Superior part)*.r",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 286,
+  "triangles": 568,
+  "center": [
+   -29.73,
+   37.23,
+   -7.44
+  ],
+  "bounds": [
+   [
+    -49.33,
+    -10.13
+   ],
+   [
+    23.83,
+    50.62
+   ],
+   [
+    -17.67,
+    2.79
+   ]
+  ]
+ },
+ {
+  "name": "Precentral sulcus (Superior part)*.l",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 286,
+  "triangles": 568,
+  "center": [
+   29.73,
+   37.23,
+   -7.44
+  ],
+  "bounds": [
+   [
+    10.13,
+    49.33
+   ],
+   [
+    23.83,
+    50.62
+   ],
+   [
+    -17.67,
+    2.79
+   ]
+  ]
+ },
+ {
+  "name": "Precentral sulcus (inferior part)*.r",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 391,
+  "triangles": 780,
+  "center": [
+   -41.7,
+   18.6,
+   12.11
+  ],
+  "bounds": [
+   [
+    -54.9,
+    -28.5
+   ],
+   [
+    -5.34,
+    42.55
+   ],
+   [
+    -0.54,
+    24.76
+   ]
+  ]
+ },
+ {
+  "name": "Precentral sulcus (inferior part)*.l",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 391,
+  "triangles": 780,
+  "center": [
+   41.7,
+   18.6,
+   12.11
+  ],
+  "bounds": [
+   [
+    28.5,
+    54.9
+   ],
+   [
+    -5.34,
+    42.55
+   ],
+   [
+    -0.54,
+    24.76
+   ]
+  ]
+ },
+ {
+  "name": "Posterior quadrangular lobule.r",
+  "category": "cerebellum",
+  "type": "MESH",
+  "vertices": 1816,
+  "triangles": 3618,
+  "center": [
+   -19.49,
+   -44.87,
+   -39.81
+  ],
+  "bounds": [
+   [
+    -40.64,
+    1.65
+   ],
+   [
+    -56.5,
+    -33.23
+   ],
+   [
+    -62.36,
+    -17.27
+   ]
+  ]
+ },
+ {
+  "name": "Posterior quadrangular lobule.l",
+  "category": "cerebellum",
+  "type": "MESH",
+  "vertices": 1816,
+  "triangles": 3618,
+  "center": [
+   19.49,
+   -44.87,
+   -39.81
+  ],
+  "bounds": [
+   [
+    -1.65,
+    40.64
+   ],
+   [
+    -56.5,
+    -33.23
+   ],
+   [
+    -62.36,
+    -17.27
+   ]
+  ]
+ },
+ {
+  "name": "Posterior nucleus of vagus nerve.r",
+  "category": "nucleus",
+  "type": "MESH",
+  "vertices": 386,
+  "triangles": 768,
+  "center": [
+   -1.74,
+   -68.4,
+   -19.84
+  ],
+  "bounds": [
+   [
+    -2.32,
+    -1.15
+   ],
+   [
+    -72.0,
+    -64.8
+   ],
+   [
+    -21.38,
+    -18.29
+   ]
+  ]
+ },
+ {
+  "name": "Posterior nucleus of vagus nerve.l",
+  "category": "nucleus",
+  "type": "MESH",
+  "vertices": 386,
+  "triangles": 768,
+  "center": [
+   1.74,
+   -68.4,
+   -19.84
+  ],
+  "bounds": [
+   [
+    1.15,
+    2.32
+   ],
+   [
+    -72.0,
+    -64.8
+   ],
+   [
+    -21.38,
+    -18.29
+   ]
+  ]
+ },
+ {
+  "name": "Postcentral sulcus.r",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 595,
+  "triangles": 1189,
+  "center": [
+   -39.82,
+   27.61,
+   -29.23
+  ],
+  "bounds": [
+   [
+    -60.94,
+    -18.69
+   ],
+   [
+    5.24,
+    49.97
+   ],
+   [
+    -49.52,
+    -8.94
+   ]
+  ]
+ },
+ {
+  "name": "Postcentral sulcus.l",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 595,
+  "triangles": 1189,
+  "center": [
+   39.82,
+   27.61,
+   -29.23
+  ],
+  "bounds": [
+   [
+    18.69,
+    60.94
+   ],
+   [
+    5.24,
+    49.97
+   ],
+   [
+    -49.52,
+    -8.94
+   ]
+  ]
+ },
+ {
+  "name": "Pons.r",
+  "category": "stem",
+  "type": "MESH",
+  "vertices": 5086,
+  "triangles": 10171,
+  "center": [
+   -10.24,
+   -50.85,
+   -8.42
+  ],
+  "bounds": [
+   [
+    -20.52,
+    0.04
+   ],
+   [
+    -64.73,
+    -36.96
+   ],
+   [
+    -25.12,
+    8.28
+   ]
+  ]
+ },
+ {
+  "name": "Pons.l",
+  "category": "stem",
+  "type": "MESH",
+  "vertices": 5086,
+  "triangles": 10171,
+  "center": [
+   10.24,
+   -50.85,
+   -8.42
+  ],
+  "bounds": [
+   [
+    -0.04,
+    20.52
+   ],
+   [
+    -64.73,
+    -36.96
+   ],
+   [
+    -25.12,
+    8.28
+   ]
+  ]
+ },
+ {
+  "name": "Pineal gland",
+  "category": "deep",
+  "type": "MESH",
+  "vertices": 319,
+  "triangles": 634,
+  "center": [
+   0.0,
+   -24.01,
+   -22.89
+  ],
+  "bounds": [
+   [
+    -3.18,
+    3.18
+   ],
+   [
+    -27.72,
+    -20.29
+   ],
+   [
+    -28.43,
+    -17.34
+   ]
+  ]
+ },
+ {
+  "name": "Parieto-occipital sulcus.r",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 824,
+  "triangles": 1636,
+  "center": [
+   -17.38,
+   7.45,
+   -64.46
+  ],
+  "bounds": [
+   [
+    -28.61,
+    -6.15
+   ],
+   [
+    -17.92,
+    32.81
+   ],
+   [
+    -79.39,
+    -49.53
+   ]
+  ]
+ },
+ {
+  "name": "Parieto-occipital sulcus.l",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 824,
+  "triangles": 1636,
+  "center": [
+   17.38,
+   7.45,
+   -64.46
+  ],
+  "bounds": [
+   [
+    6.15,
+    28.61
+   ],
+   [
+    -17.92,
+    32.81
+   ],
+   [
+    -79.39,
+    -49.53
+   ]
+  ]
+ },
+ {
+  "name": "Paracentral sulcus.r",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 338,
+  "triangles": 668,
+  "center": [
+   -25.1,
+   17.35,
+   53.5
+  ],
+  "bounds": [
+   [
+    -34.56,
+    -15.64
+   ],
+   [
+    0.38,
+    34.32
+   ],
+   [
+    35.38,
+    71.62
+   ]
+  ]
+ },
+ {
+  "name": "Paracentral sulcus.l",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 338,
+  "triangles": 668,
+  "center": [
+   25.1,
+   17.35,
+   53.5
+  ],
+  "bounds": [
+   [
+    15.64,
+    34.56
+   ],
+   [
+    0.38,
+    34.32
+   ],
+   [
+    35.38,
+    71.62
+   ]
+  ]
+ },
+ {
+  "name": "Opercular part of inferior frontal gyrus.r",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 372,
+  "triangles": 740,
+  "center": [
+   -46.91,
+   4.35,
+   21.95
+  ],
+  "bounds": [
+   [
+    -58.23,
+    -35.6
+   ],
+   [
+    -15.3,
+    24.0
+   ],
+   [
+    2.04,
+    41.86
+   ]
+  ]
+ },
+ {
+  "name": "Opercular part of inferior frontal gyrus.l",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 372,
+  "triangles": 740,
+  "center": [
+   46.91,
+   4.35,
+   21.95
+  ],
+  "bounds": [
+   [
+    35.6,
+    58.23
+   ],
+   [
+    -15.3,
+    24.0
+   ],
+   [
+    2.04,
+    41.86
+   ]
+  ]
+ },
+ {
+  "name": "Olfactory sulcus.r",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 275,
+  "triangles": 548,
+  "center": [
+   -15.33,
+   -23.06,
+   38.16
+  ],
+  "bounds": [
+   [
+    -26.0,
+    -4.67
+   ],
+   [
+    -30.97,
+    -15.14
+   ],
+   [
+    9.39,
+    66.92
+   ]
+  ]
+ },
+ {
+  "name": "Olfactory sulcus.l",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 275,
+  "triangles": 548,
+  "center": [
+   15.33,
+   -23.06,
+   38.16
+  ],
+  "bounds": [
+   [
+    4.67,
+    26.0
+   ],
+   [
+    -30.97,
+    -15.14
+   ],
+   [
+    9.39,
+    66.92
+   ]
+  ]
+ },
+ {
+  "name": "Intraparietal sulcus.r",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 428,
+  "triangles": 852,
+  "center": [
+   -28.32,
+   20.85,
+   -57.55
+  ],
+  "bounds": [
+   [
+    -41.43,
+    -15.22
+   ],
+   [
+    8.06,
+    33.63
+   ],
+   [
+    -75.04,
+    -40.05
+   ]
+  ]
+ },
+ {
+  "name": "Intraparietal sulcus.l",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 428,
+  "triangles": 852,
+  "center": [
+   28.32,
+   20.85,
+   -57.55
+  ],
+  "bounds": [
+   [
+    15.22,
+    41.43
+   ],
+   [
+    8.06,
+    33.63
+   ],
+   [
+    -75.04,
+    -40.05
+   ]
+  ]
+ },
+ {
+  "name": "Inferior temporal sulcus.r",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 125,
+  "triangles": 246,
+  "center": [
+   -42.75,
+   -42.35,
+   -10.86
+  ],
+  "bounds": [
+   [
+    -48.24,
+    -37.26
+   ],
+   [
+    -52.39,
+    -32.32
+   ],
+   [
+    -27.38,
+    5.66
+   ]
+  ]
+ },
+ {
+  "name": "Inferior temporal sulcus.l",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 125,
+  "triangles": 246,
+  "center": [
+   42.75,
+   -42.35,
+   -10.86
+  ],
+  "bounds": [
+   [
+    37.26,
+    48.24
+   ],
+   [
+    -52.39,
+    -32.32
+   ],
+   [
+    -27.38,
+    5.66
+   ]
+  ]
+ },
+ {
+  "name": "Inferior frontal sulcus.r",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 413,
+  "triangles": 742,
+  "center": [
+   -39.38,
+   12.73,
+   33.44
+  ],
+  "bounds": [
+   [
+    -51.23,
+    -27.54
+   ],
+   [
+    -3.39,
+    28.84
+   ],
+   [
+    7.96,
+    58.91
+   ]
+  ]
+ },
+ {
+  "name": "Inferior frontal sulcus.l",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 413,
+  "triangles": 742,
+  "center": [
+   39.38,
+   12.73,
+   33.44
+  ],
+  "bounds": [
+   [
+    27.54,
+    51.23
+   ],
+   [
+    -3.39,
+    28.84
+   ],
+   [
+    7.96,
+    58.91
+   ]
+  ]
+ },
+ {
+  "name": "Sphenoid bone",
+  "category": "bone",
+  "type": "MESH",
+  "vertices": 3650,
+  "triangles": 7308,
+  "center": [
+   0.0,
+   -54.72,
+   28.85
+  ],
+  "bounds": [
+   [
+    -54.42,
+    54.42
+   ],
+   [
+    -89.69,
+    -19.75
+   ],
+   [
+    2.25,
+    55.45
+   ]
+  ]
+ },
+ {
+  "name": "Precuneus.r",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 652,
+  "triangles": 1300,
+  "center": [
+   -8.23,
+   17.5,
+   -60.32
+  ],
+  "bounds": [
+   [
+    -16.46,
+    -0.01
+   ],
+   [
+    -16.4,
+    51.41
+   ],
+   [
+    -87.28,
+    -33.36
+   ]
+  ]
+ },
+ {
+  "name": "Precuneus.l",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 652,
+  "triangles": 1300,
+  "center": [
+   8.23,
+   17.5,
+   -60.32
+  ],
+  "bounds": [
+   [
+    0.01,
+    16.46
+   ],
+   [
+    -16.4,
+    51.41
+   ],
+   [
+    -87.28,
+    -33.36
+   ]
+  ]
+ },
+ {
+  "name": "Precentral gyrus.r",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 767,
+  "triangles": 1532,
+  "center": [
+   -35.78,
+   27.94,
+   -5.64
+  ],
+  "bounds": [
+   [
+    -60.09,
+    -11.47
+   ],
+   [
+    -2.71,
+    58.59
+   ],
+   [
+    -33.42,
+    22.14
+   ]
+  ]
+ },
+ {
+  "name": "Precentral gyrus.l",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 767,
+  "triangles": 1532,
+  "center": [
+   35.78,
+   27.94,
+   -5.64
+  ],
+  "bounds": [
+   [
+    11.47,
+    60.09
+   ],
+   [
+    -2.71,
+    58.59
+   ],
+   [
+    -33.42,
+    22.14
+   ]
+  ]
+ },
+ {
+  "name": "Posterior inferior cerebellar artery.r",
+  "category": "artery",
+  "type": "CURVE",
+  "vertices": 19020,
+  "triangles": 37728,
+  "center": [
+   -28.57,
+   -63.97,
+   -44.03
+  ],
+  "bounds": [
+   [
+    -51.98,
+    -5.15
+   ],
+   [
+    -78.3,
+    -49.65
+   ],
+   [
+    -74.05,
+    -14.01
+   ]
+  ]
+ },
+ {
+  "name": "Posterior inferior cerebellar artery.l",
+  "category": "artery",
+  "type": "CURVE",
+  "vertices": 19020,
+  "triangles": 37728,
+  "center": [
+   28.57,
+   -63.97,
+   -44.03
+  ],
+  "bounds": [
+   [
+    5.15,
+    51.98
+   ],
+   [
+    -78.3,
+    -49.65
+   ],
+   [
+    -74.05,
+    -14.01
+   ]
+  ]
+ },
+ {
+  "name": "Posterior division of mandibular nerve.r",
+  "category": "nerve",
+  "type": "CURVE",
+  "vertices": 468,
+  "triangles": 884,
+  "center": [
+   -29.58,
+   -78.74,
+   17.36
+  ],
+  "bounds": [
+   [
+    -36.59,
+    -22.57
+   ],
+   [
+    -94.54,
+    -62.94
+   ],
+   [
+    14.63,
+    20.08
+   ]
+  ]
+ },
+ {
+  "name": "Posterior division of mandibular nerve.l",
+  "category": "nerve",
+  "type": "CURVE",
+  "vertices": 468,
+  "triangles": 884,
+  "center": [
+   29.58,
+   -78.74,
+   17.36
+  ],
+  "bounds": [
+   [
+    22.57,
+    36.59
+   ],
+   [
+    -94.54,
+    -62.94
+   ],
+   [
+    14.63,
+    20.08
+   ]
+  ]
+ },
+ {
+  "name": "Posterior communicating artery.r",
+  "category": "artery",
+  "type": "CURVE",
+  "vertices": 444,
+  "triangles": 864,
+  "center": [
+   -8.12,
+   -34.73,
+   15.18
+  ],
+  "bounds": [
+   [
+    -11.73,
+    -4.51
+   ],
+   [
+    -36.55,
+    -32.91
+   ],
+   [
+    8.89,
+    21.46
+   ]
+  ]
+ },
+ {
+  "name": "Posterior communicating artery.l",
+  "category": "artery",
+  "type": "CURVE",
+  "vertices": 444,
+  "triangles": 864,
+  "center": [
+   8.12,
+   -34.73,
+   15.18
+  ],
+  "bounds": [
+   [
+    4.51,
+    11.73
+   ],
+   [
+    -36.55,
+    -32.91
+   ],
+   [
+    8.89,
+    21.46
+   ]
+  ]
+ },
+ {
+  "name": "Posterior cerebral artery.r",
+  "category": "artery",
+  "type": "CURVE",
+  "vertices": 16992,
+  "triangles": 33696,
+  "center": [
+   -27.23,
+   -24.91,
+   -27.12
+  ],
+  "bounds": [
+   [
+    -55.55,
+    1.09
+   ],
+   [
+    -48.26,
+    -1.56
+   ],
+   [
+    -67.97,
+    13.73
+   ]
+  ]
+ },
+ {
+  "name": "Posterior cerebral artery.l",
+  "category": "artery",
+  "type": "CURVE",
+  "vertices": 16992,
+  "triangles": 33696,
+  "center": [
+   27.23,
+   -24.91,
+   -27.12
+  ],
+  "bounds": [
+   [
+    -1.09,
+    55.55
+   ],
+   [
+    -48.26,
+    -1.56
+   ],
+   [
+    -67.97,
+    13.73
+   ]
+  ]
+ },
+ {
+  "name": "Postcentral gyrus.r",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 578,
+  "triangles": 1153,
+  "center": [
+   -39.32,
+   28.3,
+   -18.77
+  ],
+  "bounds": [
+   [
+    -65.69,
+    -12.94
+   ],
+   [
+    0.39,
+    56.2
+   ],
+   [
+    -44.53,
+    7.0
+   ]
+  ]
+ },
+ {
+  "name": "Postcentral gyrus.l",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 578,
+  "triangles": 1153,
+  "center": [
+   39.32,
+   28.3,
+   -18.77
+  ],
+  "bounds": [
+   [
+    12.94,
+    65.69
+   ],
+   [
+    0.39,
+    56.2
+   ],
+   [
+    -44.53,
+    7.0
+   ]
+  ]
+ },
+ {
+  "name": "Parieto-occipital artery.r",
+  "category": "artery",
+  "type": "CURVE",
+  "vertices": 4212,
+  "triangles": 8352,
+  "center": [
+   -9.2,
+   -6.52,
+   -56.49
+  ],
+  "bounds": [
+   [
+    -17.61,
+    -0.78
+   ],
+   [
+    -29.09,
+    16.04
+   ],
+   [
+    -87.37,
+    -25.62
+   ]
+  ]
+ },
+ {
+  "name": "Parieto-occipital artery.l",
+  "category": "artery",
+  "type": "CURVE",
+  "vertices": 4212,
+  "triangles": 8352,
+  "center": [
+   9.2,
+   -6.52,
+   -56.49
+  ],
+  "bounds": [
+   [
+    0.78,
+    17.61
+   ],
+   [
+    -29.09,
+    16.04
+   ],
+   [
+    -87.37,
+    -25.62
+   ]
+  ]
+ },
+ {
+  "name": "Parietal branches of middle cerebral artery.r",
+  "category": "artery",
+  "type": "CURVE",
+  "vertices": 2040,
+  "triangles": 4032,
+  "center": [
+   -54.29,
+   16.84,
+   -37.34
+  ],
+  "bounds": [
+   [
+    -71.0,
+    -37.58
+   ],
+   [
+    -3.63,
+    37.31
+   ],
+   [
+    -53.12,
+    -21.57
+   ]
+  ]
+ },
+ {
+  "name": "Parietal branches of middle cerebral artery.l",
+  "category": "artery",
+  "type": "CURVE",
+  "vertices": 2040,
+  "triangles": 4032,
+  "center": [
+   54.29,
+   16.84,
+   -37.34
+  ],
+  "bounds": [
+   [
+    37.58,
+    71.0
+   ],
+   [
+    -3.63,
+    37.31
+   ],
+   [
+    -53.12,
+    -21.57
+   ]
+  ]
+ },
+ {
+  "name": "Parietal bone.r",
+  "category": "bone",
+  "type": "MESH",
+  "vertices": 3386,
+  "triangles": 6780,
+  "center": [
+   -34.39,
+   7.64,
+   -30.62
+  ],
+  "bounds": [
+   [
+    -74.39,
+    5.62
+   ],
+   [
+    -50.18,
+    65.45
+   ],
+   [
+    -100.31,
+    39.06
+   ]
+  ]
+ },
+ {
+  "name": "Parietal bone.l",
+  "category": "bone",
+  "type": "MESH",
+  "vertices": 3443,
+  "triangles": 6886,
+  "center": [
+   33.43,
+   7.53,
+   -28.91
+  ],
+  "bounds": [
+   [
+    -7.42,
+    74.29
+   ],
+   [
+    -50.31,
+    65.37
+   ],
+   [
+    -100.56,
+    42.74
+   ]
+  ]
+ },
+ {
+  "name": "Paracentral gyrus and sulcus*.r",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 377,
+  "triangles": 746,
+  "center": [
+   -12.04,
+   40.86,
+   -33.65
+  ],
+  "bounds": [
+   [
+    -23.98,
+    -0.09
+   ],
+   [
+    22.08,
+    59.63
+   ],
+   [
+    -51.62,
+    -15.69
+   ]
+  ]
+ },
+ {
+  "name": "Paracentral gyrus and sulcus*.l",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 377,
+  "triangles": 746,
+  "center": [
+   12.04,
+   40.86,
+   -33.65
+  ],
+  "bounds": [
+   [
+    0.09,
+    23.98
+   ],
+   [
+    22.08,
+    59.63
+   ],
+   [
+    -51.62,
+    -15.69
+   ]
+  ]
+ },
+ {
+  "name": "Palatine bone.r",
+  "category": "bone",
+  "type": "MESH",
+  "vertices": 732,
+  "triangles": 1460,
+  "center": [
+   -13.91,
+   -75.95,
+   42.39
+  ],
+  "bounds": [
+   [
+    -27.04,
+    -0.78
+   ],
+   [
+    -96.02,
+    -55.87
+   ],
+   [
+    24.78,
+    60.0
+   ]
+  ]
+ },
+ {
+  "name": "Palatine bone.l",
+  "category": "bone",
+  "type": "MESH",
+  "vertices": 732,
+  "triangles": 1460,
+  "center": [
+   13.91,
+   -75.95,
+   42.39
+  ],
+  "bounds": [
+   [
+    0.78,
+    27.04
+   ],
+   [
+    -96.02,
+    -55.87
+   ],
+   [
+    24.78,
+    60.0
+   ]
+  ]
+ },
+ {
+  "name": "Orbital sulci (Lateral Orbital sulcus*).r",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 102,
+  "triangles": 200,
+  "center": [
+   -47.23,
+   -6.04,
+   50.13
+  ],
+  "bounds": [
+   [
+    -53.87,
+    -40.58
+   ],
+   [
+    -14.21,
+    2.13
+   ],
+   [
+    43.09,
+    57.18
+   ]
+  ]
+ },
+ {
+  "name": "Orbital sulci (Lateral Orbital sulcus*).l",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 102,
+  "triangles": 200,
+  "center": [
+   47.23,
+   -6.04,
+   50.13
+  ],
+  "bounds": [
+   [
+    40.58,
+    53.87
+   ],
+   [
+    -14.21,
+    2.13
+   ],
+   [
+    43.09,
+    57.18
+   ]
+  ]
+ },
+ {
+  "name": "Orbital sulci (H-shaped orbital sulci*).r",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 383,
+  "triangles": 762,
+  "center": [
+   -28.84,
+   -16.84,
+   48.28
+  ],
+  "bounds": [
+   [
+    -43.07,
+    -14.61
+   ],
+   [
+    -26.42,
+    -7.27
+   ],
+   [
+    27.52,
+    69.04
+   ]
+  ]
+ },
+ {
+  "name": "Orbital sulci (H-shaped orbital sulci*).l",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 383,
+  "triangles": 762,
+  "center": [
+   28.84,
+   -16.84,
+   48.28
+  ],
+  "bounds": [
+   [
+    14.61,
+    43.07
+   ],
+   [
+    -26.42,
+    -7.27
+   ],
+   [
+    27.52,
+    69.04
+   ]
+  ]
+ },
+ {
+  "name": "Orbital part of  inferior frontal gyrus.r",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 95,
+  "triangles": 186,
+  "center": [
+   -44.63,
+   -13.17,
+   37.36
+  ],
+  "bounds": [
+   [
+    -53.27,
+    -36.0
+   ],
+   [
+    -20.77,
+    -5.58
+   ],
+   [
+    25.81,
+    48.91
+   ]
+  ]
+ },
+ {
+  "name": "Orbital part of  inferior frontal gyrus.l",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 95,
+  "triangles": 186,
+  "center": [
+   44.63,
+   -13.17,
+   37.36
+  ],
+  "bounds": [
+   [
+    36.0,
+    53.27
+   ],
+   [
+    -20.77,
+    -5.58
+   ],
+   [
+    25.81,
+    48.91
+   ]
+  ]
+ },
+ {
+  "name": "Orbital gyri.r",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 756,
+  "triangles": 1512,
+  "center": [
+   -28.24,
+   -19.25,
+   47.16
+  ],
+  "bounds": [
+   [
+    -52.61,
+    -3.87
+   ],
+   [
+    -32.86,
+    -5.64
+   ],
+   [
+    16.46,
+    77.86
+   ]
+  ]
+ },
+ {
+  "name": "Orbital gyri.l",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 756,
+  "triangles": 1512,
+  "center": [
+   28.24,
+   -19.25,
+   47.16
+  ],
+  "bounds": [
+   [
+    3.87,
+    52.61
+   ],
+   [
+    -32.86,
+    -5.64
+   ],
+   [
+    16.46,
+    77.86
+   ]
+  ]
+ },
+ {
+  "name": "Orbital gyri (Frontomarginal gyrus and sulcus*).r",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 330,
+  "triangles": 656,
+  "center": [
+   -25.75,
+   -5.93,
+   67.37
+  ],
+  "bounds": [
+   [
+    -45.59,
+    -5.91
+   ],
+   [
+    -15.79,
+    3.92
+   ],
+   [
+    53.95,
+    80.79
+   ]
+  ]
+ },
+ {
+  "name": "Orbital gyri (Frontomarginal gyrus and sulcus*).l",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 330,
+  "triangles": 656,
+  "center": [
+   25.75,
+   -5.93,
+   67.37
+  ],
+  "bounds": [
+   [
+    5.91,
+    45.59
+   ],
+   [
+    -15.79,
+    3.92
+   ],
+   [
+    53.95,
+    80.79
+   ]
+  ]
+ },
+ {
+  "name": "Optic tract.r",
+  "category": "nerve",
+  "type": "MESH",
+  "vertices": 1168,
+  "triangles": 2332,
+  "center": [
+   -12.67,
+   -27.92,
+   0.08
+  ],
+  "bounds": [
+   [
+    -24.71,
+    -0.63
+   ],
+   [
+    -31.81,
+    -24.02
+   ],
+   [
+    -18.27,
+    18.43
+   ]
+  ]
+ },
+ {
+  "name": "Optic tract.l",
+  "category": "nerve",
+  "type": "MESH",
+  "vertices": 1168,
+  "triangles": 2332,
+  "center": [
+   12.67,
+   -27.92,
+   0.08
+  ],
+  "bounds": [
+   [
+    0.63,
+    24.71
+   ],
+   [
+    -31.81,
+    -24.02
+   ],
+   [
+    -18.27,
+    18.43
+   ]
+  ]
+ },
+ {
+  "name": "Optic nerve (II).r",
+  "category": "nerve",
+  "type": "CURVE",
+  "vertices": 900,
+  "triangles": 1748,
+  "center": [
+   -15.23,
+   -38.84,
+   40.14
+  ],
+  "bounds": [
+   [
+    -30.49,
+    0.04
+   ],
+   [
+    -47.2,
+    -30.47
+   ],
+   [
+    18.89,
+    61.39
+   ]
+  ]
+ },
+ {
+  "name": "Optic nerve (II).l",
+  "category": "nerve",
+  "type": "CURVE",
+  "vertices": 900,
+  "triangles": 1748,
+  "center": [
+   15.23,
+   -38.84,
+   40.14
+  ],
+  "bounds": [
+   [
+    -0.04,
+    30.49
+   ],
+   [
+    -47.2,
+    -30.47
+   ],
+   [
+    18.89,
+    61.39
+   ]
+  ]
+ },
+ {
+  "name": "Optic chiasm.r",
+  "category": "nerve",
+  "type": "MESH",
+  "vertices": 447,
+  "triangles": 890,
+  "center": [
+   -3.59,
+   -27.94,
+   16.33
+  ],
+  "bounds": [
+   [
+    -7.14,
+    -0.04
+   ],
+   [
+    -31.87,
+    -24.02
+   ],
+   [
+    11.32,
+    21.33
+   ]
+  ]
+ },
+ {
+  "name": "Optic chiasm.l",
+  "category": "nerve",
+  "type": "MESH",
+  "vertices": 447,
+  "triangles": 890,
+  "center": [
+   3.59,
+   -27.94,
+   16.33
+  ],
+  "bounds": [
+   [
+    0.04,
+    7.14
+   ],
+   [
+    -31.87,
+    -24.02
+   ],
+   [
+    11.32,
+    21.33
+   ]
+  ]
+ },
+ {
+  "name": "Ophthalmic nerve.r",
+  "category": "nerve",
+  "type": "CURVE",
+  "vertices": 3492,
+  "triangles": 6724,
+  "center": [
+   -24.42,
+   -24.96,
+   44.97
+  ],
+  "bounds": [
+   [
+    -39.07,
+    -9.77
+   ],
+   [
+    -42.96,
+    -6.96
+   ],
+   [
+    1.94,
+    88.0
+   ]
+  ]
+ },
+ {
+  "name": "Ophthalmic nerve.l",
+  "category": "nerve",
+  "type": "CURVE",
+  "vertices": 3492,
+  "triangles": 6724,
+  "center": [
+   24.42,
+   -24.96,
+   44.97
+  ],
+  "bounds": [
+   [
+    9.77,
+    39.07
+   ],
+   [
+    -42.96,
+    -6.96
+   ],
+   [
+    1.94,
+    88.0
+   ]
+  ]
+ },
+ {
+  "name": "Ophthalmic artery.r",
+  "category": "artery",
+  "type": "CURVE",
+  "vertices": 876,
+  "triangles": 1728,
+  "center": [
+   -14.79,
+   -39.46,
+   38.17
+  ],
+  "bounds": [
+   [
+    -18.66,
+    -10.93
+   ],
+   [
+    -41.61,
+    -37.31
+   ],
+   [
+    22.16,
+    54.19
+   ]
+  ]
+ },
+ {
+  "name": "Ophthalmic artery.l",
+  "category": "artery",
+  "type": "CURVE",
+  "vertices": 876,
+  "triangles": 1728,
+  "center": [
+   14.79,
+   -39.46,
+   38.17
+  ],
+  "bounds": [
+   [
+    10.93,
+    18.66
+   ],
+   [
+    -41.61,
+    -37.31
+   ],
+   [
+    22.16,
+    54.19
+   ]
+  ]
+ },
+ {
+  "name": "Olfactory nerve (I).r",
+  "category": "nerve",
+  "type": "CURVE",
+  "vertices": 14076,
+  "triangles": 26956,
+  "center": [
+   -11.6,
+   -34.84,
+   43.59
+  ],
+  "bounds": [
+   [
+    -23.32,
+    0.13
+   ],
+   [
+    -43.81,
+    -25.88
+   ],
+   [
+    17.95,
+    69.22
+   ]
+  ]
+ },
+ {
+  "name": "Olfactory nerve (I).l",
+  "category": "nerve",
+  "type": "CURVE",
+  "vertices": 14076,
+  "triangles": 26956,
+  "center": [
+   11.6,
+   -34.84,
+   43.59
+  ],
+  "bounds": [
+   [
+    -0.13,
+    23.32
+   ],
+   [
+    -43.81,
+    -25.88
+   ],
+   [
+    17.95,
+    69.22
+   ]
+  ]
+ },
+ {
+  "name": "Oculomotor nerve (III).r",
+  "category": "nerve",
+  "type": "CURVE",
+  "vertices": 4572,
+  "triangles": 8780,
+  "center": [
+   -19.63,
+   -48.56,
+   31.19
+  ],
+  "bounds": [
+   [
+    -39.09,
+    -0.17
+   ],
+   [
+    -65.62,
+    -31.5
+   ],
+   [
+    -9.47,
+    71.84
+   ]
+  ]
+ },
+ {
+  "name": "Oculomotor nerve (III).l",
+  "category": "nerve",
+  "type": "CURVE",
+  "vertices": 4572,
+  "triangles": 8780,
+  "center": [
+   19.63,
+   -48.56,
+   31.19
+  ],
+  "bounds": [
+   [
+    0.17,
+    39.09
+   ],
+   [
+    -65.62,
+    -31.5
+   ],
+   [
+    -9.47,
+    71.84
+   ]
+  ]
+ },
+ {
+  "name": "Occipitotemporal sulcus (Lateral part*).r",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 245,
+  "triangles": 487,
+  "center": [
+   -43.73,
+   -31.77,
+   -44.09
+  ],
+  "bounds": [
+   [
+    -50.24,
+    -37.22
+   ],
+   [
+    -39.73,
+    -23.8
+   ],
+   [
+    -63.35,
+    -24.82
+   ]
+  ]
+ },
+ {
+  "name": "Occipitotemporal sulcus (Lateral part*).l",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 245,
+  "triangles": 487,
+  "center": [
+   43.73,
+   -31.77,
+   -44.09
+  ],
+  "bounds": [
+   [
+    37.22,
+    50.24
+   ],
+   [
+    -39.73,
+    -23.8
+   ],
+   [
+    -63.35,
+    -24.82
+   ]
+  ]
+ },
+ {
+  "name": "Occipital pole.r",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 479,
+  "triangles": 954,
+  "center": [
+   -16.44,
+   -33.4,
+   -84.95
+  ],
+  "bounds": [
+   [
+    -32.25,
+    -0.64
+   ],
+   [
+    -50.66,
+    -16.14
+   ],
+   [
+    -99.13,
+    -70.76
+   ]
+  ]
+ },
+ {
+  "name": "Occipital pole.l",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 479,
+  "triangles": 954,
+  "center": [
+   16.44,
+   -33.4,
+   -84.95
+  ],
+  "bounds": [
+   [
+    0.64,
+    32.25
+   ],
+   [
+    -50.66,
+    -16.14
+   ],
+   [
+    -99.13,
+    -70.76
+   ]
+  ]
+ },
+ {
+  "name": "Occipital bone",
+  "category": "bone",
+  "type": "MESH",
+  "vertices": 3753,
+  "triangles": 7531,
+  "center": [
+   0.0,
+   -37.04,
+   -45.45
+  ],
+  "bounds": [
+   [
+    -59.63,
+    59.63
+   ],
+   [
+    -89.26,
+    15.19
+   ],
+   [
+    -103.38,
+    12.47
+   ]
+  ]
+ },
+ {
+  "name": "Nucleus of trochlear nerve.r",
+  "category": "nucleus",
+  "type": "MESH",
+  "vertices": 386,
+  "triangles": 768,
+  "center": [
+   -1.27,
+   -40.25,
+   -9.55
+  ],
+  "bounds": [
+   [
+    -2.62,
+    0.09
+   ],
+   [
+    -41.89,
+    -38.61
+   ],
+   [
+    -10.68,
+    -8.42
+   ]
+  ]
+ },
+ {
+  "name": "Nucleus of trochlear nerve.l",
+  "category": "nucleus",
+  "type": "MESH",
+  "vertices": 386,
+  "triangles": 768,
+  "center": [
+   1.27,
+   -40.25,
+   -9.55
+  ],
+  "bounds": [
+   [
+    -0.09,
+    2.62
+   ],
+   [
+    -41.89,
+    -38.61
+   ],
+   [
+    -10.68,
+    -8.42
+   ]
+  ]
+ },
+ {
+  "name": "Nucleus of oculomotor nerve.r",
+  "category": "nucleus",
+  "type": "MESH",
+  "vertices": 386,
+  "triangles": 768,
+  "center": [
+   -1.96,
+   -34.35,
+   -9.3
+  ],
+  "bounds": [
+   [
+    -2.62,
+    -1.29
+   ],
+   [
+    -38.48,
+    -30.21
+   ],
+   [
+    -10.64,
+    -7.95
+   ]
+  ]
+ },
+ {
+  "name": "Nucleus of oculomotor nerve.l",
+  "category": "nucleus",
+  "type": "MESH",
+  "vertices": 386,
+  "triangles": 768,
+  "center": [
+   1.96,
+   -34.35,
+   -9.3
+  ],
+  "bounds": [
+   [
+    1.29,
+    2.62
+   ],
+   [
+    -38.48,
+    -30.21
+   ],
+   [
+    -10.64,
+    -7.95
+   ]
+  ]
+ },
+ {
+  "name": "Nucleus of hypoglossal nerve.r",
+  "category": "nucleus",
+  "type": "MESH",
+  "vertices": 386,
+  "triangles": 768,
+  "center": [
+   -0.74,
+   -68.17,
+   -18.73
+  ],
+  "bounds": [
+   [
+    -1.39,
+    -0.08
+   ],
+   [
+    -71.86,
+    -64.49
+   ],
+   [
+    -20.33,
+    -17.13
+   ]
+  ]
+ },
+ {
+  "name": "Nucleus of hypoglossal nerve.l",
+  "category": "nucleus",
+  "type": "MESH",
+  "vertices": 386,
+  "triangles": 768,
+  "center": [
+   0.74,
+   -68.17,
+   -18.73
+  ],
+  "bounds": [
+   [
+    0.08,
+    1.39
+   ],
+   [
+    -71.86,
+    -64.49
+   ],
+   [
+    -20.33,
+    -17.13
+   ]
+  ]
+ },
+ {
+  "name": "Nucleus of abducens nerve.r",
+  "category": "nucleus",
+  "type": "MESH",
+  "vertices": 386,
+  "triangles": 768,
+  "center": [
+   -1.52,
+   -57.82,
+   -15.94
+  ],
+  "bounds": [
+   [
+    -2.32,
+    -0.72
+   ],
+   [
+    -58.98,
+    -56.67
+   ],
+   [
+    -16.75,
+    -15.14
+   ]
+  ]
+ },
+ {
+  "name": "Nucleus of abducens nerve.l",
+  "category": "nucleus",
+  "type": "MESH",
+  "vertices": 386,
+  "triangles": 768,
+  "center": [
+   1.52,
+   -57.82,
+   -15.94
+  ],
+  "bounds": [
+   [
+    0.72,
+    2.32
+   ],
+   [
+    -58.98,
+    -56.67
+   ],
+   [
+    -16.75,
+    -15.14
+   ]
+  ]
+ },
+ {
+  "name": "Nodule of vermis",
+  "category": "cerebellum",
+  "type": "MESH",
+  "vertices": 512,
+  "triangles": 1012,
+  "center": [
+   -0.08,
+   -59.68,
+   -34.26
+  ],
+  "bounds": [
+   [
+    -5.35,
+    5.19
+   ],
+   [
+    -65.59,
+    -53.76
+   ],
+   [
+    -38.52,
+    -29.99
+   ]
+  ]
+ },
+ {
+  "name": "Neurohypophysis",
+  "category": "deep",
+  "type": "MESH",
+  "vertices": 325,
+  "triangles": 592,
+  "center": [
+   0.0,
+   -38.76,
+   15.21
+  ],
+  "bounds": [
+   [
+    -5.86,
+    5.86
+   ],
+   [
+    -44.82,
+    -32.7
+   ],
+   [
+    12.3,
+    18.12
+   ]
+  ]
+ },
+ {
+  "name": "Nerve to mylohyoid muscle.r",
+  "category": "nerve",
+  "type": "CURVE",
+  "vertices": 1800,
+  "triangles": 3496,
+  "center": [
+   -23.72,
+   -115.71,
+   36.75
+  ],
+  "bounds": [
+   [
+    -36.28,
+    -11.16
+   ],
+   [
+    -137.32,
+    -94.1
+   ],
+   [
+    19.06,
+    54.44
+   ]
+  ]
+ },
+ {
+  "name": "Nerve to mylohyoid muscle.l",
+  "category": "nerve",
+  "type": "CURVE",
+  "vertices": 1800,
+  "triangles": 3496,
+  "center": [
+   23.72,
+   -115.71,
+   36.75
+  ],
+  "bounds": [
+   [
+    11.16,
+    36.28
+   ],
+   [
+    -137.32,
+    -94.1
+   ],
+   [
+    19.06,
+    54.44
+   ]
+  ]
+ },
+ {
+  "name": "Nasolacrimal duct.r",
+  "category": "orbit",
+  "type": "MESH",
+  "vertices": 224,
+  "triangles": 444,
+  "center": [
+   -10.19,
+   -75.04,
+   64.17
+  ],
+  "bounds": [
+   [
+    -13.18,
+    -7.2
+   ],
+   [
+    -85.33,
+    -64.75
+   ],
+   [
+    58.37,
+    69.97
+   ]
+  ]
+ },
+ {
+  "name": "Nasolacrimal duct.l",
+  "category": "orbit",
+  "type": "MESH",
+  "vertices": 224,
+  "triangles": 444,
+  "center": [
+   10.19,
+   -75.04,
+   64.17
+  ],
+  "bounds": [
+   [
+    7.2,
+    13.18
+   ],
+   [
+    -85.33,
+    -64.75
+   ],
+   [
+    58.37,
+    69.97
+   ]
+  ]
+ },
+ {
+  "name": "Nasal bone.r",
+  "category": "bone",
+  "type": "MESH",
+  "vertices": 148,
+  "triangles": 292,
+  "center": [
+   -4.2,
+   -50.61,
+   89.8
+  ],
+  "bounds": [
+   [
+    -8.4,
+    -0.0
+   ],
+   [
+    -66.29,
+    -34.92
+   ],
+   [
+    79.34,
+    100.27
+   ]
+  ]
+ },
+ {
+  "name": "Nasal bone.l",
+  "category": "bone",
+  "type": "MESH",
+  "vertices": 148,
+  "triangles": 292,
+  "center": [
+   4.2,
+   -50.61,
+   89.8
+  ],
+  "bounds": [
+   [
+    0.0,
+    8.4
+   ],
+   [
+    -66.29,
+    -34.92
+   ],
+   [
+    79.34,
+    100.27
+   ]
+  ]
+ },
+ {
+  "name": "Motor root of trigeminal nerve.r",
+  "category": "nerve",
+  "type": "MESH",
+  "vertices": 482,
+  "triangles": 960,
+  "center": [
+   -7.73,
+   -50.66,
+   -10.84
+  ],
+  "bounds": [
+   [
+    -8.68,
+    -6.78
+   ],
+   [
+    -52.27,
+    -49.04
+   ],
+   [
+    -11.79,
+    -9.89
+   ]
+  ]
+ },
+ {
+  "name": "Motor root of trigeminal nerve.l",
+  "category": "nerve",
+  "type": "MESH",
+  "vertices": 482,
+  "triangles": 960,
+  "center": [
+   7.73,
+   -50.66,
+   -10.84
+  ],
+  "bounds": [
+   [
+    6.78,
+    8.68
+   ],
+   [
+    -52.27,
+    -49.04
+   ],
+   [
+    -11.79,
+    -9.89
+   ]
+  ]
+ },
+ {
+  "name": "Motor nucleus of facial nerve.r",
+  "category": "nucleus",
+  "type": "MESH",
+  "vertices": 386,
+  "triangles": 768,
+  "center": [
+   -4.94,
+   -59.05,
+   -10.64
+  ],
+  "bounds": [
+   [
+    -5.74,
+    -4.14
+   ],
+   [
+    -60.2,
+    -57.89
+   ],
+   [
+    -11.44,
+    -9.84
+   ]
+  ]
+ },
+ {
+  "name": "Motor nucleus of facial nerve.l",
+  "category": "nucleus",
+  "type": "MESH",
+  "vertices": 386,
+  "triangles": 768,
+  "center": [
+   4.94,
+   -59.05,
+   -10.64
+  ],
+  "bounds": [
+   [
+    4.14,
+    5.74
+   ],
+   [
+    -60.2,
+    -57.89
+   ],
+   [
+    -11.44,
+    -9.84
+   ]
+  ]
+ },
+ {
+  "name": "Middle temporal gyrus.r",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 657,
+  "triangles": 1312,
+  "center": [
+   -53.12,
+   -25.26,
+   -23.04
+  ],
+  "bounds": [
+   [
+    -67.16,
+    -39.08
+   ],
+   [
+    -47.91,
+    -2.62
+   ],
+   [
+    -73.22,
+    27.15
+   ]
+  ]
+ },
+ {
+  "name": "Middle temporal gyrus.l",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 657,
+  "triangles": 1312,
+  "center": [
+   53.12,
+   -25.26,
+   -23.04
+  ],
+  "bounds": [
+   [
+    39.08,
+    67.16
+   ],
+   [
+    -47.91,
+    -2.62
+   ],
+   [
+    -73.22,
+    27.15
+   ]
+  ]
+ },
+ {
+  "name": "Middle meningeal artery.r",
+  "category": "artery",
+  "type": "CURVE",
+  "vertices": 732,
+  "triangles": 1440,
+  "center": [
+   -31.16,
+   -62.06,
+   9.68
+  ],
+  "bounds": [
+   [
+    -37.46,
+    -24.86
+   ],
+   [
+    -74.05,
+    -50.08
+   ],
+   [
+    7.07,
+    12.29
+   ]
+  ]
+ },
+ {
+  "name": "Middle meningeal artery.l",
+  "category": "artery",
+  "type": "CURVE",
+  "vertices": 732,
+  "triangles": 1440,
+  "center": [
+   31.16,
+   -62.06,
+   9.68
+  ],
+  "bounds": [
+   [
+    24.86,
+    37.46
+   ],
+   [
+    -74.05,
+    -50.08
+   ],
+   [
+    7.07,
+    12.29
+   ]
+  ]
+ },
+ {
+  "name": "Middle frontal gyrus.r",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 1141,
+  "triangles": 2277,
+  "center": [
+   -31.82,
+   19.66,
+   33.49
+  ],
+  "bounds": [
+   [
+    -51.46,
+    -12.18
+   ],
+   [
+    -11.12,
+    50.43
+   ],
+   [
+    -11.99,
+    78.97
+   ]
+  ]
+ },
+ {
+  "name": "Middle frontal gyrus.l",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 1141,
+  "triangles": 2277,
+  "center": [
+   31.82,
+   19.66,
+   33.49
+  ],
+  "bounds": [
+   [
+    12.18,
+    51.46
+   ],
+   [
+    -11.12,
+    50.43
+   ],
+   [
+    -11.99,
+    78.97
+   ]
+  ]
+ },
+ {
+  "name": "Middle cerebral artery (M3-segment).r",
+  "category": "artery",
+  "type": "CURVE",
+  "vertices": 1884,
+  "triangles": 3744,
+  "center": [
+   -53.43,
+   -10.19,
+   -18.96
+  ],
+  "bounds": [
+   [
+    -60.66,
+    -46.21
+   ],
+   [
+    -18.43,
+    -1.94
+   ],
+   [
+    -54.78,
+    16.86
+   ]
+  ]
+ },
+ {
+  "name": "Middle cerebral artery (M3 segment).l",
+  "category": "artery",
+  "type": "CURVE",
+  "vertices": 1884,
+  "triangles": 3744,
+  "center": [
+   53.43,
+   -10.19,
+   -18.96
+  ],
+  "bounds": [
+   [
+    46.21,
+    60.66
+   ],
+   [
+    -18.43,
+    -1.94
+   ],
+   [
+    -54.78,
+    16.86
+   ]
+  ]
+ },
+ {
+  "name": "Middle cerebral artery (M1-segment).r",
+  "category": "artery",
+  "type": "CURVE",
+  "vertices": 732,
+  "triangles": 1440,
+  "center": [
+   -23.7,
+   -30.07,
+   21.68
+  ],
+  "bounds": [
+   [
+    -38.43,
+    -8.96
+   ],
+   [
+    -37.44,
+    -22.69
+   ],
+   [
+    17.05,
+    26.31
+   ]
+  ]
+ },
+ {
+  "name": "Middle cerebral artery (M1-segment).l",
+  "category": "artery",
+  "type": "CURVE",
+  "vertices": 732,
+  "triangles": 1440,
+  "center": [
+   23.7,
+   -30.07,
+   21.68
+  ],
+  "bounds": [
+   [
+    8.96,
+    38.43
+   ],
+   [
+    -37.44,
+    -22.69
+   ],
+   [
+    17.05,
+    26.31
+   ]
+  ]
+ },
+ {
+  "name": "Midbrain.r",
+  "category": "stem",
+  "type": "MESH",
+  "vertices": 3049,
+  "triangles": 6092,
+  "center": [
+   -7.15,
+   -30.81,
+   -6.99
+  ],
+  "bounds": [
+   [
+    -14.27,
+    -0.02
+   ],
+   [
+    -39.08,
+    -22.54
+   ],
+   [
+    -21.23,
+    7.25
+   ]
+  ]
+ },
+ {
+  "name": "Midbrain.l",
+  "category": "stem",
+  "type": "MESH",
+  "vertices": 3049,
+  "triangles": 6092,
+  "center": [
+   7.15,
+   -30.81,
+   -6.99
+  ],
+  "bounds": [
+   [
+    0.02,
+    14.27
+   ],
+   [
+    -39.08,
+    -22.54
+   ],
+   [
+    -21.23,
+    7.25
+   ]
+  ]
+ },
+ {
+  "name": "Mental nerve.r",
+  "category": "nerve",
+  "type": "CURVE",
+  "vertices": 1404,
+  "triangles": 2652,
+  "center": [
+   -19.73,
+   -130.45,
+   69.94
+  ],
+  "bounds": [
+   [
+    -21.95,
+    -17.52
+   ],
+   [
+    -136.41,
+    -124.5
+   ],
+   [
+    67.26,
+    72.61
+   ]
+  ]
+ },
+ {
+  "name": "Mental nerve.l",
+  "category": "nerve",
+  "type": "CURVE",
+  "vertices": 1404,
+  "triangles": 2652,
+  "center": [
+   19.73,
+   -130.45,
+   69.94
+  ],
+  "bounds": [
+   [
+    17.52,
+    21.95
+   ],
+   [
+    -136.41,
+    -124.5
+   ],
+   [
+    67.26,
+    72.61
+   ]
+  ]
+ },
+ {
+  "name": "Meningeal branch of maxillary nerve.r",
+  "category": "nerve",
+  "type": "CURVE",
+  "vertices": 3132,
+  "triangles": 6108,
+  "center": [
+   -49.42,
+   -29.07,
+   1.61
+  ],
+  "bounds": [
+   [
+    -76.22,
+    -22.61
+   ],
+   [
+    -82.57,
+    24.43
+   ],
+   [
+    -24.32,
+    27.53
+   ]
+  ]
+ },
+ {
+  "name": "Meningeal branch of maxillary nerve.l",
+  "category": "nerve",
+  "type": "CURVE",
+  "vertices": 3132,
+  "triangles": 6108,
+  "center": [
+   49.42,
+   -29.07,
+   1.61
+  ],
+  "bounds": [
+   [
+    22.61,
+    76.22
+   ],
+   [
+    -82.57,
+    24.43
+   ],
+   [
+    -24.32,
+    27.53
+   ]
+  ]
+ },
+ {
+  "name": "Medulla oblongata.r",
+  "category": "stem",
+  "type": "MESH",
+  "vertices": 3042,
+  "triangles": 6080,
+  "center": [
+   -6.51,
+   -81.16,
+   -20.01
+  ],
+  "bounds": [
+   [
+    -13.01,
+    -0.01
+   ],
+   [
+    -101.2,
+    -61.12
+   ],
+   [
+    -36.13,
+    -3.9
+   ]
+  ]
+ },
+ {
+  "name": "Medulla oblongata.l",
+  "category": "stem",
+  "type": "MESH",
+  "vertices": 3042,
+  "triangles": 6080,
+  "center": [
+   6.51,
+   -81.16,
+   -20.01
+  ],
+  "bounds": [
+   [
+    0.01,
+    13.01
+   ],
+   [
+    -101.2,
+    -61.12
+   ],
+   [
+    -36.13,
+    -3.9
+   ]
+  ]
+ },
+ {
+  "name": "Medial rectus muscle.r",
+  "category": "orbit",
+  "type": "MESH",
+  "vertices": 628,
+  "triangles": 1252,
+  "center": [
+   -17.54,
+   -46.77,
+   53.02
+  ],
+  "bounds": [
+   [
+    -22.55,
+    -12.54
+   ],
+   [
+    -55.05,
+    -38.48
+   ],
+   [
+    32.82,
+    73.22
+   ]
+  ]
+ },
+ {
+  "name": "Medial rectus muscle.l",
+  "category": "orbit",
+  "type": "MESH",
+  "vertices": 628,
+  "triangles": 1252,
+  "center": [
+   17.54,
+   -46.77,
+   53.02
+  ],
+  "bounds": [
+   [
+    12.54,
+    22.55
+   ],
+   [
+    -55.05,
+    -38.48
+   ],
+   [
+    32.82,
+    73.22
+   ]
+  ]
+ },
+ {
+  "name": "Medial occipitotemporal gyrus (Parahippocampal*).r",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 477,
+  "triangles": 858,
+  "center": [
+   -27.14,
+   -38.38,
+   -10.23
+  ],
+  "bounds": [
+   [
+    -42.91,
+    -11.37
+   ],
+   [
+    -58.21,
+    -18.55
+   ],
+   [
+    -39.63,
+    19.17
+   ]
+  ]
+ },
+ {
+  "name": "Medial occipitotemporal gyrus (Parahippocampal*).l",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 477,
+  "triangles": 858,
+  "center": [
+   27.14,
+   -38.38,
+   -10.23
+  ],
+  "bounds": [
+   [
+    11.37,
+    42.91
+   ],
+   [
+    -58.21,
+    -18.55
+   ],
+   [
+    -39.63,
+    19.17
+   ]
+  ]
+ },
+ {
+  "name": "Medial occipital artery.r",
+  "category": "artery",
+  "type": "CURVE",
+  "vertices": 2604,
+  "triangles": 5184,
+  "center": [
+   -5.8,
+   -26.44,
+   -60.61
+  ],
+  "bounds": [
+   [
+    -11.16,
+    -0.44
+   ],
+   [
+    -31.11,
+    -21.77
+   ],
+   [
+    -95.05,
+    -26.18
+   ]
+  ]
+ },
+ {
+  "name": "Medial occipital artery.l",
+  "category": "artery",
+  "type": "CURVE",
+  "vertices": 2604,
+  "triangles": 5184,
+  "center": [
+   5.8,
+   -26.44,
+   -60.61
+  ],
+  "bounds": [
+   [
+    0.44,
+    11.16
+   ],
+   [
+    -31.11,
+    -21.77
+   ],
+   [
+    -95.05,
+    -26.18
+   ]
+  ]
+ },
+ {
+  "name": "Medial geniculate body.r",
+  "category": "deep",
+  "type": "MESH",
+  "vertices": 101,
+  "triangles": 198,
+  "center": [
+   -14.02,
+   -28.13,
+   -13.47
+  ],
+  "bounds": [
+   [
+    -17.18,
+    -10.85
+   ],
+   [
+    -31.85,
+    -24.41
+   ],
+   [
+    -16.9,
+    -10.04
+   ]
+  ]
+ },
+ {
+  "name": "Medial geniculate body.l",
+  "category": "deep",
+  "type": "MESH",
+  "vertices": 101,
+  "triangles": 198,
+  "center": [
+   14.02,
+   -28.13,
+   -13.47
+  ],
+  "bounds": [
+   [
+    10.85,
+    17.18
+   ],
+   [
+    -31.85,
+    -24.41
+   ],
+   [
+    -16.9,
+    -10.04
+   ]
+  ]
+ },
+ {
+  "name": "Maxillary nerve.r",
+  "category": "nerve",
+  "type": "CURVE",
+  "vertices": 4068,
+  "triangles": 7876,
+  "center": [
+   -22.02,
+   -68.0,
+   40.6
+  ],
+  "bounds": [
+   [
+    -33.22,
+    -10.82
+   ],
+   [
+    -96.07,
+    -39.92
+   ],
+   [
+    1.98,
+    79.22
+   ]
+  ]
+ },
+ {
+  "name": "Maxillary nerve.l",
+  "category": "nerve",
+  "type": "CURVE",
+  "vertices": 4068,
+  "triangles": 7876,
+  "center": [
+   22.02,
+   -68.0,
+   40.6
+  ],
+  "bounds": [
+   [
+    10.82,
+    33.22
+   ],
+   [
+    -96.07,
+    -39.92
+   ],
+   [
+    1.98,
+    79.22
+   ]
+  ]
+ },
+ {
+  "name": "Maxilla.r",
+  "category": "bone",
+  "type": "MESH",
+  "vertices": 2399,
+  "triangles": 4798,
+  "center": [
+   -22.91,
+   -68.67,
+   66.97
+  ],
+  "bounds": [
+   [
+    -46.03,
+    0.21
+   ],
+   [
+    -102.56,
+    -34.78
+   ],
+   [
+    40.06,
+    93.87
+   ]
+  ]
+ },
+ {
+  "name": "Maxilla.l",
+  "category": "bone",
+  "type": "MESH",
+  "vertices": 2399,
+  "triangles": 4798,
+  "center": [
+   22.91,
+   -68.67,
+   66.97
+  ],
+  "bounds": [
+   [
+    -0.21,
+    46.03
+   ],
+   [
+    -102.56,
+    -34.78
+   ],
+   [
+    40.06,
+    93.87
+   ]
+  ]
+ },
+ {
+  "name": "Mandible",
+  "category": "bone",
+  "type": "MESH",
+  "vertices": 9388,
+  "triangles": 18838,
+  "center": [
+   0.0,
+   -102.53,
+   42.75
+  ],
+  "bounds": [
+   [
+    -51.66,
+    51.66
+   ],
+   [
+    -143.7,
+    -61.35
+   ],
+   [
+    1.8,
+    83.71
+   ]
+  ]
+ },
+ {
+  "name": "Lunate sulcus.r",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 195,
+  "triangles": 382,
+  "center": [
+   -31.64,
+   -22.49,
+   -80.51
+  ],
+  "bounds": [
+   [
+    -42.49,
+    -20.79
+   ],
+   [
+    -34.52,
+    -10.46
+   ],
+   [
+    -91.0,
+    -70.03
+   ]
+  ]
+ },
+ {
+  "name": "Lunate sulcus.l",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 195,
+  "triangles": 382,
+  "center": [
+   31.64,
+   -22.49,
+   -80.51
+  ],
+  "bounds": [
+   [
+    20.79,
+    42.49
+   ],
+   [
+    -34.52,
+    -10.46
+   ],
+   [
+    -91.0,
+    -70.03
+   ]
+  ]
+ },
+ {
+  "name": "Lower second premolar.r",
+  "category": "tooth",
+  "type": "MESH",
+  "vertices": 592,
+  "triangles": 1180,
+  "center": [
+   -19.93,
+   -121.6,
+   64.56
+  ],
+  "bounds": [
+   [
+    -23.91,
+    -15.95
+   ],
+   [
+    -133.0,
+    -110.19
+   ],
+   [
+    58.06,
+    71.07
+   ]
+  ]
+ },
+ {
+  "name": "Lower second premolar.l",
+  "category": "tooth",
+  "type": "MESH",
+  "vertices": 592,
+  "triangles": 1180,
+  "center": [
+   19.93,
+   -121.6,
+   64.56
+  ],
+  "bounds": [
+   [
+    15.95,
+    23.91
+   ],
+   [
+    -133.0,
+    -110.19
+   ],
+   [
+    58.06,
+    71.07
+   ]
+  ]
+ },
+ {
+  "name": "Lower second molar tooth.r",
+  "category": "tooth",
+  "type": "MESH",
+  "vertices": 840,
+  "triangles": 1676,
+  "center": [
+   -26.23,
+   -112.28,
+   45.7
+  ],
+  "bounds": [
+   [
+    -32.14,
+    -20.32
+   ],
+   [
+    -121.4,
+    -103.16
+   ],
+   [
+    37.63,
+    53.77
+   ]
+  ]
+ },
+ {
+  "name": "Lower second molar tooth.l",
+  "category": "tooth",
+  "type": "MESH",
+  "vertices": 840,
+  "triangles": 1676,
+  "center": [
+   26.23,
+   -112.28,
+   45.7
+  ],
+  "bounds": [
+   [
+    20.32,
+    32.14
+   ],
+   [
+    -121.4,
+    -103.16
+   ],
+   [
+    37.63,
+    53.77
+   ]
+  ]
+ },
+ {
+  "name": "Lower medial incisor.l",
+  "category": "tooth",
+  "type": "MESH",
+  "vertices": 494,
+  "triangles": 984,
+  "center": [
+   3.22,
+   -124.95,
+   79.61
+  ],
+  "bounds": [
+   [
+    0.16,
+    6.28
+   ],
+   [
+    -137.31,
+    -112.59
+   ],
+   [
+    70.66,
+    88.57
+   ]
+  ]
+ },
+ {
+  "name": "Lower medial incisor.r",
+  "category": "tooth",
+  "type": "MESH",
+  "vertices": 494,
+  "triangles": 984,
+  "center": [
+   -3.22,
+   -124.95,
+   79.61
+  ],
+  "bounds": [
+   [
+    -6.28,
+    -0.16
+   ],
+   [
+    -137.31,
+    -112.59
+   ],
+   [
+    70.66,
+    88.57
+   ]
+  ]
+ },
+ {
+  "name": "Lower lateral incisor.r",
+  "category": "tooth",
+  "type": "MESH",
+  "vertices": 522,
+  "triangles": 1040,
+  "center": [
+   -8.06,
+   -124.84,
+   79.57
+  ],
+  "bounds": [
+   [
+    -11.91,
+    -4.22
+   ],
+   [
+    -137.1,
+    -112.58
+   ],
+   [
+    71.34,
+    87.79
+   ]
+  ]
+ },
+ {
+  "name": "Lower lateral incisor.l",
+  "category": "tooth",
+  "type": "MESH",
+  "vertices": 522,
+  "triangles": 1040,
+  "center": [
+   8.06,
+   -124.84,
+   79.57
+  ],
+  "bounds": [
+   [
+    4.22,
+    11.91
+   ],
+   [
+    -137.1,
+    -112.58
+   ],
+   [
+    71.34,
+    87.79
+   ]
+  ]
+ },
+ {
+  "name": "Lower first premolar.r",
+  "category": "tooth",
+  "type": "MESH",
+  "vertices": 613,
+  "triangles": 1222,
+  "center": [
+   -16.87,
+   -122.53,
+   70.86
+  ],
+  "bounds": [
+   [
+    -20.76,
+    -12.98
+   ],
+   [
+    -133.51,
+    -111.55
+   ],
+   [
+    63.95,
+    77.78
+   ]
+  ]
+ },
+ {
+  "name": "Lower first premolar.l",
+  "category": "tooth",
+  "type": "MESH",
+  "vertices": 613,
+  "triangles": 1222,
+  "center": [
+   16.87,
+   -122.53,
+   70.86
+  ],
+  "bounds": [
+   [
+    12.98,
+    20.76
+   ],
+   [
+    -133.51,
+    -111.55
+   ],
+   [
+    63.95,
+    77.78
+   ]
+  ]
+ },
+ {
+  "name": "Lower first molar tooth.r",
+  "category": "tooth",
+  "type": "MESH",
+  "vertices": 2260,
+  "triangles": 4508,
+  "center": [
+   -22.8,
+   -116.95,
+   57.29
+  ],
+  "bounds": [
+   [
+    -28.84,
+    -16.77
+   ],
+   [
+    -126.57,
+    -107.33
+   ],
+   [
+    49.92,
+    64.67
+   ]
+  ]
+ },
+ {
+  "name": "Lower first molar tooth.l",
+  "category": "tooth",
+  "type": "MESH",
+  "vertices": 2260,
+  "triangles": 4508,
+  "center": [
+   22.8,
+   -116.95,
+   57.29
+  ],
+  "bounds": [
+   [
+    16.77,
+    28.84
+   ],
+   [
+    -126.57,
+    -107.33
+   ],
+   [
+    49.92,
+    64.67
+   ]
+  ]
+ },
+ {
+  "name": "Lower canine.r",
+  "category": "tooth",
+  "type": "MESH",
+  "vertices": 640,
+  "triangles": 1276,
+  "center": [
+   -12.85,
+   -125.26,
+   76.31
+  ],
+  "bounds": [
+   [
+    -16.7,
+    -8.99
+   ],
+   [
+    -138.35,
+    -112.17
+   ],
+   [
+    68.71,
+    83.92
+   ]
+  ]
+ },
+ {
+  "name": "Lower canine.l",
+  "category": "tooth",
+  "type": "MESH",
+  "vertices": 640,
+  "triangles": 1276,
+  "center": [
+   12.85,
+   -125.26,
+   76.31
+  ],
+  "bounds": [
+   [
+    8.99,
+    16.7
+   ],
+   [
+    -138.35,
+    -112.17
+   ],
+   [
+    68.71,
+    83.92
+   ]
+  ]
+ },
+ {
+  "name": "Lingula of cerebellum",
+  "category": "cerebellum",
+  "type": "MESH",
+  "vertices": 530,
+  "triangles": 1028,
+  "center": [
+   0.3,
+   -45.66,
+   -26.52
+  ],
+  "bounds": [
+   [
+    -4.8,
+    5.4
+   ],
+   [
+    -51.08,
+    -40.23
+   ],
+   [
+    -34.57,
+    -18.47
+   ]
+  ]
+ },
+ {
+  "name": "Lingual nerve.r",
+  "category": "nerve",
+  "type": "CURVE",
+  "vertices": 1332,
+  "triangles": 2612,
+  "center": [
+   -19.39,
+   -95.31,
+   38.6
+  ],
+  "bounds": [
+   [
+    -30.8,
+    -7.98
+   ],
+   [
+    -120.99,
+    -69.64
+   ],
+   [
+    15.62,
+    61.58
+   ]
+  ]
+ },
+ {
+  "name": "Lingual nerve.l",
+  "category": "nerve",
+  "type": "CURVE",
+  "vertices": 1332,
+  "triangles": 2612,
+  "center": [
+   19.39,
+   -95.31,
+   38.6
+  ],
+  "bounds": [
+   [
+    7.98,
+    30.8
+   ],
+   [
+    -120.99,
+    -69.64
+   ],
+   [
+    15.62,
+    61.58
+   ]
+  ]
+ },
+ {
+  "name": "Lingual gyrus.r",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 841,
+  "triangles": 1658,
+  "center": [
+   -16.92,
+   -30.09,
+   -65.88
+  ],
+  "bounds": [
+   [
+    -33.83,
+    -0.01
+   ],
+   [
+    -45.78,
+    -14.41
+   ],
+   [
+    -96.34,
+    -35.43
+   ]
+  ]
+ },
+ {
+  "name": "Lingual gyrus.l",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 841,
+  "triangles": 1658,
+  "center": [
+   16.92,
+   -30.09,
+   -65.88
+  ],
+  "bounds": [
+   [
+    0.01,
+    33.83
+   ],
+   [
+    -45.78,
+    -14.41
+   ],
+   [
+    -96.34,
+    -35.43
+   ]
+  ]
+ },
+ {
+  "name": "Levator palpebrae superioris.r",
+  "category": "orbit",
+  "type": "MESH",
+  "vertices": 1078,
+  "triangles": 2152,
+  "center": [
+   -28.23,
+   -38.67,
+   54.28
+  ],
+  "bounds": [
+   [
+    -43.3,
+    -13.16
+   ],
+   [
+    -46.6,
+    -30.75
+   ],
+   [
+    31.25,
+    77.3
+   ]
+  ]
+ },
+ {
+  "name": "Levator palpebrae superioris.l",
+  "category": "orbit",
+  "type": "MESH",
+  "vertices": 1078,
+  "triangles": 2152,
+  "center": [
+   28.23,
+   -38.67,
+   54.28
+  ],
+  "bounds": [
+   [
+    13.16,
+    43.3
+   ],
+   [
+    -46.6,
+    -30.75
+   ],
+   [
+    31.25,
+    77.3
+   ]
+  ]
+ },
+ {
+  "name": "Lens.r",
+  "category": "eye",
+  "type": "MESH",
+  "vertices": 801,
+  "triangles": 1598,
+  "center": [
+   -31.03,
+   -48.77,
+   71.32
+  ],
+  "bounds": [
+   [
+    -36.19,
+    -25.88
+   ],
+   [
+    -53.97,
+    -43.56
+   ],
+   [
+    68.91,
+    73.73
+   ]
+  ]
+ },
+ {
+  "name": "Lens.l",
+  "category": "eye",
+  "type": "MESH",
+  "vertices": 801,
+  "triangles": 1598,
+  "center": [
+   31.03,
+   -48.77,
+   71.32
+  ],
+  "bounds": [
+   [
+    25.88,
+    36.19
+   ],
+   [
+    -53.97,
+    -43.56
+   ],
+   [
+    68.91,
+    73.73
+   ]
+  ]
+ },
+ {
+  "name": "Lateral ventricle.r",
+  "category": "deep",
+  "type": "MESH",
+  "vertices": 1451,
+  "triangles": 2898,
+  "center": [
+   -18.92,
+   -13.55,
+   -15.57
+  ],
+  "bounds": [
+   [
+    -37.6,
+    -0.23
+   ],
+   [
+    -37.13,
+    10.03
+   ],
+   [
+    -68.54,
+    37.4
+   ]
+  ]
+ },
+ {
+  "name": "Lateral ventricle.l",
+  "category": "deep",
+  "type": "MESH",
+  "vertices": 1451,
+  "triangles": 2898,
+  "center": [
+   18.92,
+   -13.55,
+   -15.57
+  ],
+  "bounds": [
+   [
+    0.23,
+    37.6
+   ],
+   [
+    -37.13,
+    10.03
+   ],
+   [
+    -68.54,
+    37.4
+   ]
+  ]
+ },
+ {
+  "name": "Lateral rectus muscle.r",
+  "category": "orbit",
+  "type": "MESH",
+  "vertices": 802,
+  "triangles": 1600,
+  "center": [
+   -30.89,
+   -46.1,
+   50.81
+  ],
+  "bounds": [
+   [
+    -44.11,
+    -17.67
+   ],
+   [
+    -54.33,
+    -37.87
+   ],
+   [
+    30.93,
+    70.7
+   ]
+  ]
+ },
+ {
+  "name": "Lateral rectus muscle.l",
+  "category": "orbit",
+  "type": "MESH",
+  "vertices": 802,
+  "triangles": 1600,
+  "center": [
+   30.89,
+   -46.1,
+   50.81
+  ],
+  "bounds": [
+   [
+    17.67,
+    44.11
+   ],
+   [
+    -54.33,
+    -37.87
+   ],
+   [
+    30.93,
+    70.7
+   ]
+  ]
+ },
+ {
+  "name": "Lateral occipitotemporal gyrus.r",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 470,
+  "triangles": 866,
+  "center": [
+   -36.66,
+   -39.86,
+   -35.26
+  ],
+  "bounds": [
+   [
+    -49.57,
+    -23.75
+   ],
+   [
+    -50.85,
+    -28.87
+   ],
+   [
+    -66.43,
+    -4.09
+   ]
+  ]
+ },
+ {
+  "name": "Lateral occipitotemporal gyrus.l",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 470,
+  "triangles": 866,
+  "center": [
+   36.66,
+   -39.86,
+   -35.26
+  ],
+  "bounds": [
+   [
+    23.75,
+    49.57
+   ],
+   [
+    -50.85,
+    -28.87
+   ],
+   [
+    -66.43,
+    -4.09
+   ]
+  ]
+ },
+ {
+  "name": "Lateral occipital gyrus (Middle occipital gyrus*).r",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 429,
+  "triangles": 854,
+  "center": [
+   -34.84,
+   -18.34,
+   -78.69
+  ],
+  "bounds": [
+   [
+    -49.83,
+    -19.84
+   ],
+   [
+    -40.82,
+    4.13
+   ],
+   [
+    -92.51,
+    -64.86
+   ]
+  ]
+ },
+ {
+  "name": "Lateral occipital gyrus (Middle occipital gyrus*).l",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 429,
+  "triangles": 854,
+  "center": [
+   34.84,
+   -18.34,
+   -78.69
+  ],
+  "bounds": [
+   [
+    19.84,
+    49.83
+   ],
+   [
+    -40.82,
+    4.13
+   ],
+   [
+    -92.51,
+    -64.86
+   ]
+  ]
+ },
+ {
+  "name": "Lateral occipital artery.r",
+  "category": "artery",
+  "type": "CURVE",
+  "vertices": 2172,
+  "triangles": 4320,
+  "center": [
+   -29.78,
+   -33.17,
+   -57.96
+  ],
+  "bounds": [
+   [
+    -51.45,
+    -8.1
+   ],
+   [
+    -45.85,
+    -20.49
+   ],
+   [
+    -72.61,
+    -43.31
+   ]
+  ]
+ },
+ {
+  "name": "Lateral occipital artery.l",
+  "category": "artery",
+  "type": "CURVE",
+  "vertices": 2172,
+  "triangles": 4320,
+  "center": [
+   29.78,
+   -33.17,
+   -57.96
+  ],
+  "bounds": [
+   [
+    8.1,
+    51.45
+   ],
+   [
+    -45.85,
+    -20.49
+   ],
+   [
+    -72.61,
+    -43.31
+   ]
+  ]
+ },
+ {
+  "name": "Lateral geniculate body.r",
+  "category": "deep",
+  "type": "MESH",
+  "vertices": 304,
+  "triangles": 604,
+  "center": [
+   -19.1,
+   -27.75,
+   -13.15
+  ],
+  "bounds": [
+   [
+    -23.21,
+    -14.98
+   ],
+   [
+    -30.87,
+    -24.64
+   ],
+   [
+    -18.85,
+    -7.46
+   ]
+  ]
+ },
+ {
+  "name": "Lateral geniculate body.l",
+  "category": "deep",
+  "type": "MESH",
+  "vertices": 304,
+  "triangles": 604,
+  "center": [
+   19.1,
+   -27.75,
+   -13.15
+  ],
+  "bounds": [
+   [
+    14.98,
+    23.21
+   ],
+   [
+    -30.87,
+    -24.64
+   ],
+   [
+    -18.85,
+    -7.46
+   ]
+  ]
+ },
+ {
+  "name": "Lacrimal sac.r",
+  "category": "orbit",
+  "type": "MESH",
+  "vertices": 194,
+  "triangles": 384,
+  "center": [
+   -11.17,
+   -57.0,
+   70.42
+  ],
+  "bounds": [
+   [
+    -13.18,
+    -9.17
+   ],
+   [
+    -66.19,
+    -47.8
+   ],
+   [
+    67.36,
+    73.47
+   ]
+  ]
+ },
+ {
+  "name": "Lacrimal sac.l",
+  "category": "orbit",
+  "type": "MESH",
+  "vertices": 194,
+  "triangles": 384,
+  "center": [
+   11.17,
+   -57.0,
+   70.42
+  ],
+  "bounds": [
+   [
+    9.17,
+    13.18
+   ],
+   [
+    -66.19,
+    -47.8
+   ],
+   [
+    67.36,
+    73.47
+   ]
+  ]
+ },
+ {
+  "name": "Lacrimal gland.r",
+  "category": "orbit",
+  "type": "MESH",
+  "vertices": 907,
+  "triangles": 1810,
+  "center": [
+   -41.51,
+   -37.42,
+   65.78
+  ],
+  "bounds": [
+   [
+    -50.51,
+    -32.52
+   ],
+   [
+    -46.63,
+    -28.21
+   ],
+   [
+    58.23,
+    73.33
+   ]
+  ]
+ },
+ {
+  "name": "Lacrimal gland.l",
+  "category": "orbit",
+  "type": "MESH",
+  "vertices": 907,
+  "triangles": 1810,
+  "center": [
+   41.51,
+   -37.42,
+   65.78
+  ],
+  "bounds": [
+   [
+    32.52,
+    50.51
+   ],
+   [
+    -46.63,
+    -28.21
+   ],
+   [
+    58.23,
+    73.33
+   ]
+  ]
+ },
+ {
+  "name": "Lacrimal canaliculus.r",
+  "category": "orbit",
+  "type": "MESH",
+  "vertices": 210,
+  "triangles": 411,
+  "center": [
+   -13.72,
+   -51.87,
+   72.85
+  ],
+  "bounds": [
+   [
+    -17.25,
+    -10.19
+   ],
+   [
+    -54.38,
+    -49.37
+   ],
+   [
+    72.27,
+    73.43
+   ]
+  ]
+ },
+ {
+  "name": "Lacrimal canaliculus.l",
+  "category": "orbit",
+  "type": "MESH",
+  "vertices": 210,
+  "triangles": 411,
+  "center": [
+   13.72,
+   -51.87,
+   72.85
+  ],
+  "bounds": [
+   [
+    10.19,
+    17.25
+   ],
+   [
+    -54.38,
+    -49.37
+   ],
+   [
+    72.27,
+    73.43
+   ]
+  ]
+ },
+ {
+  "name": "Lacrimal bone.r",
+  "category": "bone",
+  "type": "MESH",
+  "vertices": 296,
+  "triangles": 588,
+  "center": [
+   -11.79,
+   -54.33,
+   68.87
+  ],
+  "bounds": [
+   [
+    -17.12,
+    -6.47
+   ],
+   [
+    -66.88,
+    -41.78
+   ],
+   [
+    61.52,
+    76.23
+   ]
+  ]
+ },
+ {
+  "name": "Lacrimal bone.l",
+  "category": "bone",
+  "type": "MESH",
+  "vertices": 296,
+  "triangles": 588,
+  "center": [
+   11.79,
+   -54.33,
+   68.87
+  ],
+  "bounds": [
+   [
+    6.47,
+    17.12
+   ],
+   [
+    -66.88,
+    -41.78
+   ],
+   [
+    61.52,
+    76.23
+   ]
+  ]
+ },
+ {
+  "name": "Iris.r",
+  "category": "eye",
+  "type": "MESH",
+  "vertices": 1734,
+  "triangles": 3248,
+  "center": [
+   -31.16,
+   -48.82,
+   73.29
+  ],
+  "bounds": [
+   [
+    -37.59,
+    -24.74
+   ],
+   [
+    -55.26,
+    -42.39
+   ],
+   [
+    71.68,
+    74.9
+   ]
+  ]
+ },
+ {
+  "name": "Iris.l",
+  "category": "eye",
+  "type": "MESH",
+  "vertices": 1734,
+  "triangles": 3248,
+  "center": [
+   31.16,
+   -48.82,
+   73.29
+  ],
+  "bounds": [
+   [
+    24.74,
+    37.59
+   ],
+   [
+    -55.26,
+    -42.39
+   ],
+   [
+    71.68,
+    74.9
+   ]
+  ]
+ },
+ {
+  "name": "Internal carotid artery.r",
+  "category": "artery",
+  "type": "CURVE",
+  "vertices": 1452,
+  "triangles": 2880,
+  "center": [
+   -22.95,
+   -95.21,
+   11.21
+  ],
+  "bounds": [
+   [
+    -36.82,
+    -9.08
+   ],
+   [
+    -154.35,
+    -36.06
+   ],
+   [
+    -4.08,
+    26.49
+   ]
+  ]
+ },
+ {
+  "name": "Internal carotid artery.l",
+  "category": "artery",
+  "type": "CURVE",
+  "vertices": 1452,
+  "triangles": 2880,
+  "center": [
+   22.95,
+   -95.21,
+   11.21
+  ],
+  "bounds": [
+   [
+    9.08,
+    36.82
+   ],
+   [
+    -154.35,
+    -36.06
+   ],
+   [
+    -4.08,
+    26.49
+   ]
+  ]
+ },
+ {
+  "name": "Insular branches of middle cerebral artery (M2-segment).l",
+  "category": "artery",
+  "type": "CURVE",
+  "vertices": 888,
+  "triangles": 1728,
+  "center": [
+   42.63,
+   -18.8,
+   17.88
+  ],
+  "bounds": [
+   [
+    36.28,
+    48.98
+   ],
+   [
+    -24.86,
+    -12.74
+   ],
+   [
+    14.77,
+    21.0
+   ]
+  ]
+ },
+ {
+  "name": "Insular branches of middle cerebral artery (M2).r",
+  "category": "artery",
+  "type": "CURVE",
+  "vertices": 888,
+  "triangles": 1728,
+  "center": [
+   -42.63,
+   -18.8,
+   17.88
+  ],
+  "bounds": [
+   [
+    -48.98,
+    -36.28
+   ],
+   [
+    -24.86,
+    -12.74
+   ],
+   [
+    14.77,
+    21.0
+   ]
+  ]
+ },
+ {
+  "name": "Insula (Subcentral gyrus and ant. and post. sulci*).r",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 372,
+  "triangles": 740,
+  "center": [
+   -54.08,
+   -2.82,
+   -1.87
+  ],
+  "bounds": [
+   [
+    -68.12,
+    -40.04
+   ],
+   [
+    -13.85,
+    8.21
+   ],
+   [
+    -20.69,
+    16.95
+   ]
+  ]
+ },
+ {
+  "name": "Insula (Subcentral gyrus and ant. and post. sulci*).l",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 372,
+  "triangles": 740,
+  "center": [
+   54.08,
+   -2.82,
+   -1.87
+  ],
+  "bounds": [
+   [
+    40.04,
+    68.12
+   ],
+   [
+    -13.85,
+    8.21
+   ],
+   [
+    -20.69,
+    16.95
+   ]
+  ]
+ },
+ {
+  "name": "Inferior temporal gyrus.r",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 750,
+  "triangles": 1498,
+  "center": [
+   -51.17,
+   -35.45,
+   -25.92
+  ],
+  "bounds": [
+   [
+    -63.99,
+    -38.35
+   ],
+   [
+    -57.49,
+    -13.41
+   ],
+   [
+    -70.75,
+    18.91
+   ]
+  ]
+ },
+ {
+  "name": "Inferior temporal gyrus.l",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 750,
+  "triangles": 1498,
+  "center": [
+   51.17,
+   -35.45,
+   -25.92
+  ],
+  "bounds": [
+   [
+    38.35,
+    63.99
+   ],
+   [
+    -57.49,
+    -13.41
+   ],
+   [
+    -70.75,
+    18.91
+   ]
+  ]
+ },
+ {
+  "name": "Inferior semilunar lobule.r",
+  "category": "cerebellum",
+  "type": "MESH",
+  "vertices": 3901,
+  "triangles": 7787,
+  "center": [
+   -24.18,
+   -61.84,
+   -50.35
+  ],
+  "bounds": [
+   [
+    -47.93,
+    -0.43
+   ],
+   [
+    -76.11,
+    -47.56
+   ],
+   [
+    -79.46,
+    -21.24
+   ]
+  ]
+ },
+ {
+  "name": "Inferior semilunar lobule.l",
+  "category": "cerebellum",
+  "type": "MESH",
+  "vertices": 3901,
+  "triangles": 7787,
+  "center": [
+   24.18,
+   -61.84,
+   -50.35
+  ],
+  "bounds": [
+   [
+    0.43,
+    47.93
+   ],
+   [
+    -76.11,
+    -47.56
+   ],
+   [
+    -79.46,
+    -21.24
+   ]
+  ]
+ },
+ {
+  "name": "Inferior rectus muscle.r",
+  "category": "orbit",
+  "type": "MESH",
+  "vertices": 870,
+  "triangles": 1736,
+  "center": [
+   -24.5,
+   -52.6,
+   51.64
+  ],
+  "bounds": [
+   [
+    -35.61,
+    -13.39
+   ],
+   [
+    -63.5,
+    -41.7
+   ],
+   [
+    30.91,
+    72.36
+   ]
+  ]
+ },
+ {
+  "name": "Inferior rectus muscle.l",
+  "category": "orbit",
+  "type": "MESH",
+  "vertices": 870,
+  "triangles": 1736,
+  "center": [
+   24.5,
+   -52.6,
+   51.64
+  ],
+  "bounds": [
+   [
+    13.39,
+    35.61
+   ],
+   [
+    -63.5,
+    -41.7
+   ],
+   [
+    30.91,
+    72.36
+   ]
+  ]
+ },
+ {
+  "name": "Inferior petrosal sinus.r",
+  "category": "vein",
+  "type": "CURVE",
+  "vertices": 876,
+  "triangles": 1728,
+  "center": [
+   -27.31,
+   -61.66,
+   -7.25
+  ],
+  "bounds": [
+   [
+    -46.32,
+    -8.29
+   ],
+   [
+    -73.45,
+    -49.88
+   ],
+   [
+    -22.57,
+    8.07
+   ]
+  ]
+ },
+ {
+  "name": "Inferior petrosal sinus.l",
+  "category": "vein",
+  "type": "CURVE",
+  "vertices": 876,
+  "triangles": 1728,
+  "center": [
+   27.31,
+   -61.66,
+   -7.25
+  ],
+  "bounds": [
+   [
+    8.29,
+    46.32
+   ],
+   [
+    -73.45,
+    -49.88
+   ],
+   [
+    -22.57,
+    8.07
+   ]
+  ]
+ },
+ {
+  "name": "Inferior ophthalmic vein.r",
+  "category": "vein",
+  "type": "CURVE",
+  "vertices": 444,
+  "triangles": 864,
+  "center": [
+   -17.86,
+   -49.01,
+   37.31
+  ],
+  "bounds": [
+   [
+    -20.62,
+    -15.11
+   ],
+   [
+    -55.66,
+    -42.37
+   ],
+   [
+    22.25,
+    52.38
+   ]
+  ]
+ },
+ {
+  "name": "Inferior ophthalmic vein.l",
+  "category": "vein",
+  "type": "CURVE",
+  "vertices": 444,
+  "triangles": 864,
+  "center": [
+   17.86,
+   -49.01,
+   37.31
+  ],
+  "bounds": [
+   [
+    15.11,
+    20.62
+   ],
+   [
+    -55.66,
+    -42.37
+   ],
+   [
+    22.25,
+    52.38
+   ]
+  ]
+ },
+ {
+  "name": "Inferior occipital gyrus and sulcus*.r",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 449,
+  "triangles": 894,
+  "center": [
+   -35.06,
+   -36.33,
+   -69.72
+  ],
+  "bounds": [
+   [
+    -54.99,
+    -15.14
+   ],
+   [
+    -48.18,
+    -24.48
+   ],
+   [
+    -85.49,
+    -53.94
+   ]
+  ]
+ },
+ {
+  "name": "Inferior occipital gyrus and sulcus*.l",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 449,
+  "triangles": 894,
+  "center": [
+   35.06,
+   -36.33,
+   -69.72
+  ],
+  "bounds": [
+   [
+    15.14,
+    54.99
+   ],
+   [
+    -48.18,
+    -24.48
+   ],
+   [
+    -85.49,
+    -53.94
+   ]
+  ]
+ },
+ {
+  "name": "Inferior oblique muscle.r",
+  "category": "orbit",
+  "type": "MESH",
+  "vertices": 576,
+  "triangles": 1148,
+  "center": [
+   -28.56,
+   -56.38,
+   65.65
+  ],
+  "bounds": [
+   [
+    -43.26,
+    -13.87
+   ],
+   [
+    -64.46,
+    -48.3
+   ],
+   [
+    52.63,
+    78.68
+   ]
+  ]
+ },
+ {
+  "name": "Inferior oblique muscle.l",
+  "category": "orbit",
+  "type": "MESH",
+  "vertices": 576,
+  "triangles": 1148,
+  "center": [
+   28.56,
+   -56.38,
+   65.65
+  ],
+  "bounds": [
+   [
+    13.87,
+    43.26
+   ],
+   [
+    -64.46,
+    -48.3
+   ],
+   [
+    52.63,
+    78.68
+   ]
+  ]
+ },
+ {
+  "name": "Inferior nasal concha bone.r",
+  "category": "bone",
+  "type": "MESH",
+  "vertices": 238,
+  "triangles": 476,
+  "center": [
+   -9.65,
+   -76.64,
+   58.11
+  ],
+  "bounds": [
+   [
+    -14.88,
+    -4.42
+   ],
+   [
+    -87.9,
+    -65.38
+   ],
+   [
+    40.79,
+    75.43
+   ]
+  ]
+ },
+ {
+  "name": "Inferior nasal concha bone.l",
+  "category": "bone",
+  "type": "MESH",
+  "vertices": 238,
+  "triangles": 476,
+  "center": [
+   9.65,
+   -76.64,
+   58.11
+  ],
+  "bounds": [
+   [
+    4.42,
+    14.88
+   ],
+   [
+    -87.9,
+    -65.38
+   ],
+   [
+    40.79,
+    75.43
+   ]
+  ]
+ },
+ {
+  "name": "Inferior colliculus.r",
+  "category": "stem",
+  "type": "MESH",
+  "vertices": 236,
+  "triangles": 464,
+  "center": [
+   -7.33,
+   -31.7,
+   -16.18
+  ],
+  "bounds": [
+   [
+    -14.36,
+    -0.3
+   ],
+   [
+    -38.73,
+    -24.67
+   ],
+   [
+    -20.31,
+    -12.06
+   ]
+  ]
+ },
+ {
+  "name": "Inferior colliculus.l",
+  "category": "stem",
+  "type": "MESH",
+  "vertices": 236,
+  "triangles": 464,
+  "center": [
+   7.33,
+   -31.7,
+   -16.18
+  ],
+  "bounds": [
+   [
+    0.3,
+    14.36
+   ],
+   [
+    -38.73,
+    -24.67
+   ],
+   [
+    -20.31,
+    -12.06
+   ]
+  ]
+ },
+ {
+  "name": "Inferior alveolar nerve.r",
+  "category": "nerve",
+  "type": "CURVE",
+  "vertices": 8784,
+  "triangles": 16944,
+  "center": [
+   -19.45,
+   -116.57,
+   51.8
+  ],
+  "bounds": [
+   [
+    -37.27,
+    -1.64
+   ],
+   [
+    -139.13,
+    -94.01
+   ],
+   [
+    18.88,
+    84.72
+   ]
+  ]
+ },
+ {
+  "name": "Inferior alveolar nerve.l",
+  "category": "nerve",
+  "type": "CURVE",
+  "vertices": 8784,
+  "triangles": 16944,
+  "center": [
+   19.45,
+   -116.57,
+   51.8
+  ],
+  "bounds": [
+   [
+    1.64,
+    37.27
+   ],
+   [
+    -139.13,
+    -94.01
+   ],
+   [
+    18.88,
+    84.72
+   ]
+  ]
+ },
+ {
+  "name": "Hypothalamus",
+  "category": "deep",
+  "type": "MESH",
+  "vertices": 2135,
+  "triangles": 4258,
+  "center": [
+   0.0,
+   -25.86,
+   12.39
+  ],
+  "bounds": [
+   [
+    -9.62,
+    9.62
+   ],
+   [
+    -35.55,
+    -16.16
+   ],
+   [
+    3.71,
+    21.08
+   ]
+  ]
+ },
+ {
+  "name": "Hypoglossal nerve (XII).r",
+  "category": "nerve",
+  "type": "CURVE",
+  "vertices": 8352,
+  "triangles": 16288,
+  "center": [
+   -14.72,
+   -98.44,
+   16.81
+  ],
+  "bounds": [
+   [
+    -27.97,
+    -1.47
+   ],
+   [
+    -130.71,
+    -66.17
+   ],
+   [
+    -21.06,
+    54.67
+   ]
+  ]
+ },
+ {
+  "name": "Hypoglossal nerve (XII).l",
+  "category": "nerve",
+  "type": "CURVE",
+  "vertices": 8352,
+  "triangles": 16288,
+  "center": [
+   14.72,
+   -98.44,
+   16.81
+  ],
+  "bounds": [
+   [
+    1.47,
+    27.97
+   ],
+   [
+    -130.71,
+    -66.17
+   ],
+   [
+    -21.06,
+    54.67
+   ]
+  ]
+ },
+ {
+  "name": "Gracile lobule.r",
+  "category": "cerebellum",
+  "type": "MESH",
+  "vertices": 3488,
+  "triangles": 6961,
+  "center": [
+   -22.12,
+   -67.66,
+   -41.77
+  ],
+  "bounds": [
+   [
+    -39.54,
+    -4.7
+   ],
+   [
+    -77.38,
+    -57.93
+   ],
+   [
+    -60.07,
+    -23.46
+   ]
+  ]
+ },
+ {
+  "name": "Gracile lobule.l",
+  "category": "cerebellum",
+  "type": "MESH",
+  "vertices": 3488,
+  "triangles": 6961,
+  "center": [
+   22.12,
+   -67.66,
+   -41.77
+  ],
+  "bounds": [
+   [
+    4.7,
+    39.54
+   ],
+   [
+    -77.38,
+    -57.93
+   ],
+   [
+    -60.07,
+    -23.46
+   ]
+  ]
+ },
+ {
+  "name": "Glossopharyngeal nerve (IX).r",
+  "category": "nerve",
+  "type": "CURVE",
+  "vertices": 6492,
+  "triangles": 12634,
+  "center": [
+   -21.21,
+   -118.99,
+   6.35
+  ],
+  "bounds": [
+   [
+    -40.69,
+    -1.73
+   ],
+   [
+    -175.27,
+    -62.71
+   ],
+   [
+    -21.07,
+    33.77
+   ]
+  ]
+ },
+ {
+  "name": "Glossopharyngeal nerve (IX).l",
+  "category": "nerve",
+  "type": "CURVE",
+  "vertices": 6492,
+  "triangles": 12634,
+  "center": [
+   21.21,
+   -118.99,
+   6.35
+  ],
+  "bounds": [
+   [
+    1.73,
+    40.69
+   ],
+   [
+    -175.27,
+    -62.71
+   ],
+   [
+    -21.07,
+    33.77
+   ]
+  ]
+ },
+ {
+  "name": "Globus pallidus.r",
+  "category": "deep",
+  "type": "MESH",
+  "vertices": 2640,
+  "triangles": 5276,
+  "center": [
+   -20.72,
+   -13.39,
+   6.22
+  ],
+  "bounds": [
+   [
+    -28.84,
+    -12.6
+   ],
+   [
+    -21.79,
+    -4.99
+   ],
+   [
+    -7.99,
+    20.43
+   ]
+  ]
+ },
+ {
+  "name": "Globus pallidus.l",
+  "category": "deep",
+  "type": "MESH",
+  "vertices": 2640,
+  "triangles": 5276,
+  "center": [
+   20.72,
+   -13.39,
+   6.22
+  ],
+  "bounds": [
+   [
+    12.6,
+    28.84
+   ],
+   [
+    -21.79,
+    -4.99
+   ],
+   [
+    -7.99,
+    20.43
+   ]
+  ]
+ },
+ {
+  "name": "Frontal bone",
+  "category": "bone",
+  "type": "MESH",
+  "vertices": 3902,
+  "triangles": 7776,
+  "center": [
+   0.0,
+   5.9,
+   52.56
+  ],
+  "bounds": [
+   [
+    -61.19,
+    61.19
+   ],
+   [
+    -47.39,
+    59.19
+   ],
+   [
+    18.01,
+    87.11
+   ]
+  ]
+ },
+ {
+  "name": "Folium of vermis",
+  "category": "cerebellum",
+  "type": "MESH",
+  "vertices": 410,
+  "triangles": 812,
+  "center": [
+   -0.02,
+   -50.62,
+   -57.5
+  ],
+  "bounds": [
+   [
+    -6.65,
+    6.61
+   ],
+   [
+    -53.66,
+    -47.58
+   ],
+   [
+    -66.12,
+    -48.88
+   ]
+  ]
+ },
+ {
+  "name": "Falx cerebri",
+  "category": "dura",
+  "type": "MESH",
+  "vertices": 7087,
+  "triangles": 14724,
+  "center": [
+   0.03,
+   0.81,
+   -9.01
+  ],
+  "bounds": [
+   [
+    -2.9,
+    2.96
+   ],
+   [
+    -58.96,
+    60.58
+   ],
+   [
+    -96.41,
+    78.39
+   ]
+  ]
+ },
+ {
+  "name": "Facial nerve (VII).r",
+  "category": "nerve",
+  "type": "CURVE",
+  "vertices": 13968,
+  "triangles": 27312,
+  "center": [
+   -32.88,
+   -73.7,
+   34.63
+  ],
+  "bounds": [
+   [
+    -65.59,
+    -0.17
+   ],
+   [
+    -131.76,
+    -15.63
+   ],
+   [
+    -17.45,
+    86.71
+   ]
+  ]
+ },
+ {
+  "name": "Facial nerve (VII).l",
+  "category": "nerve",
+  "type": "CURVE",
+  "vertices": 13968,
+  "triangles": 27312,
+  "center": [
+   32.88,
+   -73.7,
+   34.63
+  ],
+  "bounds": [
+   [
+    0.17,
+    65.59
+   ],
+   [
+    -131.76,
+    -15.63
+   ],
+   [
+    -17.45,
+    86.71
+   ]
+  ]
+ },
+ {
+  "name": "Ethmoid bone",
+  "category": "bone",
+  "type": "MESH",
+  "vertices": 5082,
+  "triangles": 10130,
+  "center": [
+   0.0,
+   -54.41,
+   53.68
+  ],
+  "bounds": [
+   [
+    -18.74,
+    18.74
+   ],
+   [
+    -74.12,
+    -34.69
+   ],
+   [
+    31.41,
+    75.95
+   ]
+  ]
+ },
+ {
+  "name": "Declive",
+  "category": "cerebellum",
+  "type": "MESH",
+  "vertices": 1067,
+  "triangles": 2125,
+  "center": [
+   -0.04,
+   -42.56,
+   -53.66
+  ],
+  "bounds": [
+   [
+    -6.11,
+    6.04
+   ],
+   [
+    -51.37,
+    -33.75
+   ],
+   [
+    -63.2,
+    -44.12
+   ]
+  ]
+ },
+ {
+  "name": "Cuneus.r",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 475,
+  "triangles": 946,
+  "center": [
+   -9.76,
+   -9.71,
+   -74.27
+  ],
+  "bounds": [
+   [
+    -19.5,
+    -0.01
+   ],
+   [
+    -25.74,
+    6.33
+   ],
+   [
+    -98.97,
+    -49.58
+   ]
+  ]
+ },
+ {
+  "name": "Cuneus.l",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 475,
+  "triangles": 946,
+  "center": [
+   9.76,
+   -9.71,
+   -74.27
+  ],
+  "bounds": [
+   [
+    0.01,
+    19.5
+   ],
+   [
+    -25.74,
+    6.33
+   ],
+   [
+    -98.97,
+    -49.58
+   ]
+  ]
+ },
+ {
+  "name": "Culmen",
+  "category": "cerebellum",
+  "type": "MESH",
+  "vertices": 1194,
+  "triangles": 2378,
+  "center": [
+   -0.0,
+   -38.8,
+   -38.83
+  ],
+  "bounds": [
+   [
+    -5.18,
+    5.18
+   ],
+   [
+    -50.75,
+    -26.86
+   ],
+   [
+    -48.48,
+    -29.18
+   ]
+  ]
+ },
+ {
+  "name": "Corpus callosum",
+  "category": "deep",
+  "type": "MESH",
+  "vertices": 2000,
+  "triangles": 3996,
+  "center": [
+   0.0,
+   -4.82,
+   -3.14
+  ],
+  "bounds": [
+   [
+    -24.99,
+    24.99
+   ],
+   [
+    -23.65,
+    14.01
+   ],
+   [
+    -47.52,
+    41.23
+   ]
+  ]
+ },
+ {
+  "name": "Cornea.r",
+  "category": "eye",
+  "type": "MESH",
+  "vertices": 1346,
+  "triangles": 2688,
+  "center": [
+   -31.17,
+   -48.61,
+   75.67
+  ],
+  "bounds": [
+   [
+    -38.27,
+    -24.08
+   ],
+   [
+    -55.7,
+    -41.51
+   ],
+   [
+    73.19,
+    78.15
+   ]
+  ]
+ },
+ {
+  "name": "Cornea.l",
+  "category": "eye",
+  "type": "MESH",
+  "vertices": 1346,
+  "triangles": 2688,
+  "center": [
+   31.17,
+   -48.61,
+   75.67
+  ],
+  "bounds": [
+   [
+    24.08,
+    38.27
+   ],
+   [
+    -55.7,
+    -41.51
+   ],
+   [
+    73.19,
+    78.15
+   ]
+  ]
+ },
+ {
+  "name": "Common tendinous ring.r",
+  "category": "orbit",
+  "type": "MESH",
+  "vertices": 181,
+  "triangles": 362,
+  "center": [
+   -16.26,
+   -40.31,
+   33.94
+  ],
+  "bounds": [
+   [
+    -19.39,
+    -13.13
+   ],
+   [
+    -43.66,
+    -36.97
+   ],
+   [
+    31.02,
+    36.86
+   ]
+  ]
+ },
+ {
+  "name": "Common tendinous ring.l",
+  "category": "orbit",
+  "type": "MESH",
+  "vertices": 181,
+  "triangles": 362,
+  "center": [
+   16.26,
+   -40.31,
+   33.94
+  ],
+  "bounds": [
+   [
+    13.13,
+    19.39
+   ],
+   [
+    -43.66,
+    -36.97
+   ],
+   [
+    31.02,
+    36.86
+   ]
+  ]
+ },
+ {
+  "name": "Collateral sulcus.r",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 575,
+  "triangles": 1142,
+  "center": [
+   -24.79,
+   -34.36,
+   -36.66
+  ],
+  "bounds": [
+   [
+    -40.66,
+    -8.91
+   ],
+   [
+    -47.57,
+    -21.14
+   ],
+   [
+    -78.16,
+    4.85
+   ]
+  ]
+ },
+ {
+  "name": "Collateral sulcus.l",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 575,
+  "triangles": 1142,
+  "center": [
+   24.79,
+   -34.36,
+   -36.66
+  ],
+  "bounds": [
+   [
+    8.91,
+    40.66
+   ],
+   [
+    -47.57,
+    -21.14
+   ],
+   [
+    -78.16,
+    4.85
+   ]
+  ]
+ },
+ {
+  "name": "Cochlear nerve.l",
+  "category": "nerve",
+  "type": "CURVE",
+  "vertices": 468,
+  "triangles": 884,
+  "center": [
+   29.19,
+   -59.78,
+   -1.42
+  ],
+  "bounds": [
+   [
+    19.33,
+    39.05
+   ],
+   [
+    -61.47,
+    -58.08
+   ],
+   [
+    -5.09,
+    2.24
+   ]
+  ]
+ },
+ {
+  "name": "Cochlear nerve",
+  "category": "nerve",
+  "type": "MESH",
+  "vertices": 881,
+  "triangles": 1758,
+  "center": [
+   -29.64,
+   -59.61,
+   -2.11
+  ],
+  "bounds": [
+   [
+    -40.5,
+    -18.77
+   ],
+   [
+    -62.14,
+    -57.09
+   ],
+   [
+    -6.57,
+    2.35
+   ]
+  ]
+ },
+ {
+  "name": "Circular sulcus of insula.r",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 401,
+  "triangles": 798,
+  "center": [
+   -39.26,
+   -1.15,
+   11.25
+  ],
+  "bounds": [
+   [
+    -49.15,
+    -29.36
+   ],
+   [
+    -10.11,
+    7.81
+   ],
+   [
+    -18.44,
+    40.94
+   ]
+  ]
+ },
+ {
+  "name": "Circular sulcus of insula.l",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 401,
+  "triangles": 798,
+  "center": [
+   39.26,
+   -1.15,
+   11.25
+  ],
+  "bounds": [
+   [
+    29.36,
+    49.15
+   ],
+   [
+    -10.11,
+    7.81
+   ],
+   [
+    -18.44,
+    40.94
+   ]
+  ]
+ },
+ {
+  "name": "Cingulate sulcus (Marginal part*).r",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 274,
+  "triangles": 544,
+  "center": [
+   -10.95,
+   29.15,
+   -38.21
+  ],
+  "bounds": [
+   [
+    -20.68,
+    -1.23
+   ],
+   [
+    12.91,
+    45.38
+   ],
+   [
+    -54.2,
+    -22.21
+   ]
+  ]
+ },
+ {
+  "name": "Cingulate sulcus (Marginal part*).l",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 274,
+  "triangles": 544,
+  "center": [
+   10.95,
+   29.15,
+   -38.21
+  ],
+  "bounds": [
+   [
+    1.23,
+    20.68
+   ],
+   [
+    12.91,
+    45.38
+   ],
+   [
+    -54.2,
+    -22.21
+   ]
+  ]
+ },
+ {
+  "name": "Cingulate gyrus and sulcus (Posterior dorsal part).r",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 207,
+  "triangles": 410,
+  "center": [
+   -6.55,
+   12.88,
+   -36.82
+  ],
+  "bounds": [
+   [
+    -13.09,
+    -0.01
+   ],
+   [
+    -3.65,
+    29.41
+   ],
+   [
+    -53.82,
+    -19.82
+   ]
+  ]
+ },
+ {
+  "name": "Cingulate gyrus and sulcus (Posterior dorsal part).l",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 207,
+  "triangles": 410,
+  "center": [
+   6.55,
+   12.88,
+   -36.82
+  ],
+  "bounds": [
+   [
+    0.01,
+    13.09
+   ],
+   [
+    -3.65,
+    29.41
+   ],
+   [
+    -53.82,
+    -19.82
+   ]
+  ]
+ },
+ {
+  "name": "Cingulate gyrus and sulcus (Middle posterior part).r",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 302,
+  "triangles": 600,
+  "center": [
+   -9.06,
+   22.06,
+   -11.7
+  ],
+  "bounds": [
+   [
+    -18.1,
+    -0.02
+   ],
+   [
+    12.58,
+    31.54
+   ],
+   [
+    -28.22,
+    4.82
+   ]
+  ]
+ },
+ {
+  "name": "Cingulate gyrus and sulcus (Middle posterior part).l",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 302,
+  "triangles": 600,
+  "center": [
+   9.06,
+   22.06,
+   -11.7
+  ],
+  "bounds": [
+   [
+    0.02,
+    18.1
+   ],
+   [
+    12.58,
+    31.54
+   ],
+   [
+    -28.22,
+    4.82
+   ]
+  ]
+ },
+ {
+  "name": "Cingulate gyrus and sulcus (Middle anterior part).r",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 370,
+  "triangles": 736,
+  "center": [
+   -7.28,
+   21.57,
+   17.1
+  ],
+  "bounds": [
+   [
+    -14.56,
+    -0.01
+   ],
+   [
+    7.1,
+    36.05
+   ],
+   [
+    -1.23,
+    35.44
+   ]
+  ]
+ },
+ {
+  "name": "Cingulate gyrus and sulcus (Middle anterior part).l",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 370,
+  "triangles": 736,
+  "center": [
+   7.28,
+   21.57,
+   17.1
+  ],
+  "bounds": [
+   [
+    0.01,
+    14.56
+   ],
+   [
+    7.1,
+    36.05
+   ],
+   [
+    -1.23,
+    35.44
+   ]
+  ]
+ },
+ {
+  "name": "Cingulate gyrus (Posteroventral part*).r",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 153,
+  "triangles": 298,
+  "center": [
+   -8.67,
+   -14.65,
+   -39.58
+  ],
+  "bounds": [
+   [
+    -16.82,
+    -0.52
+   ],
+   [
+    -27.57,
+    -1.73
+   ],
+   [
+    -49.75,
+    -29.4
+   ]
+  ]
+ },
+ {
+  "name": "Cingulate gyrus (Posteroventral part*).l",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 153,
+  "triangles": 298,
+  "center": [
+   8.67,
+   -14.65,
+   -39.58
+  ],
+  "bounds": [
+   [
+    0.52,
+    16.82
+   ],
+   [
+    -27.57,
+    -1.73
+   ],
+   [
+    -49.75,
+    -29.4
+   ]
+  ]
+ },
+ {
+  "name": "Ciliary body-curve.r",
+  "category": "eye",
+  "type": "CURVE",
+  "vertices": 384,
+  "triangles": 768,
+  "center": [
+   -31.06,
+   -48.86,
+   71.94
+  ],
+  "bounds": [
+   [
+    -37.25,
+    -24.88
+   ],
+   [
+    -55.05,
+    -42.67
+   ],
+   [
+    71.45,
+    72.42
+   ]
+  ]
+ },
+ {
+  "name": "Choroid plexus.r",
+  "category": "deep",
+  "type": "MESH",
+  "vertices": 1324,
+  "triangles": 2647,
+  "center": [
+   -18.15,
+   -16.39,
+   -10.19
+  ],
+  "bounds": [
+   [
+    -36.3,
+    -0.01
+   ],
+   [
+    -32.83,
+    0.04
+   ],
+   [
+    -31.22,
+    10.84
+   ]
+  ]
+ },
+ {
+  "name": "Choroid plexus.l",
+  "category": "deep",
+  "type": "MESH",
+  "vertices": 1324,
+  "triangles": 2647,
+  "center": [
+   18.15,
+   -16.39,
+   -10.19
+  ],
+  "bounds": [
+   [
+    0.01,
+    36.3
+   ],
+   [
+    -32.83,
+    0.04
+   ],
+   [
+    -31.22,
+    10.84
+   ]
+  ]
+ },
+ {
+  "name": "Central sulcus.r",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 722,
+  "triangles": 1440,
+  "center": [
+   -33.7,
+   22.55,
+   -15.67
+  ],
+  "bounds": [
+   [
+    -59.37,
+    -8.04
+   ],
+   [
+    -4.04,
+    49.13
+   ],
+   [
+    -39.87,
+    8.53
+   ]
+  ]
+ },
+ {
+  "name": "Central sulcus.l",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 722,
+  "triangles": 1440,
+  "center": [
+   33.7,
+   22.55,
+   -15.67
+  ],
+  "bounds": [
+   [
+    8.04,
+    59.37
+   ],
+   [
+    -4.04,
+    49.13
+   ],
+   [
+    -39.87,
+    8.53
+   ]
+  ]
+ },
+ {
+  "name": "Central lobule",
+  "category": "cerebellum",
+  "type": "MESH",
+  "vertices": 505,
+  "triangles": 1006,
+  "center": [
+   0.31,
+   -42.15,
+   -27.05
+  ],
+  "bounds": [
+   [
+    -3.54,
+    4.17
+   ],
+   [
+    -50.07,
+    -34.23
+   ],
+   [
+    -35.58,
+    -18.52
+   ]
+  ]
+ },
+ {
+  "name": "Cavernous sinus.r",
+  "category": "vein",
+  "type": "MESH",
+  "vertices": 4962,
+  "triangles": 9728,
+  "center": [
+   -11.68,
+   -44.57,
+   14.34
+  ],
+  "bounds": [
+   [
+    -18.31,
+    -5.04
+   ],
+   [
+    -52.99,
+    -36.16
+   ],
+   [
+    4.45,
+    24.24
+   ]
+  ]
+ },
+ {
+  "name": "Cavernous sinus.l",
+  "category": "vein",
+  "type": "MESH",
+  "vertices": 4962,
+  "triangles": 9728,
+  "center": [
+   11.68,
+   -44.57,
+   14.34
+  ],
+  "bounds": [
+   [
+    5.04,
+    18.31
+   ],
+   [
+    -52.99,
+    -36.16
+   ],
+   [
+    4.45,
+    24.24
+   ]
+  ]
+ },
+ {
+  "name": "Caudate nucleus.r",
+  "category": "deep",
+  "type": "MESH",
+  "vertices": 1287,
+  "triangles": 2570,
+  "center": [
+   -17.95,
+   -9.64,
+   3.59
+  ],
+  "bounds": [
+   [
+    -33.39,
+    -2.51
+   ],
+   [
+    -27.64,
+    8.35
+   ],
+   [
+    -27.26,
+    34.44
+   ]
+  ]
+ },
+ {
+  "name": "Caudate nucleus.l",
+  "category": "deep",
+  "type": "MESH",
+  "vertices": 1287,
+  "triangles": 2570,
+  "center": [
+   17.95,
+   -9.65,
+   3.59
+  ],
+  "bounds": [
+   [
+    2.51,
+    33.39
+   ],
+   [
+    -27.64,
+    8.35
+   ],
+   [
+    -27.26,
+    34.44
+   ]
+  ]
+ },
+ {
+  "name": "Calcarine sulcus.r",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 437,
+  "triangles": 872,
+  "center": [
+   -12.74,
+   -21.83,
+   -65.36
+  ],
+  "bounds": [
+   [
+    -22.52,
+    -2.96
+   ],
+   [
+    -38.37,
+    -5.28
+   ],
+   [
+    -93.13,
+    -37.59
+   ]
+  ]
+ },
+ {
+  "name": "Calcarine sulcus.l",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 437,
+  "triangles": 872,
+  "center": [
+   12.74,
+   -21.83,
+   -65.36
+  ],
+  "bounds": [
+   [
+    2.96,
+    22.52
+   ],
+   [
+    -38.37,
+    -5.28
+   ],
+   [
+    -93.13,
+    -37.59
+   ]
+  ]
+ },
+ {
+  "name": "Buccal nerve.r",
+  "category": "nerve",
+  "type": "CURVE",
+  "vertices": 1368,
+  "triangles": 2632,
+  "center": [
+   -31.73,
+   -93.64,
+   42.3
+  ],
+  "bounds": [
+   [
+    -33.87,
+    -29.6
+   ],
+   [
+    -111.38,
+    -75.9
+   ],
+   [
+    21.79,
+    62.8
+   ]
+  ]
+ },
+ {
+  "name": "Buccal nerve.l",
+  "category": "nerve",
+  "type": "CURVE",
+  "vertices": 1368,
+  "triangles": 2632,
+  "center": [
+   31.73,
+   -93.64,
+   42.3
+  ],
+  "bounds": [
+   [
+    29.6,
+    33.87
+   ],
+   [
+    -111.38,
+    -75.9
+   ],
+   [
+    21.79,
+    62.8
+   ]
+  ]
+ },
+ {
+  "name": "Biventral lobule.r",
+  "category": "cerebellum",
+  "type": "MESH",
+  "vertices": 4464,
+  "triangles": 8902,
+  "center": [
+   -19.73,
+   -68.63,
+   -34.97
+  ],
+  "bounds": [
+   [
+    -36.97,
+    -2.48
+   ],
+   [
+    -78.63,
+    -58.63
+   ],
+   [
+    -52.69,
+    -17.24
+   ]
+  ]
+ },
+ {
+  "name": "Biventral lobule.l",
+  "category": "cerebellum",
+  "type": "MESH",
+  "vertices": 4464,
+  "triangles": 8902,
+  "center": [
+   19.73,
+   -68.63,
+   -34.97
+  ],
+  "bounds": [
+   [
+    2.48,
+    36.97
+   ],
+   [
+    -78.63,
+    -58.63
+   ],
+   [
+    -52.69,
+    -17.24
+   ]
+  ]
+ },
+ {
+  "name": "Basilar artery",
+  "category": "artery",
+  "type": "CURVE",
+  "vertices": 444,
+  "triangles": 864,
+  "center": [
+   0.0,
+   -49.82,
+   3.0
+  ],
+  "bounds": [
+   [
+    -1.1,
+    1.1
+   ],
+   [
+    -61.82,
+    -37.82
+   ],
+   [
+    -3.33,
+    9.32
+   ]
+  ]
+ },
+ {
+  "name": "Anterior quadrangular lobule.r",
+  "category": "cerebellum",
+  "type": "MESH",
+  "vertices": 3270,
+  "triangles": 6520,
+  "center": [
+   -13.85,
+   -40.42,
+   -29.87
+  ],
+  "bounds": [
+   [
+    -29.09,
+    1.39
+   ],
+   [
+    -52.95,
+    -27.88
+   ],
+   [
+    -47.28,
+    -12.45
+   ]
+  ]
+ },
+ {
+  "name": "Anterior quadrangular lobule.l",
+  "category": "cerebellum",
+  "type": "MESH",
+  "vertices": 3270,
+  "triangles": 6520,
+  "center": [
+   13.85,
+   -40.42,
+   -29.87
+  ],
+  "bounds": [
+   [
+    -1.39,
+    29.09
+   ],
+   [
+    -52.95,
+    -27.88
+   ],
+   [
+    -47.28,
+    -12.45
+   ]
+  ]
+ },
+ {
+  "name": "Anterior occipital sulcus*.r",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 184,
+  "triangles": 364,
+  "center": [
+   -42.25,
+   -20.59,
+   -64.92
+  ],
+  "bounds": [
+   [
+    -49.32,
+    -35.19
+   ],
+   [
+    -32.79,
+    -8.38
+   ],
+   [
+    -72.36,
+    -57.49
+   ]
+  ]
+ },
+ {
+  "name": "Anterior occipital sulcus*.l",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 184,
+  "triangles": 364,
+  "center": [
+   42.25,
+   -20.59,
+   -64.92
+  ],
+  "bounds": [
+   [
+    35.19,
+    49.32
+   ],
+   [
+    -32.79,
+    -8.38
+   ],
+   [
+    -72.36,
+    -57.49
+   ]
+  ]
+ },
+ {
+  "name": "Anterior inferior cerebellar artery.r",
+  "category": "artery",
+  "type": "CURVE",
+  "vertices": 2316,
+  "triangles": 4608,
+  "center": [
+   -17.34,
+   -59.91,
+   -12.83
+  ],
+  "bounds": [
+   [
+    -34.62,
+    -0.06
+   ],
+   [
+    -64.83,
+    -54.99
+   ],
+   [
+    -26.51,
+    0.84
+   ]
+  ]
+ },
+ {
+  "name": "Anterior inferior cerebellar artery.l",
+  "category": "artery",
+  "type": "CURVE",
+  "vertices": 2316,
+  "triangles": 4608,
+  "center": [
+   17.34,
+   -59.91,
+   -12.83
+  ],
+  "bounds": [
+   [
+    0.06,
+    34.62
+   ],
+   [
+    -64.83,
+    -54.99
+   ],
+   [
+    -26.51,
+    0.84
+   ]
+  ]
+ },
+ {
+  "name": "Anterior division of mandibular nerve.r",
+  "category": "nerve",
+  "type": "CURVE",
+  "vertices": 324,
+  "triangles": 596,
+  "center": [
+   -26.38,
+   -69.53,
+   18.5
+  ],
+  "bounds": [
+   [
+    -30.17,
+    -22.58
+   ],
+   [
+    -76.19,
+    -62.87
+   ],
+   [
+    14.67,
+    22.33
+   ]
+  ]
+ },
+ {
+  "name": "Anterior division of mandibular nerve.l",
+  "category": "nerve",
+  "type": "CURVE",
+  "vertices": 324,
+  "triangles": 596,
+  "center": [
+   26.38,
+   -69.53,
+   18.5
+  ],
+  "bounds": [
+   [
+    22.58,
+    30.17
+   ],
+   [
+    -76.19,
+    -62.87
+   ],
+   [
+    14.67,
+    22.33
+   ]
+  ]
+ },
+ {
+  "name": "Anterior communicating artery",
+  "category": "artery",
+  "type": "MESH",
+  "vertices": 55,
+  "triangles": 106,
+  "center": [
+   0.21,
+   -30.16,
+   23.19
+  ],
+  "bounds": [
+   [
+    -3.39,
+    3.81
+   ],
+   [
+    -30.82,
+    -29.49
+   ],
+   [
+    22.4,
+    23.98
+   ]
+  ]
+ },
+ {
+  "name": "Anterior cerebral artery.r",
+  "category": "artery",
+  "type": "CURVE",
+  "vertices": 444,
+  "triangles": 864,
+  "center": [
+   -7.98,
+   -27.8,
+   29.06
+  ],
+  "bounds": [
+   [
+    -12.85,
+    -3.1
+   ],
+   [
+    -35.49,
+    -20.1
+   ],
+   [
+    21.56,
+    36.55
+   ]
+  ]
+ },
+ {
+  "name": "Anterior cerebral artery.l",
+  "category": "artery",
+  "type": "CURVE",
+  "vertices": 444,
+  "triangles": 864,
+  "center": [
+   7.98,
+   -27.8,
+   29.06
+  ],
+  "bounds": [
+   [
+    3.1,
+    12.85
+   ],
+   [
+    -35.49,
+    -20.1
+   ],
+   [
+    21.56,
+    36.55
+   ]
+  ]
+ },
+ {
+  "name": "Angular gyrus.r",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 759,
+  "triangles": 1511,
+  "center": [
+   -37.13,
+   13.2,
+   -65.15
+  ],
+  "bounds": [
+   [
+    -58.73,
+    -15.54
+   ],
+   [
+    -10.45,
+    36.85
+   ],
+   [
+    -91.07,
+    -39.22
+   ]
+  ]
+ },
+ {
+  "name": "Angular gyrus.l",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 759,
+  "triangles": 1511,
+  "center": [
+   37.13,
+   13.2,
+   -65.15
+  ],
+  "bounds": [
+   [
+    15.54,
+    58.73
+   ],
+   [
+    -10.45,
+    36.85
+   ],
+   [
+    -91.07,
+    -39.22
+   ]
+  ]
+ },
+ {
+  "name": "Adenohypophysis",
+  "category": "deep",
+  "type": "MESH",
+  "vertices": 369,
+  "triangles": 680,
+  "center": [
+   0.0,
+   -38.29,
+   17.4
+  ],
+  "bounds": [
+   [
+    -5.95,
+    5.95
+   ],
+   [
+    -44.31,
+    -32.26
+   ],
+   [
+    13.35,
+    21.45
+   ]
+  ]
+ },
+ {
+  "name": "Accessory nucleus of oculomotor nerve.r",
+  "category": "nucleus",
+  "type": "MESH",
+  "vertices": 386,
+  "triangles": 768,
+  "center": [
+   -0.81,
+   -31.23,
+   -8.9
+  ],
+  "bounds": [
+   [
+    -1.49,
+    -0.14
+   ],
+   [
+    -35.34,
+    -27.11
+   ],
+   [
+    -10.05,
+    -7.75
+   ]
+  ]
+ },
+ {
+  "name": "Accessory nucleus of oculomotor nerve.l",
+  "category": "nucleus",
+  "type": "MESH",
+  "vertices": 386,
+  "triangles": 768,
+  "center": [
+   0.81,
+   -31.23,
+   -8.9
+  ],
+  "bounds": [
+   [
+    0.14,
+    1.49
+   ],
+   [
+    -35.34,
+    -27.11
+   ],
+   [
+    -10.05,
+    -7.75
+   ]
+  ]
+ },
+ {
+  "name": "Accessory nerve (XI).r",
+  "category": "nerve",
+  "type": "CURVE",
+  "vertices": 5874,
+  "triangles": 11475,
+  "center": [
+   -20.97,
+   -123.38,
+   -21.89
+  ],
+  "bounds": [
+   [
+    -39.25,
+    -2.68
+   ],
+   [
+    -176.34,
+    -70.41
+   ],
+   [
+    -50.93,
+    7.16
+   ]
+  ]
+ },
+ {
+  "name": "Accessory nerve (XI).l",
+  "category": "nerve",
+  "type": "CURVE",
+  "vertices": 5874,
+  "triangles": 11475,
+  "center": [
+   20.97,
+   -123.38,
+   -21.89
+  ],
+  "bounds": [
+   [
+    2.68,
+    39.25
+   ],
+   [
+    -176.34,
+    -70.41
+   ],
+   [
+    -50.93,
+    7.16
+   ]
+  ]
+ },
+ {
+  "name": "Abducens nerve (VI).r",
+  "category": "nerve",
+  "type": "CURVE",
+  "vertices": 2520,
+  "triangles": 4936,
+  "center": [
+   -16.86,
+   -52.1,
+   15.21
+  ],
+  "bounds": [
+   [
+    -32.54,
+    -1.18
+   ],
+   [
+    -64.79,
+    -39.4
+   ],
+   [
+    -16.11,
+    46.54
+   ]
+  ]
+ },
+ {
+  "name": "Abducens nerve (VI).l",
+  "category": "nerve",
+  "type": "CURVE",
+  "vertices": 2520,
+  "triangles": 4936,
+  "center": [
+   16.86,
+   -52.1,
+   15.21
+  ],
+  "bounds": [
+   [
+    1.18,
+    32.54
+   ],
+   [
+    -64.79,
+    -39.4
+   ],
+   [
+    -16.11,
+    46.54
+   ]
+  ]
+ },
+ {
+  "name": " Posterior transverse collateral sulcus.r",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 102,
+  "triangles": 184,
+  "center": [
+   -24.77,
+   -37.2,
+   -68.24
+  ],
+  "bounds": [
+   [
+    -33.83,
+    -15.7
+   ],
+   [
+    -43.84,
+    -30.55
+   ],
+   [
+    -75.65,
+    -60.83
+   ]
+  ]
+ },
+ {
+  "name": " Posterior transverse collateral sulcus.l",
+  "category": "cortex",
+  "type": "MESH",
+  "vertices": 102,
+  "triangles": 184,
+  "center": [
+   24.77,
+   -37.2,
+   -68.24
+  ],
+  "bounds": [
+   [
+    15.7,
+    33.83
+   ],
+   [
+    -43.84,
+    -30.55
+   ],
+   [
+    -75.65,
+    -60.83
+   ]
+  ]
+ }
+]

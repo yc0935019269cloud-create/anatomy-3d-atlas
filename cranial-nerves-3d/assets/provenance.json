@@ -1,0 +1,45 @@
+{
+  "date": "2026-09-29",
+  "source": {
+    "url": "https://raw.githubusercontent.com/Z-Anatomy/Models-of-human-anatomy/master/Z-Anatomy.zip",
+    "zipSha256": "e029688545627bd0214b269e1063143abb580aad72b2c2445d6d8a9a0d9da736",
+    "blend": "Z-Anatomy/Startup.blend",
+    "blendSha256": "9f08a17ea0115fed80b2a73ecdf0a1bc2ab2f6956f37c593ce23d513ea35afcd",
+    "authors": [
+      "Gauthier Kervyn",
+      "Marcin Zielinski",
+      "BodyParts3D / DBCLS",
+      "Brainder / Anderson Winkler"
+    ],
+    "license": "CC BY-SA 4.0"
+  },
+  "frame": "millimetres; +X anatomical left, +Y superior (Blender z - 1.64 m), +Z anterior; identical to brain-visual-atlas-3d",
+  "meshes": 388,
+  "vertices": 649198,
+  "categories": {
+    "bone": 22,
+    "cerebellum": 27,
+    "eye": 13,
+    "nerve": 56,
+    "artery": 38,
+    "tooth": 28,
+    "orbit": 26,
+    "cortex": 118,
+    "deep": 21,
+    "dura": 3,
+    "vein": 10,
+    "stem": 10,
+    "sinus": 2,
+    "nucleus": 14
+  },
+  "modifications": [
+    "Evaluated original modifiers and curve bevels; no decimation",
+    "Centre-line curves without bevel given a 0.6 mm bevel",
+    "Triangles entirely below -175 mm dropped",
+    "Central retinal artery omitted (very dense, not needed)",
+    "Schematic guides generated separately in src/schematic.js"
+  ],
+  "sha256": {
+    "assets/cranial-packed.js": "46a437ece8355b8f6cea041ee367807880d38e828f0ed8eb5230983dbc31f904"
+  }
+}

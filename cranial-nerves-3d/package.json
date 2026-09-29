@@ -1,0 +1,23 @@
+{
+  "name": "cranial-nerves-3d",
+  "version": "1.0.0",
+  "description": "Offline combined skull, cranial nerve and orbit atlas",
+  "main": "index.js",
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node src/verify.cjs",
+    "export": "python src/export_combined.py <Startup.blend> ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "CC-BY-SA-4.0",
+  "type": "module",
+  "dependencies": {
+    "@gltf-transform/core": "^4.5.0",
+    "@gltf-transform/extensions": "^4.5.0",
+    "esbuild": "^0.28.2",
+    "meshoptimizer": "^1.2.0",
+    "playwright": "^1.63.0",
+    "three": "^0.180.0"
+  }
+}

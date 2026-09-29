@@ -1,0 +1,23 @@
+{
+  "date": "2026-09-29T07:20:55.033Z",
+  "browser": "141.0.7390.37",
+  "offline": true,
+  "checks": [
+    "92 entries, every one matched to a source mesh or guide (445 meshes incl. schematics)",
+    "All nerve → foramen links resolve",
+    "Nerve-to-foramen distances (mm): {\"Maxillary nerve.l → rotundum\":0.6,\"Optic nerve (II).l → optic-canal\":0.6,\"Trigeminal nerve (V).l → ovale\":1.4,\"Hypoglossal nerve (XII).l → hypoglossal-canal\":4.1,\"Middle meningeal artery.l → spinosum\":3.1,\"Abducens nerve (VI).l → sof\":0.1,\"Vagus nerve (X).l → jugular\":0,\"Facial nerve (VII).l → iam\":0.1}",
+    "Themes {\"q\":10,\"f\":13,\"n\":15,\"o\":23,\"c\":11,\"g\":18,\"v\":19}: labels in bounds, no overlaps, anchors on screen, hide/show guards answers",
+    "Quiz-number search",
+    "Nerve → foramen jump (V2 → 圓孔) and foramen lists the nerves",
+    "Zoom-to-structure button",
+    "Horizontal skull cut toggles",
+    "Cavernous theme uses coronal section on all meshes",
+    "Schematic and right-side toggles",
+    "Notes dialog jump buttons",
+    "Drag rotates, no drift after release",
+    "390px mobile: no horizontal overflow or label overlap",
+    "No page errors and no network requests (fully offline)"
+  ],
+  "errors": [],
+  "http": []
+}

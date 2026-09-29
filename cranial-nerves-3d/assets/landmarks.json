@@ -1,0 +1,2217 @@
+[
+ {
+  "id": "optic-papilla",
+  "zh": "視乳突／視神經盤",
+  "en": "Optic papilla / optic disc",
+  "groups": [
+   "q",
+   "v"
+  ],
+  "models": [
+   "Retina.l",
+   "Optic nerve (II).l"
+  ],
+  "position": [
+   28.3,
+   -46.2,
+   54
+  ],
+  "note": "視網膜神經節細胞軸突集中離開眼球處。沒有 rods 與 cones，所以是生理性盲點（中央凹則看最清楚）。顱內壓升高時可見視乳頭水腫 papilledema。模型以視神經接上視網膜後極的位置標示。",
+  "representation": "guide",
+  "snap": true,
+  "quiz": 1,
+  "via": [],
+  "extra": false,
+  "number": 1
+ },
+ {
+  "id": "dura",
+  "zh": "硬腦膜",
+  "en": "Dura mater",
+  "groups": [
+   "q"
+  ],
+  "models": [
+   "Falx cerebri",
+   "Tentorium cerebelli",
+   "Cavernous sinus.l"
+  ],
+  "position": [
+   1,
+   28,
+   -20
+  ],
+  "note": "最外層腦膜。模型中的大腦鐮、小腦天幕是硬腦膜反摺；海綿竇位於硬腦膜兩層之間。視神經是中樞神經延伸，外面同樣包著 dura／arachnoid／pia，蛛網膜下腔也延伸到視神經周圍（模型未獨立建出視神經鞘）。",
+  "representation": "mesh",
+  "snap": true,
+  "quiz": 2,
+  "via": [],
+  "extra": false,
+  "number": 2
+ },
+ {
+  "id": "meyer",
+  "zh": "梅氏環（顳葉視放射）",
+  "en": "Meyer’s loop",
+  "groups": [
+   "q",
+   "v"
+  ],
+  "models": [
+   "guide:meyer"
+  ],
+  "position": [
+   34,
+   -31,
+   3
+  ],
+  "note": "視放射下部先向前繞過側腦室顳角，再往後到距狀溝下岸（舌回），傳遞對側上方視野。小考第 3 題答案是 Meyer’s loop，不是 Baum’s loop。",
+  "representation": "schematic",
+  "snap": false,
+  "quiz": 3,
+  "via": [],
+  "extra": false,
+  "number": 3
+ },
+ {
+  "id": "ora-serrata",
+  "zh": "鋸齒緣",
+  "en": "Ora serrata",
+  "groups": [
+   "q",
+   "v"
+  ],
+  "models": [
+   "guide:ora"
+  ],
+  "position": [
+   40,
+   -49,
+   68
+  ],
+  "note": "視網膜感光部的前緣，與睫狀體平坦部交界。金色環沿原模型視網膜前緣畫出，實際邊緣呈鋸齒狀。",
+  "representation": "schematic",
+  "snap": false,
+  "quiz": 4,
+  "via": [],
+  "extra": false,
+  "number": 4
+ },
+ {
+  "id": "gennari",
+  "zh": "Gennari 線",
+  "en": "Line / stria of Gennari",
+  "groups": [
+   "q",
+   "v"
+  ],
+  "models": [
+   "Calcarine sulcus.l"
+  ],
+  "position": [
+   8,
+   -25,
+   -75
+  ],
+  "note": "初級視覺皮質（V1，Brodmann 17）第 IV 層內的有髓纖維帶，肉眼可見的白線，所以 V1 又叫紋狀皮質。它在皮質裡面，3D 表面沒有網格；標點只提示距狀溝周圍的 V1 區。",
+  "representation": "reference",
+  "snap": true,
+  "quiz": 5,
+  "via": [],
+  "extra": false,
+  "number": 5
+ },
+ {
+  "id": "calcarine",
+  "zh": "距狀溝",
+  "en": "Calcarine sulcus",
+  "groups": [
+   "q",
+   "v"
+  ],
+  "models": [
+   "Calcarine sulcus.l"
+  ],
+  "position": [
+   6,
+   -22,
+   -67
+  ],
+  "note": "枕葉內側面的溝，初級視覺皮質分布在它上下兩岸。上岸楔葉看對側下方視野，下岸舌回看對側上方視野。",
+  "representation": "mesh",
+  "snap": true,
+  "quiz": 6,
+  "via": [],
+  "extra": false,
+  "number": 6
+ },
+ {
+  "id": "chiasm",
+  "zh": "視交叉",
+  "en": "Optic chiasm",
+  "groups": [
+   "q",
+   "v"
+  ],
+  "models": [
+   "Optic chiasm"
+  ],
+  "position": [
+   0,
+   -28,
+   17
+  ],
+  "note": "鼻側視網膜纖維交叉，顳側纖維不交叉。視交叉之後改用「左右視野」思考：左視束處理雙眼右側視野。位於腦下垂體正上方。",
+  "representation": "mesh",
+  "snap": true,
+  "quiz": 7,
+  "via": [],
+  "extra": false,
+  "number": 7
+ },
+ {
+  "id": "nasolacrimal",
+  "zh": "鼻淚管",
+  "en": "Nasolacrimal duct",
+  "groups": [
+   "q"
+  ],
+  "models": [
+   "Nasolacrimal duct.l",
+   "Lacrimal sac.l"
+  ],
+  "position": [
+   10,
+   -75,
+   64
+  ],
+  "note": "淚液：淚腺 → 淚小管 → 淚囊 → 鼻淚管 → 開口於下鼻道。管道走在上頷骨與淚骨圍成的骨管中。",
+  "representation": "mesh",
+  "snap": true,
+  "quiz": 8,
+  "via": [],
+  "extra": false,
+  "number": 8
+ },
+ {
+  "id": "maxillary-sinus",
+  "zh": "上頷竇",
+  "en": "Maxillary sinus",
+  "groups": [
+   "q",
+   "o"
+  ],
+  "models": [
+   "Maxilla.l",
+   "guide:maxsinus"
+  ],
+  "position": [
+   23,
+   -73,
+   59
+  ],
+  "note": "上頷骨體內的空腔，位於眼窩底下方。眼部正面撞擊可造成眼窩底骨折 blowout fracture，眼窩內容物掉入上頷竇。原模型上頷骨內有此空腔；藍色半透明體只標出空腔位置。",
+  "representation": "guide",
+  "snap": false,
+  "quiz": 9,
+  "via": [],
+  "extra": false,
+  "number": 9
+ },
+ {
+  "id": "sphenoid-sinus",
+  "zh": "蝶竇",
+  "en": "Sphenoidal sinus",
+  "groups": [
+   "q",
+   "c"
+  ],
+  "models": [
+   "Sinus of sphenoid bone"
+  ],
+  "position": [
+   6,
+   -50,
+   21
+  ],
+  "note": "蝶骨體內的空腔，正上方是蝶鞍與腦下垂體，所以腦下垂體手術可經鼻腔 → 蝶竇 → 蝶鞍（transsphenoidal approach）。",
+  "representation": "mesh",
+  "snap": true,
+  "quiz": 10,
+  "via": [],
+  "extra": false,
+  "number": 10
+ },
+ {
+  "id": "cribriform",
+  "zh": "篩板篩孔",
+  "en": "Cribriform plate foramina",
+  "groups": [
+   "f"
+  ],
+  "models": [
+   "Olfactory nerve (I)"
+  ],
+  "position": [
+   5,
+   -42,
+   61
+  ],
+  "note": "CN I 嗅神經絲穿過篩骨篩板。口訣「一篩」。標點位於篩板區；模型未逐一建出每個小孔。",
+  "representation": "guide",
+  "snap": false,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 11
+ },
+ {
+  "id": "optic-canal",
+  "zh": "視神經管",
+  "en": "Optic canal",
+  "groups": [
+   "f",
+   "o"
+  ],
+  "models": [
+   "Optic nerve (II)",
+   "Ophthalmic artery"
+  ],
+  "position": [
+   12.5,
+   -37.6,
+   31.4
+  ],
+  "note": "通過：CN II 視神經＋眼動脈＋伴隨的交感纖維。口訣「二視」。位置取自原模型標記線端點。",
+  "representation": "guide",
+  "snap": false,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 12
+ },
+ {
+  "id": "sof",
+  "zh": "眶上裂",
+  "en": "Superior orbital fissure",
+  "groups": [
+   "f",
+   "o"
+  ],
+  "models": [
+   "Oculomotor nerve (III)",
+   "Trochlear nerve (IV)",
+   "Ophthalmic nerve",
+   "Abducens nerve (VI)",
+   "Superior ophthalmic vein"
+  ],
+  "position": [
+   17.1,
+   -42.4,
+   32.1
+  ],
+  "note": "III、IV、V1、VI 與上眼靜脈經此進入眼窩。口訣「三四一六眶上裂」。原模型沒有此裂的標記點，標點取自這四條神經在骨處交會的位置。",
+  "representation": "guide",
+  "snap": false,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 13
+ },
+ {
+  "id": "rotundum",
+  "zh": "圓孔",
+  "en": "Foramen rotundum",
+  "groups": [
+   "f"
+  ],
+  "models": [
+   "Maxillary nerve"
+  ],
+  "position": [
+   16.7,
+   -48.5,
+   25.5
+  ],
+  "note": "V2 上頷神經。口訣「二圓」。原模型的 V2 與此孔相距約 0.6 mm。",
+  "representation": "guide",
+  "snap": false,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 14
+ },
+ {
+  "id": "ovale",
+  "zh": "卵圓孔",
+  "en": "Foramen ovale",
+  "groups": [
+   "f"
+  ],
+  "models": [
+   "Trigeminal nerve (V)",
+   "Anterior division of mandibular nerve",
+   "Posterior division of mandibular nerve"
+  ],
+  "position": [
+   24,
+   -61.6,
+   13.3
+  ],
+  "note": "V3 下頷神經。口訣「三卵」。",
+  "representation": "guide",
+  "snap": false,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 15
+ },
+ {
+  "id": "spinosum",
+  "zh": "棘孔",
+  "en": "Foramen spinosum",
+  "groups": [
+   "f"
+  ],
+  "models": [
+   "Middle meningeal artery"
+  ],
+  "position": [
+   29.2,
+   -62.1,
+   8.2
+  ],
+  "note": "中腦膜動脈（不是腦神經）。位於卵圓孔後外側。",
+  "representation": "guide",
+  "snap": false,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 16
+ },
+ {
+  "id": "carotid-canal",
+  "zh": "頸動脈管",
+  "en": "Carotid canal",
+  "groups": [
+   "f"
+  ],
+  "models": [
+   "Internal carotid artery"
+  ],
+  "position": [
+   28,
+   -78,
+   -7
+  ],
+  "note": "內頸動脈由此進入顱內，之後走進海綿竇。標點為顱底外口附近的近似位置。",
+  "representation": "guide",
+  "snap": false,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 17
+ },
+ {
+  "id": "iam",
+  "zh": "內耳道",
+  "en": "Internal acoustic meatus",
+  "groups": [
+   "f"
+  ],
+  "models": [
+   "Facial nerve (VII)",
+   "Vestibulocochlear nerve (VIII)",
+   "Vestibular nerve",
+   "Cochlear nerve"
+  ],
+  "position": [
+   19.5,
+   -57.3,
+   -5.5
+  ],
+  "note": "CN VII＋VIII 共同進入。口訣「七八內聽」。標點取自兩條神經進入顳骨岩部處。",
+  "representation": "guide",
+  "snap": false,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 18
+ },
+ {
+  "id": "jugular",
+  "zh": "頸靜脈孔",
+  "en": "Jugular foramen",
+  "groups": [
+   "f"
+  ],
+  "models": [
+   "Glossopharyngeal nerve (IX)",
+   "Vagus nerve (X)",
+   "Accessory nerve (XI)"
+  ],
+  "position": [
+   26.8,
+   -71.8,
+   -11.2
+  ],
+  "note": "CN IX、X、XI 共同走頸靜脈孔（還有內頸靜脈）。口訣「九十十一頸靜脈」。標點取自三條神經在骨處交會的位置。",
+  "representation": "guide",
+  "snap": false,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 19
+ },
+ {
+  "id": "hypoglossal-canal",
+  "zh": "舌下神經管",
+  "en": "Hypoglossal canal",
+  "groups": [
+   "f"
+  ],
+  "models": [
+   "Hypoglossal nerve (XII)"
+  ],
+  "position": [
+   18.2,
+   -76.9,
+   -14.8
+  ],
+  "note": "CN XII。口訣「十二舌下」。位於枕骨大孔前外側、枕髁上方。",
+  "representation": "guide",
+  "snap": false,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 20
+ },
+ {
+  "id": "magnum",
+  "zh": "枕骨大孔",
+  "en": "Foramen magnum",
+  "groups": [
+   "f"
+  ],
+  "models": [
+   "Medulla oblongata",
+   "Vertebral artery"
+  ],
+  "position": [
+   0.7,
+   -83.9,
+   -30.3
+  ],
+  "note": "延腦與脊髓交界、椎動脈、副神經脊髓根通過。",
+  "representation": "guide",
+  "snap": false,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 21
+ },
+ {
+  "id": "sella",
+  "zh": "蝶鞍（腦下垂體窩）",
+  "en": "Sella turcica / hypophysial fossa",
+  "groups": [
+   "f",
+   "c"
+  ],
+  "models": [
+   "Adenohypophysis",
+   "Neurohypophysis"
+  ],
+  "position": [
+   0,
+   -46.5,
+   15.6
+  ],
+  "note": "蝶骨體上方的鞍形凹窩，容納腦下垂體；下面是蝶竇，兩側是海綿竇。",
+  "representation": "guide",
+  "snap": false,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 22
+ },
+ {
+  "id": "cn1",
+  "zh": "CN I 嗅神經",
+  "en": "Olfactory nerve (CN I)",
+  "groups": [
+   "n"
+  ],
+  "models": [
+   "Olfactory nerve (I).l"
+  ],
+  "position": [
+   11.6,
+   -34.8,
+   43.6
+  ],
+  "note": "嗅球＋嗅束位於額葉底面。",
+  "representation": "mesh",
+  "snap": true,
+  "quiz": null,
+  "via": [
+   "cribriform"
+  ],
+  "extra": false,
+  "number": 23
+ },
+ {
+  "id": "cn2",
+  "zh": "CN II 視神經",
+  "en": "Optic nerve (CN II)",
+  "groups": [
+   "n"
+  ],
+  "models": [
+   "Optic nerve (II).l"
+  ],
+  "position": [
+   15,
+   -38.8,
+   40
+  ],
+  "note": "CN II 是中樞神經延伸，外有三層腦膜。四段：眼球內段（最短，篩板前無髓鞘）→ 眼窩段（最長，S 形）→ 視神經管段 → 顱內段（到視交叉）。",
+  "representation": "mesh",
+  "snap": true,
+  "quiz": null,
+  "via": [
+   "optic-canal"
+  ],
+  "extra": false,
+  "number": 24
+ },
+ {
+  "id": "cn3",
+  "zh": "CN III 動眼神經",
+  "en": "Oculomotor nerve (CN III)",
+  "groups": [
+   "n",
+   "g"
+  ],
+  "models": [
+   "Oculomotor nerve (III).l"
+  ],
+  "position": [
+   6.7,
+   -33.1,
+   6.5
+  ],
+  "note": "從中腦腹側、腳間窩發出。支配上直肌、下直肌、內直肌、下斜肌、提上瞼肌；副交感纖維到睫狀神經節。在共同腱環內分成上支、下支。",
+  "representation": "mesh",
+  "snap": true,
+  "quiz": null,
+  "via": [
+   "sof"
+  ],
+  "extra": false,
+  "number": 25
+ },
+ {
+  "id": "cn4",
+  "zh": "CN IV 滑車神經",
+  "en": "Trochlear nerve (CN IV)",
+  "groups": [
+   "n"
+  ],
+  "models": [
+   "Trochlear nerve (IV).l"
+  ],
+  "position": [
+   8.4,
+   -43.1,
+   -15.3
+  ],
+  "note": "唯一從腦幹背側發出的腦神經，繞中腦向前。只支配上斜肌（SO4），走共同腱環外。",
+  "representation": "mesh",
+  "snap": true,
+  "quiz": null,
+  "via": [
+   "sof"
+  ],
+  "extra": false,
+  "number": 26
+ },
+ {
+  "id": "cn5",
+  "zh": "CN V 三叉神經",
+  "en": "Trigeminal nerve (CN V)",
+  "groups": [
+   "n"
+  ],
+  "models": [
+   "Trigeminal nerve (V).l",
+   "Sensory root of trigeminal nerve.l",
+   "Motor root of trigeminal nerve.l"
+  ],
+  "position": [
+   11.9,
+   -49.8,
+   -12.3
+  ],
+  "note": "從橋腦外側出來，很粗：大的感覺根＋小的運動根，之後分 V1、V2、V3。",
+  "representation": "mesh",
+  "snap": true,
+  "quiz": null,
+  "via": [
+   "sof",
+   "rotundum",
+   "ovale"
+  ],
+  "extra": false,
+  "number": 27
+ },
+ {
+  "id": "v1",
+  "zh": "V1 眼神經",
+  "en": "Ophthalmic nerve (V1)",
+  "groups": [
+   "n"
+  ],
+  "models": [
+   "Ophthalmic nerve.l"
+  ],
+  "position": [
+   20.6,
+   -39.4,
+   32.3
+  ],
+  "note": "純感覺。經眶上裂入眼窩後分成額神經、淚神經、鼻睫神經。原模型把額神經 → 眶上／滑車上神經畫在同一條曲線上。",
+  "representation": "mesh",
+  "snap": true,
+  "quiz": null,
+  "via": [
+   "sof"
+  ],
+  "extra": false,
+  "number": 28
+ },
+ {
+  "id": "v2",
+  "zh": "V2 上頷神經",
+  "en": "Maxillary nerve (V2)",
+  "groups": [
+   "n"
+  ],
+  "models": [
+   "Maxillary nerve.l"
+  ],
+  "position": [
+   17.4,
+   -49.7,
+   22.4
+  ],
+  "note": "純感覺。穿圓孔，經翼腭窩、眶下裂，延續為眶下神經。",
+  "representation": "mesh",
+  "snap": true,
+  "quiz": null,
+  "via": [
+   "rotundum"
+  ],
+  "extra": false,
+  "number": 29
+ },
+ {
+  "id": "v3",
+  "zh": "V3 下頷神經",
+  "en": "Mandibular nerve (V3)",
+  "groups": [
+   "n"
+  ],
+  "models": [
+   "Anterior division of mandibular nerve.l",
+   "Posterior division of mandibular nerve.l",
+   "Inferior alveolar nerve.l",
+   "Lingual nerve.l"
+  ],
+  "position": [
+   26.4,
+   -69.5,
+   18.5
+  ],
+  "note": "感覺＋運動（咀嚼肌）。穿卵圓孔，下牙槽神經、舌神經等為其分支。",
+  "representation": "mesh",
+  "snap": true,
+  "quiz": null,
+  "via": [
+   "ovale"
+  ],
+  "extra": false,
+  "number": 30
+ },
+ {
+  "id": "cn6",
+  "zh": "CN VI 外旋神經",
+  "en": "Abducens nerve (CN VI)",
+  "groups": [
+   "n"
+  ],
+  "models": [
+   "Abducens nerve (VI).l"
+  ],
+  "position": [
+   4.4,
+   -64.3,
+   -3.2
+  ],
+  "note": "橋延交界靠近中線發出。只支配外直肌（LR6）。在海綿竇「腔內」緊貼內頸動脈，病變時常最先受影響 → 眼球無法外轉。",
+  "representation": "mesh",
+  "snap": true,
+  "quiz": null,
+  "via": [
+   "sof"
+  ],
+  "extra": false,
+  "number": 31
+ },
+ {
+  "id": "cn7",
+  "zh": "CN VII 顏面神經",
+  "en": "Facial nerve (CN VII)",
+  "groups": [
+   "n"
+  ],
+  "models": [
+   "Facial nerve (VII).l"
+  ],
+  "position": [
+   12,
+   -60,
+   -11
+  ],
+  "note": "小腦橋腦角，與 VIII 很靠近，一起進內耳道；出顱經莖乳孔。",
+  "representation": "mesh",
+  "snap": true,
+  "quiz": null,
+  "via": [
+   "iam"
+  ],
+  "extra": false,
+  "number": 32
+ },
+ {
+  "id": "cn8",
+  "zh": "CN VIII 前庭耳蝸神經",
+  "en": "Vestibulocochlear nerve (CN VIII)",
+  "groups": [
+   "n"
+  ],
+  "models": [
+   "Vestibulocochlear nerve (VIII).l",
+   "Vestibular nerve.l",
+   "Cochlear nerve.l"
+  ],
+  "position": [
+   14.4,
+   -60.7,
+   -10.4
+  ],
+  "note": "小腦橋腦角，與 VII 共同進內耳道。",
+  "representation": "mesh",
+  "snap": true,
+  "quiz": null,
+  "via": [
+   "iam"
+  ],
+  "extra": false,
+  "number": 33
+ },
+ {
+  "id": "cn9",
+  "zh": "CN IX 舌咽神經",
+  "en": "Glossopharyngeal nerve (CN IX)",
+  "groups": [
+   "n"
+  ],
+  "models": [
+   "Glossopharyngeal nerve (IX).l"
+  ],
+  "position": [
+   12,
+   -66,
+   -14
+  ],
+  "note": "延腦橄欖後溝發出，走頸靜脈孔。",
+  "representation": "mesh",
+  "snap": true,
+  "quiz": null,
+  "via": [
+   "jugular"
+  ],
+  "extra": false,
+  "number": 34
+ },
+ {
+  "id": "cn10",
+  "zh": "CN X 迷走神經",
+  "en": "Vagus nerve (CN X)",
+  "groups": [
+   "n"
+  ],
+  "models": [
+   "Vagus nerve (X).l"
+  ],
+  "position": [
+   11,
+   -70,
+   -17
+  ],
+  "note": "延腦橄欖後溝發出，走頸靜脈孔。",
+  "representation": "mesh",
+  "snap": true,
+  "quiz": null,
+  "via": [
+   "jugular"
+  ],
+  "extra": false,
+  "number": 35
+ },
+ {
+  "id": "cn11",
+  "zh": "CN XI 副神經",
+  "en": "Accessory nerve (CN XI)",
+  "groups": [
+   "n"
+  ],
+  "models": [
+   "Accessory nerve (XI).l"
+  ],
+  "position": [
+   12,
+   -80,
+   -22
+  ],
+  "note": "橄欖後溝附近及上頸髓發出，走頸靜脈孔。",
+  "representation": "mesh",
+  "snap": true,
+  "quiz": null,
+  "via": [
+   "jugular"
+  ],
+  "extra": false,
+  "number": 36
+ },
+ {
+  "id": "cn12",
+  "zh": "CN XII 舌下神經",
+  "en": "Hypoglossal nerve (CN XII)",
+  "groups": [
+   "n"
+  ],
+  "models": [
+   "Hypoglossal nerve (XII).l"
+  ],
+  "position": [
+   6,
+   -74,
+   -10
+  ],
+  "note": "延腦橄欖前溝發出，走舌下神經管。",
+  "representation": "mesh",
+  "snap": true,
+  "quiz": null,
+  "via": [
+   "hypoglossal-canal"
+  ],
+  "extra": false,
+  "number": 37
+ },
+ {
+  "id": "annulus",
+  "zh": "共同腱環（Zinn 環）",
+  "en": "Common tendinous ring (annulus of Zinn)",
+  "groups": [
+   "o"
+  ],
+  "models": [
+   "Common tendinous ring.l"
+  ],
+  "position": [
+   16.3,
+   -40.3,
+   34
+  ],
+  "note": "四條直肌的共同起點。腱環內：III 上支、III 下支、鼻睫神經、VI（以及 II 與眼動脈）。腱環外：IV、額神經、淚神經、上眼靜脈。",
+  "representation": "mesh",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 38
+ },
+ {
+  "id": "sr",
+  "zh": "上直肌",
+  "en": "Superior rectus",
+  "groups": [
+   "o"
+  ],
+  "models": [
+   "Superior rectus muscle.l"
+  ],
+  "position": [
+   25.4,
+   -36.5,
+   55
+  ],
+  "note": "CN III 上支支配。",
+  "representation": "mesh",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 39
+ },
+ {
+  "id": "lps",
+  "zh": "提上瞼肌",
+  "en": "Levator palpebrae superioris",
+  "groups": [
+   "o"
+  ],
+  "models": [
+   "Levator palpebrae superioris.l"
+  ],
+  "position": [
+   28,
+   -32,
+   62
+  ],
+  "note": "CN III 上支支配（另有交感支配的 Müller 肌）。",
+  "representation": "mesh",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 40
+ },
+ {
+  "id": "ir",
+  "zh": "下直肌",
+  "en": "Inferior rectus",
+  "groups": [
+   "o"
+  ],
+  "models": [
+   "Inferior rectus muscle.l"
+  ],
+  "position": [
+   24.5,
+   -55,
+   52
+  ],
+  "note": "CN III 下支支配。",
+  "representation": "mesh",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 41
+ },
+ {
+  "id": "mr",
+  "zh": "內直肌",
+  "en": "Medial rectus",
+  "groups": [
+   "o"
+  ],
+  "models": [
+   "Medial rectus muscle.l"
+  ],
+  "position": [
+   16,
+   -46.8,
+   53
+  ],
+  "note": "CN III 下支支配；雙側收縮使眼球會聚。",
+  "representation": "mesh",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 42
+ },
+ {
+  "id": "lr",
+  "zh": "外直肌",
+  "en": "Lateral rectus",
+  "groups": [
+   "o"
+  ],
+  "models": [
+   "Lateral rectus muscle.l"
+  ],
+  "position": [
+   38,
+   -46,
+   52
+  ],
+  "note": "CN VI 支配（LR6）。",
+  "representation": "mesh",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 43
+ },
+ {
+  "id": "so",
+  "zh": "上斜肌＋滑車",
+  "en": "Superior oblique + trochlea",
+  "groups": [
+   "o"
+  ],
+  "models": [
+   "Superior oblique muscle.l",
+   "Trochlea of superior oblique muscle.l"
+  ],
+  "position": [
+   14.6,
+   -33,
+   75
+  ],
+  "note": "CN IV 支配（SO4）。肌腱繞過額骨上的滑車再轉向後外附著於眼球。",
+  "representation": "mesh",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 44
+ },
+ {
+  "id": "io",
+  "zh": "下斜肌",
+  "en": "Inferior oblique",
+  "groups": [
+   "o"
+  ],
+  "models": [
+   "Inferior oblique muscle.l"
+  ],
+  "position": [
+   30,
+   -60,
+   66
+  ],
+  "note": "CN III 下支支配；唯一不從眼窩後方起始的眼外肌。",
+  "representation": "mesh",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 45
+ },
+ {
+  "id": "orb-4",
+  "zh": "IV 滑車神經 → 上斜肌",
+  "en": "CN IV entering superior oblique",
+  "groups": [
+   "o"
+  ],
+  "models": [
+   "Trochlear nerve (IV).l"
+  ],
+  "position": [
+   28.1,
+   -33.9,
+   54.5
+  ],
+  "note": "走共同腱環外，進入上斜肌上緣。看神經最後進哪條肌肉：去上斜肌 → IV。",
+  "representation": "guide",
+  "snap": true,
+  "quiz": null,
+  "via": [
+   "sof"
+  ],
+  "extra": false,
+  "number": 46
+ },
+ {
+  "id": "orb-6",
+  "zh": "VI 外旋神經 → 外直肌",
+  "en": "CN VI entering lateral rectus",
+  "groups": [
+   "o"
+  ],
+  "models": [
+   "Abducens nerve (VI).l"
+  ],
+  "position": [
+   29.3,
+   -40.7,
+   43.9
+  ],
+  "note": "走共同腱環內，進入外直肌內面。去外直肌 → VI。",
+  "representation": "guide",
+  "snap": true,
+  "quiz": null,
+  "via": [
+   "sof"
+  ],
+  "extra": false,
+  "number": 47
+ },
+ {
+  "id": "orb-v1",
+  "zh": "V1 眼神經（入眶前）",
+  "en": "Ophthalmic nerve before branching",
+  "groups": [
+   "o"
+  ],
+  "models": [
+   "Ophthalmic nerve.l"
+  ],
+  "position": [
+   16.6,
+   -42.4,
+   23.2
+  ],
+  "note": "V1 在眶上裂前分成額、淚、鼻睫三支。",
+  "representation": "guide",
+  "snap": true,
+  "quiz": null,
+  "via": [
+   "sof"
+  ],
+  "extra": false,
+  "number": 48
+ },
+ {
+  "id": "cn3-sup",
+  "zh": "CN III 上支",
+  "en": "Superior division of CN III",
+  "groups": [
+   "o"
+  ],
+  "models": [
+   "Oculomotor nerve (III).l"
+  ],
+  "position": [
+   24.2,
+   -34.4,
+   56.6
+  ],
+  "note": "走共同腱環內，到上直肌與提上瞼肌。",
+  "representation": "guide",
+  "snap": true,
+  "quiz": null,
+  "via": [
+   "sof"
+  ],
+  "extra": false,
+  "number": 49
+ },
+ {
+  "id": "cn3-inf",
+  "zh": "CN III 下支",
+  "en": "Inferior division of CN III",
+  "groups": [
+   "o",
+   "g"
+  ],
+  "models": [
+   "Oculomotor nerve (III).l"
+  ],
+  "position": [
+   27.2,
+   -54.7,
+   46.5
+  ],
+  "note": "走共同腱環內，到內直肌、下直肌、下斜肌，並送副交感纖維到睫狀神經節。",
+  "representation": "guide",
+  "snap": true,
+  "quiz": null,
+  "via": [
+   "sof"
+  ],
+  "extra": false,
+  "number": 50
+ },
+ {
+  "id": "frontal-n",
+  "zh": "額神經（V1）",
+  "en": "Frontal nerve (V1)",
+  "groups": [
+   "o"
+  ],
+  "models": [
+   "Ophthalmic nerve.l"
+  ],
+  "position": [
+   23.1,
+   -32.3,
+   46.7
+  ],
+  "note": "V1 最上方的分支，走共同腱環外、提上瞼肌上方，往前分為眶上神經與滑車上神經到額頭（原模型的 V1 曲線一路畫到額頭，末端分支即眶上／滑車上神經）。",
+  "representation": "guide",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 51
+ },
+ {
+  "id": "lacrimal-n",
+  "zh": "淚神經（V1）",
+  "en": "Lacrimal nerve (V1)",
+  "groups": [
+   "o"
+  ],
+  "models": [
+   "guide:lacrimal-n"
+  ],
+  "position": [
+   33,
+   -38.2,
+   50
+  ],
+  "note": "V1 分支，走共同腱環外，沿外直肌上緣到淚腺。原模型沒有此神經，粉色細線為走向示意。",
+  "representation": "schematic",
+  "snap": false,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 52
+ },
+ {
+  "id": "nasociliary",
+  "zh": "鼻睫神經（V1）",
+  "en": "Nasociliary nerve (V1)",
+  "groups": [
+   "o",
+   "g"
+  ],
+  "models": [
+   "guide:nasociliary"
+  ],
+  "position": [
+   17.8,
+   -38.8,
+   42
+  ],
+  "note": "V1 位置較深的分支，唯一穿過共同腱環；跨過視神經到眼窩內側。發出睫狀神經節感覺根及長睫狀神經。原模型沒有此神經，為走向示意。",
+  "representation": "schematic",
+  "snap": false,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 53
+ },
+ {
+  "id": "lacrimal-gland",
+  "zh": "淚腺",
+  "en": "Lacrimal gland",
+  "groups": [
+   "o"
+  ],
+  "models": [
+   "Lacrimal gland.l"
+  ],
+  "position": [
+   45,
+   -35,
+   66
+  ],
+  "note": "位於眼窩外上方。模型上找到淚腺，就能判斷哪邊是 lateral。",
+  "representation": "mesh",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 54
+ },
+ {
+  "id": "sov",
+  "zh": "上眼靜脈",
+  "en": "Superior ophthalmic vein",
+  "groups": [
+   "o"
+  ],
+  "models": [
+   "Superior ophthalmic vein.l"
+  ],
+  "position": [
+   19.5,
+   -38,
+   40
+  ],
+  "note": "走共同腱環外、經眶上裂，匯入海綿竇。",
+  "representation": "mesh",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 55
+ },
+ {
+  "id": "ophthalmic-a",
+  "zh": "眼動脈",
+  "en": "Ophthalmic artery",
+  "groups": [
+   "o"
+  ],
+  "models": [
+   "Ophthalmic artery.l"
+  ],
+  "position": [
+   17,
+   -40,
+   45
+  ],
+  "note": "內頸動脈分支，與視神經一起走視神經管（交感纖維伴行）。",
+  "representation": "mesh",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 56
+ },
+ {
+  "id": "lamina",
+  "zh": "篩骨紙板／篩竇",
+  "en": "Lamina papyracea / ethmoidal cells",
+  "groups": [
+   "o"
+  ],
+  "models": [
+   "Ethmoid bone"
+  ],
+  "position": [
+   12,
+   -46,
+   48
+  ],
+  "note": "眼窩內側壁非常薄，旁邊就是篩竇，也是眼窩容易骨折的地方。",
+  "representation": "guide",
+  "snap": false,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 57
+ },
+ {
+  "id": "cavernous",
+  "zh": "海綿竇",
+  "en": "Cavernous sinus",
+  "groups": [
+   "c"
+  ],
+  "models": [
+   "Cavernous sinus.l"
+  ],
+  "position": [
+   8,
+   -40,
+   20
+  ],
+  "note": "位於蝶鞍兩側。外側壁由上到下：III → IV → V1 → V2（3-4-1-2）。腔內：內頸動脈＋CN VI＋交感神經叢。建議把透明度調低，從前方或上方看神經在壁中的排列。",
+  "representation": "mesh",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 58
+ },
+ {
+  "id": "ica",
+  "zh": "內頸動脈",
+  "en": "Internal carotid artery",
+  "groups": [
+   "c",
+   "f"
+  ],
+  "models": [
+   "Internal carotid artery.l"
+  ],
+  "position": [
+   14.4,
+   -56.7,
+   20
+  ],
+  "note": "經頸動脈管入顱，在海綿竇腔內呈彎曲（carotid siphon），旁邊緊貼 CN VI。本模型的 ICA 在切面處略低於海綿竇。",
+  "representation": "mesh",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 59
+ },
+ {
+  "id": "pituitary",
+  "zh": "腦下垂體",
+  "en": "Pituitary gland",
+  "groups": [
+   "c"
+  ],
+  "models": [
+   "Adenohypophysis",
+   "Neurohypophysis"
+  ],
+  "position": [
+   3,
+   -38,
+   19
+  ],
+  "note": "位在蝶鞍，上方是視交叉，下方是蝶竇，兩側是海綿竇。腫瘤向上壓迫視交叉 → 雙顳側偏盲。",
+  "representation": "mesh",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 60
+ },
+ {
+  "id": "transsphenoidal",
+  "zh": "經蝶竇手術路徑",
+  "en": "Transsphenoidal approach",
+  "groups": [
+   "c"
+  ],
+  "models": [
+   "guide:transsphenoidal"
+  ],
+  "position": [
+   0,
+   -44,
+   20
+  ],
+  "note": "鼻腔 → 蝶竇 → 蝶鞍 → 腦下垂體。綠色箭線是路徑示意。",
+  "representation": "schematic",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 61
+ },
+ {
+  "id": "ciliary-ganglion",
+  "zh": "睫狀神經節",
+  "en": "Ciliary ganglion",
+  "groups": [
+   "g"
+  ],
+  "models": [
+   "guide:ganglion"
+  ],
+  "position": [
+   22.5,
+   -43,
+   40.5
+  ],
+  "note": "位於眼窩深部、視神經外側。三種根：副交感（CN III 下支，唯一在此突觸）、感覺（鼻睫神經，不突觸）、交感（內頸動脈神經叢，不突觸）。原模型沒有此構造；小球只示意位置。",
+  "representation": "schematic",
+  "snap": false,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 62
+ },
+ {
+  "id": "para-root",
+  "zh": "副交感根",
+  "en": "Parasympathetic (motor) root",
+  "groups": [
+   "g"
+  ],
+  "models": [
+   "guide:root-para"
+  ],
+  "position": [
+   25,
+   -48,
+   43
+  ],
+  "note": "EW 核 → CN III → 下支 → 睫狀神經節突觸 → 短睫狀神經 → 瞳孔括約肌＋睫狀肌：縮瞳＋調節。",
+  "representation": "schematic",
+  "snap": false,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 63
+ },
+ {
+  "id": "sensory-root",
+  "zh": "感覺根",
+  "en": "Sensory root (from nasociliary)",
+  "groups": [
+   "g"
+  ],
+  "models": [
+   "guide:root-sens"
+  ],
+  "position": [
+   19.8,
+   -40.5,
+   39
+  ],
+  "note": "由鼻睫神經來，穿過神經節但不突觸。",
+  "representation": "schematic",
+  "snap": false,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 64
+ },
+ {
+  "id": "symp-root",
+  "zh": "交感根",
+  "en": "Sympathetic root",
+  "groups": [
+   "g"
+  ],
+  "models": [
+   "guide:root-symp"
+  ],
+  "position": [
+   17.5,
+   -42.5,
+   38
+  ],
+  "note": "來自內頸動脈交感神經叢（沿眼動脈進眼窩），穿過神經節但不突觸；到瞳孔開大肌。",
+  "representation": "schematic",
+  "snap": false,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 65
+ },
+ {
+  "id": "short-ciliary",
+  "zh": "短睫狀神經",
+  "en": "Short ciliary nerves",
+  "groups": [
+   "g"
+  ],
+  "models": [
+   "guide:short-ciliary"
+  ],
+  "position": [
+   26,
+   -44,
+   48
+  ],
+  "note": "從睫狀神經節出去，可攜帶副交感、交感、感覺三種纖維。一秒判斷：從神經節出去 → 短睫狀。",
+  "representation": "schematic",
+  "snap": false,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 66
+ },
+ {
+  "id": "long-ciliary",
+  "zh": "長睫狀神經",
+  "en": "Long ciliary nerves",
+  "groups": [
+   "g"
+  ],
+  "models": [
+   "guide:long-ciliary"
+  ],
+  "position": [
+   22,
+   -40,
+   48
+  ],
+  "note": "直接由鼻睫神經來，繞過睫狀神經節，主要帶感覺＋交感。",
+  "representation": "schematic",
+  "snap": false,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 67
+ },
+ {
+  "id": "sphincter",
+  "zh": "瞳孔括約肌",
+  "en": "Sphincter pupillae",
+  "groups": [
+   "g"
+  ],
+  "models": [
+   "guide:sphincter"
+  ],
+  "position": [
+   31,
+   -47,
+   74
+  ],
+  "note": "短睫狀神經的副交感纖維支配；收縮 → 縮瞳。環形只示意位置。",
+  "representation": "schematic",
+  "snap": false,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 68
+ },
+ {
+  "id": "ciliary-muscle",
+  "zh": "睫狀肌",
+  "en": "Ciliary muscle",
+  "groups": [
+   "g"
+  ],
+  "models": [
+   "guide:ciliary"
+  ],
+  "position": [
+   36,
+   -49,
+   69
+  ],
+  "note": "收縮 → 懸韌帶放鬆 → 水晶體變厚（調節）。環形只示意位置。",
+  "representation": "schematic",
+  "snap": false,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 69
+ },
+ {
+  "id": "lens",
+  "zh": "水晶體",
+  "en": "Lens",
+  "groups": [
+   "g",
+   "v"
+  ],
+  "models": [
+   "Lens.l"
+  ],
+  "position": [
+   31,
+   -49,
+   71.3
+  ],
+  "note": "無血管，靠房水供應營養；前面較平、後面較凸。上皮只在前囊內側。白內障術後殘留上皮移行到後囊 → 後囊混濁 PCO（二次白內障）。",
+  "representation": "mesh",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 70
+ },
+ {
+  "id": "ew",
+  "zh": "EW 核（動眼神經副核）",
+  "en": "Edinger–Westphal nucleus",
+  "groups": [
+   "g"
+  ],
+  "models": [
+   "Accessory nucleus of oculomotor nerve.l"
+  ],
+  "position": [
+   0.8,
+   -31.2,
+   -8.9
+  ],
+  "note": "副交感節前神經元所在；接收兩側頂蓋前區 → 所以照一眼兩眼都縮瞳（直接＋間接反應）。",
+  "representation": "mesh",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 71
+ },
+ {
+  "id": "nucleus3",
+  "zh": "動眼神經核",
+  "en": "Oculomotor nucleus",
+  "groups": [
+   "g"
+  ],
+  "models": [
+   "Nucleus of oculomotor nerve.l"
+  ],
+  "position": [
+   2,
+   -34.4,
+   -9.3
+  ],
+  "note": "上丘層次可見 CN III 核與 EW 核。「上丘三」。",
+  "representation": "mesh",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 72
+ },
+ {
+  "id": "nucleus4",
+  "zh": "滑車神經核",
+  "en": "Trochlear nucleus",
+  "groups": [
+   "g"
+  ],
+  "models": [
+   "Nucleus of trochlear nerve.l"
+  ],
+  "position": [
+   1.3,
+   -40.3,
+   -9.6
+  ],
+  "note": "下丘層次可見 CN IV 核。「下丘四」。",
+  "representation": "mesh",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 73
+ },
+ {
+  "id": "sc",
+  "zh": "上丘",
+  "en": "Superior colliculus",
+  "groups": [
+   "g",
+   "v"
+  ],
+  "models": [
+   "Superior colliculus.l"
+  ],
+  "position": [
+   8.7,
+   -27.5,
+   -16.6
+  ],
+  "note": "中腦四疊體上對，主要負責視覺反射。",
+  "representation": "mesh",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 74
+ },
+ {
+  "id": "ic",
+  "zh": "下丘",
+  "en": "Inferior colliculus",
+  "groups": [
+   "g"
+  ],
+  "models": [
+   "Inferior colliculus.l"
+  ],
+  "position": [
+   7.3,
+   -31.7,
+   -16.2
+  ],
+  "note": "中腦四疊體下對，主要與聽覺路徑／反射相關。",
+  "representation": "mesh",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 75
+ },
+ {
+  "id": "pretectal",
+  "zh": "頂蓋前區",
+  "en": "Pretectal area",
+  "groups": [
+   "g"
+  ],
+  "models": [
+   "guide:pretectal"
+  ],
+  "position": [
+   5,
+   -25,
+   -11
+  ],
+  "note": "瞳孔對光反射中樞：視網膜 → CN II → 頂蓋前區 → 兩側 EW 核 → CN III → 睫狀神經節 → 短睫狀神經 → 瞳孔括約肌。原模型無此區網格，小球示意在上丘前方。",
+  "representation": "schematic",
+  "snap": false,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 76
+ },
+ {
+  "id": "retina",
+  "zh": "視網膜",
+  "en": "Retina",
+  "groups": [
+   "v"
+  ],
+  "models": [
+   "Retina.l"
+  ],
+  "position": [
+   40,
+   -52,
+   60
+  ],
+  "note": "影像上下左右都倒置；下半部視網膜對應上方視野。",
+  "representation": "mesh",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 77
+ },
+ {
+  "id": "on-intraocular",
+  "zh": "視神經：眼球內段",
+  "en": "Optic nerve — intraocular part",
+  "groups": [
+   "v"
+  ],
+  "models": [
+   "Optic nerve (II).l"
+  ],
+  "position": [
+   28.8,
+   -46.3,
+   55
+  ],
+  "note": "最短（約 1 mm）；篩板前無髓鞘。",
+  "representation": "guide",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 78
+ },
+ {
+  "id": "on-orbital",
+  "zh": "視神經：眼窩段",
+  "en": "Optic nerve — intraorbital part",
+  "groups": [
+   "v"
+  ],
+  "models": [
+   "Optic nerve (II).l"
+  ],
+  "position": [
+   22,
+   -43,
+   43
+  ],
+  "note": "最長，呈 S 形，讓眼球轉動時不被拉扯。",
+  "representation": "guide",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 79
+ },
+ {
+  "id": "on-canal",
+  "zh": "視神經：視神經管段",
+  "en": "Optic nerve — intracanalicular part",
+  "groups": [
+   "v"
+  ],
+  "models": [
+   "Optic nerve (II).l"
+  ],
+  "position": [
+   12.5,
+   -37.6,
+   31.4
+  ],
+  "note": "通過視神經管，與眼動脈同行。",
+  "representation": "guide",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 80
+ },
+ {
+  "id": "on-cranial",
+  "zh": "視神經：顱內段",
+  "en": "Optic nerve — intracranial part",
+  "groups": [
+   "v"
+  ],
+  "models": [
+   "Optic nerve (II).l"
+  ],
+  "position": [
+   7,
+   -33.5,
+   24
+  ],
+  "note": "視神經管 → 視交叉。",
+  "representation": "guide",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 81
+ },
+ {
+  "id": "optic-tract",
+  "zh": "視束",
+  "en": "Optic tract",
+  "groups": [
+   "v"
+  ],
+  "models": [
+   "Optic tract.l"
+  ],
+  "position": [
+   16,
+   -28,
+   0
+  ],
+  "note": "視交叉之後：左視束帶雙眼右側視野。",
+  "representation": "mesh",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 82
+ },
+ {
+  "id": "lgn",
+  "zh": "外側膝狀體",
+  "en": "Lateral geniculate nucleus",
+  "groups": [
+   "v"
+  ],
+  "models": [
+   "Lateral geniculate body.l"
+  ],
+  "position": [
+   19.1,
+   -27.8,
+   -13.2
+  ],
+  "note": "丘腦的視覺中繼站，之後經視放射到 V1。",
+  "representation": "mesh",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 83
+ },
+ {
+  "id": "baum",
+  "zh": "鮑氏環（頂葉視放射）",
+  "en": "Baum’s loop",
+  "groups": [
+   "v"
+  ],
+  "models": [
+   "guide:baum"
+  ],
+  "position": [
+   31,
+   -3,
+   -45
+  ],
+  "note": "視放射上部，經頂葉到距狀溝上岸（楔葉），傳遞對側下方視野。",
+  "representation": "schematic",
+  "snap": false,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 84
+ },
+ {
+  "id": "v1-cortex",
+  "zh": "初級視覺皮質 V1",
+  "en": "Primary visual cortex (V1, BA 17)",
+  "groups": [
+   "v"
+  ],
+  "models": [
+   "Calcarine sulcus.l",
+   "Cuneus.l",
+   "Lingual gyrus.l"
+  ],
+  "position": [
+   8,
+   -23,
+   -79
+  ],
+  "note": "= Striate cortex = Brodmann area 17，位於距狀溝兩岸。問「什麼皮質」答 primary visual cortex；問「第幾區」答 17。",
+  "representation": "guide",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 85
+ },
+ {
+  "id": "cuneus",
+  "zh": "楔葉",
+  "en": "Cuneus",
+  "groups": [
+   "v"
+  ],
+  "models": [
+   "Cuneus.l"
+  ],
+  "position": [
+   6,
+   -5,
+   -80
+  ],
+  "note": "距狀溝上方；代表對側下方視野。「上面的楔葉看下面」。",
+  "representation": "mesh",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 86
+ },
+ {
+  "id": "lingual",
+  "zh": "舌回",
+  "en": "Lingual gyrus",
+  "groups": [
+   "v"
+  ],
+  "models": [
+   "Lingual gyrus.l"
+  ],
+  "position": [
+   8,
+   -35,
+   -70
+  ],
+  "note": "距狀溝下方；代表對側上方視野。「下面的舌回看上面」。",
+  "representation": "mesh",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 87
+ },
+ {
+  "id": "cav-3",
+  "zh": "III（外側壁最上）",
+  "en": "CN III in lateral wall",
+  "groups": [
+   "c"
+  ],
+  "models": [
+   "Oculomotor nerve (III).l"
+  ],
+  "position": [
+   12.6,
+   -37.2,
+   20
+  ],
+  "note": "外側壁由上到下第 1 條。",
+  "representation": "guide",
+  "snap": true,
+  "quiz": null,
+  "via": [
+   "sof"
+  ],
+  "extra": false,
+  "number": 88
+ },
+ {
+  "id": "cav-4",
+  "zh": "IV（外側壁）",
+  "en": "CN IV in lateral wall",
+  "groups": [
+   "c"
+  ],
+  "models": [
+   "Trochlear nerve (IV).l"
+  ],
+  "position": [
+   13.6,
+   -43.2,
+   20
+  ],
+  "note": "外側壁第 2 條。本模型中 IV 與 V1 幾乎同高，教科書排列是 III → IV → V1 → V2。",
+  "representation": "guide",
+  "snap": true,
+  "quiz": null,
+  "via": [
+   "sof"
+  ],
+  "extra": false,
+  "number": 89
+ },
+ {
+  "id": "cav-v1",
+  "zh": "V1（外側壁）",
+  "en": "V1 in lateral wall",
+  "groups": [
+   "c"
+  ],
+  "models": [
+   "Ophthalmic nerve.l"
+  ],
+  "position": [
+   15,
+   -42.5,
+   20
+  ],
+  "note": "外側壁第 3 條，往前經眶上裂。",
+  "representation": "guide",
+  "snap": true,
+  "quiz": null,
+  "via": [
+   "sof"
+  ],
+  "extra": false,
+  "number": 90
+ },
+ {
+  "id": "cav-v2",
+  "zh": "V2（外側壁最下）",
+  "en": "V2 in lateral wall",
+  "groups": [
+   "c"
+  ],
+  "models": [
+   "Maxillary nerve.l"
+  ],
+  "position": [
+   17.2,
+   -49,
+   20
+  ],
+  "note": "外側壁最下方，往前出圓孔。",
+  "representation": "guide",
+  "snap": true,
+  "quiz": null,
+  "via": [
+   "rotundum"
+  ],
+  "extra": false,
+  "number": 91
+ },
+ {
+  "id": "cav-6",
+  "zh": "VI（海綿竇腔內）",
+  "en": "CN VI inside the sinus",
+  "groups": [
+   "c"
+  ],
+  "models": [
+   "Abducens nerve (VI).l"
+  ],
+  "position": [
+   14,
+   -46.2,
+   20
+  ],
+  "note": "唯一走在海綿竇腔內的腦神經，貼著 ICA。",
+  "representation": "guide",
+  "snap": true,
+  "quiz": null,
+  "via": [
+   "sof"
+  ],
+  "extra": false,
+  "number": 92
+ }
+]

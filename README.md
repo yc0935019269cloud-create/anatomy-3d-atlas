@@ -1,12 +1,15 @@
 # 解剖 3D 圖譜
 
-兩套可直接開啟的互動式 3D 解剖圖譜：
+三套可直接開啟的互動式 3D 解剖圖譜：
 
 - [腦與視覺路徑](brain-visual-atlas-3d/腦與視覺路徑3D.html)
 - [頭顱骨](skull-atlas-3d/頭顱骨3D.html)
+- [腦神經與顱骨孔洞（骨＋神經＋腦整合）](cranial-nerves-3d/神經與顱骨3D.html)
 - [圖譜選單](index.html)
 
 網站由 GitHub Pages 提供。點選首頁卡片即可開啟各圖譜；返回瀏覽器上一頁可回到選單。
+
+整合圖譜把頭骨、12 對腦神經、眼窩與腦放在同一座標，可看到每條神經穿過哪個孔；說明見 `cranial-nerves-3d/README.md`。
 
 ## 授權與來源
 
