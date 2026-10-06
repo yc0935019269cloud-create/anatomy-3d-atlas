@@ -1,12 +1,12 @@
 {
-  "date": "2026-09-29T16:35:45.214Z",
+  "date": "2026-10-06T05:31:47.678Z",
   "browser": "141.0.7390.37",
   "offline": true,
   "checks": [
-    "92 entries, every one matched to a source mesh or guide (447 meshes incl. schematics)",
+    "113 entries, every one matched to a source mesh or guide (537 meshes incl. schematics)",
     "All nerve → foramen links resolve",
     "Nerve-to-foramen distances (mm): {\"Maxillary nerve.l → rotundum\":0.6,\"Optic nerve (II).l → optic-canal\":0.6,\"Trigeminal nerve (V).l → ovale\":1.4,\"Hypoglossal nerve (XII).l → hypoglossal-canal\":4.1,\"Middle meningeal artery.l → spinosum\":3.1,\"Abducens nerve (VI).l → sof\":0.9,\"Vagus nerve (X).l → jugular\":0,\"Facial nerve (VII).l → iam\":0.1}",
-    "Themes {\"q\":10,\"f\":13,\"n\":15,\"o\":23,\"c\":11,\"g\":18,\"v\":20}: labels in bounds, no overlaps, anchors on screen, hide/show guards answers",
+    "Themes {\"q\":10,\"f\":13,\"n\":15,\"o\":23,\"e\":23,\"c\":11,\"g\":18,\"v\":20}: labels in bounds, no overlaps, anchors on screen, hide/show guards answers",
     "Quiz-number search",
     "Nerve → foramen jump (V2 → 圓孔) and foramen lists the nerves",
     "Selecting a cranial nerve emphasises it (both sides; V includes V1–V3), other nerves fade to the adjustable opacity (0 hides them), other leader lines hidden until cleared",
@@ -15,6 +15,7 @@
     "Horizontal skull cut toggles",
     "Sagittal and coronal sections, flip side, and per-plane bone / brain / nerve / other scope",
     "Optic nerve dural sheath shown and quiz 2 anchored on it",
+    "Ocular vessel theme: CRA, SPCA, LPCA (+ intraocular course), 7 anterior ciliary arteries, iris arterial circles, Zinn–Haller, 4 vortex veins; selecting a vessel fades the others",
     "Cavernous theme uses coronal section on all meshes",
     "Schematic and right-side toggles",
     "Notes dialog jump buttons",

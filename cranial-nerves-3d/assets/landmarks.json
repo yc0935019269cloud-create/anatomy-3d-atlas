@@ -1330,7 +1330,8 @@
   "zh": "上眼靜脈",
   "en": "Superior ophthalmic vein",
   "groups": [
-   "o"
+   "o",
+   "e"
   ],
   "models": [
    "Superior ophthalmic vein.l"
@@ -1353,7 +1354,8 @@
   "zh": "眼動脈",
   "en": "Ophthalmic artery",
   "groups": [
-   "o"
+   "o",
+   "e"
   ],
   "models": [
    "Ophthalmic artery.l"
@@ -2214,5 +2216,492 @@
   ],
   "extra": false,
   "number": 92
+ },
+ {
+  "id": "cra",
+  "zh": "視網膜中央動脈",
+  "en": "Central retinal artery (CRA)",
+  "groups": [
+   "e"
+  ],
+  "models": [
+   "Central retinal artery.l"
+  ],
+  "position": [
+   25.9,
+   -49.4,
+   48.3
+  ],
+  "note": "眼動脈第一條分支。實際上在眼球後約 1 cm 由下方穿入視神經，沿視神經中央走到視盤，再分成上下鼻側／顳側四支。終動脈 → 阻塞（CRAO）造成內層視網膜缺血、黃斑櫻桃紅斑。原模型的 CRA 走在視神經下方、到視盤才接上，穿入位置以說明為準。",
+  "representation": "mesh",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 93
+ },
+ {
+  "id": "cra-branches",
+  "zh": "視網膜中央動脈的視網膜分支",
+  "en": "Retinal branches of the CRA",
+  "groups": [
+   "e"
+  ],
+  "models": [
+   "Central retinal artery.l"
+  ],
+  "position": [
+   40.4,
+   -42.2,
+   61
+  ],
+  "note": "在視網膜神經纖維層內分布，供應視網膜內 2/3（神經節細胞到內核層）；外層（感光細胞）由脈絡膜供應。原模型直接畫在視網膜上。",
+  "representation": "guide",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 94
+ },
+ {
+  "id": "crv",
+  "zh": "視網膜中央靜脈",
+  "en": "Central retinal vein (CRV)",
+  "groups": [
+   "e"
+  ],
+  "models": [
+   "guide:crv"
+  ],
+  "position": [
+   24.2,
+   -45.6,
+   44.2
+  ],
+  "note": "與 CRA 同行於視神經中，在眼球後方離開視神經，匯入上眼靜脈或直接進海綿竇。阻塞（CRVO）→ 火焰狀出血。原模型沒有，藍線為示意；實際在視神經中央。",
+  "representation": "schematic",
+  "snap": false,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 95
+ },
+ {
+  "id": "spca",
+  "zh": "睫狀後短動脈",
+  "en": "Short posterior ciliary arteries",
+  "groups": [
+   "e"
+  ],
+  "models": [
+   "Short posterior ciliary arteries.l",
+   "guide:spca-ext"
+  ],
+  "position": [
+   21,
+   -40.8,
+   40.5
+  ],
+  "note": "約 15–20 條，在視神經周圍穿入鞏膜，供應脈絡膜（→ 外層視網膜）與視神經頭。原模型只畫到眼球後方約 9 mm，接到鞏膜的細支是示意。",
+  "representation": "mesh",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 96
+ },
+ {
+  "id": "zinn",
+  "zh": "Zinn-Haller 環",
+  "en": "Circle of Zinn–Haller",
+  "groups": [
+   "e"
+  ],
+  "models": [
+   "guide:zinn"
+  ],
+  "position": [
+   30.5,
+   -46.5,
+   51.6
+  ],
+  "note": "睫狀後短動脈在鞏膜內環繞視神經頭形成的吻合環，供應篩板附近的視神經。前部缺血性視神經病變與它有關。示意。",
+  "representation": "schematic",
+  "snap": false,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 97
+ },
+ {
+  "id": "lpca",
+  "zh": "睫狀後長動脈",
+  "en": "Long posterior ciliary arteries",
+  "groups": [
+   "e"
+  ],
+  "models": [
+   "Long posterior ciliary arteries.l",
+   "guide:lpca-in"
+  ],
+  "position": [
+   25.1,
+   -39.1,
+   47.4
+  ],
+  "note": "內、外側各一條，穿鞏膜後沿水平經線在脈絡膜上腔往前，到睫狀體參與虹膜大動脈環。原模型畫到眼球後上方；眼球內沿水平經線的走向是示意。",
+  "representation": "mesh",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 98
+ },
+ {
+  "id": "muscular",
+  "zh": "眼動脈肌支",
+  "en": "Muscular branches of the ophthalmic artery",
+  "groups": [
+   "e"
+  ],
+  "models": [
+   "guide:muscular"
+  ],
+  "position": [
+   20,
+   -41,
+   46
+  ],
+  "note": "供應眼外肌，並延續為睫狀前動脈。示意。",
+  "representation": "schematic",
+  "snap": false,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 99
+ },
+ {
+  "id": "aca",
+  "zh": "睫狀前動脈",
+  "en": "Anterior ciliary arteries",
+  "groups": [
+   "e"
+  ],
+  "models": [
+   "guide:aca"
+  ],
+  "position": [
+   31.2,
+   -42.2,
+   72
+  ],
+  "note": "由肌支沿四條直肌肌腱往前：上、下、內直肌各 2 條，外直肌 1 條，共 7 條。在角膜緣附近穿鞏膜，與睫狀後長動脈形成虹膜大動脈環；也分支到結膜與鞏膜表層。斜視手術切多條直肌時要注意前段缺血。示意。",
+  "representation": "schematic",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 100
+ },
+ {
+  "id": "mac",
+  "zh": "虹膜大動脈環",
+  "en": "Major arterial circle of the iris",
+  "groups": [
+   "e"
+  ],
+  "models": [
+   "guide:mac"
+  ],
+  "position": [
+   37.4,
+   -48.8,
+   71.2
+  ],
+  "note": "位於睫狀體、虹膜根部，由睫狀後長動脈＋睫狀前動脈組成，供應睫狀體與虹膜。示意。",
+  "representation": "schematic",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 101
+ },
+ {
+  "id": "mic",
+  "zh": "虹膜小動脈環",
+  "en": "Minor arterial circle of the iris",
+  "groups": [
+   "e"
+  ],
+  "models": [
+   "guide:mic"
+  ],
+  "position": [
+   34.3,
+   -48.8,
+   73.8
+  ],
+  "note": "在虹膜表面的領狀緣（collarette）附近，由大動脈環發出的放射狀血管連成，常不完整。示意。",
+  "representation": "schematic",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 102
+ },
+ {
+  "id": "lacrimal-a",
+  "zh": "淚腺動脈",
+  "en": "Lacrimal artery",
+  "groups": [
+   "e"
+  ],
+  "models": [
+   "Lacrimal artery.l"
+  ],
+  "position": [
+   30,
+   -36,
+   50
+  ],
+  "note": "眼動脈分支，沿外直肌上緣到淚腺；分出瞼外側動脈，並有回返腦膜支經眶上裂。",
+  "representation": "mesh",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 103
+ },
+ {
+  "id": "supraorbital-a",
+  "zh": "眶上動脈",
+  "en": "Supra-orbital artery",
+  "groups": [
+   "e"
+  ],
+  "models": [
+   "Supra-orbital artery.l"
+  ],
+  "position": [
+   26,
+   -22,
+   82
+  ],
+  "note": "經眶上孔／切跡到額部，與眶上神經伴行。",
+  "representation": "mesh",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 104
+ },
+ {
+  "id": "supratrochlear-a",
+  "zh": "滑車上動脈",
+  "en": "Supratrochlear artery",
+  "groups": [
+   "e"
+  ],
+  "models": [
+   "Supratrochlear artery.l"
+  ],
+  "position": [
+   12.4,
+   -25,
+   85
+  ],
+  "note": "眼動脈終支之一，在滑車上方出眼窩到額部內側。",
+  "representation": "mesh",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 105
+ },
+ {
+  "id": "ethmoidal-a",
+  "zh": "前／後篩動脈",
+  "en": "Anterior & posterior ethmoidal arteries",
+  "groups": [
+   "e"
+  ],
+  "models": [
+   "Anterior ethmoidal artery.l",
+   "Posterior ethmoidal artery.l"
+  ],
+  "position": [
+   10,
+   -44,
+   55
+  ],
+  "note": "經眼窩內側壁的篩孔到篩竇、鼻腔與顱前窩。前篩動脈是鼻出血的重要來源之一。",
+  "representation": "mesh",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 106
+ },
+ {
+  "id": "dorsal-nasal",
+  "zh": "鼻背動脈",
+  "en": "Dorsal nasal artery",
+  "groups": [
+   "e"
+  ],
+  "models": [
+   "guide:dorsal-nasal"
+  ],
+  "position": [
+   10,
+   -34,
+   79
+  ],
+  "note": "眼動脈終支之一，在內眥上方出眼窩到鼻背，與內眥動脈（面動脈）吻合 → 頸內、頸外動脈系統在此相連。示意。",
+  "representation": "schematic",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 107
+ },
+ {
+  "id": "med-palp",
+  "zh": "瞼內側動脈＋眼瞼動脈弓",
+  "en": "Medial palpebral arteries & palpebral arcades",
+  "groups": [
+   "e"
+  ],
+  "models": [
+   "guide:med-palp",
+   "guide:arcade"
+  ],
+  "position": [
+   22,
+   -38.6,
+   80.3
+  ],
+  "note": "瞼內側動脈分上、下支，與瞼外側動脈連成上、下眼瞼動脈弓。示意，位置為眼瞼近似。",
+  "representation": "schematic",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 108
+ },
+ {
+  "id": "lat-palp",
+  "zh": "瞼外側動脈",
+  "en": "Lateral palpebral artery",
+  "groups": [
+   "e"
+  ],
+  "models": [
+   "guide:lat-palp"
+  ],
+  "position": [
+   44.5,
+   -44,
+   71
+  ],
+  "note": "由淚腺動脈分出，到外眥接上、下眼瞼動脈弓。示意。",
+  "representation": "schematic",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 109
+ },
+ {
+  "id": "vortex",
+  "zh": "渦靜脈",
+  "en": "Vortex veins",
+  "groups": [
+   "e"
+  ],
+  "models": [
+   "guide:vortex"
+  ],
+  "position": [
+   39.2,
+   -40.7,
+   60.3
+  ],
+  "note": "4（–6）條，每象限一條，在赤道後方穿出鞏膜，收集脈絡膜、睫狀體、虹膜的靜脈血；上方兩條入上眼靜脈、下方兩條入下眼靜脈。示意。",
+  "representation": "schematic",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 110
+ },
+ {
+  "id": "iov",
+  "zh": "眼下靜脈",
+  "en": "Inferior ophthalmic vein",
+  "groups": [
+   "e"
+  ],
+  "models": [
+   "Inferior ophthalmic vein.l"
+  ],
+  "position": [
+   18,
+   -49,
+   40
+  ],
+  "note": "經眶下裂通翼靜脈叢，也可匯入上眼靜脈或海綿竇。",
+  "representation": "mesh",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 111
+ },
+ {
+  "id": "infraorbital-a",
+  "zh": "眶下動脈",
+  "en": "Infra-orbital artery",
+  "groups": [
+   "e"
+  ],
+  "models": [
+   "Infra-orbital artery.l"
+  ],
+  "position": [
+   27,
+   -70,
+   62
+  ],
+  "note": "來自上頷動脈（頸外系統），走眶下溝／管到眶下孔，供應下直肌、下斜肌等鄰近構造。",
+  "representation": "mesh",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 112
+ },
+ {
+  "id": "angular-a",
+  "zh": "內眥動脈",
+  "en": "Angular artery",
+  "groups": [
+   "e"
+  ],
+  "models": [
+   "Angular artery.l"
+  ],
+  "position": [
+   12,
+   -45,
+   80
+  ],
+  "note": "面動脈（頸外系統）的終段，在內眥與鼻背動脈吻合。",
+  "representation": "mesh",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 113
  }
 ]

@@ -5,14 +5,14 @@ source=pathlib.Path(sys.argv[-2]);root=pathlib.Path(sys.argv[-1])
 BONES=['Ethmoid bone','Frontal bone','Inferior nasal concha bone','Lacrimal bone','Mandible','Maxilla','Nasal bone','Occipital bone','Palatine bone','Parietal bone','Sphenoid bone','Temporal bone','Vomer','Zygomatic bone']
 SINUS=['Sinus of sphenoid bone','Sinus of frontal bone']
 DURA=['Falx cerebri','Tentorium cerebelli']
-VEIN=['Cavernous sinus','Superior ophthalmic vein','Inferior ophthalmic vein','Superior petrosal sinus','Inferior petrosal sinus']
+VEIN=['Angular vein','Cavernous sinus','Superior ophthalmic vein','Inferior ophthalmic vein','Superior petrosal sinus','Inferior petrosal sinus']
 DEEP=['Thalamus','Hypothalamus','Corpus callosum','Caudate nucleus','Putamen','Medial geniculate body','Lateral geniculate body','Choroid plexus','Adenohypophysis','Neurohypophysis','Lateral ventricle','Globus pallidus','Pineal gland']
 STEM=['Midbrain','Pons','Medulla oblongata','Superior colliculus','Inferior colliculus']
 NERVE=['Olfactory nerve (I)','Optic nerve (II)','Optic tract','Optic chiasm','Oculomotor nerve (III)','Trochlear nerve (IV)','Trigeminal nerve (V)','Sensory root of trigeminal nerve','Motor root of trigeminal nerve','Ophthalmic nerve','Maxillary nerve','Meningeal branch of maxillary nerve','Anterior division of mandibular nerve','Posterior division of mandibular nerve','Inferior alveolar nerve','Lingual nerve','Buccal nerve','Mental nerve','Nerve to mylohyoid muscle','Abducens nerve (VI)','Facial nerve (VII)','Vestibulocochlear nerve (VIII)','Vestibular nerve','Cochlear nerve','Glossopharyngeal nerve (IX)','Vagus nerve (X)','Accessory nerve (XI)','Hypoglossal nerve (XII)']
 NUCLEUS=['Nucleus of oculomotor nerve','Accessory nucleus of oculomotor nerve','Nucleus of trochlear nerve','Nucleus of abducens nerve','Motor nucleus of facial nerve','Nucleus of hypoglossal nerve','Posterior nucleus of vagus nerve']
 EYE=['Sclera','Retina','Iris','Lens','Cornea','Vitreous body','Ciliary body-curve']
 ORBIT=['Superior rectus muscle','Inferior rectus muscle','Medial rectus muscle','Lateral rectus muscle','Superior oblique muscle','Inferior oblique muscle','Levator palpebrae superioris','Trochlea of superior oblique muscle','Common tendinous ring','Lacrimal gland','Lacrimal sac','Lacrimal canaliculus','Nasolacrimal duct']
-ARTERY=['Vertebral artery','Basilar artery','Internal carotid artery','Anterior cerebral artery','Anterior communicating artery','Posterior communicating artery','Posterior cerebral artery','Ophthalmic artery','Superior cerebellar artery','Anterior inferior cerebellar artery','Posterior inferior cerebellar artery','Middle meningeal artery','Medial occipital artery','Lateral occipital artery','Parieto-occipital artery']
+ARTERY=['Vertebral artery','Basilar artery','Internal carotid artery','Anterior cerebral artery','Anterior communicating artery','Posterior communicating artery','Posterior cerebral artery','Ophthalmic artery','Superior cerebellar artery','Anterior inferior cerebellar artery','Posterior inferior cerebellar artery','Middle meningeal artery','Central retinal artery','Lacrimal artery','Supra-orbital artery','Supratrochlear artery','Anterior ethmoidal artery','Posterior ethmoidal artery','Long posterior ciliary arteries','Short posterior ciliary arteries','Infra-orbital artery','Angular artery','Medial occipital artery','Lateral occipital artery','Parieto-occipital artery']
 TABLE=[(BONES,'bone'),(SINUS,'sinus'),(DURA,'dura'),(VEIN,'vein'),(DEEP,'deep'),(STEM,'stem'),(NERVE,'nerve'),(NUCLEUS,'nucleus'),(EYE,'eye'),(ORBIT,'orbit'),(ARTERY,'artery')]
 def kind(s):
  if s.endswith(('.t','.s','.i','.j','.g')):return None
@@ -39,6 +39,8 @@ bpy.context.view_layer.update()
 for o in dst.objects:
  # A few nerve curves are centre lines only; give them a thin visible bevel.
  if o and o.type=='CURVE' and o.data.bevel_depth==0 and not o.data.bevel_object and kind(o.name):o.data.bevel_depth=.0006;o.data.bevel_resolution=2
+ # The central retinal artery has ~800 control points (it fans out over the retina): sample it more coarsely.
+ if o and o.type=='CURVE' and o.name.startswith('Central retinal artery'):o.data.resolution_u=2;o.data.bevel_resolution=1;o.data.bevel_depth=.00035
 bpy.context.view_layer.update();dg=bpy.context.evaluated_depsgraph_get()
 def conv(p):return [p.x*1000,(p.z-1.64)*1000,-p.y*1000]
 meshes=[];report=[];anchors={}
