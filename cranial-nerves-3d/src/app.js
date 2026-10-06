@@ -4,11 +4,11 @@ import {labels,groups,themeOrder} from './labels.js';
 import {createSchematics,createOra} from './schematic.js';
 import {notesHTML} from './notes.js';
 import {correctAnnulus} from './annulus.js';
-import {createOcularVessels} from './ocular.js';
+import {createOcularVessels,createBrainVessels} from './ocular.js';
 const $=id=>document.getElementById(id);
 // Camera directions (from target to camera). Frame: +X left, +Y superior, +Z anterior.
 const cameras={top:{dir:[0,1,-.02],up:[0,0,1],text:'上面觀 · 前方在上 · 左側在畫面左方'},bottom:{dir:[0,-1,-.02],up:[0,0,1],text:'底面觀 · 前方在上 · 左側在畫面右方'},front:{dir:[0,.12,1],up:[0,1,0],text:'前面觀 · 左側在畫面右方'},left:{dir:[1,0,0],up:[0,1,0],text:'左側觀 · 前方在畫面左方'},medial:{dir:[-1,0,0],up:[0,1,0],text:'由正中面看左半邊 · 前方在畫面右方'},oblique:{dir:[.62,.55,.56],up:[0,1,0],text:'立體斜視 · 可自由拖曳旋轉'}};
-const frames={q:{target:[4,-38,2],zoom:1.3},f:{target:[0,-58,8],zoom:1.3},n:{target:[0,-60,2],zoom:1.9},o:{target:[20,-42,50],zoom:2.9},e:{target:[26,-43,58],zoom:2.6},c:{target:[0,-46,20],zoom:3.6},g:{target:[14,-40,22],zoom:2.3},v:{target:[0,-28,-12],zoom:1.2}};
+const frames={q:{target:[4,-38,2],zoom:1.3},f:{target:[0,-58,8],zoom:1.3},n:{target:[0,-60,2],zoom:1.9},o:{target:[20,-42,50],zoom:2.9},e:{target:[24,-50,62],zoom:1.9},k:{target:[29,-46,60],zoom:4.6},u:{target:[30.2,-48.6,55],zoom:9.5},w:{target:[18,-100,10],zoom:.95},b:{target:[0,-48,-5],zoom:1.6},c:{target:[0,-46,20],zoom:3.6},g:{target:[14,-40,22],zoom:2.3},v:{target:[0,-28,-12],zoom:1.2}};
 const typeNames={mesh:'原模型構造',guide:'原模型上的位置／通道',schematic:'示意（原模型沒有）',reference:'皮質內層次（無 3D 網格）'};
 // Cranial nerve colours, reused by the legend.
 export const nerveColors=[['I',/^Olfactory/,0xf4e38e],['II',/^Optic (nerve|chiasm|tract)/,0xffd35c],['III',/^Oculomotor/,0x5fa8ff],['IV',/^Trochlear nerve/,0xc58bff],['V1',/^Ophthalmic nerve/,0xffe36b],['V2',/^(Maxillary nerve|Meningeal branch of maxillary)/,0xffa94d],['V',/(Trigeminal|root of trigeminal)/,0xffc04d],['V3',/(mandibular nerve|Inferior alveolar|Lingual nerve|Buccal nerve|Mental nerve|mylohyoid)/,0xff7d3d],['VI',/^Abducens/,0x3fe0b0],['VII',/^Facial nerve/,0xff78a8],['VIII',/^(Vestibul|Cochlear)/,0xa3e070],['IX',/^Glossopharyngeal/,0x74d3ff],['X',/^Vagus/,0x98a8ff],['XI',/^Accessory nerve/,0xd9a4ff],['XII',/^Hypoglossal nerve/,0x57e3e0]];
@@ -41,7 +41,7 @@ async function initialize(){
  scene=new T.Scene();camera=new T.OrthographicCamera(-180,180,130,-130,.1,2400);scene.add(new T.HemisphereLight(0xececff,0x463e4b,2));for(const [pos,col,intensity] of [[[180,260,280],0xffece6,2.3],[[-180,40,-200],0xb5cdef,1.4],[[0,-220,60],0xfad3cc,1.3]]){const light=new T.DirectionalLight(col,intensity);light.position.set(...pos);scene.add(light);}
  for(const item of data.meshes){const g=new T.BufferGeometry();g.setAttribute('position',new T.BufferAttribute(decode(item.positions,Float32Array),3));g.setIndex(new T.BufferAttribute(decode(item.indices,Uint32Array),1));g.computeVertexNormals();const col=colorFor(item);const m=new T.Mesh(g,new T.MeshStandardMaterial({color:col,roughness:item.category==='bone'||item.category==='tooth'?.82:.62,side:T.DoubleSide}));m.name=item.name;m.userData={category:item.category,baseColor:col,schematic:false};meshes.push(m);scene.add(m);}
  const annulus=correctAnnulus(meshes);
- const schematic=createSchematics();schematic.push(...createOcularVessels(meshes));for(const r of meshes.filter(m=>/^Retina\.[lr]$/.test(m.name)))schematic.push(createOra(r));meshes.push(...schematic);scene.add(...schematic);scene.updateMatrixWorld(true);
+ const schematic=createSchematics();const ocular=createOcularVessels(meshes);window.ocularFrame=ocular.report.frame;schematic.push(...ocular,...createBrainVessels());for(const r of meshes.filter(m=>/^Retina\.[lr]$/.test(m.name)))schematic.push(createOra(r));meshes.push(...schematic);scene.add(...schematic);scene.updateMatrixWorld(true);
  for(const l of labels){l.matches=meshes.filter(m=>matches(m,l));l.point=new T.Vector3(...l.position);if(l.snap){const left=l.matches.filter(m=>/\.l\d*$/.test(m.name)),pool=left.length?left:l.matches;let dist=Infinity;const v=new T.Vector3();for(const m of pool){const a=m.geometry.attributes.position;for(let i=0;i<a.count;i++){v.fromBufferAttribute(a,i).applyMatrix4(m.matrixWorld);const d=v.distanceToSquared(new T.Vector3(...l.position));if(d<dist){dist=d;l.anchorMesh=m;l.localAnchor=new T.Vector3().fromBufferAttribute(a,i);}}}if(l.anchorMesh)l.point.copy(l.localAnchor).applyMatrix4(l.anchorMesh.matrixWorld);}}
  $('total').textContent=labels.length;buildLegend();
  setGroup('q');new ResizeObserver(resize).observe($('stage'));resize();$('loading').hidden=true;renderer.setAnimationLoop(()=>{controls.update();if(dirty){renderer.render(scene,camera);drawLabels();dirty=false;}});
@@ -56,7 +56,7 @@ function setCamera(which,frame=frames[current]){
  makeControls(target);labelSlots=null;$('camera-view').value=which;$('orientation').textContent=c.text;dirty=true;
 }
 function setGroup(id){current=id;selected=null;apexMode=false;$('apex-view').hidden=id!=='o';const g=groups[id];$('view-title').textContent=g.title;$('view-note').textContent=g.subtitle;$('flow').textContent=names?g.flow:'名稱與說明已隱藏 · 保留項目編號供自測';
- $('bone').value=g.bone;$('cortex').value=g.cortex;presetCuts(g);$('jaw').checked=id==='q';$('right').checked=!'ge'.includes(id);$('cerebellum').checked=id==='n';$('guides').checked=true;$('search').value='';$('legend').hidden=!'fnoc'.includes(id);
+ $('bone').value=g.bone;$('cortex').value=g.cortex;presetCuts(g);$('jaw').checked=id==='q';$('right').checked=!'geku'.includes(id);$('cerebellum').checked='nb'.includes(id);$('retina-guide').hidden=g.panel!=='retina';$('guides').checked=true;$('search').value='';$('legend').hidden=!'fnoc'.includes(id);
  setCamera(g.camera);document.querySelectorAll('[data-view]').forEach(b=>b.classList.toggle('active',b.dataset.view===id));updateModel();renderList();rebuildLabels();showDetail();}
 function updateModel(){const groupLabels=labels.filter(l=>l.groups.includes(current)),sel=labels.find(l=>l.id===selected),bone=+$('bone').value,cortex=+$('cortex').value;const needed=new Set(groupLabels.flatMap(l=>l.matches));if(sel)sel.matches.forEach(m=>needed.add(m));
  $('bone-value').textContent=Math.round(bone*100)+'%';$('cortex-value').textContent=Math.round(cortex*100)+'%';$('nerve-dim-value').textContent=+$('nerve-dim').value?Math.round($('nerve-dim').value*100)+'%':'隱藏';syncCutUI();planesBy=sectionPlanes();
@@ -64,20 +64,20 @@ function updateModel(){const groupLabels=labels.filter(l=>l.groups.includes(curr
  const isolate=sel&&current!=='v'?new Set(sel.matches.filter(m=>m.userData.category==='nerve').map(m=>cnCode(m.name)).filter(Boolean)):null;
  if(isolate?.has('V'))['V1','V2','V3'].forEach(c=>isolate.add(c));if(isolate&&['V1','V2','V3'].some(c=>isolate.has(c)))isolate.add('V');
  // In the ocular vessel theme, selecting a vessel fades the other vessels in the same way.
- const isVessel=m=>['artery','vein','vessel-guide'].includes(m.userData.category),vesselFocus=current==='e'&&sel?.matches.some(isVessel);
+ const isVessel=m=>['artery','vein','vessel-guide','brainvessel-guide'].includes(m.userData.category),vesselFocus='ekuwb'.includes(current)&&sel?.matches.some(isVessel);
  for(const m of meshes){const cat=m.userData.category,n=m.name,belongs=needed.has(m),highlight=sel?.matches.includes(m),th=current;let visible=belongs,opacity=1;
   if(cat==='bone'||cat==='tooth'){visible=bone>0&&(!isLower(n)||$('jaw').checked);opacity=bone;if(highlight&&bone<.3){visible=true;opacity=.45;}}
   else if(cat==='sinus'){visible=belongs||'qocf'.includes(th);opacity=belongs?.8:.45;}
   else if(cat==='cortex'){visible=cortex>0||highlight;opacity=highlight?Math.max(cortex,.75):cortex;}
-  else if(cat==='cerebellum'){visible=$('cerebellum').checked;opacity=th==='n'?.5:.25;}
-  else if(cat==='stem'){visible=belongs||'nqgvc'.includes(th);opacity=belongs?.9:th==='n'?.85:th==='g'?.35:.22;}
+  else if(cat==='cerebellum'){visible=$('cerebellum').checked;opacity=th==='n'?.5:th==='b'?.3:.25;}
+  else if(cat==='stem'){visible=belongs||'nqgvcb'.includes(th);opacity=belongs?.9:th==='n'?.85:th==='g'?.35:.22;}
   else if(cat==='deep'){visible=belongs||('vg'.includes(th)&&/^Thalamus/.test(n));opacity=belongs?.85:.14;}
-  else if(cat==='nerve'){visible=belongs||('fnoc'.includes(th)&&!(/^Optic tract/.test(n)&&th!=='n'))||(th==='g'&&/^(Oculomotor|Optic|Ophthalmic)/.test(n))||(th==='v'&&/^Optic/.test(n))||(th==='e'&&/^Optic nerve/.test(n));opacity=belongs||'fnoc'.includes(th)?1:.45;if(isolate?.size){const on=isolate.has(cnCode(n)),dim=+$('nerve-dim').value;visible=on||dim>0;opacity=on?1:dim;}}
+  else if(cat==='nerve'){visible=belongs||('fnoc'.includes(th)&&!(/^Optic tract/.test(n)&&th!=='n'))||(th==='g'&&/^(Oculomotor|Optic|Ophthalmic)/.test(n))||(th==='v'&&/^Optic/.test(n))||('eku'.includes(th)&&/^Optic nerve/.test(n));opacity=belongs||'fnoc'.includes(th)?1:.45;if(isolate?.size){const on=isolate.has(cnCode(n)),dim=+$('nerve-dim').value;visible=on||dim>0;opacity=on?1:dim;}}
   else if(cat==='nucleus'){visible=belongs||'gn'.includes(th);opacity=belongs?1:.6;}
-  else if(cat==='eye'){visible=th!=='n';opacity=n.startsWith('Sclera')?.13:n.startsWith('Retina')?.3:n.startsWith('Lens')?.6:n.startsWith('Cornea')?.18:n.startsWith('Vitreous')?0:.85;if(opacity===0&&!belongs)visible=false;}
-  else if(cat==='orbit'){visible=belongs||'ocfe'.includes(th);opacity=belongs?1:th==='o'||th==='f'?.95:th==='e'?.14:.35;}
-  else if(cat==='artery'){visible=belongs||('cf'.includes(th)&&/^(Internal carotid|Ophthalmic|Middle meningeal)/.test(n))||(th==='n'&&/^(Basilar|Vertebral|Internal carotid)/.test(n))||(th==='e'&&/^Internal carotid/.test(n));opacity=belongs?1:.6;}
-  else if(cat==='vein'){visible=belongs||'cofe'.includes(th);opacity=/^Cavernous/.test(n)?(th==='c'?.55:.4):.8;}
+  else if(cat==='eye'){visible=!'nwb'.includes(th);opacity=n.startsWith('Sclera')?(th==='u'?1:'ek'.includes(th)?.32:.13):n.startsWith('Retina')?(th==='u'?1:th==='k'?.22:.3):n.startsWith('Lens')?.6:n.startsWith('Cornea')?.18:n.startsWith('Vitreous')?0:.85;if(opacity===0&&!belongs)visible=false;}
+  else if(cat==='orbit'){visible=belongs||'ocfek'.includes(th);opacity=belongs?1:th==='o'||th==='f'?.95:th==='e'?.14:th==='k'?.1:.35;}
+  else if(cat==='artery'){visible=belongs||('cf'.includes(th)&&/^(Internal carotid|Ophthalmic|Middle meningeal)/.test(n))||(th==='n'&&/^(Basilar|Vertebral|Internal carotid)/.test(n))||(th==='e'&&/^Internal carotid/.test(n))||'bw'.includes(th);opacity=belongs?1:'bw'.includes(th)?.4:.6;}
+  else if(cat==='vein'){visible=belongs||'cofek'.includes(th);opacity=/^Cavernous/.test(n)?(th==='c'?.55:.4):.8;}
   else if(cat==='dura'){visible=belongs&&(th==='q'||highlight);opacity=.32;}
   else if(m.userData.schematic){visible=belongs||(m.userData.themes||'').includes(th);opacity=m.userData.fixedOpacity??1;}
   if(apexMode&&(cat==='sinus'||cat==='sinus-guide'||cat==='bone'||cat==='tooth'))visible=false;
@@ -85,7 +85,7 @@ function updateModel(){const groupLabels=labels.filter(l=>l.groups.includes(curr
   if(m.userData.schematic&&!$('guides').checked)visible=false;
   if(!$('right').checked&&/\.r\d*$/.test(n))visible=false;
   if(highlight&&visible)opacity=Math.max(opacity,cat==='bone'||cat==='cortex'||cat==='vein'||cat==='sinus'||cat==='dura'?opacity:.8);
-  const mat=m.material;m.visible=visible;mat.opacity=opacity;mat.transparent=opacity<.999;mat.depthWrite=opacity>.7;const pl=planesBy[scopeOf(m)];mat.clippingPlanes=pl.length?pl:null;mat.needsUpdate=true;
+  const mat=m.material;if(n.startsWith('Retina'))mat.color.setHex('uk'.includes(th)?0xe0874a:m.userData.baseColor);m.visible=visible;mat.opacity=opacity;mat.transparent=opacity<.999;mat.depthWrite=opacity>.7;const pl=planesBy[scopeOf(m)];mat.clippingPlanes=pl.length?pl:null;mat.needsUpdate=true;
   mat.emissive.setHex(highlight?0x6a4b20:0);mat.emissiveIntensity=highlight?.7:0;if(cat==='path-guide'){mat.emissive.setHex(m.userData.baseColor);mat.emissiveIntensity=highlight?.9:.5;}if(vesselFocus&&highlight&&isVessel(m)){mat.emissive.setHex(m.userData.baseColor);mat.emissiveIntensity=.7;m.renderOrder=3;}if(cat==='nerve'&&(highlight||(isolate?.size&&isolate.has(cnCode(n))))){mat.emissive.setHex(m.userData.baseColor);mat.emissiveIntensity=.85;m.renderOrder=3;}
   m.renderOrder=cat==='nerve'&&isolate?.size&&isolate.has(cnCode(n))?3:opacity<.5?2:0;
  }

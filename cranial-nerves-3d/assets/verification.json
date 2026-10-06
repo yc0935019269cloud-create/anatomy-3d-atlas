@@ -1,12 +1,12 @@
 {
-  "date": "2026-10-06T05:31:47.678Z",
+  "date": "2026-10-06T06:07:36.841Z",
   "browser": "141.0.7390.37",
   "offline": true,
   "checks": [
-    "113 entries, every one matched to a source mesh or guide (537 meshes incl. schematics)",
+    "167 entries, every one matched to a source mesh or guide (638 meshes incl. schematics)",
     "All nerve → foramen links resolve",
     "Nerve-to-foramen distances (mm): {\"Maxillary nerve.l → rotundum\":0.6,\"Optic nerve (II).l → optic-canal\":0.6,\"Trigeminal nerve (V).l → ovale\":1.4,\"Hypoglossal nerve (XII).l → hypoglossal-canal\":4.1,\"Middle meningeal artery.l → spinosum\":3.1,\"Abducens nerve (VI).l → sof\":0.9,\"Vagus nerve (X).l → jugular\":0,\"Facial nerve (VII).l → iam\":0.1}",
-    "Themes {\"q\":10,\"f\":13,\"n\":15,\"o\":23,\"e\":23,\"c\":11,\"g\":18,\"v\":20}: labels in bounds, no overlaps, anchors on screen, hide/show guards answers",
+    "Themes {\"q\":10,\"f\":13,\"n\":15,\"o\":23,\"e\":22,\"k\":17,\"u\":16,\"c\":11,\"g\":18,\"v\":20,\"w\":18,\"b\":17}: labels in bounds, no overlaps, anchors on screen, hide/show guards answers",
     "Quiz-number search",
     "Nerve → foramen jump (V2 → 圓孔) and foramen lists the nerves",
     "Selecting a cranial nerve emphasises it (both sides; V includes V1–V3), other nerves fade to the adjustable opacity (0 hides them), other leader lines hidden until cleared",

@@ -5,7 +5,8 @@
   "en": "Optic papilla / optic disc",
   "groups": [
    "q",
-   "v"
+   "v",
+   "u"
   ],
   "models": [
    "Retina.l",
@@ -80,7 +81,8 @@
   "en": "Ora serrata",
   "groups": [
    "q",
-   "v"
+   "v",
+   "k"
   ],
   "models": [
    "guide:ora"
@@ -1355,7 +1357,8 @@
   "en": "Ophthalmic artery",
   "groups": [
    "o",
-   "e"
+   "e",
+   "w"
   ],
   "models": [
    "Ophthalmic artery.l"
@@ -1401,7 +1404,8 @@
   "zh": "海綿竇",
   "en": "Cavernous sinus",
   "groups": [
-   "c"
+   "c",
+   "e"
   ],
   "models": [
    "Cavernous sinus.l"
@@ -1425,7 +1429,8 @@
   "en": "Internal carotid artery",
   "groups": [
    "c",
-   "f"
+   "f",
+   "w"
   ],
   "models": [
    "Internal carotid artery.l"
@@ -1842,7 +1847,8 @@
   "zh": "視網膜",
   "en": "Retina",
   "groups": [
-   "v"
+   "v",
+   "u"
   ],
   "models": [
    "Retina.l"
@@ -2222,7 +2228,8 @@
   "zh": "視網膜中央動脈",
   "en": "Central retinal artery (CRA)",
   "groups": [
-   "e"
+   "k",
+   "u"
   ],
   "models": [
    "Central retinal artery.l"
@@ -2241,34 +2248,12 @@
   "number": 93
  },
  {
-  "id": "cra-branches",
-  "zh": "視網膜中央動脈的視網膜分支",
-  "en": "Retinal branches of the CRA",
-  "groups": [
-   "e"
-  ],
-  "models": [
-   "Central retinal artery.l"
-  ],
-  "position": [
-   40.4,
-   -42.2,
-   61
-  ],
-  "note": "在視網膜神經纖維層內分布，供應視網膜內 2/3（神經節細胞到內核層）；外層（感光細胞）由脈絡膜供應。原模型直接畫在視網膜上。",
-  "representation": "guide",
-  "snap": true,
-  "quiz": null,
-  "via": [],
-  "extra": false,
-  "number": 94
- },
- {
   "id": "crv",
   "zh": "視網膜中央靜脈",
   "en": "Central retinal vein (CRV)",
   "groups": [
-   "e"
+   "k",
+   "u"
   ],
   "models": [
    "guide:crv"
@@ -2284,14 +2269,14 @@
   "quiz": null,
   "via": [],
   "extra": false,
-  "number": 95
+  "number": 94
  },
  {
   "id": "spca",
   "zh": "睫狀後短動脈",
   "en": "Short posterior ciliary arteries",
   "groups": [
-   "e"
+   "k"
   ],
   "models": [
    "Short posterior ciliary arteries.l",
@@ -2308,14 +2293,15 @@
   "quiz": null,
   "via": [],
   "extra": false,
-  "number": 96
+  "number": 95
  },
  {
   "id": "zinn",
   "zh": "Zinn-Haller 環",
   "en": "Circle of Zinn–Haller",
   "groups": [
-   "e"
+   "k",
+   "u"
   ],
   "models": [
    "guide:zinn"
@@ -2331,14 +2317,14 @@
   "quiz": null,
   "via": [],
   "extra": false,
-  "number": 97
+  "number": 96
  },
  {
   "id": "lpca",
   "zh": "睫狀後長動脈",
   "en": "Long posterior ciliary arteries",
   "groups": [
-   "e"
+   "k"
   ],
   "models": [
    "Long posterior ciliary arteries.l",
@@ -2355,14 +2341,14 @@
   "quiz": null,
   "via": [],
   "extra": false,
-  "number": 98
+  "number": 97
  },
  {
   "id": "muscular",
   "zh": "眼動脈肌支",
   "en": "Muscular branches of the ophthalmic artery",
   "groups": [
-   "e"
+   "k"
   ],
   "models": [
    "guide:muscular"
@@ -2378,14 +2364,14 @@
   "quiz": null,
   "via": [],
   "extra": false,
-  "number": 99
+  "number": 98
  },
  {
   "id": "aca",
   "zh": "睫狀前動脈",
   "en": "Anterior ciliary arteries",
   "groups": [
-   "e"
+   "k"
   ],
   "models": [
    "guide:aca"
@@ -2401,14 +2387,14 @@
   "quiz": null,
   "via": [],
   "extra": false,
-  "number": 100
+  "number": 99
  },
  {
   "id": "mac",
   "zh": "虹膜大動脈環",
   "en": "Major arterial circle of the iris",
   "groups": [
-   "e"
+   "k"
   ],
   "models": [
    "guide:mac"
@@ -2424,14 +2410,14 @@
   "quiz": null,
   "via": [],
   "extra": false,
-  "number": 101
+  "number": 100
  },
  {
   "id": "mic",
   "zh": "虹膜小動脈環",
   "en": "Minor arterial circle of the iris",
   "groups": [
-   "e"
+   "k"
   ],
   "models": [
    "guide:mic"
@@ -2447,7 +2433,7 @@
   "quiz": null,
   "via": [],
   "extra": false,
-  "number": 102
+  "number": 101
  },
  {
   "id": "lacrimal-a",
@@ -2470,7 +2456,7 @@
   "quiz": null,
   "via": [],
   "extra": false,
-  "number": 103
+  "number": 102
  },
  {
   "id": "supraorbital-a",
@@ -2493,7 +2479,7 @@
   "quiz": null,
   "via": [],
   "extra": false,
-  "number": 104
+  "number": 103
  },
  {
   "id": "supratrochlear-a",
@@ -2516,7 +2502,7 @@
   "quiz": null,
   "via": [],
   "extra": false,
-  "number": 105
+  "number": 104
  },
  {
   "id": "ethmoidal-a",
@@ -2540,7 +2526,7 @@
   "quiz": null,
   "via": [],
   "extra": false,
-  "number": 106
+  "number": 105
  },
  {
   "id": "dorsal-nasal",
@@ -2563,7 +2549,7 @@
   "quiz": null,
   "via": [],
   "extra": false,
-  "number": 107
+  "number": 106
  },
  {
   "id": "med-palp",
@@ -2587,7 +2573,7 @@
   "quiz": null,
   "via": [],
   "extra": false,
-  "number": 108
+  "number": 107
  },
  {
   "id": "lat-palp",
@@ -2610,14 +2596,14 @@
   "quiz": null,
   "via": [],
   "extra": false,
-  "number": 109
+  "number": 108
  },
  {
   "id": "vortex",
   "zh": "渦靜脈",
   "en": "Vortex veins",
   "groups": [
-   "e"
+   "k"
   ],
   "models": [
    "guide:vortex"
@@ -2633,7 +2619,7 @@
   "quiz": null,
   "via": [],
   "extra": false,
-  "number": 110
+  "number": 109
  },
  {
   "id": "iov",
@@ -2656,7 +2642,7 @@
   "quiz": null,
   "via": [],
   "extra": false,
-  "number": 111
+  "number": 110
  },
  {
   "id": "infraorbital-a",
@@ -2679,7 +2665,7 @@
   "quiz": null,
   "via": [],
   "extra": false,
-  "number": 112
+  "number": 111
  },
  {
   "id": "angular-a",
@@ -2702,6 +2688,1288 @@
   "quiz": null,
   "via": [],
   "extra": false,
+  "number": 112
+ },
+ {
+  "id": "ant-meningeal",
+  "zh": "前腦膜動脈",
+  "en": "Anterior meningeal artery",
+  "groups": [
+   "e"
+  ],
+  "models": [
+   "guide:ant-meningeal"
+  ],
+  "position": [
+   4,
+   -28,
+   66
+  ],
+  "note": "由前篩動脈分出，進入顱前窩供應硬腦膜。示意。",
+  "representation": "schematic",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
   "number": 113
+ },
+ {
+  "id": "zygomatic-br",
+  "zh": "淚腺動脈顴支",
+  "en": "Zygomatic branches of the lacrimal artery",
+  "groups": [
+   "e"
+  ],
+  "models": [
+   "guide:zygomatic-br"
+  ],
+  "position": [
+   48,
+   -48,
+   60
+  ],
+  "note": "穿顴骨到顳部與面頰（顴顳支、顴面支）。示意。",
+  "representation": "schematic",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 114
+ },
+ {
+  "id": "angular-v",
+  "zh": "內眥靜脈",
+  "en": "Angular vein",
+  "groups": [
+   "e"
+  ],
+  "models": [
+   "Angular vein.l"
+  ],
+  "position": [
+   12,
+   -38,
+   80
+  ],
+  "note": "面靜脈的起始段，在內眥與上眼靜脈相通，無瓣膜。",
+  "representation": "mesh",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 115
+ },
+ {
+  "id": "facial-v",
+  "zh": "面靜脈",
+  "en": "Facial vein",
+  "groups": [
+   "e"
+  ],
+  "models": [
+   "Facial vein.l"
+  ],
+  "position": [
+   30,
+   -110,
+   55
+  ],
+  "note": "經內眥靜脈 ↔ 上眼靜脈 → 海綿竇；也經深面靜脈 ↔ 翼靜脈叢。面部感染可逆流入顱。",
+  "representation": "mesh",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 116
+ },
+ {
+  "id": "supratrochlear-v",
+  "zh": "滑車上靜脈／鼻背靜脈",
+  "en": "Supratrochlear & dorsal nasal veins",
+  "groups": [
+   "e"
+  ],
+  "models": [
+   "guide:supratrochlear-v",
+   "guide:nasal-dorsum-v"
+  ],
+  "position": [
+   12,
+   -24,
+   86
+  ],
+  "note": "額部與鼻背的靜脈，在內眥匯成內眥靜脈。示意。",
+  "representation": "schematic",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 117
+ },
+ {
+  "id": "lacrimal-v",
+  "zh": "淚腺靜脈",
+  "en": "Lacrimal vein",
+  "groups": [
+   "e"
+  ],
+  "models": [
+   "guide:lacrimal-v"
+  ],
+  "position": [
+   35,
+   -34.5,
+   60
+  ],
+  "note": "淚腺的靜脈，匯入上眼靜脈。示意。",
+  "representation": "schematic",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 118
+ },
+ {
+  "id": "infraorbital-v",
+  "zh": "眶下靜脈",
+  "en": "Infra-orbital vein",
+  "groups": [
+   "e"
+  ],
+  "models": [
+   "guide:infraorbital-v"
+  ],
+  "position": [
+   27,
+   -72,
+   64
+  ],
+  "note": "沿眶下管，經眶下裂往翼靜脈叢。示意。",
+  "representation": "schematic",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 119
+ },
+ {
+  "id": "pterygoid",
+  "zh": "翼靜脈叢",
+  "en": "Pterygoid venous plexus",
+  "groups": [
+   "e"
+  ],
+  "models": [
+   "guide:pterygoid",
+   "guide:iov-pterygoid"
+  ],
+  "position": [
+   31,
+   -72,
+   18
+  ],
+  "note": "顳下窩內的靜脈叢；下眼靜脈經眶下裂通此，也經導靜脈連海綿竇。示意。",
+  "representation": "schematic",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 120
+ },
+ {
+  "id": "danger",
+  "zh": "危險三角",
+  "en": "Danger triangle of the face",
+  "groups": [
+   "e"
+  ],
+  "models": [
+   "guide:danger"
+  ],
+  "position": [
+   19,
+   -102,
+   82
+  ],
+  "note": "鼻根到兩側嘴角。這區靜脈（面、內眥靜脈）無瓣膜，經眼靜脈通海綿竇 → 感染可造成海綿竇血栓（海綿竇症候群）。示意。",
+  "representation": "schematic",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 121
+ },
+ {
+  "id": "acv",
+  "zh": "睫狀前靜脈",
+  "en": "Anterior ciliary veins",
+  "groups": [
+   "k"
+  ],
+  "models": [
+   "guide:acv"
+  ],
+  "position": [
+   24,
+   -48.5,
+   71
+  ],
+  "note": "收集睫狀體與鞏膜靜脈竇（Schlemm 管）的血，沿直肌回到肌靜脈 → 上／下眼靜脈。示意。",
+  "representation": "schematic",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 122
+ },
+ {
+  "id": "schlemm",
+  "zh": "鞏膜靜脈竇（Schlemm 管）",
+  "en": "Scleral venous sinus (canal of Schlemm)",
+  "groups": [
+   "k"
+  ],
+  "models": [
+   "guide:schlemm"
+  ],
+  "position": [
+   31.2,
+   -41.9,
+   72.7
+  ],
+  "note": "角膜緣的環狀管道，房水由此流出 → 鞏膜內／表層靜脈 → 睫狀前靜脈。示意。",
+  "representation": "schematic",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 123
+ },
+ {
+  "id": "episcleral",
+  "zh": "鞏膜表層與結膜血管",
+  "en": "Episcleral & conjunctival vessels",
+  "groups": [
+   "k"
+  ],
+  "models": [
+   "guide:episcleral"
+  ],
+  "position": [
+   31.2,
+   -56.6,
+   71.3
+  ],
+  "note": "睫狀前動脈在角膜緣附近的分支（含結膜前／後動脈），形成角膜緣周圍的血管網。示意。",
+  "representation": "schematic",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 124
+ },
+ {
+  "id": "plicata",
+  "zh": "睫狀體皺褶部（pars plicata）",
+  "en": "Pars plicata of the ciliary body",
+  "groups": [
+   "k"
+  ],
+  "models": [
+   "guide:plicata"
+  ],
+  "position": [
+   37.8,
+   -48.8,
+   70.4
+  ],
+  "note": "睫狀體前部，有睫狀突，分泌房水；虹膜大動脈環就在附近。示意位置。",
+  "representation": "schematic",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 125
+ },
+ {
+  "id": "plana",
+  "zh": "睫狀體平坦部（pars plana）",
+  "en": "Pars plana of the ciliary body",
+  "groups": [
+   "k"
+  ],
+  "models": [
+   "guide:plana"
+  ],
+  "position": [
+   23.6,
+   -48.8,
+   69.3
+  ],
+  "note": "睫狀體後部平坦區，往後到鋸齒緣接視網膜。玻璃體手術常由此進入。示意位置。",
+  "representation": "schematic",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 126
+ },
+ {
+  "id": "choroid",
+  "zh": "脈絡膜（脈絡膜微血管叢）",
+  "en": "Choroid & choriocapillaris",
+  "groups": [
+   "k",
+   "u"
+  ],
+  "models": [
+   "guide:choroid"
+  ],
+  "position": [
+   35.8,
+   -55.1,
+   54.7
+  ],
+  "note": "葡萄膜後部（葡萄膜＝虹膜＋睫狀體＋脈絡膜）。由睫狀後短／長動脈供應，最內層是脈絡膜微血管叢，經 Bruch 膜擴散供應色素上皮與感光細胞（外層視網膜）。血流回渦靜脈。示意殼層。",
+  "representation": "schematic",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 127
+ },
+ {
+  "id": "disc",
+  "zh": "視神經盤（視乳突）",
+  "en": "Optic disc",
+  "groups": [
+   "u"
+  ],
+  "models": [
+   "guide:disc"
+  ],
+  "position": [
+   28.4,
+   -47.4,
+   53.4
+  ],
+  "note": "約 1.5 × 1.75 mm，無感光細胞 → 盲點。CRA 由此進入、CRV 由此離開。在左眼眼底位於黃斑的鼻側。",
+  "representation": "schematic",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 128
+ },
+ {
+  "id": "cup",
+  "zh": "視神經杯（杯盤比）",
+  "en": "Optic cup (cup/disc ratio)",
+  "groups": [
+   "u"
+  ],
+  "models": [
+   "guide:cup"
+  ],
+  "position": [
+   28.4,
+   -47.4,
+   53.4
+  ],
+  "note": "視神經盤中央的凹陷。杯與盤直徑比＝杯盤比，正常約 < 0.3；變大要懷疑青光眼。示意大小。",
+  "representation": "schematic",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 129
+ },
+ {
+  "id": "macula",
+  "zh": "黃斑部與中央凹",
+  "en": "Macula lutea & fovea",
+  "groups": [
+   "u"
+  ],
+  "models": [
+   "guide:fundus-macula",
+   "guide:fundus-fovea"
+  ],
+  "position": [
+   31.2,
+   -49.6,
+   53
+  ],
+  "note": "在視神經盤顳側約 2.5 個盤徑。中央凹無視網膜血管（無血管區），靠脈絡膜供應；周圍由 CRA 的上、下顳側支供應。約 20% 的人有睫狀視網膜動脈供應黃斑。",
+  "representation": "schematic",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 130
+ },
+ {
+  "id": "cra-st",
+  "zh": "CRA 顳上支",
+  "en": "Superior temporal branch",
+  "groups": [
+   "u"
+  ],
+  "models": [
+   "Central retinal artery.l"
+  ],
+  "position": [
+   32.7,
+   -43.7,
+   54.8
+  ],
+  "note": "往黃斑上方與顳上方。標點為原模型 CRA 在此方向最近的分支。",
+  "representation": "guide",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 131
+ },
+ {
+  "id": "cra-sn",
+  "zh": "CRA 鼻上支",
+  "en": "Superior nasal branch",
+  "groups": [
+   "u"
+  ],
+  "models": [
+   "Central retinal artery.l"
+  ],
+  "position": [
+   25.4,
+   -44.3,
+   55.8
+  ],
+  "note": "往鼻上方。",
+  "representation": "guide",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 132
+ },
+ {
+  "id": "cra-it",
+  "zh": "CRA 顳下支",
+  "en": "Inferior temporal branch",
+  "groups": [
+   "u"
+  ],
+  "models": [
+   "Central retinal artery.l"
+  ],
+  "position": [
+   33,
+   -52,
+   53.6
+  ],
+  "note": "往黃斑下方與顳下方；顳上、顳下支共同環繞黃斑。",
+  "representation": "guide",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 133
+ },
+ {
+  "id": "cra-in",
+  "zh": "CRA 鼻下支",
+  "en": "Inferior nasal branch",
+  "groups": [
+   "u"
+  ],
+  "models": [
+   "Central retinal artery.l"
+  ],
+  "position": [
+   24.8,
+   -51.6,
+   54.9
+  ],
+  "note": "往鼻下方。",
+  "representation": "guide",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 134
+ },
+ {
+  "id": "cilioretinal",
+  "zh": "睫狀視網膜動脈",
+  "en": "Cilioretinal artery",
+  "groups": [
+   "u"
+  ],
+  "models": [
+   "guide:cilioretinal"
+  ],
+  "position": [
+   29.9,
+   -48.4,
+   53.1
+  ],
+  "note": "屬睫狀後短動脈系統（常經 Zinn 環），在視神經盤顳側邊緣獨立出來、不經 CRA，供應黃斑。約 10–33%（講義也寫 20%）的人有，90% 在顳側。CRA 阻塞時可保住中央視力；它本身阻塞 → 中央視力喪失。示意。",
+  "representation": "schematic",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 135
+ },
+ {
+  "id": "lamina",
+  "zh": "篩板",
+  "en": "Lamina cribrosa",
+  "groups": [
+   "u"
+  ],
+  "models": [
+   "guide:lamina"
+  ],
+  "position": [
+   28.1,
+   -47.1,
+   51.8
+  ],
+  "note": "鞏膜在視神經穿出處的篩狀板；視神經在篩板前無髓鞘、篩板後有髓鞘。這段（篩板前／篩板）由睫狀後短動脈（Zinn 環）供應。示意。",
+  "representation": "schematic",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 136
+ },
+ {
+  "id": "hyaloid",
+  "zh": "玻璃體管（Cloquet 管）",
+  "en": "Hyaloid canal",
+  "groups": [
+   "u"
+  ],
+  "models": [
+   "guide:hyaloid"
+  ],
+  "position": [
+   29.7,
+   -48,
+   61
+  ],
+  "note": "胚胎玻璃體動脈退化後留下的管道，從視神經盤到水晶體後面。示意。",
+  "representation": "schematic",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 137
+ },
+ {
+  "id": "cca",
+  "zh": "頸總動脈",
+  "en": "Common carotid artery",
+  "groups": [
+   "w"
+  ],
+  "models": [
+   "Left common carotid artery"
+  ],
+  "position": [
+   25,
+   -190,
+   8
+  ],
+  "note": "約在甲狀軟骨上緣（C4）分成頸內與頸外動脈。",
+  "representation": "mesh",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 138
+ },
+ {
+  "id": "carotid-sinus",
+  "zh": "頸動脈竇",
+  "en": "Carotid sinus",
+  "groups": [
+   "w"
+  ],
+  "models": [
+   "guide:carotid-sinus"
+  ],
+  "position": [
+   31.6,
+   -149,
+   0.2
+  ],
+  "note": "頸內動脈起始的膨大處，有壓力感受器（CN IX）；也是動脈粥狀硬化好發處，血栓可往上到眼動脈 → 一過性黑矇。示意。",
+  "representation": "schematic",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 139
+ },
+ {
+  "id": "eca",
+  "zh": "頸外動脈",
+  "en": "External carotid artery",
+  "groups": [
+   "w"
+  ],
+  "models": [
+   "External carotid artery.l"
+  ],
+  "position": [
+   30,
+   -120,
+   15
+  ],
+  "note": "供應臉部與頭皮：面動脈、上頷動脈、顳淺動脈等。",
+  "representation": "mesh",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 140
+ },
+ {
+  "id": "facial-a",
+  "zh": "面動脈",
+  "en": "Facial artery",
+  "groups": [
+   "w"
+  ],
+  "models": [
+   "Facial artery.l"
+  ],
+  "position": [
+   38,
+   -110,
+   45
+  ],
+  "note": "頸外動脈分支，終段是內眥動脈，與眼動脈的鼻背動脈吻合。",
+  "representation": "mesh",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 141
+ },
+ {
+  "id": "maxillary-a",
+  "zh": "上頷動脈",
+  "en": "Maxillary artery",
+  "groups": [
+   "w"
+  ],
+  "models": [
+   "Maxillary artery.l"
+  ],
+  "position": [
+   40,
+   -78,
+   15
+  ],
+  "note": "頸外動脈終支之一；分出中腦膜動脈、眶下動脈。",
+  "representation": "mesh",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 142
+ },
+ {
+  "id": "sta",
+  "zh": "顳淺動脈",
+  "en": "Superficial temporal artery",
+  "groups": [
+   "w"
+  ],
+  "models": [
+   "Superficial temporal artery.l"
+  ],
+  "position": [
+   62,
+   -40,
+   0
+  ],
+  "note": "頸外動脈終支之一；巨細胞動脈炎（顳動脈炎）可造成缺血性視神經病變。",
+  "representation": "mesh",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 143
+ },
+ {
+  "id": "mma",
+  "zh": "中腦膜動脈",
+  "en": "Middle meningeal artery",
+  "groups": [
+   "w"
+  ],
+  "models": [
+   "Middle meningeal artery.l"
+  ],
+  "position": [
+   31,
+   -62,
+   9.7
+  ],
+  "note": "上頷動脈分支，穿棘孔入顱。",
+  "representation": "mesh",
+  "snap": true,
+  "quiz": null,
+  "via": [
+   "spinosum"
+  ],
+  "extra": false,
+  "number": 144
+ },
+ {
+  "id": "ijv",
+  "zh": "頸內靜脈",
+  "en": "Internal jugular vein",
+  "groups": [
+   "w"
+  ],
+  "models": [
+   "Internal jugular vein.l"
+  ],
+  "position": [
+   30,
+   -150,
+   -12
+  ],
+  "note": "由乙狀竇延續，出頸靜脈孔（與 IX、X、XI 同孔）。",
+  "representation": "mesh",
+  "snap": true,
+  "quiz": null,
+  "via": [
+   "jugular"
+  ],
+  "extra": false,
+  "number": 145
+ },
+ {
+  "id": "vertebral-w",
+  "zh": "椎動脈",
+  "en": "Vertebral artery",
+  "groups": [
+   "w",
+   "b"
+  ],
+  "models": [
+   "Vertebral artery.l"
+  ],
+  "position": [
+   12,
+   -77,
+   -13
+  ],
+  "note": "後循環：椎動脈 → 基底動脈 → 後大腦動脈。",
+  "representation": "mesh",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 146
+ },
+ {
+  "id": "basilar",
+  "zh": "基底動脈",
+  "en": "Basilar artery",
+  "groups": [
+   "w",
+   "b"
+  ],
+  "models": [
+   "Basilar artery"
+  ],
+  "position": [
+   0,
+   -50,
+   3
+  ],
+  "note": "左右椎動脈匯合而成，走在橋腦腹側。",
+  "representation": "mesh",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 147
+ },
+ {
+  "id": "aca",
+  "zh": "前大腦動脈",
+  "en": "Anterior cerebral artery",
+  "groups": [
+   "w"
+  ],
+  "models": [
+   "Anterior cerebral artery.l"
+  ],
+  "position": [
+   6,
+   -28,
+   29
+  ],
+  "note": "頸內動脈分支；左右以前交通動脈相連。",
+  "representation": "mesh",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 148
+ },
+ {
+  "id": "acom",
+  "zh": "前交通動脈",
+  "en": "Anterior communicating artery",
+  "groups": [
+   "w"
+  ],
+  "models": [
+   "Anterior communicating artery"
+  ],
+  "position": [
+   0,
+   -30,
+   23
+  ],
+  "note": "連接左右 ACA，是 Willis 環的一段；不是頸內動脈的分支。",
+  "representation": "mesh",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 149
+ },
+ {
+  "id": "mca",
+  "zh": "中大腦動脈",
+  "en": "Middle cerebral artery",
+  "groups": [
+   "w"
+  ],
+  "models": [
+   "Middle cerebral artery"
+  ],
+  "position": [
+   26,
+   -30,
+   22
+  ],
+  "note": "頸內動脈最大分支，往外側。左 MCA 出血 → 右側偏癱＋右半側偏盲（傷到視放射）。",
+  "representation": "mesh",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 150
+ },
+ {
+  "id": "pcom",
+  "zh": "後交通動脈",
+  "en": "Posterior communicating artery",
+  "groups": [
+   "w"
+  ],
+  "models": [
+   "Posterior communicating artery.l"
+  ],
+  "position": [
+   8,
+   -35,
+   15
+  ],
+  "note": "連接頸內動脈與後大腦動脈。",
+  "representation": "mesh",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 151
+ },
+ {
+  "id": "pca",
+  "zh": "後大腦動脈",
+  "en": "Posterior cerebral artery",
+  "groups": [
+   "w",
+   "b"
+  ],
+  "models": [
+   "Posterior cerebral artery.l"
+  ],
+  "position": [
+   26,
+   -25,
+   -27
+  ],
+  "note": "基底動脈終支，供應枕葉視覺皮質。",
+  "representation": "mesh",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 152
+ },
+ {
+  "id": "willis",
+  "zh": "威利氏環",
+  "en": "Circle of Willis",
+  "groups": [
+   "w"
+  ],
+  "models": [
+   "Anterior communicating artery",
+   "Anterior cerebral artery",
+   "Posterior communicating artery",
+   "Posterior cerebral artery",
+   "Internal carotid artery"
+  ],
+  "position": [
+   0,
+   -32,
+   10
+  ],
+  "note": "ACom、ACA 近端、ICA 末端、PCom、PCA 近端組成；前後循環在此相連。",
+  "representation": "guide",
+  "snap": false,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 153
+ },
+ {
+  "id": "heubner",
+  "zh": "Heubner 回返動脈",
+  "en": "Recurrent artery of Heubner",
+  "groups": [
+   "b"
+  ],
+  "models": [
+   "guide:heubner"
+  ],
+  "position": [
+   10,
+   -26,
+   25
+  ],
+  "note": "ACA 近端分出後回返，供應尾狀核頭、內囊前肢。示意。",
+  "representation": "schematic",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 154
+ },
+ {
+  "id": "lenticulostriate",
+  "zh": "內、外側豆紋動脈",
+  "en": "Medial & lateral lenticulostriate arteries",
+  "groups": [
+   "b"
+  ],
+  "models": [
+   "Proximal lateral striate branches",
+   "Distal lateral striate branches"
+  ],
+  "position": [
+   18,
+   -24,
+   24
+  ],
+  "note": "MCA 起始段的穿通支，供應基底核與內囊；高血壓腦出血好發。",
+  "representation": "mesh",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 155
+ },
+ {
+  "id": "med-orbitofrontal",
+  "zh": "內側眶額動脈",
+  "en": "Medial orbitofrontal artery",
+  "groups": [
+   "b"
+  ],
+  "models": [
+   "Orbitofrontal branches of anterior cerebral artery"
+  ],
+  "position": [
+   8,
+   -22,
+   56
+  ],
+  "note": "ACA 在額葉底面的分支。",
+  "representation": "mesh",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 156
+ },
+ {
+  "id": "lat-orbitofrontal",
+  "zh": "外側眶額動脈",
+  "en": "Lateral orbitofrontal artery",
+  "groups": [
+   "b"
+  ],
+  "models": [
+   "guide:lateral-orbitofrontal"
+  ],
+  "position": [
+   37,
+   -22,
+   39
+  ],
+  "note": "MCA 在眶額區的分支。示意。",
+  "representation": "schematic",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 157
+ },
+ {
+  "id": "candelabra",
+  "zh": "上行額動脈（燭臺分支）",
+  "en": "Ascending frontal (candelabra) artery",
+  "groups": [
+   "b"
+  ],
+  "models": [
+   "guide:ascending-frontal"
+  ],
+  "position": [
+   48,
+   1,
+   23
+  ],
+  "note": "MCA 往額葉上行的分支。示意。",
+  "representation": "schematic",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 158
+ },
+ {
+  "id": "acha",
+  "zh": "前脈絡叢動脈",
+  "en": "Anterior choroidal artery",
+  "groups": [
+   "b"
+  ],
+  "models": [
+   "guide:acha"
+  ],
+  "position": [
+   14,
+   -32,
+   1
+  ],
+  "note": "直接起自頸內動脈（國考：AChA 起自 ICA）。供應視束、外側膝狀體、內囊後肢、脈絡叢。示意。",
+  "representation": "schematic",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 159
+ },
+ {
+  "id": "post-choroidal",
+  "zh": "後脈絡叢動脈",
+  "en": "Posterior choroidal arteries",
+  "groups": [
+   "b"
+  ],
+  "models": [
+   "guide:posterior-choroidal"
+  ],
+  "position": [
+   14,
+   -20,
+   -25
+  ],
+  "note": "PCA 分支，也參與外側膝狀體與脈絡叢供血。示意。",
+  "representation": "schematic",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 160
+ },
+ {
+  "id": "sca",
+  "zh": "上小腦動脈",
+  "en": "Superior cerebellar artery",
+  "groups": [
+   "b"
+  ],
+  "models": [
+   "Superior cerebellar artery.l"
+  ],
+  "position": [
+   23,
+   -42,
+   -28
+  ],
+  "note": "基底動脈遠端分支。",
+  "representation": "mesh",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 161
+ },
+ {
+  "id": "pontine",
+  "zh": "橋腦動脈",
+  "en": "Pontine arteries",
+  "groups": [
+   "b"
+  ],
+  "models": [
+   "Medial pontine branches of basilar artery",
+   "Lateral pontine branches of basilar artery"
+  ],
+  "position": [
+   7,
+   -49,
+   4
+  ],
+  "note": "基底動脈到橋腦的內、外側分支。",
+  "representation": "mesh",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 162
+ },
+ {
+  "id": "labyrinthine",
+  "zh": "迷路（內聽）動脈",
+  "en": "Labyrinthine (internal acoustic) artery",
+  "groups": [
+   "b"
+  ],
+  "models": [
+   "guide:labyrinthine"
+  ],
+  "position": [
+   27,
+   -57,
+   -3
+  ],
+  "note": "常由 AICA 分出，進內耳道。示意。",
+  "representation": "schematic",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 163
+ },
+ {
+  "id": "aica",
+  "zh": "前下小腦動脈",
+  "en": "Anterior inferior cerebellar artery",
+  "groups": [
+   "b"
+  ],
+  "models": [
+   "Anterior inferior cerebellar artery.l"
+  ],
+  "position": [
+   18,
+   -60,
+   -13
+  ],
+  "note": "基底動脈分支。",
+  "representation": "mesh",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 164
+ },
+ {
+  "id": "pica",
+  "zh": "後下小腦動脈",
+  "en": "Posterior inferior cerebellar artery",
+  "groups": [
+   "b"
+  ],
+  "models": [
+   "Posterior inferior cerebellar artery.l"
+  ],
+  "position": [
+   27,
+   -64,
+   -43
+  ],
+  "note": "椎動脈分支（講義圖上的 cut 是切斷端）。",
+  "representation": "mesh",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 165
+ },
+ {
+  "id": "asa",
+  "zh": "前脊髓動脈",
+  "en": "Anterior spinal artery",
+  "groups": [
+   "b"
+  ],
+  "models": [
+   "Anterior spinal artery"
+  ],
+  "position": [
+   0,
+   -87,
+   -16
+  ],
+  "note": "左右椎動脈各發一支在前方匯合。",
+  "representation": "mesh",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 166
+ },
+ {
+  "id": "psa",
+  "zh": "後脊髓動脈",
+  "en": "Posterior spinal artery",
+  "groups": [
+   "b"
+  ],
+  "models": [
+   "guide:psa"
+  ],
+  "position": [
+   6,
+   -88,
+   -31
+  ],
+  "note": "成對，走在脊髓後外側。示意。",
+  "representation": "schematic",
+  "snap": true,
+  "quiz": null,
+  "via": [],
+  "extra": false,
+  "number": 167
  }
 ]

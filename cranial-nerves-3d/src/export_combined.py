@@ -5,14 +5,14 @@ source=pathlib.Path(sys.argv[-2]);root=pathlib.Path(sys.argv[-1])
 BONES=['Ethmoid bone','Frontal bone','Inferior nasal concha bone','Lacrimal bone','Mandible','Maxilla','Nasal bone','Occipital bone','Palatine bone','Parietal bone','Sphenoid bone','Temporal bone','Vomer','Zygomatic bone']
 SINUS=['Sinus of sphenoid bone','Sinus of frontal bone']
 DURA=['Falx cerebri','Tentorium cerebelli']
-VEIN=['Angular vein','Cavernous sinus','Superior ophthalmic vein','Inferior ophthalmic vein','Superior petrosal sinus','Inferior petrosal sinus']
+VEIN=['Angular vein','Facial vein','Internal jugular vein','Cavernous sinus','Superior ophthalmic vein','Inferior ophthalmic vein','Superior petrosal sinus','Inferior petrosal sinus']
 DEEP=['Thalamus','Hypothalamus','Corpus callosum','Caudate nucleus','Putamen','Medial geniculate body','Lateral geniculate body','Choroid plexus','Adenohypophysis','Neurohypophysis','Lateral ventricle','Globus pallidus','Pineal gland']
 STEM=['Midbrain','Pons','Medulla oblongata','Superior colliculus','Inferior colliculus']
 NERVE=['Olfactory nerve (I)','Optic nerve (II)','Optic tract','Optic chiasm','Oculomotor nerve (III)','Trochlear nerve (IV)','Trigeminal nerve (V)','Sensory root of trigeminal nerve','Motor root of trigeminal nerve','Ophthalmic nerve','Maxillary nerve','Meningeal branch of maxillary nerve','Anterior division of mandibular nerve','Posterior division of mandibular nerve','Inferior alveolar nerve','Lingual nerve','Buccal nerve','Mental nerve','Nerve to mylohyoid muscle','Abducens nerve (VI)','Facial nerve (VII)','Vestibulocochlear nerve (VIII)','Vestibular nerve','Cochlear nerve','Glossopharyngeal nerve (IX)','Vagus nerve (X)','Accessory nerve (XI)','Hypoglossal nerve (XII)']
 NUCLEUS=['Nucleus of oculomotor nerve','Accessory nucleus of oculomotor nerve','Nucleus of trochlear nerve','Nucleus of abducens nerve','Motor nucleus of facial nerve','Nucleus of hypoglossal nerve','Posterior nucleus of vagus nerve']
 EYE=['Sclera','Retina','Iris','Lens','Cornea','Vitreous body','Ciliary body-curve']
 ORBIT=['Superior rectus muscle','Inferior rectus muscle','Medial rectus muscle','Lateral rectus muscle','Superior oblique muscle','Inferior oblique muscle','Levator palpebrae superioris','Trochlea of superior oblique muscle','Common tendinous ring','Lacrimal gland','Lacrimal sac','Lacrimal canaliculus','Nasolacrimal duct']
-ARTERY=['Vertebral artery','Basilar artery','Internal carotid artery','Anterior cerebral artery','Anterior communicating artery','Posterior communicating artery','Posterior cerebral artery','Ophthalmic artery','Superior cerebellar artery','Anterior inferior cerebellar artery','Posterior inferior cerebellar artery','Middle meningeal artery','Central retinal artery','Lacrimal artery','Supra-orbital artery','Supratrochlear artery','Anterior ethmoidal artery','Posterior ethmoidal artery','Long posterior ciliary arteries','Short posterior ciliary arteries','Infra-orbital artery','Angular artery','Medial occipital artery','Lateral occipital artery','Parieto-occipital artery']
+ARTERY=['Vertebral artery','Basilar artery','Internal carotid artery','Anterior cerebral artery','Anterior communicating artery','Posterior communicating artery','Posterior cerebral artery','Ophthalmic artery','Superior cerebellar artery','Anterior inferior cerebellar artery','Posterior inferior cerebellar artery','Middle meningeal artery','Central retinal artery','Lacrimal artery','Supra-orbital artery','Supratrochlear artery','Anterior ethmoidal artery','Posterior ethmoidal artery','Long posterior ciliary arteries','Short posterior ciliary arteries','Infra-orbital artery','Angular artery','External carotid artery','Left common carotid artery','Right common carotid artery','Facial artery','Maxillary artery','Superficial temporal artery','Anterior spinal artery','Proximal lateral striate branches','Distal lateral striate branches','Orbitofrontal branches of anterior cerebral artery','Medial pontine branches of basilar artery','Lateral pontine branches of basilar artery','Medial occipital artery','Lateral occipital artery','Parieto-occipital artery']
 TABLE=[(BONES,'bone'),(SINUS,'sinus'),(DURA,'dura'),(VEIN,'vein'),(DEEP,'deep'),(STEM,'stem'),(NERVE,'nerve'),(NUCLEUS,'nucleus'),(EYE,'eye'),(ORBIT,'orbit'),(ARTERY,'artery')]
 def kind(s):
  if s.endswith(('.t','.s','.i','.j','.g')):return None
@@ -57,7 +57,8 @@ for o in dst.objects:
  if not k or o.type not in ['MESH','CURVE','SURFACE']:continue
  ev=o.evaluated_get(dg);m=ev.to_mesh();m.calc_loop_triangles()
  if not len(m.vertices) or not len(m.loop_triangles):ev.to_mesh_clear();print('EMPTY',o.name);continue
- pos=[conv(o.matrix_world@v.co) for v in m.vertices];tri=[t.vertices[:] for t in m.loop_triangles if any(pos[i][1]>-175 for i in t.vertices)]
+ pos=[conv(o.matrix_world@v.co) for v in m.vertices];low=-260 if k in ('artery','vein') else -175  # vessels reach the neck (carotid bifurcation)
+ tri=[t.vertices[:] for t in m.loop_triangles if any(pos[i][1]>low for i in t.vertices)]
  if not tri:ev.to_mesh_clear();continue
  ids=sorted(set(v for t in tri for v in t));mapping={v:i for i,v in enumerate(ids)};flat=[round(v,3) for i in ids for v in pos[i]];ind=[mapping[i] for t in tri for i in t]
  if o.matrix_world.determinant()<0:

@@ -14,20 +14,20 @@
     "license": "CC BY-SA 4.0"
   },
   "frame": "millimetres; +X anatomical left, +Y superior (Blender z - 1.64 m), +Z anterior; identical to brain-visual-atlas-3d",
-  "meshes": 410,
-  "vertices": 714982,
+  "meshes": 436,
+  "vertices": 793846,
   "categories": {
     "bone": 22,
     "cerebellum": 27,
     "eye": 13,
     "nerve": 56,
-    "artery": 58,
+    "artery": 80,
     "tooth": 28,
     "orbit": 26,
     "cortex": 118,
     "deep": 21,
     "dura": 3,
-    "vein": 12,
+    "vein": 16,
     "stem": 10,
     "sinus": 2,
     "nucleus": 14
@@ -38,9 +38,14 @@
     "Triangles entirely below -175 mm dropped",
     "Central retinal artery re-sampled more coarsely (resolution 2, 0.35 mm bevel) because it has ~800 control points",
     "Schematic guides generated separately in src/schematic.js",
-    "Ocular vessels missing from the source (anterior ciliary arteries, iris arterial circles, circle of Zinn–Haller, central retinal vein, vortex veins, palpebral and dorsal nasal arteries, intraocular LPCA course, SPCA continuation to the sclera) generated in src/ocular.js"
+    "Vessels keep triangles down to -260 mm so the carotid bifurcation is included; other categories stop at -175 mm",
+    "Ocular, orbital, fundus and brain-base schematics generated in src/ocular.js (see README)",
+    "Retinal branches of the central retinal artery moved at load time from the outer globe surface onto the inner retina (teaching correction)"
   ],
   "sha256": {
-    "assets/cranial-packed.js": "d9c2a73a833ad6b2168b352d40c3bfe6e206fcf10ae95f918a1dc4d429fb99ce"
+    "assets/cranial-packed.js": "022192a57fc201bf919302b4ae6700926c633d3a83a811a24d905476048874b9"
+  },
+  "lectures": {
+    "assets/ocular-blood-supply.pdf": "User-supplied 41-page lecture (ocular blood supply / retinal vasculature); original rights retained"
   }
 }

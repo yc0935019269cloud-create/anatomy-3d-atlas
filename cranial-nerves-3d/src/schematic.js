@@ -42,4 +42,4 @@ export function createOra(retina){const a=retina.geometry.attributes.position,si
  for(const [x,y,z] of rim){const b=bins[Math.floor(((Math.atan2(y-cy,x-cx)+Math.PI)/(2*Math.PI))*36)%36];b[0]+=x;b[1]+=y;b[2]+=z;b[3]++;}
  const pts=bins.filter(b=>b[3]).map(b=>new T.Vector3(b[0]/b[3],b[1]/b[3],b[2]/b[3]));
  const mesh=new T.Mesh(new T.TubeGeometry(new T.CatmullRomCurve3(pts,true),120,.42,8,true),new T.MeshStandardMaterial({color:0xffc83d,roughness:.4}));
- mesh.name='guide:ora'+side;mesh.userData={category:'eye-guide',themes:'qvg',tags:['guide:ora'+side],schematic:true,baseColor:0xffc83d};return mesh;}
+ mesh.name='guide:ora'+side;mesh.userData={category:'eye-guide',themes:'qvgk',tags:['guide:ora'+side],schematic:true,baseColor:0xffc83d};return mesh;}

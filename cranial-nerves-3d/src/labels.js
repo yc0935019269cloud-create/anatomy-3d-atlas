@@ -7,10 +7,10 @@ const rows=[];
 function add(id,zh,en,groups,models,position,note,o={}){rows.push({id,zh,en,groups:groups.split(''),models,position,note,representation:o.rep||'mesh',snap:o.snap??(o.rep||'mesh')==='mesh',quiz:o.quiz||null,via:o.via||[],extra:!!o.extra});}
 
 // ── 小考 10 題（講義投影片與小考卷） ──
-add('optic-papilla','視乳突／視神經盤','Optic papilla / optic disc','qv',['Retina.l','Optic nerve (II).l'],[28.3,-46.2,54],'視網膜神經節細胞軸突集中離開眼球處。沒有 rods 與 cones，所以是生理性盲點（中央凹則看最清楚）。顱內壓升高時可見視乳頭水腫 papilledema。模型以視神經接上視網膜後極的位置標示。',{rep:'guide',snap:true,quiz:1});
+add('optic-papilla','視乳突／視神經盤','Optic papilla / optic disc','qvu',['Retina.l','Optic nerve (II).l'],[28.3,-46.2,54],'視網膜神經節細胞軸突集中離開眼球處。沒有 rods 與 cones，所以是生理性盲點（中央凹則看最清楚）。顱內壓升高時可見視乳頭水腫 papilledema。模型以視神經接上視網膜後極的位置標示。',{rep:'guide',snap:true,quiz:1});
 add('dura','硬腦膜（視神經鞘）','Dura mater (optic nerve sheath)','qv',['guide:on-sheath','Falx cerebri','Tentorium cerebelli'],[24,-44,45.5],'考題指的是包在視乳突後方視神經外面的硬腦膜：視神經是中樞神經的延伸，從視神經管到眼球後方都包著 dura／arachnoid／pia，蛛網膜下腔也一路延伸過來，所以顱內壓升高會造成視乳頭水腫。硬腦膜在眼球後方與鞏膜相連、在視神經管處與顱內硬腦膜延續。淡紫色半透明管為視神經鞘示意（原模型沒有）；顱內的大腦鐮、小腦天幕是原模型的硬腦膜反摺，一併高亮。',{rep:'schematic',snap:true,quiz:2});
 add('meyer','梅氏環（顳葉視放射）',"Meyer’s loop",'qv',['guide:meyer'],[34,-31,3],'視放射下部先向前繞過側腦室顳角，再往後到距狀溝下岸（舌回），傳遞對側上方視野。小考第 3 題答案是 Meyer’s loop，不是 Baum’s loop。',{rep:'schematic',quiz:3});
-add('ora-serrata','鋸齒緣','Ora serrata','qv',['guide:ora'],[40,-49,68],'視網膜感光部的前緣，與睫狀體平坦部交界。金色環沿原模型視網膜前緣畫出，實際邊緣呈鋸齒狀。',{rep:'schematic',quiz:4});
+add('ora-serrata','鋸齒緣','Ora serrata','qvk',['guide:ora'],[40,-49,68],'視網膜感光部的前緣，與睫狀體平坦部交界。金色環沿原模型視網膜前緣畫出，實際邊緣呈鋸齒狀。',{rep:'schematic',quiz:4});
 add('gennari','Gennari 線','Line / stria of Gennari','qv',['Calcarine sulcus.l'],[8,-25,-75],'初級視覺皮質（V1，Brodmann 17）第 IV 層內的有髓纖維帶，肉眼可見的白線，所以 V1 又叫紋狀皮質。它在皮質裡面，3D 表面沒有網格；標點只提示距狀溝周圍的 V1 區。',{rep:'reference',snap:true,quiz:5});
 add('calcarine','距狀溝','Calcarine sulcus','qv',['Calcarine sulcus.l'],[6,-22,-67],'枕葉內側面的溝，初級視覺皮質分布在它上下兩岸。上岸楔葉看對側下方視野，下岸舌回看對側上方視野。',{quiz:6});
 add('chiasm','視交叉','Optic chiasm','qv',['Optic chiasm'],[0,-28,17],'鼻側視網膜纖維交叉，顳側纖維不交叉。視交叉之後改用「左右視野」思考：左視束處理雙眼右側視野。位於腦下垂體正上方。',{quiz:7});
@@ -69,12 +69,12 @@ add('lacrimal-n','淚神經（V1）','Lacrimal nerve (V1)','o',['guide:lacrimal-
 add('nasociliary','鼻睫神經（V1）','Nasociliary nerve (V1)','og',['guide:nasociliary'],[17.8,-38.8,42],'V1 位置較深的分支，唯一穿過共同腱環；跨過視神經到眼窩內側。發出睫狀神經節感覺根及長睫狀神經。原模型沒有此神經，為走向示意。',{rep:'schematic'});
 add('lacrimal-gland','淚腺','Lacrimal gland','o',['Lacrimal gland.l'],[45,-35,66],'位於眼窩外上方。模型上找到淚腺，就能判斷哪邊是 lateral。');
 add('sov','上眼靜脈','Superior ophthalmic vein','oe',['Superior ophthalmic vein.l'],[19.5,-38,40],'走共同腱環外、經眶上裂，匯入海綿竇。');
-add('ophthalmic-a','眼動脈','Ophthalmic artery','oe',['Ophthalmic artery.l'],[17,-40,45],'內頸動脈分支，與視神經一起走視神經管（交感纖維伴行）。');
+add('ophthalmic-a','眼動脈','Ophthalmic artery','oew',['Ophthalmic artery.l'],[17,-40,45],'內頸動脈分支，與視神經一起走視神經管（交感纖維伴行）。');
 add('lamina','篩骨紙板／篩竇','Lamina papyracea / ethmoidal cells','o',['Ethmoid bone'],[12,-46,48],'眼窩內側壁非常薄，旁邊就是篩竇，也是眼窩容易骨折的地方。',{rep:'guide',snap:false});
 
 // ── 海綿竇與蝶鞍 ──
-add('cavernous','海綿竇','Cavernous sinus','c',['Cavernous sinus.l'],[8,-40,20],'位於蝶鞍兩側。外側壁由上到下：III → IV → V1 → V2（3-4-1-2）。腔內：內頸動脈＋CN VI＋交感神經叢。建議把透明度調低，從前方或上方看神經在壁中的排列。');
-add('ica','內頸動脈','Internal carotid artery','cf',['Internal carotid artery.l'],[14.4,-56.7,20],'經頸動脈管入顱，在海綿竇腔內呈彎曲（carotid siphon），旁邊緊貼 CN VI。本模型的 ICA 在切面處略低於海綿竇。',{snap:true});
+add('cavernous','海綿竇','Cavernous sinus','ce',['Cavernous sinus.l'],[8,-40,20],'位於蝶鞍兩側。外側壁由上到下：III → IV → V1 → V2（3-4-1-2）。腔內：內頸動脈＋CN VI＋交感神經叢。建議把透明度調低，從前方或上方看神經在壁中的排列。');
+add('ica','內頸動脈','Internal carotid artery','cfw',['Internal carotid artery.l'],[14.4,-56.7,20],'經頸動脈管入顱，在海綿竇腔內呈彎曲（carotid siphon），旁邊緊貼 CN VI。本模型的 ICA 在切面處略低於海綿竇。',{snap:true});
 add('pituitary','腦下垂體','Pituitary gland','c',['Adenohypophysis','Neurohypophysis'],[3,-38,19],'位在蝶鞍，上方是視交叉，下方是蝶竇，兩側是海綿竇。腫瘤向上壓迫視交叉 → 雙顳側偏盲。');
 add('transsphenoidal','經蝶竇手術路徑','Transsphenoidal approach','c',['guide:transsphenoidal'],[0,-44,20],'鼻腔 → 蝶竇 → 蝶鞍 → 腦下垂體。綠色箭線是路徑示意。',{rep:'schematic',snap:true});
 
@@ -96,7 +96,7 @@ add('ic','下丘','Inferior colliculus','g',['Inferior colliculus.l'],[7.3,-31.7
 add('pretectal','頂蓋前區','Pretectal area','g',['guide:pretectal'],[5,-25,-11],'瞳孔對光反射中樞：視網膜 → CN II → 頂蓋前區 → 兩側 EW 核 → CN III → 睫狀神經節 → 短睫狀神經 → 瞳孔括約肌。原模型無此區網格，小球示意在上丘前方。',{rep:'schematic'});
 
 // ── 視覺路徑 ──
-add('retina','視網膜','Retina','v',['Retina.l'],[40,-52,60],'影像上下左右都倒置；下半部視網膜對應上方視野。');
+add('retina','視網膜','Retina','vu',['Retina.l'],[40,-52,60],'影像上下左右都倒置；下半部視網膜對應上方視野。');
 add('on-intraocular','視神經：眼球內段','Optic nerve — intraocular part','v',['Optic nerve (II).l'],[28.8,-46.3,55],'最短（約 1 mm）；篩板前無髓鞘。',{rep:'guide',snap:true});
 add('on-orbital','視神經：眼窩段','Optic nerve — intraorbital part','v',['Optic nerve (II).l'],[22,-43,43],'最長，呈 S 形，讓眼球轉動時不被拉扯。',{rep:'guide',snap:true});
 add('on-canal','視神經：視神經管段','Optic nerve — intracanalicular part','v',['Optic nerve (II).l'],[12.5,-37.6,31.4],'通過視神經管，與眼動脈同行。',{rep:'guide',snap:true});
@@ -116,16 +116,15 @@ add('cav-v2','V2（外側壁最下）','V2 in lateral wall','c',['Maxillary nerv
 add('cav-6','VI（海綿竇腔內）','CN VI inside the sinus','c',['Abducens nerve (VI).l'],[14,-46.2,20],'唯一走在海綿竇腔內的腦神經，貼著 ICA。',{rep:'guide',snap:true,via:['sof']});
 
 // ── 眼部血管：眼動脈的分支、睫狀循環、視網膜循環與靜脈回流 ──
-add('cra','視網膜中央動脈','Central retinal artery (CRA)','e',['Central retinal artery.l'],[25.9,-49.4,48.3],'眼動脈第一條分支。實際上在眼球後約 1 cm 由下方穿入視神經，沿視神經中央走到視盤，再分成上下鼻側／顳側四支。終動脈 → 阻塞（CRAO）造成內層視網膜缺血、黃斑櫻桃紅斑。原模型的 CRA 走在視神經下方、到視盤才接上，穿入位置以說明為準。');
-add('cra-branches','視網膜中央動脈的視網膜分支','Retinal branches of the CRA','e',['Central retinal artery.l'],[40.4,-42.2,61],'在視網膜神經纖維層內分布，供應視網膜內 2/3（神經節細胞到內核層）；外層（感光細胞）由脈絡膜供應。原模型直接畫在視網膜上。',{rep:'guide',snap:true});
-add('crv','視網膜中央靜脈','Central retinal vein (CRV)','e',['guide:crv'],[24.2,-45.6,44.2],'與 CRA 同行於視神經中，在眼球後方離開視神經，匯入上眼靜脈或直接進海綿竇。阻塞（CRVO）→ 火焰狀出血。原模型沒有，藍線為示意；實際在視神經中央。',{rep:'schematic'});
-add('spca','睫狀後短動脈','Short posterior ciliary arteries','e',['Short posterior ciliary arteries.l','guide:spca-ext'],[21,-40.8,40.5],'約 15–20 條，在視神經周圍穿入鞏膜，供應脈絡膜（→ 外層視網膜）與視神經頭。原模型只畫到眼球後方約 9 mm，接到鞏膜的細支是示意。');
-add('zinn','Zinn-Haller 環','Circle of Zinn–Haller','e',['guide:zinn'],[30.5,-46.5,51.6],'睫狀後短動脈在鞏膜內環繞視神經頭形成的吻合環，供應篩板附近的視神經。前部缺血性視神經病變與它有關。示意。',{rep:'schematic'});
-add('lpca','睫狀後長動脈','Long posterior ciliary arteries','e',['Long posterior ciliary arteries.l','guide:lpca-in'],[25.1,-39.1,47.4],'內、外側各一條，穿鞏膜後沿水平經線在脈絡膜上腔往前，到睫狀體參與虹膜大動脈環。原模型畫到眼球後上方；眼球內沿水平經線的走向是示意。');
-add('muscular','眼動脈肌支','Muscular branches of the ophthalmic artery','e',['guide:muscular'],[20,-41,46],'供應眼外肌，並延續為睫狀前動脈。示意。',{rep:'schematic'});
-add('aca','睫狀前動脈','Anterior ciliary arteries','e',['guide:aca'],[31.2,-42.2,72],'由肌支沿四條直肌肌腱往前：上、下、內直肌各 2 條，外直肌 1 條，共 7 條。在角膜緣附近穿鞏膜，與睫狀後長動脈形成虹膜大動脈環；也分支到結膜與鞏膜表層。斜視手術切多條直肌時要注意前段缺血。示意。',{rep:'schematic',snap:true});
-add('mac','虹膜大動脈環','Major arterial circle of the iris','e',['guide:mac'],[37.4,-48.8,71.2],'位於睫狀體、虹膜根部，由睫狀後長動脈＋睫狀前動脈組成，供應睫狀體與虹膜。示意。',{rep:'schematic',snap:true});
-add('mic','虹膜小動脈環','Minor arterial circle of the iris','e',['guide:mic'],[34.3,-48.8,73.8],'在虹膜表面的領狀緣（collarette）附近，由大動脈環發出的放射狀血管連成，常不完整。示意。',{rep:'schematic',snap:true});
+add('cra','視網膜中央動脈','Central retinal artery (CRA)','ku',['Central retinal artery.l'],[25.9,-49.4,48.3],'眼動脈第一條分支。實際上在眼球後約 1 cm 由下方穿入視神經，沿視神經中央走到視盤，再分成上下鼻側／顳側四支。終動脈 → 阻塞（CRAO）造成內層視網膜缺血、黃斑櫻桃紅斑。原模型的 CRA 走在視神經下方、到視盤才接上，穿入位置以說明為準。');
+add('crv','視網膜中央靜脈','Central retinal vein (CRV)','ku',['guide:crv'],[24.2,-45.6,44.2],'與 CRA 同行於視神經中，在眼球後方離開視神經，匯入上眼靜脈或直接進海綿竇。阻塞（CRVO）→ 火焰狀出血。原模型沒有，藍線為示意；實際在視神經中央。',{rep:'schematic'});
+add('spca','睫狀後短動脈','Short posterior ciliary arteries','k',['Short posterior ciliary arteries.l','guide:spca-ext'],[21,-40.8,40.5],'約 15–20 條，在視神經周圍穿入鞏膜，供應脈絡膜（→ 外層視網膜）與視神經頭。原模型只畫到眼球後方約 9 mm，接到鞏膜的細支是示意。');
+add('zinn','Zinn-Haller 環','Circle of Zinn–Haller','ku',['guide:zinn'],[30.5,-46.5,51.6],'睫狀後短動脈在鞏膜內環繞視神經頭形成的吻合環，供應篩板附近的視神經。前部缺血性視神經病變與它有關。示意。',{rep:'schematic'});
+add('lpca','睫狀後長動脈','Long posterior ciliary arteries','k',['Long posterior ciliary arteries.l','guide:lpca-in'],[25.1,-39.1,47.4],'內、外側各一條，穿鞏膜後沿水平經線在脈絡膜上腔往前，到睫狀體參與虹膜大動脈環。原模型畫到眼球後上方；眼球內沿水平經線的走向是示意。');
+add('muscular','眼動脈肌支','Muscular branches of the ophthalmic artery','k',['guide:muscular'],[20,-41,46],'供應眼外肌，並延續為睫狀前動脈。示意。',{rep:'schematic'});
+add('aca','睫狀前動脈','Anterior ciliary arteries','k',['guide:aca'],[31.2,-42.2,72],'由肌支沿四條直肌肌腱往前：上、下、內直肌各 2 條，外直肌 1 條，共 7 條。在角膜緣附近穿鞏膜，與睫狀後長動脈形成虹膜大動脈環；也分支到結膜與鞏膜表層。斜視手術切多條直肌時要注意前段缺血。示意。',{rep:'schematic',snap:true});
+add('mac','虹膜大動脈環','Major arterial circle of the iris','k',['guide:mac'],[37.4,-48.8,71.2],'位於睫狀體、虹膜根部，由睫狀後長動脈＋睫狀前動脈組成，供應睫狀體與虹膜。示意。',{rep:'schematic',snap:true});
+add('mic','虹膜小動脈環','Minor arterial circle of the iris','k',['guide:mic'],[34.3,-48.8,73.8],'在虹膜表面的領狀緣（collarette）附近，由大動脈環發出的放射狀血管連成，常不完整。示意。',{rep:'schematic',snap:true});
 add('lacrimal-a','淚腺動脈','Lacrimal artery','e',['Lacrimal artery.l'],[30,-36,50],'眼動脈分支，沿外直肌上緣到淚腺；分出瞼外側動脈，並有回返腦膜支經眶上裂。',{snap:true});
 add('supraorbital-a','眶上動脈','Supra-orbital artery','e',['Supra-orbital artery.l'],[26,-22,82],'經眶上孔／切跡到額部，與眶上神經伴行。',{snap:true});
 add('supratrochlear-a','滑車上動脈','Supratrochlear artery','e',['Supratrochlear artery.l'],[12.4,-25,85],'眼動脈終支之一，在滑車上方出眼窩到額部內側。',{snap:true});
@@ -133,10 +132,75 @@ add('ethmoidal-a','前／後篩動脈','Anterior & posterior ethmoidal arteries'
 add('dorsal-nasal','鼻背動脈','Dorsal nasal artery','e',['guide:dorsal-nasal'],[10,-34,79],'眼動脈終支之一，在內眥上方出眼窩到鼻背，與內眥動脈（面動脈）吻合 → 頸內、頸外動脈系統在此相連。示意。',{rep:'schematic',snap:true});
 add('med-palp','瞼內側動脈＋眼瞼動脈弓','Medial palpebral arteries & palpebral arcades','e',['guide:med-palp','guide:arcade'],[22,-38.6,80.3],'瞼內側動脈分上、下支，與瞼外側動脈連成上、下眼瞼動脈弓。示意，位置為眼瞼近似。',{rep:'schematic',snap:true});
 add('lat-palp','瞼外側動脈','Lateral palpebral artery','e',['guide:lat-palp'],[44.5,-44,71],'由淚腺動脈分出，到外眥接上、下眼瞼動脈弓。示意。',{rep:'schematic',snap:true});
-add('vortex','渦靜脈','Vortex veins','e',['guide:vortex'],[39.2,-40.7,60.3],'4（–6）條，每象限一條，在赤道後方穿出鞏膜，收集脈絡膜、睫狀體、虹膜的靜脈血；上方兩條入上眼靜脈、下方兩條入下眼靜脈。示意。',{rep:'schematic',snap:true});
+add('vortex','渦靜脈','Vortex veins','k',['guide:vortex'],[39.2,-40.7,60.3],'4（–6）條，每象限一條，在赤道後方穿出鞏膜，收集脈絡膜、睫狀體、虹膜的靜脈血；上方兩條入上眼靜脈、下方兩條入下眼靜脈。示意。',{rep:'schematic',snap:true});
 add('iov','眼下靜脈','Inferior ophthalmic vein','e',['Inferior ophthalmic vein.l'],[18,-49,40],'經眶下裂通翼靜脈叢，也可匯入上眼靜脈或海綿竇。',{snap:true});
 add('infraorbital-a','眶下動脈','Infra-orbital artery','e',['Infra-orbital artery.l'],[27,-70,62],'來自上頷動脈（頸外系統），走眶下溝／管到眶下孔，供應下直肌、下斜肌等鄰近構造。',{snap:true});
 add('angular-a','內眥動脈','Angular artery','e',['Angular artery.l'],[12,-45,80],'面動脈（頸外系統）的終段，在內眥與鼻背動脈吻合。',{snap:true});
+
+// ── 眼眶血管：靜脈回流與危險三角、其餘眼動脈分支 ──
+add('ant-meningeal','前腦膜動脈','Anterior meningeal artery','e',['guide:ant-meningeal'],[4,-28,66],'由前篩動脈分出，進入顱前窩供應硬腦膜。示意。',{rep:'schematic',snap:true});
+add('zygomatic-br','淚腺動脈顴支','Zygomatic branches of the lacrimal artery','e',['guide:zygomatic-br'],[48,-48,60],'穿顴骨到顳部與面頰（顴顳支、顴面支）。示意。',{rep:'schematic',snap:true});
+add('angular-v','內眥靜脈','Angular vein','e',['Angular vein.l'],[12,-38,80],'面靜脈的起始段，在內眥與上眼靜脈相通，無瓣膜。',{snap:true});
+add('facial-v','面靜脈','Facial vein','e',['Facial vein.l'],[30,-110,55],'經內眥靜脈 ↔ 上眼靜脈 → 海綿竇；也經深面靜脈 ↔ 翼靜脈叢。面部感染可逆流入顱。',{snap:true});
+add('supratrochlear-v','滑車上靜脈／鼻背靜脈','Supratrochlear & dorsal nasal veins','e',['guide:supratrochlear-v','guide:nasal-dorsum-v'],[12,-24,86],'額部與鼻背的靜脈，在內眥匯成內眥靜脈。示意。',{rep:'schematic',snap:true});
+add('lacrimal-v','淚腺靜脈','Lacrimal vein','e',['guide:lacrimal-v'],[35,-34.5,60],'淚腺的靜脈，匯入上眼靜脈。示意。',{rep:'schematic',snap:true});
+add('infraorbital-v','眶下靜脈','Infra-orbital vein','e',['guide:infraorbital-v'],[27,-72,64],'沿眶下管，經眶下裂往翼靜脈叢。示意。',{rep:'schematic',snap:true});
+add('pterygoid','翼靜脈叢','Pterygoid venous plexus','e',['guide:pterygoid','guide:iov-pterygoid'],[31,-72,18],'顳下窩內的靜脈叢；下眼靜脈經眶下裂通此，也經導靜脈連海綿竇。示意。',{rep:'schematic',snap:true});
+add('danger','危險三角','Danger triangle of the face','e',['guide:danger'],[19,-102,82],'鼻根到兩側嘴角。這區靜脈（面、內眥靜脈）無瓣膜，經眼靜脈通海綿竇 → 感染可造成海綿竇血栓（海綿竇症候群）。示意。',{rep:'schematic',snap:true});
+
+// ── 眼球血管：前段 ──
+add('acv','睫狀前靜脈','Anterior ciliary veins','k',['guide:acv'],[24,-48.5,71],'收集睫狀體與鞏膜靜脈竇（Schlemm 管）的血，沿直肌回到肌靜脈 → 上／下眼靜脈。示意。',{rep:'schematic',snap:true});
+add('schlemm','鞏膜靜脈竇（Schlemm 管）','Scleral venous sinus (canal of Schlemm)','k',['guide:schlemm'],[31.2,-41.9,72.7],'角膜緣的環狀管道，房水由此流出 → 鞏膜內／表層靜脈 → 睫狀前靜脈。示意。',{rep:'schematic',snap:true});
+add('episcleral','鞏膜表層與結膜血管','Episcleral & conjunctival vessels','k',['guide:episcleral'],[31.2,-56.6,71.3],'睫狀前動脈在角膜緣附近的分支（含結膜前／後動脈），形成角膜緣周圍的血管網。示意。',{rep:'schematic',snap:true});
+add('plicata','睫狀體皺褶部（pars plicata）','Pars plicata of the ciliary body','k',['guide:plicata'],[37.8,-48.8,70.4],'睫狀體前部，有睫狀突，分泌房水；虹膜大動脈環就在附近。示意位置。',{rep:'schematic',snap:true});
+add('plana','睫狀體平坦部（pars plana）','Pars plana of the ciliary body','k',['guide:plana'],[23.6,-48.8,69.3],'睫狀體後部平坦區，往後到鋸齒緣接視網膜。玻璃體手術常由此進入。示意位置。',{rep:'schematic',snap:true});
+add('choroid','脈絡膜（脈絡膜微血管叢）','Choroid & choriocapillaris','ku',['guide:choroid'],[35.8,-55.1,54.7],'葡萄膜後部（葡萄膜＝虹膜＋睫狀體＋脈絡膜）。由睫狀後短／長動脈供應，最內層是脈絡膜微血管叢，經 Bruch 膜擴散供應色素上皮與感光細胞（外層視網膜）。血流回渦靜脈。示意殼層。',{rep:'schematic',snap:true});
+
+// ── 視網膜與眼底 ──
+add('disc','視神經盤（視乳突）','Optic disc','u',['guide:disc'],[28.4,-47.4,53.4],'約 1.5 × 1.75 mm，無感光細胞 → 盲點。CRA 由此進入、CRV 由此離開。在左眼眼底位於黃斑的鼻側。',{rep:'schematic',snap:true});
+add('cup','視神經杯（杯盤比）','Optic cup (cup/disc ratio)','u',['guide:cup'],[28.4,-47.4,53.4],'視神經盤中央的凹陷。杯與盤直徑比＝杯盤比，正常約 < 0.3；變大要懷疑青光眼。示意大小。',{rep:'schematic',snap:true});
+add('macula','黃斑部與中央凹','Macula lutea & fovea','u',['guide:fundus-macula','guide:fundus-fovea'],[31.2,-49.6,53],'在視神經盤顳側約 2.5 個盤徑。中央凹無視網膜血管（無血管區），靠脈絡膜供應；周圍由 CRA 的上、下顳側支供應。約 20% 的人有睫狀視網膜動脈供應黃斑。',{rep:'schematic',snap:true});
+add('cra-st','CRA 顳上支','Superior temporal branch','u',['Central retinal artery.l'],[32.7,-43.7,54.8],'往黃斑上方與顳上方。標點為原模型 CRA 在此方向最近的分支。',{rep:'guide',snap:true});
+add('cra-sn','CRA 鼻上支','Superior nasal branch','u',['Central retinal artery.l'],[25.4,-44.3,55.8],'往鼻上方。',{rep:'guide',snap:true});
+add('cra-it','CRA 顳下支','Inferior temporal branch','u',['Central retinal artery.l'],[33,-52,53.6],'往黃斑下方與顳下方；顳上、顳下支共同環繞黃斑。',{rep:'guide',snap:true});
+add('cra-in','CRA 鼻下支','Inferior nasal branch','u',['Central retinal artery.l'],[24.8,-51.6,54.9],'往鼻下方。',{rep:'guide',snap:true});
+add('cilioretinal','睫狀視網膜動脈','Cilioretinal artery','u',['guide:cilioretinal'],[29.9,-48.4,53.1],'屬睫狀後短動脈系統（常經 Zinn 環），在視神經盤顳側邊緣獨立出來、不經 CRA，供應黃斑。約 10–33%（講義也寫 20%）的人有，90% 在顳側。CRA 阻塞時可保住中央視力；它本身阻塞 → 中央視力喪失。示意。',{rep:'schematic',snap:true});
+add('lamina','篩板','Lamina cribrosa','u',['guide:lamina'],[28.1,-47.1,51.8],'鞏膜在視神經穿出處的篩狀板；視神經在篩板前無髓鞘、篩板後有髓鞘。這段（篩板前／篩板）由睫狀後短動脈（Zinn 環）供應。示意。',{rep:'schematic',snap:true});
+add('hyaloid','玻璃體管（Cloquet 管）','Hyaloid canal','u',['guide:hyaloid'],[29.7,-48,61],'胚胎玻璃體動脈退化後留下的管道，從視神經盤到水晶體後面。示意。',{rep:'schematic',snap:true});
+
+// ── 頸部與 Willis 環 ──
+add('cca','頸總動脈','Common carotid artery','w',['Left common carotid artery'],[25,-190,8],'約在甲狀軟骨上緣（C4）分成頸內與頸外動脈。',{snap:true});
+add('carotid-sinus','頸動脈竇','Carotid sinus','w',['guide:carotid-sinus'],[31.6,-149,.2],'頸內動脈起始的膨大處，有壓力感受器（CN IX）；也是動脈粥狀硬化好發處，血栓可往上到眼動脈 → 一過性黑矇。示意。',{rep:'schematic',snap:true});
+add('eca','頸外動脈','External carotid artery','w',['External carotid artery.l'],[30,-120,15],'供應臉部與頭皮：面動脈、上頷動脈、顳淺動脈等。',{snap:true});
+add('facial-a','面動脈','Facial artery','w',['Facial artery.l'],[38,-110,45],'頸外動脈分支，終段是內眥動脈，與眼動脈的鼻背動脈吻合。',{snap:true});
+add('maxillary-a','上頷動脈','Maxillary artery','w',['Maxillary artery.l'],[40,-78,15],'頸外動脈終支之一；分出中腦膜動脈、眶下動脈。',{snap:true});
+add('sta','顳淺動脈','Superficial temporal artery','w',['Superficial temporal artery.l'],[62,-40,0],'頸外動脈終支之一；巨細胞動脈炎（顳動脈炎）可造成缺血性視神經病變。',{snap:true});
+add('mma','中腦膜動脈','Middle meningeal artery','w',['Middle meningeal artery.l'],[31,-62,9.7],'上頷動脈分支，穿棘孔入顱。',{snap:true,via:['spinosum']});
+add('ijv','頸內靜脈','Internal jugular vein','w',['Internal jugular vein.l'],[30,-150,-12],'由乙狀竇延續，出頸靜脈孔（與 IX、X、XI 同孔）。',{snap:true,via:['jugular']});
+add('vertebral-w','椎動脈','Vertebral artery','wb',['Vertebral artery.l'],[12,-77,-13],'後循環：椎動脈 → 基底動脈 → 後大腦動脈。',{snap:true});
+add('basilar','基底動脈','Basilar artery','wb',['Basilar artery'],[0,-50,3],'左右椎動脈匯合而成，走在橋腦腹側。',{snap:true});
+add('aca','前大腦動脈','Anterior cerebral artery','w',['Anterior cerebral artery.l'],[6,-28,29],'頸內動脈分支；左右以前交通動脈相連。',{snap:true});
+add('acom','前交通動脈','Anterior communicating artery','w',['Anterior communicating artery'],[0,-30,23],'連接左右 ACA，是 Willis 環的一段；不是頸內動脈的分支。',{snap:true});
+add('mca','中大腦動脈','Middle cerebral artery','w',['Middle cerebral artery'],[26,-30,22],'頸內動脈最大分支，往外側。左 MCA 出血 → 右側偏癱＋右半側偏盲（傷到視放射）。',{snap:true});
+add('pcom','後交通動脈','Posterior communicating artery','w',['Posterior communicating artery.l'],[8,-35,15],'連接頸內動脈與後大腦動脈。',{snap:true});
+add('pca','後大腦動脈','Posterior cerebral artery','wb',['Posterior cerebral artery.l'],[26,-25,-27],'基底動脈終支，供應枕葉視覺皮質。',{snap:true});
+add('willis','威利氏環','Circle of Willis','w',['Anterior communicating artery','Anterior cerebral artery','Posterior communicating artery','Posterior cerebral artery','Internal carotid artery'],[0,-32,10],'ACom、ACA 近端、ICA 末端、PCom、PCA 近端組成；前後循環在此相連。',{rep:'guide',snap:false});
+
+// ── 腦底動脈分支 ──
+add('heubner','Heubner 回返動脈','Recurrent artery of Heubner','b',['guide:heubner'],[10,-26,25],'ACA 近端分出後回返，供應尾狀核頭、內囊前肢。示意。',{rep:'schematic',snap:true});
+add('lenticulostriate','內、外側豆紋動脈','Medial & lateral lenticulostriate arteries','b',['Proximal lateral striate branches','Distal lateral striate branches'],[18,-24,24],'MCA 起始段的穿通支，供應基底核與內囊；高血壓腦出血好發。',{snap:true});
+add('med-orbitofrontal','內側眶額動脈','Medial orbitofrontal artery','b',['Orbitofrontal branches of anterior cerebral artery'],[8,-22,56],'ACA 在額葉底面的分支。',{snap:true});
+add('lat-orbitofrontal','外側眶額動脈','Lateral orbitofrontal artery','b',['guide:lateral-orbitofrontal'],[37,-22,39],'MCA 在眶額區的分支。示意。',{rep:'schematic',snap:true});
+add('candelabra','上行額動脈（燭臺分支）','Ascending frontal (candelabra) artery','b',['guide:ascending-frontal'],[48,1,23],'MCA 往額葉上行的分支。示意。',{rep:'schematic',snap:true});
+add('acha','前脈絡叢動脈','Anterior choroidal artery','b',['guide:acha'],[14,-32,1],'直接起自頸內動脈（國考：AChA 起自 ICA）。供應視束、外側膝狀體、內囊後肢、脈絡叢。示意。',{rep:'schematic',snap:true});
+add('post-choroidal','後脈絡叢動脈','Posterior choroidal arteries','b',['guide:posterior-choroidal'],[14,-20,-25],'PCA 分支，也參與外側膝狀體與脈絡叢供血。示意。',{rep:'schematic',snap:true});
+add('sca','上小腦動脈','Superior cerebellar artery','b',['Superior cerebellar artery.l'],[23,-42,-28],'基底動脈遠端分支。',{snap:true});
+add('pontine','橋腦動脈','Pontine arteries','b',['Medial pontine branches of basilar artery','Lateral pontine branches of basilar artery'],[7,-49,4],'基底動脈到橋腦的內、外側分支。',{snap:true});
+add('labyrinthine','迷路（內聽）動脈','Labyrinthine (internal acoustic) artery','b',['guide:labyrinthine'],[27,-57,-3],'常由 AICA 分出，進內耳道。示意。',{rep:'schematic',snap:true});
+add('aica','前下小腦動脈','Anterior inferior cerebellar artery','b',['Anterior inferior cerebellar artery.l'],[18,-60,-13],'基底動脈分支。',{snap:true});
+add('pica','後下小腦動脈','Posterior inferior cerebellar artery','b',['Posterior inferior cerebellar artery.l'],[27,-64,-43],'椎動脈分支（講義圖上的 cut 是切斷端）。',{snap:true});
+add('asa','前脊髓動脈','Anterior spinal artery','b',['Anterior spinal artery'],[0,-87,-16],'左右椎動脈各發一支在前方匯合。',{snap:true});
+add('psa','後脊髓動脈','Posterior spinal artery','b',['guide:psa'],[6,-88,-31],'成對，走在脊髓後外側。示意。',{rep:'schematic',snap:true});
 
 export const labels=rows.map((r,i)=>({...r,number:i+1}));
 export const groups={
@@ -144,9 +208,13 @@ export const groups={
  f:{title:'顱底孔洞',subtitle:'移除顱蓋與腦，看每條腦神經穿出哪個孔',camera:'top',bone:1,cuts:{y:[-30,false]},cortex:0,flow:'一篩二視　三四一六眶上裂　二圓三卵　七八內聽　九十十一頸靜脈　十二舌下'},
  n:{title:'12 對腦神經',subtitle:'從腦底認腦神經的發出位置，再追到它穿的孔',camera:'bottom',bone:0,cuts:{},cortex:.18,flow:'I 嗅　II 視　III 動眼　IV 滑車　V 三叉　VI 外旋　VII 顏面　VIII 前庭耳蝸　IX 舌咽　X 迷走　XI 副　XII 舌下'},
  o:{title:'眼窩與共同腱環',subtitle:'掀開眼窩頂，看眶上裂的神經誰在腱環內、誰在腱環外',camera:'top',bone:1,cuts:{y:[-33,false]},cortex:0,flow:'上斜四、外直六、其他三　｜　腱環外：IV、額、淚、上眼靜脈　｜　腱環內：III、鼻睫、VI'},
- e:{title:'眼部血管',subtitle:'眼動脈分支、睫狀循環（前／後、長／短）、視網膜中央動靜脈、渦靜脈',camera:'oblique',bone:0,cuts:{},cortex:0,flow:'ICA → 眼動脈 → CRA（視網膜內層）｜睫狀後短（脈絡膜、視神經頭）｜睫狀後長＋睫狀前 → 虹膜大動脈環｜靜脈：CRV、渦靜脈 → 上／下眼靜脈 → 海綿竇'},
+ e:{title:'眼眶血管',subtitle:'眼動脈的眼眶分支、眼眶靜脈回流、危險三角 → 海綿竇',camera:'oblique',bone:0,cuts:{},cortex:0,flow:'ICA → 眼動脈 → 淚腺、眶上、滑車上、篩、鼻背、瞼動脈｜靜脈：上眼靜脈 → 眶上裂 → 海綿竇；下眼靜脈 → 海綿竇／翼靜脈叢；內眥靜脈 ↔ 面靜脈'},
+ k:{title:'眼球血管',subtitle:'睫狀循環：前／後、長／短睫狀動脈，虹膜動脈環，Zinn 環，渦靜脈；眼球半透明可見',camera:'oblique',bone:0,cuts:{},cortex:0,flow:'睫狀後短 → 脈絡膜、視神經頭（Zinn 環）｜睫狀後長＋睫狀前（7 條）→ 虹膜大動脈環 → 小動脈環｜回流：渦靜脈、睫狀前靜脈、Schlemm 管'},
+ u:{title:'視網膜與眼底',subtitle:'眼底鏡視角（冠狀切開眼球）：視神經盤、杯盤比、黃斑、CRA 四分支、睫狀視網膜動脈',camera:'front',bone:0,cuts:{z:[61,true]},cortex:0,panel:'retina',flow:'內層視網膜 ← 視網膜中央動脈｜外層（RPE、感光細胞）← 脈絡膜微血管叢（Bruch 膜）｜黃斑中央凹無血管'},
  c:{title:'海綿竇與蝶鞍',subtitle:'冠狀切面：外側壁 III→IV→V1→V2，腔內 ICA＋VI；在「切面」可前後移動',camera:'front',bone:1,cuts:{z:[20,true]},cortex:0,flow:'外壁三四一二，裡面六和頸內動脈　｜　蝶竇 → 蝶鞍 → 腦下垂體'},
  g:{title:'睫狀神經節與瞳孔反射',subtitle:'由上往下看：三種根、長短睫狀神經、上丘三下丘四',camera:'top',bone:0,cuts:{},cortex:0,flow:'光 → 視網膜 → CN II → 頂蓋前區 → 兩側 EW 核 → CN III → 睫狀神經節 → 短睫狀神經 → 瞳孔括約肌'},
- v:{title:'視覺路徑與皮質',subtitle:'從視神經四段到 V1，楔葉在上看下面、舌回在下看上面',camera:'top',bone:0,cuts:{},cortex:.12,flow:'視網膜 → 視神經 → 視交叉 → 視束 → LGN → 視放射 → V1（BA17）'}
+ v:{title:'視覺路徑與皮質',subtitle:'從視神經四段到 V1，楔葉在上看下面、舌回在下看上面',camera:'top',bone:0,cuts:{},cortex:.12,flow:'視網膜 → 視神經 → 視交叉 → 視束 → LGN → 視放射 → V1（BA17）'},
+ w:{title:'頸部與 Willis 環',subtitle:'頸總 → 頸內／頸外動脈；頸內動脈四分支；Willis 環',camera:'left',bone:.12,cuts:{},cortex:0,flow:'頸內動脈分支：前大腦、中大腦、眼動脈、前脈絡叢｜後循環：椎動脈 → 基底動脈 → 後大腦動脈'},
+ b:{title:'腦底動脈分支',subtitle:'講義腦底血管圖的細部分支',camera:'bottom',bone:0,cuts:{},cortex:.1,flow:'實線為原模型血管；淡紫色為示意'}
 };
-export const themeOrder=['q','f','n','o','e','c','g','v'];
+export const themeOrder=['q','f','n','o','e','k','u','c','g','v','w','b'];
