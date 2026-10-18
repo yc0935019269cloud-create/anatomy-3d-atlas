@@ -3,7 +3,8 @@ import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
 import {labels,groups,pageTitles} from './labels.js';
 import {createSchematics} from './schematic.js';
 const $=id=>document.getElementById(id);
-const cameras={top:{pos:[0,600,-10],up:[0,0,1],text:'上面觀 · 前方在上 · 左腦在畫面左側'},bottom:{pos:[0,-600,-10],up:[0,0,1],text:'底面觀 · 前方在上 · 左腦在畫面右側'},left:{pos:[600,-10,-10],up:[0,1,0],text:'左側觀 · 前方在畫面左側'},medial:{pos:[-600,-10,-10],up:[0,1,0],text:'由正中面看左半腦 · 前方在畫面右側'},front:{pos:[0,-10,600],up:[0,1,0],text:'前面觀 · 左側在畫面右側'},oblique:{pos:[330,320,420],up:[0,1,0],text:'立體斜視 · 可自由拖曳旋轉'}};
+// Top and bottom views are tilted 15° off the vertical axis so the turntable can spin (a camera on the pole cannot).
+const cameras={top:{pos:[0,557.6,-162.4],up:[0,1,0],text:'上面觀 · 前方在上 · 左腦在畫面左側'},bottom:{pos:[0,-601.6,148.4],up:[0,1,0],text:'底面觀 · 前方在上 · 左腦在畫面右側'},left:{pos:[600,-10,-10],up:[0,1,0],text:'左側觀 · 前方在畫面左側'},medial:{pos:[-600,-10,-10],up:[0,1,0],text:'由正中面看左半腦 · 前方在畫面右側'},front:{pos:[0,-10,600],up:[0,1,0],text:'前面觀 · 左側在畫面右側'},oblique:{pos:[330,320,420],up:[0,1,0],text:'立體斜視 · 可自由拖曳旋轉'}};
 const typeNames={mesh:'原模型構造',guide:'區域導引',schematic:'示意模型',reference:'原圖／層次構造'};
 let current='p',names=true,selected=null,language='both',renderer,scene,camera,controls,meshes=[],active=[],width=0,height=0,dirty=true,pageNumber=8,labelSlots=null;
 const project=new T.Vector3(),lowerPlane=new T.Plane(new T.Vector3(0,1,0),110);
@@ -25,7 +26,8 @@ async function initialize(){
 function setCamera(which){
  const c=cameras[which];controls?.dispose();camera.up.set(...c.up);camera.position.set(...c.pos);camera.zoom=1;camera.lookAt(0,-22,-7);
  // Same drag feel as the skull atlas: orbit around the view's up axis with light damping.
- controls=new OrbitControls(camera,$('canvas'));controls.enableDamping=true;controls.dampingFactor=.1;controls.minZoom=.45;controls.maxZoom=5;controls.target.set(0,-22,-7);
+ // Turntable around the vertical axis in every view, like the skull atlas: build with Y up, then restore the view's up.
+ const viewUp=camera.up.clone();camera.up.set(0,1,0);controls=new OrbitControls(camera,$('canvas'));camera.up.copy(viewUp);controls.enableDamping=true;controls.dampingFactor=.1;controls.minZoom=.45;controls.maxZoom=5;controls.minPolarAngle=.17;controls.maxPolarAngle=Math.PI-.17;controls.target.set(0,-22,-7);
  controls.addEventListener('change',()=>dirty=true);controls.addEventListener('start',()=>{$('canvas').classList.add('dragging');$('orientation').textContent='自由視角 · 標點固定於模型；背面構造的指線可穿透表面';});controls.addEventListener('end',()=>$('canvas').classList.remove('dragging'));
  controls.update();camera.updateProjectionMatrix();labelSlots=null;$('camera-view').value=which;$('orientation').textContent=c.text;dirty=true;
 }

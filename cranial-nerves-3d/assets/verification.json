@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-06T06:07:36.841Z",
+  "date": "2026-10-18T09:06:44.410Z",
   "browser": "141.0.7390.37",
   "offline": true,
   "checks": [
@@ -20,6 +20,7 @@
     "Schematic and right-side toggles",
     "Notes dialog jump buttons",
     "Drag rotates with skull-atlas damping, then settles",
+    "Top/bottom views: horizontal drag spins around the vertical axis (turntable, as in the skull atlas)",
     "390px mobile: no horizontal overflow or label overlap",
     "No page errors and no network requests (fully offline)"
   ],

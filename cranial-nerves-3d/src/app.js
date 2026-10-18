@@ -7,7 +7,8 @@ import {correctAnnulus} from './annulus.js';
 import {createOcularVessels,createBrainVessels} from './ocular.js';
 const $=id=>document.getElementById(id);
 // Camera directions (from target to camera). Frame: +X left, +Y superior, +Z anterior.
-const cameras={top:{dir:[0,1,-.02],up:[0,0,1],text:'上面觀 · 前方在上 · 左側在畫面左方'},bottom:{dir:[0,-1,-.02],up:[0,0,1],text:'底面觀 · 前方在上 · 左側在畫面右方'},front:{dir:[0,.12,1],up:[0,1,0],text:'前面觀 · 左側在畫面右方'},left:{dir:[1,0,0],up:[0,1,0],text:'左側觀 · 前方在畫面左方'},medial:{dir:[-1,0,0],up:[0,1,0],text:'由正中面看左半邊 · 前方在畫面右方'},oblique:{dir:[.62,.55,.56],up:[0,1,0],text:'立體斜視 · 可自由拖曳旋轉'}};
+// Top and bottom views are tilted 15° off the vertical axis: a turntable around a pole that the camera sits on cannot spin.
+const cameras={top:{dir:[0,.966,-.259],up:[0,1,0],text:'上面觀 · 前方在上 · 左側在畫面左方'},bottom:{dir:[0,-.966,.259],up:[0,1,0],text:'底面觀 · 前方在上 · 左側在畫面右方'},front:{dir:[0,.12,1],up:[0,1,0],text:'前面觀 · 左側在畫面右方'},left:{dir:[1,0,0],up:[0,1,0],text:'左側觀 · 前方在畫面左方'},medial:{dir:[-1,0,0],up:[0,1,0],text:'由正中面看左半邊 · 前方在畫面右方'},oblique:{dir:[.62,.55,.56],up:[0,1,0],text:'立體斜視 · 可自由拖曳旋轉'}};
 const frames={q:{target:[4,-38,2],zoom:1.3},f:{target:[0,-58,8],zoom:1.3},n:{target:[0,-60,2],zoom:1.9},o:{target:[20,-42,50],zoom:2.9},e:{target:[24,-50,62],zoom:1.9},k:{target:[29,-46,60],zoom:4.6},u:{target:[30.2,-48.6,55],zoom:9.5},w:{target:[18,-100,10],zoom:.95},b:{target:[0,-48,-5],zoom:1.6},c:{target:[0,-46,20],zoom:3.6},g:{target:[14,-40,22],zoom:2.3},v:{target:[0,-28,-12],zoom:1.2}};
 const typeNames={mesh:'原模型構造',guide:'原模型上的位置／通道',schematic:'示意（原模型沒有）',reference:'皮質內層次（無 3D 網格）'};
 // Cranial nerve colours, reused by the legend.
@@ -48,8 +49,11 @@ async function initialize(){
  window.atlas={labels,groups,meshes,scene,get camera(){return camera;},get controls(){return controls;},annulus,setGroup,select:choose,setCamera,focusOn:id=>focusOn(labels.find(l=>l.id===id)),get state(){return {current,names,selected,active:active.length};}};
 }
 function buildLegend(){$('legend').replaceChildren();for(const [cn,,col] of nerveColors){const s=document.createElement('span');s.innerHTML=`<i style="background:#${col.toString(16).padStart(6,'0')}"></i>${cn}`;$('legend').append(s);}}
-// Same drag feel as the skull atlas: orbit around camera.up with light damping. Rebuilt whenever camera.up changes.
-function makeControls(target){controls?.dispose();controls=new OrbitControls(camera,$('canvas'));controls.enableDamping=true;controls.dampingFactor=.1;controls.minZoom=.45;controls.maxZoom=9;controls.target.copy(target);
+// Same drag feel as the skull atlas: a turntable around the vertical (superior) axis with light damping, in every view.
+// OrbitControls fixes its orbit axis from camera.up at construction, so build it with Y up and restore the view's up afterwards
+// (top/bottom views keep anterior at the top of the screen without turning the orbit axis front-to-back).
+function makeControls(target){controls?.dispose();const viewUp=camera.up.clone();camera.up.set(0,1,0);controls=new OrbitControls(camera,$('canvas'));camera.up.copy(viewUp);controls.enableDamping=true;controls.dampingFactor=.1;controls.minZoom=.45;controls.maxZoom=9;// Keep 10° off the poles, where a turntable cannot spin.
+ controls.minPolarAngle=.17;controls.maxPolarAngle=Math.PI-.17;controls.target.copy(target);
  controls.addEventListener('change',()=>dirty=true);controls.addEventListener('start',()=>{$('canvas').classList.add('dragging');$('orientation').textContent='自由視角 · 指線可穿透表面，旋轉時留意前後關係';});controls.addEventListener('end',()=>$('canvas').classList.remove('dragging'));controls.update();}
 function setCamera(which,frame=frames[current]){
  const c=cameras[which],target=new T.Vector3(...frame.target),dir=new T.Vector3(...c.dir).normalize();camera.up.set(...c.up);camera.position.copy(target).addScaledVector(dir,700);camera.zoom=frame.zoom;camera.lookAt(target);camera.updateProjectionMatrix();
